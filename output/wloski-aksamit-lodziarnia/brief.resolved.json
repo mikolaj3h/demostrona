@@ -1,0 +1,447 @@
+{
+  "name": "Włoski Aksamit-Lodziarnia",
+  "slug": "wloski-aksamit-lodziarnia",
+  "tagline": null,
+  "description": null,
+  "industry": "lodziarnia",
+  "industryLabel": "Lodziarnia rzemieślnicza",
+  "schemaType": "IceCreamShop",
+  "servicesHeading": {
+    "eyebrow": "Nasza karta",
+    "title": "Co znajdziesz w lodziarni"
+  },
+  "theme": {
+    "id": "artisan",
+    "label": "Rzemieślniczy",
+    "heroStyle": "split",
+    "font": {
+      "heading": "'Playfair Display', Georgia, 'Times New Roman', serif",
+      "body": "'DM Sans', system-ui, -apple-system, Segoe UI, sans-serif",
+      "google": "Playfair+Display:wght@600;700;800&family=DM+Sans:wght@400;500;600"
+    },
+    "type": {
+      "headingWeight": 700,
+      "headingSpacing": "-0.01em",
+      "headingTransform": "none",
+      "eyebrowSpacing": "0.18em",
+      "eyebrowTransform": "uppercase"
+    },
+    "radius": {
+      "card": "18px",
+      "button": "999px",
+      "input": "12px",
+      "pill": "999px"
+    },
+    "color": {
+      "primary": "#c12f52",
+      "primaryDark": "#a22745",
+      "primaryLight": "#db869b",
+      "primarySoft": "#f9eaee",
+      "onPrimary": "#ffffff",
+      "accent": "#79c2a8",
+      "accentDark": "#68a790",
+      "onAccent": "#0b1220",
+      "ink": "#241c15",
+      "inkMuted": "#5c5247",
+      "bg": "#fffaf3",
+      "surface": "#ffffff",
+      "surfaceAlt": "#f5e7dd",
+      "border": "#ece0d0",
+      "footerBg": "#241a13",
+      "footerInk": "#f8fafc",
+      "footerMuted": "#a7a5a3",
+      "heroOverlay": "#201711"
+    },
+    "shadow": {
+      "sm": "0 1px 2px rgba(42, 33, 24, 0.06), 0 1px 3px rgba(42, 33, 24, 0.1)",
+      "card": "0 6px 24px rgba(42, 33, 24, 0.08), 0 1px 2px rgba(42, 33, 24, 0.06)",
+      "hover": "0 18px 48px rgba(42, 33, 24, 0.16), 0 4px 12px rgba(42, 33, 24, 0.08)",
+      "header": "0 4px 20px rgba(42, 33, 24, 0.08)",
+      "button": "0 8px 20px rgba(193, 47, 82, 0.28)"
+    },
+    "_tint": "#2a2118"
+  },
+  "themeId": "artisan",
+  "brand": {
+    "primary": "#c12f52",
+    "accent": "#79c2a8"
+  },
+  "city": "Pińczów",
+  "region": null,
+  "serviceArea": "Pińczów",
+  "year": null,
+  "url": null,
+  "contact": {
+    "phone": "+48 782 336 467",
+    "phoneRaw": "+48 782 336 467",
+    "phoneValid": true,
+    "email": null,
+    "address": {
+      "street": "Siedem Źródeł 8",
+      "postalCode": "28-400",
+      "city": "Pińczów",
+      "full": "Siedem Źródeł 8, 28-400 Pińczów"
+    },
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=W%C5%82oski%20Aksamit-Lodziarnia&query_place_id=ChIJpfwJSe-_F0cRAsyDLDlqCLk"
+  },
+  "hours": [
+    {
+      "label": "Poniedziałek – Sobota",
+      "value": "10:00 – 19:00"
+    },
+    {
+      "label": "Niedziela",
+      "value": "10:00 – 20:00"
+    }
+  ],
+  "social": {},
+  "legal": {
+    "fullName": "Włoski Aksamit-Lodziarnia",
+    "nip": null,
+    "regon": null,
+    "privacyUrl": "#polityka-prywatnosci"
+  },
+  "images": {
+    "hero": {
+      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEKDnXfZFrNCrO_dtK9v9YXAWtzeW3Lx73BasKr7ZwCyGcYPqFogZ0xqB4H7mpIoOqkIHEyxnZitRVK6-_svMQlxw-2dLssxLGm9Je_rRKE7J6hSE0goBOgOrwPpzCPARJVGz8_=w1280-h960-k-no",
+      "alt": "Włoski Aksamit-Lodziarnia",
+      "mode": "custom"
+    },
+    "about": {
+      "src": "https://images.unsplash.com/photo-1488900128323-21503983a07e?auto=format&fit=crop&w=960&q=72",
+      "alt": "Lody w wafelku trzymane w dłoni",
+      "mode": "unsplash"
+    },
+    "gallery": [
+      {
+        "src": "https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?auto=format&fit=crop&w=900&q=70",
+        "alt": "Lody w rożku na tle lata",
+        "mode": "unsplash"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1567206563064-6f60f40a2b57?auto=format&fit=crop&w=900&q=70",
+        "alt": "Witryna lodziarni z wieloma smakami",
+        "mode": "unsplash"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1576506295286-5cda18df43e7?auto=format&fit=crop&w=900&q=70",
+        "alt": "Gałki lodów w pucharku z owocami",
+        "mode": "unsplash"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&w=900&q=70",
+        "alt": "Lody w rożkach na letnim tle",
+        "mode": "unsplash"
+      }
+    ]
+  },
+  "services": [
+    {
+      "name": "Lody rzemieślnicze",
+      "description": "Codziennie kręcone na miejscu z naturalnych składników, bez gotowych baz i sztucznych barwników.",
+      "icon": "iceCream"
+    },
+    {
+      "name": "Sorbety owocowe",
+      "description": "Wegańskie sorbety z prawdziwych owoców — orzeźwiające i intensywne w smaku.",
+      "icon": "leaf"
+    },
+    {
+      "name": "Desery lodowe",
+      "description": "Puchary, gofry i lody w polewie — mała uczta na słodko dla całej rodziny.",
+      "icon": "cake"
+    },
+    {
+      "name": "Lody na wynos",
+      "description": "Gałki w wafelku i lody w pojemnikach do domu — szybko, bez kolejki.",
+      "icon": "truck"
+    }
+  ],
+  "menu": [
+    {
+      "name": "Lody rzemieślnicze",
+      "note": "gałka 8 zł · podwójna 14 zł",
+      "items": [
+        {
+          "name": "Śmietankowa",
+          "description": "klasyka z prawdziwej śmietany",
+          "price": "8 zł",
+          "tags": []
+        },
+        {
+          "name": "Czekolada belgijska",
+          "description": "intensywna, z gorzkiej czekolady",
+          "price": "8 zł",
+          "tags": []
+        },
+        {
+          "name": "Truskawka",
+          "description": "z sezonowych, polskich truskawek",
+          "price": "8 zł",
+          "tags": [
+            "sezonowe"
+          ]
+        },
+        {
+          "name": "Słony karmel",
+          "description": "domowy karmel z odrobiną soli",
+          "price": "9 zł",
+          "tags": [
+            "nowość"
+          ]
+        },
+        {
+          "name": "Pistacja",
+          "description": "z prażonych pistacji",
+          "price": "9 zł",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "name": "Sorbety owocowe",
+      "note": "na wodzie, wegańskie",
+      "items": [
+        {
+          "name": "Malina",
+          "description": "intensywny sorbet z malin",
+          "price": "8 zł",
+          "tags": [
+            "wegańskie",
+            "bez laktozy"
+          ]
+        },
+        {
+          "name": "Cytryna",
+          "description": "orzeźwiający, lekko kwaśny",
+          "price": "8 zł",
+          "tags": [
+            "wegańskie"
+          ]
+        },
+        {
+          "name": "Mango",
+          "description": "z dojrzałego mango",
+          "price": "9 zł",
+          "tags": [
+            "wegańskie"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Desery lodowe",
+      "note": "",
+      "items": [
+        {
+          "name": "Puchar owocowy",
+          "description": "3 gałki, świeże owoce, bita śmietana",
+          "price": "19 zł",
+          "tags": []
+        },
+        {
+          "name": "Gofr z lodami",
+          "description": "chrupiący gofr, 2 gałki, polewa",
+          "price": "21 zł",
+          "tags": []
+        },
+        {
+          "name": "Affogato",
+          "description": "gałka śmietankowa zalana espresso",
+          "price": "14 zł",
+          "tags": []
+        }
+      ]
+    }
+  ],
+  "features": [
+    {
+      "title": "Miejsca na miejscu",
+      "text": "",
+      "icon": "users"
+    },
+    {
+      "title": "Na wynos",
+      "text": "",
+      "icon": "truck"
+    },
+    {
+      "title": "Wi-Fi",
+      "text": "",
+      "icon": "briefcase"
+    },
+    {
+      "title": "Miła atmosfera",
+      "text": "",
+      "icon": "heart"
+    },
+    {
+      "title": "Spokojne miejsce",
+      "text": "",
+      "icon": "heart"
+    },
+    {
+      "title": "Szybka obsługa",
+      "text": "",
+      "icon": "clock"
+    }
+  ],
+  "process": [],
+  "stats": [
+    {
+      "value": "24",
+      "label": "smaki w sezonie"
+    },
+    {
+      "value": "100%",
+      "label": "naturalne składniki"
+    },
+    {
+      "value": "7/7",
+      "label": "otwarte w sezonie"
+    },
+    {
+      "value": "4,9",
+      "label": "ocena Google"
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "Najlepsze lody w okolicy — czuć prawdziwą śmietanę i owoce. Wracamy tu całą rodziną co weekend.",
+      "author": "Magda z dziećmi",
+      "role": "opinia przykładowa",
+      "rating": 5
+    },
+    {
+      "quote": "Sorbet malinowy jak z włoskiej gelaterii. Mała kolejka, ale warto poczekać.",
+      "author": "Tomek",
+      "role": "opinia przykładowa",
+      "rating": 5
+    }
+  ],
+  "pricing": [],
+  "faq": [
+    {
+      "q": "Czy macie lody wegańskie i bez laktozy?",
+      "a": "Tak — w ofercie zawsze znajdziesz owocowe sorbety na wodzie (wegańskie) oraz propozycje bez laktozy."
+    },
+    {
+      "q": "Czy lody są bezglutenowe?",
+      "a": "Większość naszych smaków nie zawiera glutenu. O skład konkretnego smaku zawsze pytaj obsługę przy ladzie."
+    },
+    {
+      "q": "Czy można kupić lody na wynos do domu?",
+      "a": "Oczywiście — pakujemy lody w pojemniki na wynos, idealne na deser w domowym gronie."
+    },
+    {
+      "q": "Jak często zmieniają się smaki?",
+      "a": "Bazowe smaki są zawsze dostępne, a obok nich rotują propozycje sezonowe zależne od dostępnych owoców."
+    }
+  ],
+  "hero": {
+    "headline": "Lody, które robimy z głową i sercem.",
+    "subheadline": "Rzemieślnicza lodziarnia — Pińczów i okolice. Codziennie świeże lody z naturalnych składników — na miejscu i na wynos.",
+    "badges": [
+      "Miejsca na miejscu",
+      "Na wynos",
+      "Wi-Fi"
+    ],
+    "image": {
+      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEKDnXfZFrNCrO_dtK9v9YXAWtzeW3Lx73BasKr7ZwCyGcYPqFogZ0xqB4H7mpIoOqkIHEyxnZitRVK6-_svMQlxw-2dLssxLGm9Je_rRKE7J6hSE0goBOgOrwPpzCPARJVGz8_=w1280-h960-k-no",
+      "alt": "Włoski Aksamit-Lodziarnia",
+      "mode": "custom"
+    }
+  },
+  "about": {
+    "title": "Dlaczego my?",
+    "eyebrow": "O nas",
+    "text": [
+      "Jesteśmy małą, rodzinną lodziarnią, w której lody powstają na miejscu — z prawdziwej śmietany, sezonowych owoców i odrobiny cierpliwości. Bez gotowych baz, bez sztucznych barwników.",
+      "Każdego dnia kręcimy świeże porcje, a smaki dobieramy do tego, co akurat najlepsze. Wpadnij na gałkę, deser albo lody na wynos — i poczuj różnicę, jaką robi rzemiosło."
+    ],
+    "points": [
+      "Naturalne składniki",
+      "Codziennie świeże",
+      "Dla każdego"
+    ],
+    "image": {
+      "src": "https://images.unsplash.com/photo-1488900128323-21503983a07e?auto=format&fit=crop&w=960&q=72",
+      "alt": "Lody w wafelku trzymane w dłoni",
+      "mode": "unsplash"
+    }
+  },
+  "cta": {
+    "title": "Wpadnij na gałkę dobrych lodów.",
+    "text": "Czekamy ze świeżymi, rzemieślniczymi lodami — na miejscu i na wynos."
+  },
+  "seo": {
+    "title": "Włoski Aksamit-Lodziarnia — Lodziarnia rzemieślnicza | Pińczów",
+    "description": "Włoski Aksamit-Lodziarnia — lodziarnia rzemieślnicza. Pińczów i okolice. Oferujemy: Lody rzemieślnicze, Sorbety owocowe, Desery lodowe i Lody na wynos.",
+    "keywords": [
+      "lodziarnia",
+      "lody rzemieślnicze",
+      "lody naturalne",
+      "gelato",
+      "desery lodowe",
+      "Pińczów"
+    ],
+    "ogImage": null
+  },
+  "rating": "4,9",
+  "reviewCount": 49,
+  "priceRange": null,
+  "hoursWeekly": [
+    {
+      "open": "10:00",
+      "close": "19:00"
+    },
+    {
+      "open": "10:00",
+      "close": "19:00"
+    },
+    {
+      "open": "10:00",
+      "close": "19:00"
+    },
+    {
+      "open": "10:00",
+      "close": "19:00"
+    },
+    {
+      "open": "10:00",
+      "close": "19:00"
+    },
+    {
+      "open": "10:00",
+      "close": "19:00"
+    },
+    {
+      "open": "10:00",
+      "close": "20:00"
+    }
+  ],
+  "layout": [
+    "header",
+    "hero",
+    "trustbar",
+    "menu",
+    "map",
+    "about",
+    "gallery",
+    "stats",
+    "testimonials",
+    "faq",
+    "cta",
+    "contact",
+    "footer",
+    "cookie"
+  ],
+  "meta": {
+    "generator": "demo-stron-pl",
+    "industry": "lodziarnia",
+    "theme": "artisan",
+    "imageMode": "unsplash",
+    "generatedAt": "2026-06-17T13:53:42.518Z",
+    "warnings": []
+  }
+}

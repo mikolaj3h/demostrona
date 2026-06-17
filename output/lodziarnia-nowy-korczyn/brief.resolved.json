@@ -1,0 +1,415 @@
+{
+  "name": "Lodziarnia Nowy Korczyn",
+  "slug": "lodziarnia-nowy-korczyn",
+  "tagline": null,
+  "description": null,
+  "industry": "cukiernia",
+  "industryLabel": "Cukiernia",
+  "schemaType": "Bakery",
+  "servicesHeading": {
+    "eyebrow": "Nasza witryna",
+    "title": "Co dla Ciebie upieczemy"
+  },
+  "theme": {
+    "id": "artisan",
+    "label": "Rzemieślniczy",
+    "heroStyle": "split",
+    "font": {
+      "heading": "'Playfair Display', Georgia, 'Times New Roman', serif",
+      "body": "'DM Sans', system-ui, -apple-system, Segoe UI, sans-serif",
+      "google": "Playfair+Display:wght@600;700;800&family=DM+Sans:wght@400;500;600"
+    },
+    "type": {
+      "headingWeight": 700,
+      "headingSpacing": "-0.01em",
+      "headingTransform": "none",
+      "eyebrowSpacing": "0.18em",
+      "eyebrowTransform": "uppercase"
+    },
+    "radius": {
+      "card": "18px",
+      "button": "999px",
+      "input": "12px",
+      "pill": "999px"
+    },
+    "color": {
+      "primary": "#a8456a",
+      "primaryDark": "#8d3a59",
+      "primaryLight": "#cd93a9",
+      "primarySoft": "#f6ecf0",
+      "onPrimary": "#ffffff",
+      "accent": "#e0a96d",
+      "accentDark": "#c1915e",
+      "onAccent": "#0b1220",
+      "ink": "#241c15",
+      "inkMuted": "#5c5247",
+      "bg": "#fffaf3",
+      "surface": "#ffffff",
+      "surfaceAlt": "#f4e8de",
+      "border": "#ece0d0",
+      "footerBg": "#241a13",
+      "footerInk": "#f8fafc",
+      "footerMuted": "#a7a5a3",
+      "heroOverlay": "#201711"
+    },
+    "shadow": {
+      "sm": "0 1px 2px rgba(42, 33, 24, 0.06), 0 1px 3px rgba(42, 33, 24, 0.1)",
+      "card": "0 6px 24px rgba(42, 33, 24, 0.08), 0 1px 2px rgba(42, 33, 24, 0.06)",
+      "hover": "0 18px 48px rgba(42, 33, 24, 0.16), 0 4px 12px rgba(42, 33, 24, 0.08)",
+      "header": "0 4px 20px rgba(42, 33, 24, 0.08)",
+      "button": "0 8px 20px rgba(168, 69, 106, 0.28)"
+    },
+    "_tint": "#2a2118"
+  },
+  "themeId": "artisan",
+  "brand": {
+    "primary": "#a8456a",
+    "accent": "#e0a96d"
+  },
+  "city": "Nowy Korczyn",
+  "region": null,
+  "serviceArea": "Nowy Korczyn",
+  "year": null,
+  "url": null,
+  "contact": {
+    "phone": "+48 664 198 611",
+    "phoneRaw": "+48 664 198 611",
+    "phoneValid": true,
+    "email": null,
+    "address": {
+      "street": "18 Rynek",
+      "postalCode": "28-136",
+      "city": "Nowy Korczyn",
+      "full": "18 Rynek, 28-136 Nowy Korczyn"
+    },
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lodziarnia%20Nowy%20Korczyn&query_place_id=ChIJ-Xy6sq7QF0cRpAMgggED_Ps"
+  },
+  "hours": [
+    {
+      "label": "Poniedziałek – Piątek",
+      "value": "10:00 – 19:00"
+    },
+    {
+      "label": "Sobota – Niedziela",
+      "value": "11:00 – 19:00"
+    }
+  ],
+  "social": {},
+  "legal": {
+    "fullName": "Lodziarnia Nowy Korczyn",
+    "nip": null,
+    "regon": null,
+    "privacyUrl": "#polityka-prywatnosci"
+  },
+  "images": {
+    "hero": {
+      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHzRgiSmiZwsyNrQSJU6gOSdjI-bZVHNuBrz8aVt8IOu9lvjLprZd9Z5r5bFpcskPInKe2kiiO8RCQpcJljblc9n17AbYWyZeH55VeOLLsvfQ_1O2WcRFL1YJVCQwXg9_upizeb=w1280-h960-k-no",
+      "alt": "Lodziarnia Nowy Korczyn",
+      "mode": "custom"
+    },
+    "about": {
+      "src": "https://images.unsplash.com/photo-1486427944299-d1955d23e34d?auto=format&fit=crop&w=960&q=72",
+      "alt": "Cukiernik dekoruje deser",
+      "mode": "unsplash"
+    },
+    "gallery": [
+      {
+        "src": "https://images.unsplash.com/photo-1535141192574-5d4897c12636?auto=format&fit=crop&w=900&q=70",
+        "alt": "Kolorowe ciastka i desery",
+        "mode": "unsplash"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=900&q=70",
+        "alt": "Świeżo upieczone wypieki",
+        "mode": "unsplash"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=70",
+        "alt": "Tort udekorowany owocami",
+        "mode": "unsplash"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=900&q=70",
+        "alt": "Słodkie monoporcje na talerzu",
+        "mode": "unsplash"
+      }
+    ]
+  },
+  "services": [
+    {
+      "name": "Torty na zamówienie",
+      "description": "Torty na urodziny, śluby i komunie — projektowane i pieczone pod Twoją okazję.",
+      "icon": "cake"
+    },
+    {
+      "name": "Ciasta i ciastka",
+      "description": "Codzienna witryna pełna klasyków i sezonowych nowości prosto z pieca.",
+      "icon": "cookie"
+    },
+    {
+      "name": "Desery i monoporcje",
+      "description": "Eleganckie monoporcje i desery na słodki finał każdego spotkania.",
+      "icon": "heart"
+    },
+    {
+      "name": "Słodki catering",
+      "description": "Słodkie stoły i pudełka deserów na eventy firmowe i rodzinne.",
+      "icon": "truck"
+    }
+  ],
+  "menu": [
+    {
+      "name": "Torty",
+      "note": "na zamówienie · cena za porcję",
+      "items": [
+        {
+          "name": "Tort czekoladowy",
+          "description": "biszkopt kakaowy, krem belgijski",
+          "price": "od 12 zł",
+          "tags": []
+        },
+        {
+          "name": "Tort bezowy",
+          "description": "lekka beza, krem, sezonowe owoce",
+          "price": "od 14 zł",
+          "tags": [
+            "bez glutenu"
+          ]
+        },
+        {
+          "name": "Tort weselny",
+          "description": "wielopiętrowy, projekt indywidualny",
+          "price": "wycena",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "name": "Ciasta i ciastka",
+      "note": "codziennie w witrynie",
+      "items": [
+        {
+          "name": "Sernik wiedeński",
+          "description": "puszysty, na kruchym spodzie",
+          "price": "13 zł",
+          "tags": []
+        },
+        {
+          "name": "Szarlotka",
+          "description": "z jabłkami i cynamonem, podawana na ciepło",
+          "price": "12 zł",
+          "tags": []
+        },
+        {
+          "name": "Ptyś z kremem",
+          "description": "klasyk z bitą śmietaną",
+          "price": "9 zł",
+          "tags": []
+        },
+        {
+          "name": "Eklerka",
+          "description": "z kremem waniliowym",
+          "price": "10 zł",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "name": "Desery i monoporcje",
+      "note": "",
+      "items": [
+        {
+          "name": "Monoporcja sezonowa",
+          "description": "mus i owoce wedle dnia",
+          "price": "15 zł",
+          "tags": [
+            "sezonowe"
+          ]
+        },
+        {
+          "name": "Tartaletka cytrynowa",
+          "description": "z kremem i bezą",
+          "price": "13 zł",
+          "tags": []
+        },
+        {
+          "name": "Brownie wegańskie",
+          "description": "wilgotne, bez nabiału",
+          "price": "12 zł",
+          "tags": [
+            "wegańskie"
+          ]
+        }
+      ]
+    }
+  ],
+  "features": [
+    {
+      "title": "Płatności zbliżeniowe",
+      "text": "",
+      "icon": "shield"
+    },
+    {
+      "title": "Płatność kartą",
+      "text": "",
+      "icon": "shield"
+    }
+  ],
+  "process": [],
+  "stats": [
+    {
+      "value": "25+",
+      "label": "rodzajów ciast"
+    },
+    {
+      "value": "codziennie",
+      "label": "świeże wypieki"
+    },
+    {
+      "value": "na zamówienie",
+      "label": "torty okolicznościowe"
+    },
+    {
+      "value": "4,9",
+      "label": "ocena Google"
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "Tort na urodziny córki zachwycił wszystkich — i wyglądem, i smakiem. Czuć, że robione z sercem.",
+      "author": "Paulina",
+      "role": "opinia przykładowa",
+      "rating": 5
+    },
+    {
+      "quote": "Najlepsze ptysie i sernik w mieście. Witryna kusi za każdym razem, gdy przechodzę obok.",
+      "author": "Robert",
+      "role": "opinia przykładowa",
+      "rating": 5
+    }
+  ],
+  "pricing": [],
+  "faq": [
+    {
+      "q": "Z jakim wyprzedzeniem zamawiać tort?",
+      "a": "Standardowe torty przyjmujemy z ok. 3–4 dniowym wyprzedzeniem, a bardziej rozbudowane projekty (śluby) — z większym zapasem czasu."
+    },
+    {
+      "q": "Czy macie wypieki wegańskie lub bezglutenowe?",
+      "a": "Tak, regularnie przygotowujemy propozycje wegańskie i bezglutenowe. Przy zamówieniu tortu dopasujemy recepturę do potrzeb."
+    },
+    {
+      "q": "Czy dowozicie zamówienia?",
+      "a": "Większe zamówienia i torty możemy dowieźć na wskazany adres — szczegóły ustalamy indywidualnie."
+    },
+    {
+      "q": "Jak mogę zapłacić?",
+      "a": "Przyjmujemy gotówkę, karty oraz płatności telefonem (NFC) i BLIK."
+    }
+  ],
+  "hero": {
+    "headline": "Świeże wypieki prosto z pieca.",
+    "subheadline": "Rzemieślnicza cukiernia — Nowy Korczyn i okolice. Torty na zamówienie, codzienne ciasta i desery z naturalnych składników.",
+    "badges": [
+      "Płatności zbliżeniowe",
+      "Płatność kartą"
+    ],
+    "image": {
+      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHzRgiSmiZwsyNrQSJU6gOSdjI-bZVHNuBrz8aVt8IOu9lvjLprZd9Z5r5bFpcskPInKe2kiiO8RCQpcJljblc9n17AbYWyZeH55VeOLLsvfQ_1O2WcRFL1YJVCQwXg9_upizeb=w1280-h960-k-no",
+      "alt": "Lodziarnia Nowy Korczyn",
+      "mode": "custom"
+    }
+  },
+  "about": {
+    "title": "Dlaczego my?",
+    "eyebrow": "O nas",
+    "text": [
+      "Jesteśmy rzemieślniczą cukiernią, w której wszystko powstaje na miejscu — z prawdziwego masła, jajek i naturalnych składników. Bez gotowych proszków i ulepszaczy.",
+      "Pieczemy codziennie, a torty na zamówienie projektujemy razem z Tobą — tak, by pasowały do okazji smakiem i wyglądem. Wpadnij do witryny albo zamów coś wyjątkowego."
+    ],
+    "points": [
+      "Świeże, codzienne wypieki",
+      "Torty na każdą okazję",
+      "Naturalne składniki"
+    ],
+    "image": {
+      "src": "https://images.unsplash.com/photo-1486427944299-d1955d23e34d?auto=format&fit=crop&w=960&q=72",
+      "alt": "Cukiernik dekoruje deser",
+      "mode": "unsplash"
+    }
+  },
+  "cta": {
+    "title": "Zamów coś słodkiego.",
+    "text": "Wpadnij po świeże ciasto albo zamów tort na swoją okazję — upieczemy go z sercem."
+  },
+  "seo": {
+    "title": "Lodziarnia Nowy Korczyn — Cukiernia | Nowy Korczyn",
+    "description": "Lodziarnia Nowy Korczyn — cukiernia. Nowy Korczyn i okolice. Oferujemy: Torty na zamówienie, Ciasta i ciastka, Desery i monoporcje i Słodki catering.",
+    "keywords": [
+      "cukiernia",
+      "torty na zamówienie",
+      "ciasta",
+      "desery",
+      "wypieki",
+      "Nowy Korczyn"
+    ],
+    "ogImage": null
+  },
+  "rating": "4,9",
+  "reviewCount": 82,
+  "priceRange": null,
+  "hoursWeekly": [
+    {
+      "open": "10:00",
+      "close": "19:00"
+    },
+    {
+      "open": "10:00",
+      "close": "19:00"
+    },
+    {
+      "open": "10:00",
+      "close": "19:00"
+    },
+    {
+      "open": "10:00",
+      "close": "19:00"
+    },
+    {
+      "open": "10:00",
+      "close": "19:00"
+    },
+    {
+      "open": "11:00",
+      "close": "19:00"
+    },
+    {
+      "open": "11:00",
+      "close": "19:00"
+    }
+  ],
+  "layout": [
+    "header",
+    "hero",
+    "trustbar",
+    "menu",
+    "map",
+    "about",
+    "gallery",
+    "stats",
+    "testimonials",
+    "faq",
+    "cta",
+    "contact",
+    "footer",
+    "cookie"
+  ],
+  "meta": {
+    "generator": "demo-stron-pl",
+    "industry": "cukiernia",
+    "theme": "artisan",
+    "imageMode": "unsplash",
+    "generatedAt": "2026-06-17T13:53:42.518Z",
+    "warnings": []
+  }
+}
