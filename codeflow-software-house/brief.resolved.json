@@ -1,0 +1,338 @@
+{
+  "name": "Codeflow Software House",
+  "slug": "codeflow-software-house",
+  "tagline": "Budujemy oprogramowanie, które zarabia",
+  "description": null,
+  "industry": "it",
+  "industryLabel": "Software house / usługi IT",
+  "schemaType": "ProfessionalService",
+  "servicesHeading": null,
+  "theme": {
+    "id": "modern",
+    "label": "Nowoczesny",
+    "heroStyle": "overlay",
+    "font": {
+      "heading": "'Plus Jakarta Sans', system-ui, -apple-system, Segoe UI, Roboto, sans-serif",
+      "body": "'Inter', system-ui, -apple-system, Segoe UI, Roboto, sans-serif",
+      "google": "Plus+Jakarta+Sans:wght@600;700;800&family=Inter:wght@400;500;600;700"
+    },
+    "type": {
+      "headingWeight": 800,
+      "headingSpacing": "-0.025em",
+      "headingTransform": "none",
+      "eyebrowSpacing": "0.08em",
+      "eyebrowTransform": "uppercase"
+    },
+    "radius": {
+      "card": "20px",
+      "button": "12px",
+      "input": "12px",
+      "pill": "999px"
+    },
+    "color": {
+      "primary": "#4f46e5",
+      "primaryDark": "#423bc0",
+      "primaryLight": "#9994f0",
+      "primarySoft": "#ededfc",
+      "onPrimary": "#ffffff",
+      "accent": "#06b6d4",
+      "accentDark": "#059db6",
+      "onAccent": "#0b1220",
+      "ink": "#0f172a",
+      "inkMuted": "#51607a",
+      "bg": "#ffffff",
+      "surface": "#ffffff",
+      "surfaceAlt": "#eff1fb",
+      "border": "#e6eaf2",
+      "footerBg": "#0b1220",
+      "footerInk": "#f8fafc",
+      "footerMuted": "#9ea2a8",
+      "heroOverlay": "#0a101d"
+    },
+    "shadow": {
+      "sm": "0 1px 2px rgba(30, 41, 59, 0.06), 0 1px 3px rgba(30, 41, 59, 0.1)",
+      "card": "0 6px 24px rgba(30, 41, 59, 0.08), 0 1px 2px rgba(30, 41, 59, 0.06)",
+      "hover": "0 18px 48px rgba(30, 41, 59, 0.16), 0 4px 12px rgba(30, 41, 59, 0.08)",
+      "header": "0 4px 20px rgba(30, 41, 59, 0.08)",
+      "button": "0 8px 20px rgba(79, 70, 229, 0.28)"
+    },
+    "_tint": "#1e293b"
+  },
+  "themeId": "modern",
+  "brand": {
+    "primary": "#4f46e5",
+    "accent": "#06b6d4"
+  },
+  "city": "Wrocław",
+  "region": null,
+  "serviceArea": "Wrocław",
+  "year": 2016,
+  "url": "https://codeflow.pl",
+  "contact": {
+    "phone": "+48 711 002 030",
+    "phoneRaw": "+48 71 100 20 30",
+    "phoneValid": true,
+    "email": "hello@codeflow.pl",
+    "address": {
+      "street": "ul. Krupnicza 13",
+      "postalCode": "50-075",
+      "city": "Wrocław",
+      "full": "ul. Krupnicza 13, 50-075 Wrocław"
+    },
+    "mapUrl": null
+  },
+  "hours": [
+    {
+      "label": "Poniedziałek – Piątek",
+      "value": "9:00 – 17:00"
+    },
+    {
+      "label": "Sobota – Niedziela",
+      "value": "nieczynne"
+    }
+  ],
+  "social": {
+    "linkedin": "https://linkedin.com/company/codeflow",
+    "x": "https://x.com/codeflow_pl"
+  },
+  "legal": {
+    "fullName": "Codeflow Software House",
+    "nip": "898-211-22-33",
+    "regon": null,
+    "privacyUrl": "#polityka-prywatnosci"
+  },
+  "images": {
+    "hero": {
+      "src": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1680&q=70",
+      "alt": "Kod aplikacji na ekranie",
+      "mode": "unsplash"
+    },
+    "about": {
+      "src": "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=960&q=72",
+      "alt": "Zespół programistów przy pracy",
+      "mode": "unsplash"
+    },
+    "gallery": [
+      {
+        "src": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=70",
+        "alt": "Praca nad oprogramowaniem",
+        "mode": "unsplash"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=900&q=70",
+        "alt": "Programowanie i rozwój produktu",
+        "mode": "unsplash"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=900&q=70",
+        "alt": "Analiza danych i metryk",
+        "mode": "unsplash"
+      }
+    ]
+  },
+  "services": [
+    {
+      "name": "Aplikacje webowe",
+      "description": "Szybkie, skalowalne aplikacje SaaS i platformy szyte na miarę Twojego biznesu.",
+      "icon": "code"
+    },
+    {
+      "name": "Aplikacje mobilne",
+      "description": "Natywne i wieloplatformowe aplikacje na iOS i Android z dbałością o UX.",
+      "icon": "phone"
+    },
+    {
+      "name": "Sklepy i e-commerce",
+      "description": "Wydajne sklepy, które realnie zwiększają sprzedaż i konwersję.",
+      "icon": "chartUp"
+    },
+    {
+      "name": "Wsparcie i rozwój",
+      "description": "Hosting, monitoring i ciągły rozwój produktu po wdrożeniu.",
+      "icon": "headset"
+    }
+  ],
+  "menu": [],
+  "features": [
+    {
+      "title": "Sprawdzony proces",
+      "text": "Pracujemy w sprintach z regularnym feedbackiem.",
+      "icon": "cog"
+    },
+    {
+      "title": "Czysty kod",
+      "text": "Testy i dokumentacja to standard, nie dodatek.",
+      "icon": "check"
+    },
+    {
+      "title": "Partnerstwo",
+      "text": "Doradzamy biznesowo, nie tylko technicznie.",
+      "icon": "users"
+    }
+  ],
+  "process": [
+    {
+      "title": "Discovery",
+      "text": "Poznajemy cele biznesowe i definiujemy zakres MVP."
+    },
+    {
+      "title": "Projekt",
+      "text": "Tworzymy makiety, architekturę i plan sprintów."
+    },
+    {
+      "title": "Development",
+      "text": "Budujemy w tygodniowych sprintach z testami i demo."
+    },
+    {
+      "title": "Wdrożenie",
+      "text": "Uruchamiamy produkt i rozwijamy go na podstawie danych."
+    }
+  ],
+  "stats": [
+    {
+      "value": "130+",
+      "label": "wdrożonych projektów"
+    },
+    {
+      "value": "98%",
+      "label": "projektów na czas"
+    },
+    {
+      "value": "32",
+      "label": "specjalistów w zespole"
+    },
+    {
+      "value": "5,0",
+      "label": "ocena klientów"
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "Dostarczyli MVP w 10 tygodni, dokładnie w budżecie. Komunikacja i jakość kodu na najwyższym poziomie.",
+      "author": "CTO, startup fintech",
+      "role": "Klient B2B",
+      "rating": 5
+    },
+    {
+      "quote": "Partner technologiczny, który rozumie biznes, a nie tylko technologię. Polecamy bez wahania.",
+      "author": "Dyrektor e-commerce",
+      "role": "Klient B2B",
+      "rating": 5
+    }
+  ],
+  "pricing": [],
+  "faq": [
+    {
+      "q": "Ile trwa zbudowanie MVP?",
+      "a": "Zwykle 6–12 tygodni, w zależności od zakresu. Dokładny harmonogram ustalamy po fazie discovery."
+    },
+    {
+      "q": "Czy podpisujecie NDA?",
+      "a": "Tak, poufność i bezpieczeństwo danych traktujemy priorytetowo na każdym etapie."
+    },
+    {
+      "q": "Co dzieje się po wdrożeniu?",
+      "a": "Oferujemy utrzymanie, monitoring i dalszy rozwój produktu w modelu abonamentowym lub projektowym."
+    }
+  ],
+  "hero": {
+    "headline": "Zamieniamy pomysły w działające produkty.",
+    "subheadline": "Tworzymy aplikacje, strony i systemy, które realnie rozwijają biznes — z dbałością o jakość i terminy.",
+    "badges": [
+      "Sprawdzony proces",
+      "Czysty kod",
+      "Partnerstwo"
+    ],
+    "image": {
+      "src": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1680&q=70",
+      "alt": "Kod aplikacji na ekranie",
+      "mode": "unsplash"
+    }
+  },
+  "about": {
+    "title": "Dlaczego my?",
+    "eyebrow": "O nas",
+    "text": [
+      "Jesteśmy zespołem inżynierów i projektantów, który zamienia pomysły w działające produkty cyfrowe.",
+      "Łączymy rzemiosło technologiczne z myśleniem o biznesie klienta — bo dobry kod to taki, który zarabia."
+    ],
+    "points": [
+      "Sprawdzony proces",
+      "Czysty kod",
+      "Partnerstwo"
+    ],
+    "image": {
+      "src": "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=960&q=72",
+      "alt": "Zespół programistów przy pracy",
+      "mode": "unsplash"
+    }
+  },
+  "cta": {
+    "title": "Masz pomysł na produkt?",
+    "text": "Porozmawiajmy — bezpłatna konsultacja i wstępna wycena w 48h."
+  },
+  "seo": {
+    "title": "Codeflow Software House — Software house / usługi IT | Wrocław",
+    "description": "Codeflow Software House — software house / usługi it. Wrocław i okolice. Budujemy oprogramowanie, które zarabia.",
+    "keywords": [
+      "software house",
+      "aplikacje",
+      "strony",
+      "oprogramowanie",
+      "it",
+      "Wrocław"
+    ],
+    "ogImage": null
+  },
+  "rating": "5,0",
+  "reviewCount": 47,
+  "priceRange": null,
+  "hoursWeekly": [
+    {
+      "open": "09:00",
+      "close": "17:00"
+    },
+    {
+      "open": "09:00",
+      "close": "17:00"
+    },
+    {
+      "open": "09:00",
+      "close": "17:00"
+    },
+    {
+      "open": "09:00",
+      "close": "17:00"
+    },
+    {
+      "open": "09:00",
+      "close": "17:00"
+    },
+    null,
+    null
+  ],
+  "layout": [
+    "header",
+    "hero",
+    "trustbar",
+    "services",
+    "about",
+    "process",
+    "stats",
+    "gallery",
+    "testimonials",
+    "faq",
+    "cta",
+    "contact",
+    "footer",
+    "cookie"
+  ],
+  "meta": {
+    "generator": "demo-stron-pl",
+    "industry": "it",
+    "theme": "modern",
+    "imageMode": "unsplash",
+    "generatedAt": "2026-06-17T17:16:05.035Z",
+    "warnings": []
+  }
+}

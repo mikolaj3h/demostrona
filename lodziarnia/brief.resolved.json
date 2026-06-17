@@ -1,6 +1,6 @@
 {
-  "name": "Lodziarnia Amarena",
-  "slug": "lodziarnia-amarena",
+  "name": "Lodziarnia",
+  "slug": "lodziarnia",
   "tagline": null,
   "description": null,
   "industry": "lodziarnia",
@@ -66,53 +66,36 @@
     "primary": "#c12f52",
     "accent": "#79c2a8"
   },
-  "city": "Kościerzyna",
+  "city": "Pasym",
   "region": null,
-  "serviceArea": "Kościerzyna",
+  "serviceArea": "Pasym",
   "year": null,
   "url": null,
   "contact": {
-    "phone": "+48 723 817 384",
-    "phoneRaw": "+48 723 817 384",
+    "phone": "+48 608 272 991",
+    "phoneRaw": "+48 608 272 991",
     "phoneValid": true,
     "email": null,
     "address": {
-      "street": "Długa 8",
-      "postalCode": "83-400",
-      "city": "Kościerzyna",
-      "full": "Długa 8, 83-400 Kościerzyna"
+      "street": "Krótka 3",
+      "postalCode": "12-130",
+      "city": "Pasym",
+      "full": "Krótka 3, 12-130 Pasym"
     },
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lodziarnia%20Amarena&query_place_id=ChIJVVVxqcl3AkcRluz53ZSk5UY"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lodziarnia&query_place_id=ChIJzQ5ikL6KHUcRsg4GTg1w3Gc"
   },
-  "hours": [
-    {
-      "label": "Poniedziałek – Czwartek",
-      "value": "11:00 – 19:00"
-    },
-    {
-      "label": "Piątek",
-      "value": "11:00 – 17:30"
-    },
-    {
-      "label": "Sobota",
-      "value": "11:00 – 19:00"
-    },
-    {
-      "label": "Niedziela",
-      "value": "11:00 – 18:00"
-    }
-  ],
+  "hours": [],
   "social": {},
   "legal": {
-    "fullName": "Lodziarnia Amarena",
+    "fullName": "Lodziarnia",
     "nip": null,
     "regon": null,
     "privacyUrl": "#polityka-prywatnosci"
   },
   "images": {
     "hero": {
-      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFq531R_Z946EPiQLk3zwy637a_byiwFl_qGxrav5yYx1MtB4bJ7x_5ciXB4P79kwSKOBsZNl2wD5iaGSieePNmPPGMxW3whQQE00Q6wjjenGqSMKrzlbbBK1kS1pVtLpCjfxJAYQ=w1280-h960-k-no",
-      "alt": "Lodziarnia Amarena",
+      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEWnIR9RRgi7g_W05NrRjpR7zkwzHwgW8RlA2onBUMdYTYBRXN16kYWzY7X2KHR_yFXrLAl4aN_nBHY2LiwEtkshdFzZLg2ATAoam9QPu-qKdDxJGFeXKhjADu0i9MJSoeTTYqxqahPv4_e=w1280-h960-k-no",
+      "alt": "Lodziarnia",
       "mode": "custom"
     },
     "about": {
@@ -264,6 +247,16 @@
   ],
   "features": [
     {
+      "title": "Miła atmosfera",
+      "text": "",
+      "icon": "heart"
+    },
+    {
+      "title": "Spokojne miejsce",
+      "text": "",
+      "icon": "heart"
+    },
+    {
       "title": "Płatność kartą",
       "text": "",
       "icon": "shield"
@@ -272,6 +265,11 @@
       "title": "Płatności zbliżeniowe",
       "text": "",
       "icon": "shield"
+    },
+    {
+      "title": "Przyjazne dzieciom",
+      "text": "",
+      "icon": "users"
     }
   ],
   "process": [],
@@ -328,14 +326,15 @@
   ],
   "hero": {
     "headline": "Lody, które robimy z głową i sercem.",
-    "subheadline": "Rzemieślnicza lodziarnia — Kościerzyna i okolice. Codziennie świeże lody z naturalnych składników — na miejscu i na wynos.",
+    "subheadline": "Rzemieślnicza lodziarnia — Pasym i okolice. Codziennie świeże lody z naturalnych składników — na miejscu i na wynos.",
     "badges": [
-      "Płatność kartą",
-      "Płatności zbliżeniowe"
+      "Miła atmosfera",
+      "Spokojne miejsce",
+      "Płatność kartą"
     ],
     "image": {
-      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFq531R_Z946EPiQLk3zwy637a_byiwFl_qGxrav5yYx1MtB4bJ7x_5ciXB4P79kwSKOBsZNl2wD5iaGSieePNmPPGMxW3whQQE00Q6wjjenGqSMKrzlbbBK1kS1pVtLpCjfxJAYQ=w1280-h960-k-no",
-      "alt": "Lodziarnia Amarena",
+      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEWnIR9RRgi7g_W05NrRjpR7zkwzHwgW8RlA2onBUMdYTYBRXN16kYWzY7X2KHR_yFXrLAl4aN_nBHY2LiwEtkshdFzZLg2ATAoam9QPu-qKdDxJGFeXKhjADu0i9MJSoeTTYqxqahPv4_e=w1280-h960-k-no",
+      "alt": "Lodziarnia",
       "mode": "custom"
     }
   },
@@ -362,50 +361,29 @@
     "text": "Czekamy ze świeżymi, rzemieślniczymi lodami — na miejscu i na wynos."
   },
   "seo": {
-    "title": "Lodziarnia Amarena — Lodziarnia rzemieślnicza | Kościerzyna",
-    "description": "Lodziarnia Amarena — lodziarnia rzemieślnicza. Kościerzyna i okolice. Oferujemy: Lody rzemieślnicze, Sorbety owocowe, Desery lodowe i Lody na wynos.",
+    "title": "Lodziarnia — Lodziarnia rzemieślnicza | Pasym",
+    "description": "Lodziarnia — lodziarnia rzemieślnicza. Pasym i okolice. Oferujemy: Lody rzemieślnicze, Sorbety owocowe, Desery lodowe i Lody na wynos.",
     "keywords": [
       "lodziarnia",
       "lody rzemieślnicze",
       "lody naturalne",
       "gelato",
       "desery lodowe",
-      "Kościerzyna"
+      "Pasym"
     ],
     "ogImage": null
   },
   "rating": "4,9",
-  "reviewCount": 287,
+  "reviewCount": 41,
   "priceRange": null,
   "hoursWeekly": [
-    {
-      "open": "11:00",
-      "close": "19:00"
-    },
-    {
-      "open": "11:00",
-      "close": "19:00"
-    },
-    {
-      "open": "11:00",
-      "close": "19:00"
-    },
-    {
-      "open": "11:00",
-      "close": "19:00"
-    },
-    {
-      "open": "11:00",
-      "close": "17:30"
-    },
-    {
-      "open": "11:00",
-      "close": "19:00"
-    },
-    {
-      "open": "11:00",
-      "close": "18:00"
-    }
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
   ],
   "layout": [
     "header",

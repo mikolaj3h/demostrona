@@ -1,6 +1,6 @@
 {
-  "name": "Lodziarnia Amarena",
-  "slug": "lodziarnia-amarena",
+  "name": "Lodziarnia Sweet Ice Kretowiny",
+  "slug": "lodziarnia-sweet-ice-kretowiny",
   "tagline": null,
   "description": null,
   "industry": "lodziarnia",
@@ -66,53 +66,36 @@
     "primary": "#c12f52",
     "accent": "#79c2a8"
   },
-  "city": "Kościerzyna",
+  "city": "Kretowiny",
   "region": null,
-  "serviceArea": "Kościerzyna",
+  "serviceArea": "Kretowiny",
   "year": null,
   "url": null,
   "contact": {
-    "phone": "+48 723 817 384",
-    "phoneRaw": "+48 723 817 384",
+    "phone": "+48 660 377 611",
+    "phoneRaw": "+48 660 377 611",
     "phoneValid": true,
     "email": null,
     "address": {
-      "street": "Długa 8",
-      "postalCode": "83-400",
-      "city": "Kościerzyna",
-      "full": "Długa 8, 83-400 Kościerzyna"
+      "street": "Kretowiny 23",
+      "postalCode": "14-300",
+      "city": "Kretowiny",
+      "full": "Kretowiny 23, 14-300 Kretowiny"
     },
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lodziarnia%20Amarena&query_place_id=ChIJVVVxqcl3AkcRluz53ZSk5UY"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lodziarnia%20Sweet%20Ice%20Kretowiny&query_place_id=ChIJx0ZPy0Kb4kYRr_25u11f9pk"
   },
-  "hours": [
-    {
-      "label": "Poniedziałek – Czwartek",
-      "value": "11:00 – 19:00"
-    },
-    {
-      "label": "Piątek",
-      "value": "11:00 – 17:30"
-    },
-    {
-      "label": "Sobota",
-      "value": "11:00 – 19:00"
-    },
-    {
-      "label": "Niedziela",
-      "value": "11:00 – 18:00"
-    }
-  ],
+  "hours": [],
   "social": {},
   "legal": {
-    "fullName": "Lodziarnia Amarena",
+    "fullName": "Lodziarnia Sweet Ice Kretowiny",
     "nip": null,
     "regon": null,
     "privacyUrl": "#polityka-prywatnosci"
   },
   "images": {
     "hero": {
-      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFq531R_Z946EPiQLk3zwy637a_byiwFl_qGxrav5yYx1MtB4bJ7x_5ciXB4P79kwSKOBsZNl2wD5iaGSieePNmPPGMxW3whQQE00Q6wjjenGqSMKrzlbbBK1kS1pVtLpCjfxJAYQ=w1280-h960-k-no",
-      "alt": "Lodziarnia Amarena",
+      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAF1jTWxRaF6cSQMrpRZIwVnOqZ6U2xJL0eQ8P4IVamrBR_Qh51c3y0AHbFDxYFc57MTtemzn_A9SWZSChmJ5DM6VEy0qP1v84oV49mqeSgLqubne_rEknPEF7Dnz5xP_rg8Lonc4a6ThbyL=w1280-h960-k-no",
+      "alt": "Lodziarnia Sweet Ice Kretowiny",
       "mode": "custom"
     },
     "about": {
@@ -264,12 +247,22 @@
   ],
   "features": [
     {
-      "title": "Płatność kartą",
+      "title": "Miejsca na miejscu",
       "text": "",
-      "icon": "shield"
+      "icon": "users"
     },
     {
-      "title": "Płatności zbliżeniowe",
+      "title": "Na wynos",
+      "text": "",
+      "icon": "truck"
+    },
+    {
+      "title": "Dostępne dla wózków",
+      "text": "",
+      "icon": "check"
+    },
+    {
+      "title": "Płatność kartą",
       "text": "",
       "icon": "shield"
     }
@@ -328,14 +321,15 @@
   ],
   "hero": {
     "headline": "Lody, które robimy z głową i sercem.",
-    "subheadline": "Rzemieślnicza lodziarnia — Kościerzyna i okolice. Codziennie świeże lody z naturalnych składników — na miejscu i na wynos.",
+    "subheadline": "Rzemieślnicza lodziarnia — Kretowiny i okolice. Codziennie świeże lody z naturalnych składników — na miejscu i na wynos.",
     "badges": [
-      "Płatność kartą",
-      "Płatności zbliżeniowe"
+      "Miejsca na miejscu",
+      "Na wynos",
+      "Dostępne dla wózków"
     ],
     "image": {
-      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFq531R_Z946EPiQLk3zwy637a_byiwFl_qGxrav5yYx1MtB4bJ7x_5ciXB4P79kwSKOBsZNl2wD5iaGSieePNmPPGMxW3whQQE00Q6wjjenGqSMKrzlbbBK1kS1pVtLpCjfxJAYQ=w1280-h960-k-no",
-      "alt": "Lodziarnia Amarena",
+      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAF1jTWxRaF6cSQMrpRZIwVnOqZ6U2xJL0eQ8P4IVamrBR_Qh51c3y0AHbFDxYFc57MTtemzn_A9SWZSChmJ5DM6VEy0qP1v84oV49mqeSgLqubne_rEknPEF7Dnz5xP_rg8Lonc4a6ThbyL=w1280-h960-k-no",
+      "alt": "Lodziarnia Sweet Ice Kretowiny",
       "mode": "custom"
     }
   },
@@ -362,50 +356,29 @@
     "text": "Czekamy ze świeżymi, rzemieślniczymi lodami — na miejscu i na wynos."
   },
   "seo": {
-    "title": "Lodziarnia Amarena — Lodziarnia rzemieślnicza | Kościerzyna",
-    "description": "Lodziarnia Amarena — lodziarnia rzemieślnicza. Kościerzyna i okolice. Oferujemy: Lody rzemieślnicze, Sorbety owocowe, Desery lodowe i Lody na wynos.",
+    "title": "Lodziarnia Sweet Ice Kretowiny | Kretowiny",
+    "description": "Lodziarnia Sweet Ice Kretowiny — lodziarnia rzemieślnicza. Kretowiny i okolice. Oferujemy: Lody rzemieślnicze, Sorbety owocowe, Desery lodowe i Lody na wynos.",
     "keywords": [
       "lodziarnia",
       "lody rzemieślnicze",
       "lody naturalne",
       "gelato",
       "desery lodowe",
-      "Kościerzyna"
+      "Kretowiny"
     ],
     "ogImage": null
   },
   "rating": "4,9",
-  "reviewCount": 287,
+  "reviewCount": 2,
   "priceRange": null,
   "hoursWeekly": [
-    {
-      "open": "11:00",
-      "close": "19:00"
-    },
-    {
-      "open": "11:00",
-      "close": "19:00"
-    },
-    {
-      "open": "11:00",
-      "close": "19:00"
-    },
-    {
-      "open": "11:00",
-      "close": "19:00"
-    },
-    {
-      "open": "11:00",
-      "close": "17:30"
-    },
-    {
-      "open": "11:00",
-      "close": "19:00"
-    },
-    {
-      "open": "11:00",
-      "close": "18:00"
-    }
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
   ],
   "layout": [
     "header",

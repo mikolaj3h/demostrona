@@ -1,0 +1,380 @@
+{
+  "name": "Dentic — Centrum Stomatologii",
+  "slug": "dentic-centrum-stomatologii",
+  "tagline": "Zdrowy uśmiech bez stresu",
+  "description": null,
+  "industry": "dentysta",
+  "industryLabel": "Gabinet stomatologiczny",
+  "schemaType": "Dentist",
+  "servicesHeading": null,
+  "theme": {
+    "id": "modern",
+    "label": "Nowoczesny",
+    "heroStyle": "overlay",
+    "font": {
+      "heading": "'Plus Jakarta Sans', system-ui, -apple-system, Segoe UI, Roboto, sans-serif",
+      "body": "'Inter', system-ui, -apple-system, Segoe UI, Roboto, sans-serif",
+      "google": "Plus+Jakarta+Sans:wght@600;700;800&family=Inter:wght@400;500;600;700"
+    },
+    "type": {
+      "headingWeight": 800,
+      "headingSpacing": "-0.025em",
+      "headingTransform": "none",
+      "eyebrowSpacing": "0.08em",
+      "eyebrowTransform": "uppercase"
+    },
+    "radius": {
+      "card": "20px",
+      "button": "12px",
+      "input": "12px",
+      "pill": "999px"
+    },
+    "color": {
+      "primary": "#0891b2",
+      "primaryDark": "#077a96",
+      "primaryLight": "#70bfd2",
+      "primarySoft": "#e6f4f7",
+      "onPrimary": "#0b1220",
+      "accent": "#22d3ee",
+      "accentDark": "#1db5cd",
+      "onAccent": "#0b1220",
+      "ink": "#0f172a",
+      "inkMuted": "#51607a",
+      "bg": "#ffffff",
+      "surface": "#ffffff",
+      "surfaceAlt": "#ecf4f9",
+      "border": "#e6eaf2",
+      "footerBg": "#0b1220",
+      "footerInk": "#f8fafc",
+      "footerMuted": "#9ea2a8",
+      "heroOverlay": "#0a101d"
+    },
+    "shadow": {
+      "sm": "0 1px 2px rgba(30, 41, 59, 0.06), 0 1px 3px rgba(30, 41, 59, 0.1)",
+      "card": "0 6px 24px rgba(30, 41, 59, 0.08), 0 1px 2px rgba(30, 41, 59, 0.06)",
+      "hover": "0 18px 48px rgba(30, 41, 59, 0.16), 0 4px 12px rgba(30, 41, 59, 0.08)",
+      "header": "0 4px 20px rgba(30, 41, 59, 0.08)",
+      "button": "0 8px 20px rgba(8, 145, 178, 0.28)"
+    },
+    "_tint": "#1e293b"
+  },
+  "themeId": "modern",
+  "brand": {
+    "primary": "#0891b2",
+    "accent": "#22d3ee"
+  },
+  "city": "Wrocław",
+  "region": null,
+  "serviceArea": "Wrocław",
+  "year": 2014,
+  "url": "https://dentic-wroclaw.pl",
+  "contact": {
+    "phone": "+48 712 003 040",
+    "phoneRaw": "+48 71 200 30 40",
+    "phoneValid": true,
+    "email": "rejestracja@dentic-wroclaw.pl",
+    "address": {
+      "street": "ul. Świdnicka 40",
+      "postalCode": "50-024",
+      "city": "Wrocław",
+      "full": "ul. Świdnicka 40, 50-024 Wrocław"
+    },
+    "mapUrl": null
+  },
+  "hours": [
+    {
+      "label": "Poniedziałek – Piątek",
+      "value": "8:00 – 20:00"
+    },
+    {
+      "label": "Sobota",
+      "value": "9:00 – 15:00"
+    },
+    {
+      "label": "Niedziela",
+      "value": "nieczynne"
+    }
+  ],
+  "social": {
+    "facebook": "https://facebook.com/dentic.wroclaw",
+    "instagram": "https://instagram.com/dentic_wroclaw"
+  },
+  "legal": {
+    "fullName": "Dentic — Centrum Stomatologii",
+    "nip": "898-234-56-78",
+    "regon": null,
+    "privacyUrl": "#polityka-prywatnosci"
+  },
+  "images": {
+    "hero": {
+      "src": "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=1680&q=70",
+      "alt": "Nowoczesny gabinet stomatologiczny",
+      "mode": "unsplash"
+    },
+    "about": {
+      "src": "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=960&q=72",
+      "alt": "Stomatolog podczas przyjmowania pacjenta",
+      "mode": "unsplash"
+    },
+    "gallery": [
+      {
+        "src": "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=900&q=70",
+        "alt": "Profesjonalny sprzęt stomatologiczny",
+        "mode": "unsplash"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&w=900&q=70",
+        "alt": "Komfortowe wnętrze gabinetu",
+        "mode": "unsplash"
+      }
+    ]
+  },
+  "services": [
+    {
+      "name": "Stomatologia zachowawcza",
+      "description": "Bezbolesne leczenie próchnicy i estetyczne wypełnienia w komfortowych warunkach.",
+      "icon": "tooth"
+    },
+    {
+      "name": "Implanty",
+      "description": "Trwałe odtworzenie braków zębowych z gwarancją i pełną diagnostyką 3D.",
+      "icon": "sparkles"
+    },
+    {
+      "name": "Higienizacja i wybielanie",
+      "description": "Profesjonalne czyszczenie, piaskowanie i bezpieczne wybielanie zębów.",
+      "icon": "star"
+    },
+    {
+      "name": "Ortodoncja",
+      "description": "Aparaty stałe i nakładkowe (Invisalign) dla dzieci i dorosłych.",
+      "icon": "heart"
+    }
+  ],
+  "menu": [],
+  "features": [
+    {
+      "title": "Leczenie bez bólu",
+      "text": "Komfortowe znieczulenie i spokojna atmosfera.",
+      "icon": "heart"
+    },
+    {
+      "title": "Nowoczesny sprzęt",
+      "text": "Cyfrowa diagnostyka i sprawdzone technologie.",
+      "icon": "sparkles"
+    },
+    {
+      "title": "Rezerwacja online",
+      "text": "Umów wizytę o dowolnej porze, w kilka chwil.",
+      "icon": "calendar"
+    }
+  ],
+  "process": [
+    {
+      "title": "Wizyta",
+      "text": "Badanie i rozmowa o Twoich potrzebach."
+    },
+    {
+      "title": "Plan leczenia",
+      "text": "Przejrzysty plan i wycena."
+    },
+    {
+      "title": "Leczenie",
+      "text": "Komfortowe zabiegi bez pośpiechu."
+    },
+    {
+      "title": "Profilaktyka",
+      "text": "Przypominamy o kontrolach i higienie."
+    }
+  ],
+  "stats": [
+    {
+      "value": "10+",
+      "label": "lat doświadczenia"
+    },
+    {
+      "value": "9000+",
+      "label": "zadowolonych pacjentów"
+    },
+    {
+      "value": "4,9",
+      "label": "ocena pacjentów"
+    },
+    {
+      "value": "100%",
+      "label": "sterylności narzędzi"
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "Zawsze bałam się dentysty — tutaj wreszcie czuję się spokojnie. Bezboleśnie!",
+      "author": "Natalia G.",
+      "role": "Pacjentka",
+      "rating": 5
+    },
+    {
+      "quote": "Profesjonalne podejście i piękny efekt po wybielaniu. Polecam całą rodziną.",
+      "author": "Krzysztof B.",
+      "role": "Pacjent",
+      "rating": 5
+    }
+  ],
+  "pricing": [
+    {
+      "name": "Przegląd + konsultacja",
+      "price": "od 100 zł",
+      "period": "/ wizyta",
+      "features": [
+        "Pełne badanie jamy ustnej",
+        "Plan leczenia",
+        "Konsultacja ze specjalistą"
+      ],
+      "featured": false,
+      "cta": "Wybieram"
+    },
+    {
+      "name": "Higienizacja",
+      "price": "od 250 zł",
+      "period": "/ zabieg",
+      "features": [
+        "Skaling i piaskowanie",
+        "Fluoryzacja",
+        "Instruktaż higieny",
+        "Bez bólu"
+      ],
+      "featured": true,
+      "cta": "Wybieram"
+    },
+    {
+      "name": "Wybielanie",
+      "price": "od 800 zł",
+      "period": "/ zabieg",
+      "features": [
+        "Konsultacja wstępna",
+        "Profesjonalny system",
+        "Trwały efekt",
+        "Bezpieczne dla szkliwa"
+      ],
+      "featured": false,
+      "cta": "Wybieram"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Czy leczenie boli?",
+      "a": "Stosujemy skuteczne znieczulenie i dbamy o komfort — większość zabiegów jest bezbolesna."
+    },
+    {
+      "q": "Czy mogę umówić wizytę online?",
+      "a": "Tak, rezerwacja online jest dostępna całą dobę."
+    },
+    {
+      "q": "Czy przyjmujecie dzieci?",
+      "a": "Tak, mamy doświadczenie w pracy z najmłodszymi pacjentami."
+    }
+  ],
+  "hero": {
+    "headline": "Zdrowy uśmiech w komfortowych warunkach.",
+    "subheadline": "Nowoczesna stomatologia — Wrocław i okolice. Leczymy bezboleśnie, bez pośpiechu i z troską o pacjenta.",
+    "badges": [
+      "Leczenie bez bólu",
+      "Nowoczesny sprzęt",
+      "Rezerwacja online"
+    ],
+    "image": {
+      "src": "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=1680&q=70",
+      "alt": "Nowoczesny gabinet stomatologiczny",
+      "mode": "unsplash"
+    }
+  },
+  "about": {
+    "title": "Dlaczego my?",
+    "eyebrow": "O nas",
+    "text": [
+      "Nasz gabinet łączy nowoczesną stomatologię z troską o komfort pacjenta. Leczymy bezboleśnie i bez pośpiechu.",
+      "Wierzymy, że zdrowy uśmiech zaczyna się od zaufania — dlatego zawsze tłumaczymy, co i dlaczego robimy."
+    ],
+    "points": [
+      "Leczenie bez bólu",
+      "Nowoczesny sprzęt",
+      "Rezerwacja online"
+    ],
+    "image": {
+      "src": "https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=960&q=72",
+      "alt": "Stomatolog podczas przyjmowania pacjenta",
+      "mode": "unsplash"
+    }
+  },
+  "cta": {
+    "title": "Zadbaj o swój uśmiech.",
+    "text": "Umów wizytę online lub zadzwoń — przyjmujemy nowych pacjentów."
+  },
+  "seo": {
+    "title": "Dentic — Centrum Stomatologii — Gabinet stomatologiczny | Wrocław",
+    "description": "Dentic — Centrum Stomatologii — gabinet stomatologiczny. Wrocław i okolice. Zdrowy uśmiech bez stresu.",
+    "keywords": [
+      "dentysta",
+      "stomatolog",
+      "leczenie zębów",
+      "implanty",
+      "wybielanie",
+      "Wrocław"
+    ],
+    "ogImage": null
+  },
+  "rating": "4,9",
+  "reviewCount": 318,
+  "priceRange": "100–800 zł",
+  "hoursWeekly": [
+    {
+      "open": "08:00",
+      "close": "20:00"
+    },
+    {
+      "open": "08:00",
+      "close": "20:00"
+    },
+    {
+      "open": "08:00",
+      "close": "20:00"
+    },
+    {
+      "open": "08:00",
+      "close": "20:00"
+    },
+    {
+      "open": "08:00",
+      "close": "20:00"
+    },
+    {
+      "open": "09:00",
+      "close": "15:00"
+    },
+    null
+  ],
+  "layout": [
+    "header",
+    "hero",
+    "trustbar",
+    "services",
+    "about",
+    "process",
+    "stats",
+    "gallery",
+    "testimonials",
+    "pricing",
+    "faq",
+    "cta",
+    "contact",
+    "footer",
+    "cookie"
+  ],
+  "meta": {
+    "generator": "demo-stron-pl",
+    "industry": "dentysta",
+    "theme": "modern",
+    "imageMode": "unsplash",
+    "generatedAt": "2026-06-17T17:16:05.035Z",
+    "warnings": []
+  }
+}

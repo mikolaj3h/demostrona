@@ -1,0 +1,434 @@
+{
+  "name": "Kawiarnia przy Sklepie, Bistro & Café",
+  "slug": "kawiarnia-przy-sklepie-bistro-caf",
+  "tagline": "Dobra kawa i domowe bistro w kameralnym wnętrzu",
+  "description": null,
+  "industry": "restauracja",
+  "industryLabel": "Restauracja",
+  "schemaType": "Restaurant",
+  "servicesHeading": {
+    "eyebrow": "Nasza karta",
+    "title": "Co u nas zjesz"
+  },
+  "theme": {
+    "id": "warm",
+    "label": "Ciepły",
+    "heroStyle": "overlay",
+    "font": {
+      "heading": "'Poppins', system-ui, -apple-system, Segoe UI, sans-serif",
+      "body": "'Inter', system-ui, -apple-system, Segoe UI, sans-serif",
+      "google": "Poppins:wght@500;600;700&family=Inter:wght@400;500;600"
+    },
+    "type": {
+      "headingWeight": 700,
+      "headingSpacing": "-0.015em",
+      "headingTransform": "none",
+      "eyebrowSpacing": "0.1em",
+      "eyebrowTransform": "uppercase"
+    },
+    "radius": {
+      "card": "24px",
+      "button": "16px",
+      "input": "16px",
+      "pill": "999px"
+    },
+    "color": {
+      "primary": "#6b4226",
+      "primaryDark": "#5a3720",
+      "primaryLight": "#a99181",
+      "primarySoft": "#f0ece9",
+      "onPrimary": "#ffffff",
+      "accent": "#d08c3f",
+      "accentDark": "#b37836",
+      "onAccent": "#0b1220",
+      "ink": "#1c1917",
+      "inkMuted": "#57534e",
+      "bg": "#fffdf9",
+      "surface": "#ffffff",
+      "surfaceAlt": "#f5ede2",
+      "border": "#efe6da",
+      "footerBg": "#15201f",
+      "footerInk": "#f8fafc",
+      "footerMuted": "#a2a7a8",
+      "heroOverlay": "#131d1c"
+    },
+    "shadow": {
+      "sm": "0 1px 2px rgba(28, 25, 23, 0.06), 0 1px 3px rgba(28, 25, 23, 0.1)",
+      "card": "0 6px 24px rgba(28, 25, 23, 0.08), 0 1px 2px rgba(28, 25, 23, 0.06)",
+      "hover": "0 18px 48px rgba(28, 25, 23, 0.16), 0 4px 12px rgba(28, 25, 23, 0.08)",
+      "header": "0 4px 20px rgba(28, 25, 23, 0.08)",
+      "button": "0 8px 20px rgba(107, 66, 38, 0.28)"
+    },
+    "_tint": "#1c1917"
+  },
+  "themeId": "warm",
+  "brand": {
+    "primary": "#6b4226",
+    "accent": "#d08c3f"
+  },
+  "city": "Łódź",
+  "region": null,
+  "serviceArea": "Łódź",
+  "year": null,
+  "url": null,
+  "contact": {
+    "phone": null,
+    "phoneRaw": null,
+    "phoneValid": false,
+    "email": null,
+    "address": {
+      "street": "ul. Wincentego Tomaszewicza 4",
+      "postalCode": "94-048",
+      "city": "Łódź",
+      "full": "ul. Wincentego Tomaszewicza 4, 94-048 Łódź"
+    },
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Kawiarnia%20przy%20Sklepie%2C%20Bistro%20%26%20Caf%C3%A9&query_place_id=ChIJ5QpY1k01GkcRqInPIwW2eBI"
+  },
+  "hours": [
+    {
+      "label": "Poniedziałek – Piątek",
+      "value": "9:00 – 20:00"
+    },
+    {
+      "label": "Sobota",
+      "value": "10:00 – 19:00"
+    },
+    {
+      "label": "Niedziela",
+      "value": "nieczynne"
+    }
+  ],
+  "social": {},
+  "legal": {
+    "fullName": "Kawiarnia przy Sklepie, Bistro & Café",
+    "nip": null,
+    "regon": null,
+    "privacyUrl": "#polityka-prywatnosci"
+  },
+  "images": {
+    "hero": {
+      "src": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1680&q=70",
+      "alt": "Klimatyczne wnętrze restauracji",
+      "mode": "unsplash"
+    },
+    "about": {
+      "src": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=960&q=72",
+      "alt": "Nakryty stół w restauracji",
+      "mode": "unsplash"
+    },
+    "gallery": [
+      {
+        "src": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=900&q=70",
+        "alt": "Szef kuchni komponuje danie",
+        "mode": "unsplash"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?auto=format&fit=crop&w=900&q=70",
+        "alt": "Apetyczne danie na talerzu",
+        "mode": "unsplash"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=900&q=70",
+        "alt": "Świeżo przygotowany posiłek",
+        "mode": "unsplash"
+      }
+    ]
+  },
+  "services": [
+    {
+      "name": "Kawa z charakterem",
+      "description": "Starannie parzona kawa, którą goście chwalą w opiniach — idealna na poranny start i popołudniową chwilę dla siebie.",
+      "icon": "flame"
+    },
+    {
+      "name": "Bistro na co dzień",
+      "description": "Domowe, sycące posiłki przygotowywane na miejscu — dobre rozwiązanie na lunch w trasie albo spokojny obiad w pojedynkę.",
+      "icon": "utensils"
+    },
+    {
+      "name": "Miejsce na chwilę dla siebie",
+      "description": "Spokojne, kameralne wnętrze, w którym dobrze usiąść z kawą, książką albo laptopem bez pośpiechu.",
+      "icon": "heart"
+    },
+    {
+      "name": "Przystanek dla podróżnych",
+      "description": "Niezobowiązująca atmosfera i przyjazna obsługa — chętnie zaglądają do nas także turyści zwiedzający Łódź.",
+      "icon": "users"
+    }
+  ],
+  "menu": [
+    {
+      "name": "Przystawki",
+      "note": "",
+      "items": [
+        {
+          "name": "Tatar wołowy",
+          "description": "z piklami, kaparami i żółtkiem",
+          "price": "32 zł",
+          "tags": []
+        },
+        {
+          "name": "Śledź po kaszubsku",
+          "description": "z jabłkiem i czerwoną cebulą",
+          "price": "24 zł",
+          "tags": []
+        },
+        {
+          "name": "Zupa dnia",
+          "description": "codziennie świeża, z pieczywem",
+          "price": "18 zł",
+          "tags": [
+            "wegetariańskie"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Dania główne",
+      "note": "kuchnia sezonowa",
+      "items": [
+        {
+          "name": "Dorsz z pieca",
+          "description": "z warzywami i masłem ziołowym",
+          "price": "54 zł",
+          "tags": []
+        },
+        {
+          "name": "Policzki wołowe",
+          "description": "duszone w czerwonym winie, puree",
+          "price": "58 zł",
+          "tags": []
+        },
+        {
+          "name": "Pierogi ruskie",
+          "description": "z okrasą lub na maśle",
+          "price": "29 zł",
+          "tags": [
+            "wegetariańskie"
+          ]
+        },
+        {
+          "name": "Risotto z grzybami",
+          "description": "z parmezanem i natką",
+          "price": "42 zł",
+          "tags": [
+            "wegetariańskie",
+            "bez glutenu"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Desery",
+      "note": "",
+      "items": [
+        {
+          "name": "Sernik na ciepło",
+          "description": "z sosem żurawinowym",
+          "price": "19 zł",
+          "tags": []
+        },
+        {
+          "name": "Tarta cytrynowa",
+          "description": "z lekką bezą",
+          "price": "18 zł",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "name": "Napoje",
+      "note": "",
+      "items": [
+        {
+          "name": "Lemoniada domowa",
+          "description": "sezonowa, lekko gazowana",
+          "price": "14 zł",
+          "tags": [
+            "sezonowe"
+          ]
+        },
+        {
+          "name": "Kawa",
+          "description": "espresso / z mlekiem",
+          "price": "10 zł",
+          "tags": []
+        },
+        {
+          "name": "Wino — kieliszek",
+          "description": "białe / czerwone",
+          "price": "od 18 zł",
+          "tags": []
+        }
+      ]
+    }
+  ],
+  "features": [
+    {
+      "title": "Dobra kawa",
+      "text": "Najczęściej chwalona przez naszych gości — to po nią wracają.",
+      "icon": "star"
+    },
+    {
+      "title": "Kameralny klimat",
+      "text": "Spokojne wnętrze i niezobowiązująca atmosfera, z dala od zgiełku.",
+      "icon": "heart"
+    },
+    {
+      "title": "Wygodne płatności",
+      "text": "Zapłacisz kartą debetową, kredytową lub telefonem (NFC).",
+      "icon": "shield"
+    }
+  ],
+  "process": [],
+  "stats": [
+    {
+      "value": "7",
+      "label": "opinii w Google"
+    },
+    {
+      "value": "9–20",
+      "label": "otwarte w tygodniu"
+    },
+    {
+      "value": "NFC",
+      "label": "płatności zbliżeniowe"
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "Najlepsza kolacja od dawna — smak, obsługa i klimat na najwyższym poziomie.",
+      "author": "Aleksandra W.",
+      "role": "Gość",
+      "rating": 5
+    },
+    {
+      "quote": "Zorganizowali nam wspaniałe przyjęcie. Goście do dziś wspominają jedzenie.",
+      "author": "Paweł K.",
+      "role": "Organizator urodzin",
+      "rating": 5
+    }
+  ],
+  "pricing": [],
+  "faq": [
+    {
+      "q": "Czy oprócz kawy można u Was zjeść?",
+      "a": "Tak — jesteśmy kawiarnią i bistro, serwujemy domowe posiłki przygotowywane na miejscu, dobre na lunch albo spokojny obiad."
+    },
+    {
+      "q": "Czy można u Was popracować przy laptopie?",
+      "a": "Jak najbardziej — to spokojne, kameralne miejsce, w sam raz na pracę albo chwilę dla siebie przy kawie."
+    },
+    {
+      "q": "Jak mogę zapłacić?",
+      "a": "Przyjmujemy karty debetowe i kredytowe oraz płatności mobilne (NFC)."
+    },
+    {
+      "q": "W jakich godzinach jesteście otwarci?",
+      "a": "Od poniedziałku do piątku w godzinach 9:00–20:00, w soboty 10:00–19:00. W niedziele nieczynne."
+    }
+  ],
+  "hero": {
+    "headline": "Dobra kawa i coś dobrego na talerzu",
+    "subheadline": "Kameralna kawiarnia i bistro na Tomaszewicza w Łodzi — aromatyczna kawa, domowe posiłki i spokojna, niezobowiązująca atmosfera w sam raz na przerwę w ciągu dnia.",
+    "badges": [
+      "Dobra kawa",
+      "Domowe bistro",
+      "Kameralny klimat"
+    ],
+    "image": {
+      "src": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1680&q=70",
+      "alt": "Klimatyczne wnętrze restauracji",
+      "mode": "unsplash"
+    }
+  },
+  "about": {
+    "title": "Kawiarnia, do której się wraca",
+    "eyebrow": "O nas",
+    "text": [
+      "Kawiarnia przy Sklepie to kameralne bistro i café przy ulicy Tomaszewicza w Łodzi. Stawiamy na dobrą, starannie parzoną kawę i domowe posiłki podawane bez pośpiechu — w spokojnym, przytulnym wnętrzu.",
+      {
+        "\"To miejsce dla każdego, kto chce na chwilę zwolnić": "usiąść z filiżanką kawy, zjeść coś dobrego w pojedynkę albo spokojnie popracować. Niezobowiązująca atmosfera i przyjazna obsługa sprawiają, że łatwo poczuć się tu jak u siebie.\""
+      }
+    ],
+    "points": [
+      "Starannie parzona kawa",
+      "Domowe posiłki z bistro",
+      "Spokojne, kameralne wnętrze",
+      "Płatności kartą i telefonem (NFC)"
+    ],
+    "image": {
+      "src": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=960&q=72",
+      "alt": "Nakryty stół w restauracji",
+      "mode": "unsplash"
+    }
+  },
+  "cta": {
+    "title": "Wpadnij na dobrą kawę",
+    "text": "Zajrzyj do nas na Tomaszewicza — czekamy z aromatyczną kawą, domowym bistro i spokojną atmosferą."
+  },
+  "seo": {
+    "title": "Kawiarnia przy Sklepie, Bistro & Café — Restauracja | Łódź",
+    "description": "Kawiarnia przy Sklepie, Bistro & Café — restauracja. Łódź i okolice. Dobra kawa i domowe bistro w kameralnym wnętrzu.",
+    "keywords": [
+      "restauracja",
+      "menu",
+      "rezerwacja stolika",
+      "kuchnia",
+      "Łódź"
+    ],
+    "ogImage": null
+  },
+  "rating": null,
+  "reviewCount": 7,
+  "priceRange": null,
+  "hoursWeekly": [
+    {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    {
+      "open": "10:00",
+      "close": "19:00"
+    },
+    null
+  ],
+  "layout": [
+    "header",
+    "hero",
+    "trustbar",
+    "services",
+    "about",
+    "stats",
+    "gallery",
+    "faq",
+    "cta",
+    "contact",
+    "footer",
+    "cookie"
+  ],
+  "meta": {
+    "generator": "demo-stron-pl",
+    "industry": "restauracja",
+    "theme": "warm",
+    "imageMode": "unsplash",
+    "generatedAt": "2026-06-17T17:16:05.035Z",
+    "warnings": []
+  }
+}

@@ -1,0 +1,341 @@
+{
+  "name": "Kancelaria Adwokacka Nowak & Wspólnicy",
+  "slug": "kancelaria-adwokacka-nowak-wspolnicy",
+  "tagline": "Prawo po Twojej stronie",
+  "description": null,
+  "industry": "kancelaria",
+  "industryLabel": "Kancelaria prawna",
+  "schemaType": "LegalService",
+  "servicesHeading": null,
+  "theme": {
+    "id": "elegant",
+    "label": "Elegancki",
+    "heroStyle": "overlay",
+    "font": {
+      "heading": "'Fraunces', Georgia, 'Times New Roman', serif",
+      "body": "'Inter', system-ui, -apple-system, Segoe UI, sans-serif",
+      "google": "Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600"
+    },
+    "type": {
+      "headingWeight": 600,
+      "headingSpacing": "-0.01em",
+      "headingTransform": "none",
+      "eyebrowSpacing": "0.22em",
+      "eyebrowTransform": "uppercase"
+    },
+    "radius": {
+      "card": "8px",
+      "button": "6px",
+      "input": "6px",
+      "pill": "999px"
+    },
+    "color": {
+      "primary": "#1e3a5f",
+      "primaryDark": "#193150",
+      "primaryLight": "#7d8da2",
+      "primarySoft": "#e9ebef",
+      "onPrimary": "#ffffff",
+      "accent": "#b08d57",
+      "accentDark": "#97794b",
+      "onAccent": "#0b1220",
+      "ink": "#1c1a17",
+      "inkMuted": "#5f594f",
+      "bg": "#fbfaf7",
+      "surface": "#ffffff",
+      "surfaceAlt": "#ebeae4",
+      "border": "#e7e1d6",
+      "footerBg": "#1b1916",
+      "footerInk": "#f8fafc",
+      "footerMuted": "#a4a5a5",
+      "heroOverlay": "#181714"
+    },
+    "shadow": {
+      "sm": "0 1px 2px rgba(43, 38, 32, 0.06), 0 1px 3px rgba(43, 38, 32, 0.1)",
+      "card": "0 6px 24px rgba(43, 38, 32, 0.08), 0 1px 2px rgba(43, 38, 32, 0.06)",
+      "hover": "0 18px 48px rgba(43, 38, 32, 0.16), 0 4px 12px rgba(43, 38, 32, 0.08)",
+      "header": "0 4px 20px rgba(43, 38, 32, 0.08)",
+      "button": "0 8px 20px rgba(30, 58, 95, 0.28)"
+    },
+    "_tint": "#2b2620"
+  },
+  "themeId": "elegant",
+  "brand": {
+    "primary": "#1e3a5f",
+    "accent": "#b08d57"
+  },
+  "city": "Warszawa",
+  "region": null,
+  "serviceArea": "Warszawa",
+  "year": 2006,
+  "url": "https://nowak-kancelaria.pl",
+  "contact": {
+    "phone": "+48 221 234 567",
+    "phoneRaw": "+48 22 123 45 67",
+    "phoneValid": true,
+    "email": "sekretariat@nowak-kancelaria.pl",
+    "address": {
+      "street": "ul. Marszałkowska 100, lok. 12",
+      "postalCode": "00-026",
+      "city": "Warszawa",
+      "full": "ul. Marszałkowska 100, lok. 12, 00-026 Warszawa"
+    },
+    "mapUrl": null
+  },
+  "hours": [
+    {
+      "label": "Poniedziałek – Piątek",
+      "value": "9:00 – 17:00"
+    },
+    {
+      "label": "Sobota",
+      "value": "po umówieniu"
+    },
+    {
+      "label": "Niedziela",
+      "value": "nieczynne"
+    }
+  ],
+  "social": {
+    "linkedin": "https://linkedin.com/company/kancelaria-nowak",
+    "facebook": "https://facebook.com/kancelaria.nowak"
+  },
+  "legal": {
+    "fullName": "Kancelaria Adwokacka Nowak & Wspólnicy",
+    "nip": "525-234-56-78",
+    "regon": "146789012",
+    "privacyUrl": "#polityka-prywatnosci"
+  },
+  "images": {
+    "hero": {
+      "src": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1680&q=70",
+      "alt": "Wnętrze kancelarii prawnej z księgami",
+      "mode": "unsplash"
+    },
+    "about": {
+      "src": "https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&w=960&q=72",
+      "alt": "Symbol sprawiedliwości — waga Temidy",
+      "mode": "unsplash"
+    },
+    "gallery": [
+      {
+        "src": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=900&q=70",
+        "alt": "Biblioteka prawnicza",
+        "mode": "unsplash"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=900&q=70",
+        "alt": "Gabinet prawnika podczas pracy",
+        "mode": "unsplash"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1436450412740-6b988f486c6b?auto=format&fit=crop&w=900&q=70",
+        "alt": "Podpisywanie dokumentów",
+        "mode": "unsplash"
+      }
+    ]
+  },
+  "services": [
+    {
+      "name": "Prawo cywilne",
+      "description": "Umowy, odszkodowania, sprawy spadkowe i spory majątkowe — doradztwo i reprezentacja.",
+      "icon": "scales"
+    },
+    {
+      "name": "Prawo gospodarcze",
+      "description": "Stała i doraźna obsługa firm, kontrakty handlowe, windykacja należności.",
+      "icon": "briefcase"
+    },
+    {
+      "name": "Prawo rodzinne",
+      "description": "Rozwody, alimenty, podział majątku i opieka nad dziećmi — z empatią i dyskrecją.",
+      "icon": "users"
+    },
+    {
+      "name": "Prawo karne",
+      "description": "Obrona i reprezentacja pokrzywdzonych na każdym etapie postępowania.",
+      "icon": "shield"
+    }
+  ],
+  "menu": [],
+  "features": [
+    {
+      "title": "Indywidualne podejście",
+      "text": "Każdą sprawę analizujemy osobiście i prowadzimy do końca.",
+      "icon": "user"
+    },
+    {
+      "title": "Pełna dyskrecja",
+      "text": "Gwarantujemy poufność i tajemnicę zawodową.",
+      "icon": "lock"
+    },
+    {
+      "title": "Jasne zasady",
+      "text": "Honorarium ustalamy przejrzyście, na początku współpracy.",
+      "icon": "check"
+    }
+  ],
+  "process": [
+    {
+      "title": "Konsultacja",
+      "text": "Analizujemy sprawę i przedstawiamy możliwości."
+    },
+    {
+      "title": "Strategia",
+      "text": "Proponujemy plan działania i wycenę."
+    },
+    {
+      "title": "Reprezentacja",
+      "text": "Prowadzimy sprawę i dbamy o Twoje interesy."
+    },
+    {
+      "title": "Rozstrzygnięcie",
+      "text": "Doprowadzamy sprawę do korzystnego finału."
+    }
+  ],
+  "stats": [
+    {
+      "value": "18",
+      "label": "lat praktyki"
+    },
+    {
+      "value": "1500+",
+      "label": "prowadzonych spraw"
+    },
+    {
+      "value": "92%",
+      "label": "spraw zakończonych sukcesem"
+    },
+    {
+      "value": "5,0",
+      "label": "ocena klientów"
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "Profesjonalizm i spokój na każdym etapie. Mecenas tłumaczył wszystko zrozumiałym językiem i był zawsze dostępny.",
+      "author": "Joanna P.",
+      "role": "Sprawa spadkowa",
+      "rating": 5
+    },
+    {
+      "quote": "Skuteczna obsługa prawna naszej spółki. Konkretne rekomendacje, które realnie zabezpieczyły nasze interesy.",
+      "author": "Robert M.",
+      "role": "Prezes spółki z o.o.",
+      "rating": 5
+    }
+  ],
+  "pricing": [],
+  "faq": [
+    {
+      "q": "Ile kosztuje pierwsza konsultacja?",
+      "a": "Koszt konsultacji ustalamy indywidualnie i informujemy o nim przed spotkaniem."
+    },
+    {
+      "q": "Czy prowadzicie sprawy zdalnie?",
+      "a": "Tak, oferujemy konsultacje online oraz pełną obsługę dokumentów na odległość."
+    },
+    {
+      "q": "W jakich dziedzinach się specjalizujecie?",
+      "a": "Najczęściej prowadzimy sprawy z zakresu prawa cywilnego, gospodarczego i rodzinnego."
+    }
+  ],
+  "hero": {
+    "headline": "Twoja sprawa w pewnych rękach.",
+    "subheadline": "Profesjonalna obsługa prawna — Warszawa i okolice. Konkretne porady, skuteczna reprezentacja i pełna dyskrecja.",
+    "badges": [
+      "Indywidualne podejście",
+      "Pełna dyskrecja",
+      "Jasne zasady"
+    ],
+    "image": {
+      "src": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=1680&q=70",
+      "alt": "Wnętrze kancelarii prawnej z księgami",
+      "mode": "unsplash"
+    }
+  },
+  "about": {
+    "title": "18 lat doświadczenia w służbie klientom",
+    "eyebrow": "O nas",
+    "text": [
+      "Kancelaria Nowak & Wspólnicy od 2006 roku reprezentuje klientów indywidualnych oraz przedsiębiorców przed sądami i organami administracji.",
+      "Łączymy rzetelną wiedzę prawniczą z indywidualnym podejściem i pełną dyskrecją. Każdą sprawę prowadzi dedykowany prawnik, który jest do Twojej dyspozycji na każdym etapie."
+    ],
+    "points": [
+      "Bezpłatna wstępna analiza sprawy",
+      "Jasne, ustalane z góry honorarium",
+      "Możliwość obsługi zdalnej"
+    ],
+    "image": {
+      "src": "https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&w=960&q=72",
+      "alt": "Symbol sprawiedliwości — waga Temidy",
+      "mode": "unsplash"
+    }
+  },
+  "cta": {
+    "title": "Potrzebujesz wsparcia prawnego?",
+    "text": "Umów konsultację — przeanalizujemy Twoją sprawę i wskażemy najlepsze rozwiązanie."
+  },
+  "seo": {
+    "title": "Kancelaria Adwokacka Nowak & Wspólnicy | Warszawa",
+    "description": "Kancelaria Adwokacka Nowak & Wspólnicy — kancelaria prawna. Warszawa i okolice. Prawo po Twojej stronie.",
+    "keywords": [
+      "kancelaria",
+      "adwokat",
+      "radca prawny",
+      "porady prawne",
+      "Warszawa"
+    ],
+    "ogImage": null
+  },
+  "rating": "5,0",
+  "reviewCount": 86,
+  "priceRange": null,
+  "hoursWeekly": [
+    {
+      "open": "09:00",
+      "close": "17:00"
+    },
+    {
+      "open": "09:00",
+      "close": "17:00"
+    },
+    {
+      "open": "09:00",
+      "close": "17:00"
+    },
+    {
+      "open": "09:00",
+      "close": "17:00"
+    },
+    {
+      "open": "09:00",
+      "close": "17:00"
+    },
+    null,
+    null
+  ],
+  "layout": [
+    "header",
+    "hero",
+    "trustbar",
+    "services",
+    "about",
+    "process",
+    "stats",
+    "gallery",
+    "testimonials",
+    "faq",
+    "cta",
+    "contact",
+    "footer",
+    "cookie"
+  ],
+  "meta": {
+    "generator": "demo-stron-pl",
+    "industry": "kancelaria",
+    "theme": "elegant",
+    "imageMode": "unsplash",
+    "generatedAt": "2026-06-17T17:16:05.035Z",
+    "warnings": []
+  }
+}

@@ -1,0 +1,439 @@
+{
+  "name": "Kawiarnia BaKalia",
+  "slug": "kawiarnia-bakalia",
+  "tagline": "Dobra kawa, domowe desery, miły klimat",
+  "description": null,
+  "industry": "restauracja",
+  "industryLabel": "Restauracja",
+  "schemaType": "Restaurant",
+  "servicesHeading": {
+    "eyebrow": "Nasza karta",
+    "title": "Co u nas zjesz"
+  },
+  "theme": {
+    "id": "warm",
+    "label": "Ciepły",
+    "heroStyle": "overlay",
+    "font": {
+      "heading": "'Poppins', system-ui, -apple-system, Segoe UI, sans-serif",
+      "body": "'Inter', system-ui, -apple-system, Segoe UI, sans-serif",
+      "google": "Poppins:wght@500;600;700&family=Inter:wght@400;500;600"
+    },
+    "type": {
+      "headingWeight": 700,
+      "headingSpacing": "-0.015em",
+      "headingTransform": "none",
+      "eyebrowSpacing": "0.1em",
+      "eyebrowTransform": "uppercase"
+    },
+    "radius": {
+      "card": "24px",
+      "button": "16px",
+      "input": "16px",
+      "pill": "999px"
+    },
+    "color": {
+      "primary": "#7c4a2d",
+      "primaryDark": "#683e26",
+      "primaryLight": "#b39685",
+      "primarySoft": "#f2edea",
+      "onPrimary": "#ffffff",
+      "accent": "#c98a3c",
+      "accentDark": "#ad7734",
+      "onAccent": "#0b1220",
+      "ink": "#1c1917",
+      "inkMuted": "#57534e",
+      "bg": "#fffdf9",
+      "surface": "#ffffff",
+      "surfaceAlt": "#f6ede2",
+      "border": "#efe6da",
+      "footerBg": "#15201f",
+      "footerInk": "#f8fafc",
+      "footerMuted": "#a2a7a8",
+      "heroOverlay": "#131d1c"
+    },
+    "shadow": {
+      "sm": "0 1px 2px rgba(28, 25, 23, 0.06), 0 1px 3px rgba(28, 25, 23, 0.1)",
+      "card": "0 6px 24px rgba(28, 25, 23, 0.08), 0 1px 2px rgba(28, 25, 23, 0.06)",
+      "hover": "0 18px 48px rgba(28, 25, 23, 0.16), 0 4px 12px rgba(28, 25, 23, 0.08)",
+      "header": "0 4px 20px rgba(28, 25, 23, 0.08)",
+      "button": "0 8px 20px rgba(124, 74, 45, 0.28)"
+    },
+    "_tint": "#1c1917"
+  },
+  "themeId": "warm",
+  "brand": {
+    "primary": "#7c4a2d",
+    "accent": "#c98a3c"
+  },
+  "city": "Tomaszów Mazowiecki",
+  "region": null,
+  "serviceArea": "Tomaszów Mazowiecki",
+  "year": null,
+  "url": null,
+  "contact": {
+    "phone": null,
+    "phoneRaw": null,
+    "phoneValid": false,
+    "email": null,
+    "address": {
+      "street": "ul. Dąbrowska 14",
+      "postalCode": "97-200",
+      "city": "Tomaszów Mazowiecki",
+      "full": "ul. Dąbrowska 14, 97-200 Tomaszów Mazowiecki"
+    },
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Kawiarnia%20BaKalia&query_place_id=ChIJzcskwjuFGUcR0ROCqQ_9_9M"
+  },
+  "hours": [
+    {
+      "label": "Poniedziałek – Piątek",
+      "value": "10:00 – 19:00"
+    },
+    {
+      "label": "Sobota",
+      "value": "10:00 – 20:00"
+    },
+    {
+      "label": "Niedziela",
+      "value": "10:00 – 19:00"
+    }
+  ],
+  "social": {},
+  "legal": {
+    "fullName": "Kawiarnia BaKalia",
+    "nip": null,
+    "regon": null,
+    "privacyUrl": "#polityka-prywatnosci"
+  },
+  "images": {
+    "hero": {
+      "src": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1680&q=70",
+      "alt": "Klimatyczne wnętrze restauracji",
+      "mode": "unsplash"
+    },
+    "about": {
+      "src": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=960&q=72",
+      "alt": "Nakryty stół w restauracji",
+      "mode": "unsplash"
+    },
+    "gallery": [
+      {
+        "src": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=900&q=70",
+        "alt": "Szef kuchni komponuje danie",
+        "mode": "unsplash"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?auto=format&fit=crop&w=900&q=70",
+        "alt": "Apetyczne danie na talerzu",
+        "mode": "unsplash"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=900&q=70",
+        "alt": "Świeżo przygotowany posiłek",
+        "mode": "unsplash"
+      }
+    ]
+  },
+  "services": [
+    {
+      "name": "Kawa z charakterem",
+      "description": "Starannie parzona kawa, którą goście najczęściej chwalą w opiniach. Idealna na poranek i popołudniową przerwę.",
+      "icon": "flame"
+    },
+    {
+      "name": "Domowe desery",
+      "description": "Świeże ciasta i słodkości przygotowywane z myślą o tych, którzy kochają dobrze zjeść.",
+      "icon": "heart"
+    },
+    {
+      "name": "Herbaty i piwa",
+      "description": "Duży wybór herbat na każdą porę dnia oraz selekcja piw na spokojny wieczór.",
+      "icon": "droplet"
+    },
+    {
+      "name": "Ogródek i miejsce do pracy",
+      "description": "Latem zapraszamy do ogródka, a w tygodniu to spokojne miejsce na pracę przy laptopie czy spotkanie.",
+      "icon": "leaf"
+    }
+  ],
+  "menu": [
+    {
+      "name": "Przystawki",
+      "note": "",
+      "items": [
+        {
+          "name": "Tatar wołowy",
+          "description": "z piklami, kaparami i żółtkiem",
+          "price": "32 zł",
+          "tags": []
+        },
+        {
+          "name": "Śledź po kaszubsku",
+          "description": "z jabłkiem i czerwoną cebulą",
+          "price": "24 zł",
+          "tags": []
+        },
+        {
+          "name": "Zupa dnia",
+          "description": "codziennie świeża, z pieczywem",
+          "price": "18 zł",
+          "tags": [
+            "wegetariańskie"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Dania główne",
+      "note": "kuchnia sezonowa",
+      "items": [
+        {
+          "name": "Dorsz z pieca",
+          "description": "z warzywami i masłem ziołowym",
+          "price": "54 zł",
+          "tags": []
+        },
+        {
+          "name": "Policzki wołowe",
+          "description": "duszone w czerwonym winie, puree",
+          "price": "58 zł",
+          "tags": []
+        },
+        {
+          "name": "Pierogi ruskie",
+          "description": "z okrasą lub na maśle",
+          "price": "29 zł",
+          "tags": [
+            "wegetariańskie"
+          ]
+        },
+        {
+          "name": "Risotto z grzybami",
+          "description": "z parmezanem i natką",
+          "price": "42 zł",
+          "tags": [
+            "wegetariańskie",
+            "bez glutenu"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Desery",
+      "note": "",
+      "items": [
+        {
+          "name": "Sernik na ciepło",
+          "description": "z sosem żurawinowym",
+          "price": "19 zł",
+          "tags": []
+        },
+        {
+          "name": "Tarta cytrynowa",
+          "description": "z lekką bezą",
+          "price": "18 zł",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "name": "Napoje",
+      "note": "",
+      "items": [
+        {
+          "name": "Lemoniada domowa",
+          "description": "sezonowa, lekko gazowana",
+          "price": "14 zł",
+          "tags": [
+            "sezonowe"
+          ]
+        },
+        {
+          "name": "Kawa",
+          "description": "espresso / z mlekiem",
+          "price": "10 zł",
+          "tags": []
+        },
+        {
+          "name": "Wino — kieliszek",
+          "description": "białe / czerwone",
+          "price": "od 18 zł",
+          "tags": []
+        }
+      ]
+    }
+  ],
+  "features": [
+    {
+      "title": "Dobra kawa",
+      "text": "Najczęściej chwalona przez naszych gości w opiniach Google.",
+      "icon": "star"
+    },
+    {
+      "title": "Kameralny klimat",
+      "text": "Przytulne, spokojne wnętrze i niezobowiązująca atmosfera.",
+      "icon": "heart"
+    },
+    {
+      "title": "Przyjaźni wszystkim",
+      "text": "Menu dla dzieci, pełna dostępność dla osób na wózkach, możliwe rezerwacje.",
+      "icon": "users"
+    }
+  ],
+  "process": [],
+  "stats": [
+    {
+      "value": "96",
+      "label": "opinii w Google"
+    },
+    {
+      "value": "7/7",
+      "label": "otwarte cały tydzień"
+    },
+    {
+      "value": "10–20",
+      "label": "czynne w soboty"
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "Najlepsza kolacja od dawna — smak, obsługa i klimat na najwyższym poziomie.",
+      "author": "Aleksandra W.",
+      "role": "Gość",
+      "rating": 5
+    },
+    {
+      "quote": "Zorganizowali nam wspaniałe przyjęcie. Goście do dziś wspominają jedzenie.",
+      "author": "Paweł K.",
+      "role": "Organizator urodzin",
+      "rating": 5
+    }
+  ],
+  "pricing": [],
+  "faq": [
+    {
+      "q": "Czy macie ogródek?",
+      "a": "Tak, latem zapraszamy do naszego przytulnego ogródka na świeżym powietrzu."
+    },
+    {
+      "q": "Czy można u Was popracować przy laptopie?",
+      "a": "Jak najbardziej — to spokojne, kameralne miejsce, w sam raz na pracę albo spotkanie przy kawie."
+    },
+    {
+      "q": "Czy jest parking?",
+      "a": "Tak, w pobliżu dostępny jest bezpłatny parking przy ulicy."
+    },
+    {
+      "q": "Jak mogę zapłacić?",
+      "a": "Przyjmujemy karty debetowe i kredytowe oraz płatności mobilne (NFC)."
+    },
+    {
+      "q": "Czy miejsce jest przyjazne dzieciom i osobom na wózkach?",
+      "a": "Tak — mamy menu dla dzieci, a lokal jest w pełni dostępny dla osób na wózkach (wejście i toaleta)."
+    }
+  ],
+  "hero": {
+    "headline": "Tu kawa smakuje jak w domu",
+    "subheadline": "Kameralna kawiarnia w sercu Tomaszowa Mazowieckiego — dobra kawa, domowe desery, duży wybór herbat i przytulny ogródek latem.",
+    "badges": [
+      "Dobra kawa",
+      "Domowe desery",
+      "Ogródek latem"
+    ],
+    "image": {
+      "src": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1680&q=70",
+      "alt": "Klimatyczne wnętrze restauracji",
+      "mode": "unsplash"
+    }
+  },
+  "about": {
+    "title": "Miejsce, do którego się wraca",
+    "eyebrow": "O nas",
+    "text": [
+      "BaKalia to kameralna kawiarnia, w której można zwolnić — przy filiżance dobrej kawy, kawałku domowego ciasta, z książką albo z laptopem. Stawiamy na jakość i przyjazną obsługę.",
+      "Latem zapraszamy do ogródka, a przez cały rok dbamy o to, by każdy — także rodziny z dziećmi i goście na wózkach — czuł się u nas swobodnie i mile widziany."
+    ],
+    "points": [
+      "Starannie parzona kawa",
+      "Domowe, świeże desery",
+      "Duży wybór herbat i piw",
+      "Ogródek do dyspozycji latem"
+    ],
+    "image": {
+      "src": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=960&q=72",
+      "alt": "Nakryty stół w restauracji",
+      "mode": "unsplash"
+    }
+  },
+  "cta": {
+    "title": "Wpadnij na dobrą kawę",
+    "text": "Zarezerwuj stolik lub po prostu zajrzyj — czekamy z aromatyczną kawą, domowymi deserami i miłą atmosferą."
+  },
+  "seo": {
+    "title": "Kawiarnia BaKalia — Restauracja | Tomaszów Mazowiecki",
+    "description": "Kawiarnia BaKalia — restauracja. Tomaszów Mazowiecki i okolice. Dobra kawa, domowe desery, miły klimat.",
+    "keywords": [
+      "restauracja",
+      "menu",
+      "rezerwacja stolika",
+      "kuchnia",
+      "Tomaszów Mazowiecki"
+    ],
+    "ogImage": null
+  },
+  "rating": null,
+  "reviewCount": 96,
+  "priceRange": null,
+  "hoursWeekly": [
+    {
+      "open": "10:00",
+      "close": "19:00"
+    },
+    {
+      "open": "10:00",
+      "close": "19:00"
+    },
+    {
+      "open": "10:00",
+      "close": "19:00"
+    },
+    {
+      "open": "10:00",
+      "close": "19:00"
+    },
+    {
+      "open": "10:00",
+      "close": "19:00"
+    },
+    {
+      "open": "10:00",
+      "close": "20:00"
+    },
+    {
+      "open": "10:00",
+      "close": "19:00"
+    }
+  ],
+  "layout": [
+    "header",
+    "hero",
+    "trustbar",
+    "services",
+    "about",
+    "stats",
+    "gallery",
+    "faq",
+    "cta",
+    "contact",
+    "footer",
+    "cookie"
+  ],
+  "meta": {
+    "generator": "demo-stron-pl",
+    "industry": "restauracja",
+    "theme": "warm",
+    "imageMode": "unsplash",
+    "generatedAt": "2026-06-17T17:16:05.035Z",
+    "warnings": []
+  }
+}

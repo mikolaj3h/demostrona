@@ -1,0 +1,409 @@
+{
+  "name": "Bistro Przystań",
+  "slug": "bistro-przystan",
+  "tagline": "Kuchnia sezonowa nad Motławą",
+  "description": null,
+  "industry": "restauracja",
+  "industryLabel": "Restauracja",
+  "schemaType": "Restaurant",
+  "servicesHeading": {
+    "eyebrow": "Nasza karta",
+    "title": "Co u nas zjesz"
+  },
+  "theme": {
+    "id": "artisan",
+    "label": "Rzemieślniczy",
+    "heroStyle": "split",
+    "font": {
+      "heading": "'Playfair Display', Georgia, 'Times New Roman', serif",
+      "body": "'DM Sans', system-ui, -apple-system, Segoe UI, sans-serif",
+      "google": "Playfair+Display:wght@600;700;800&family=DM+Sans:wght@400;500;600"
+    },
+    "type": {
+      "headingWeight": 700,
+      "headingSpacing": "-0.01em",
+      "headingTransform": "none",
+      "eyebrowSpacing": "0.18em",
+      "eyebrowTransform": "uppercase"
+    },
+    "radius": {
+      "card": "18px",
+      "button": "999px",
+      "input": "12px",
+      "pill": "999px"
+    },
+    "color": {
+      "primary": "#9a3412",
+      "primaryDark": "#812c0f",
+      "primaryLight": "#c48976",
+      "primarySoft": "#f5ebe7",
+      "onPrimary": "#ffffff",
+      "accent": "#eab308",
+      "accentDark": "#c99a07",
+      "onAccent": "#0b1220",
+      "ink": "#241c15",
+      "inkMuted": "#5c5247",
+      "bg": "#fffaf3",
+      "surface": "#ffffff",
+      "surfaceAlt": "#f3e8db",
+      "border": "#ece0d0",
+      "footerBg": "#241a13",
+      "footerInk": "#f8fafc",
+      "footerMuted": "#a7a5a3",
+      "heroOverlay": "#201711"
+    },
+    "shadow": {
+      "sm": "0 1px 2px rgba(42, 33, 24, 0.06), 0 1px 3px rgba(42, 33, 24, 0.1)",
+      "card": "0 6px 24px rgba(42, 33, 24, 0.08), 0 1px 2px rgba(42, 33, 24, 0.06)",
+      "hover": "0 18px 48px rgba(42, 33, 24, 0.16), 0 4px 12px rgba(42, 33, 24, 0.08)",
+      "header": "0 4px 20px rgba(42, 33, 24, 0.08)",
+      "button": "0 8px 20px rgba(154, 52, 18, 0.28)"
+    },
+    "_tint": "#2a2118"
+  },
+  "themeId": "artisan",
+  "brand": {
+    "primary": "#9a3412",
+    "accent": "#eab308"
+  },
+  "city": "Gdańsk",
+  "region": null,
+  "serviceArea": "Gdańsk",
+  "year": 2015,
+  "url": "https://bistroprzystan.pl",
+  "contact": {
+    "phone": "+48 585 551 122",
+    "phoneRaw": "+48 58 555 11 22",
+    "phoneValid": true,
+    "email": "rezerwacje@bistroprzystan.pl",
+    "address": {
+      "street": "ul. Długie Pobrzeże 21",
+      "postalCode": "80-888",
+      "city": "Gdańsk",
+      "full": "ul. Długie Pobrzeże 21, 80-888 Gdańsk"
+    },
+    "mapUrl": null
+  },
+  "hours": [
+    {
+      "label": "Poniedziałek – Czwartek",
+      "value": "12:00 – 22:00"
+    },
+    {
+      "label": "Piątek – Sobota",
+      "value": "12:00 – 23:00"
+    },
+    {
+      "label": "Niedziela",
+      "value": "12:00 – 21:00"
+    }
+  ],
+  "social": {
+    "instagram": "https://instagram.com/bistroprzystan",
+    "facebook": "https://facebook.com/bistroprzystan"
+  },
+  "legal": {
+    "fullName": "Bistro Przystań",
+    "nip": "583-234-56-78",
+    "regon": null,
+    "privacyUrl": "#polityka-prywatnosci"
+  },
+  "images": {
+    "hero": {
+      "src": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1680&q=70",
+      "alt": "Klimatyczne wnętrze restauracji",
+      "mode": "unsplash"
+    },
+    "about": {
+      "src": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=960&q=72",
+      "alt": "Nakryty stół w restauracji",
+      "mode": "unsplash"
+    },
+    "gallery": [
+      {
+        "src": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=900&q=70",
+        "alt": "Szef kuchni komponuje danie",
+        "mode": "unsplash"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?auto=format&fit=crop&w=900&q=70",
+        "alt": "Apetyczne danie na talerzu",
+        "mode": "unsplash"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=900&q=70",
+        "alt": "Świeżo przygotowany posiłek",
+        "mode": "unsplash"
+      }
+    ]
+  },
+  "services": [
+    {
+      "name": "Menu sezonowe",
+      "description": "Dania z lokalnych, świeżych składników, zmieniane wraz z porami roku.",
+      "icon": "utensils"
+    },
+    {
+      "name": "Rezerwacje",
+      "description": "Zarezerwuj stolik na wieczór we dwoje lub większą okazję.",
+      "icon": "calendar"
+    },
+    {
+      "name": "Imprezy i bankiety",
+      "description": "Organizujemy urodziny, komunie i spotkania firmowe.",
+      "icon": "users"
+    },
+    {
+      "name": "Catering",
+      "description": "Dowozimy nasze dania na Twoje wydarzenie.",
+      "icon": "truck"
+    }
+  ],
+  "menu": [
+    {
+      "name": "Przystawki",
+      "note": "",
+      "items": [
+        {
+          "name": "Krewetki na maśle czosnkowym",
+          "description": "z chrupiącą bagietką",
+          "price": "34 zł",
+          "tags": []
+        },
+        {
+          "name": "Śledź po kaszubsku",
+          "description": "z jabłkiem i czerwoną cebulą",
+          "price": "24 zł",
+          "tags": []
+        },
+        {
+          "name": "Zupa rybna",
+          "description": "bogata, z grzanką",
+          "price": "26 zł",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "name": "Z wody i lądu",
+      "note": "świeże ryby z lokalnych połowów",
+      "items": [
+        {
+          "name": "Dorsz z pieca",
+          "description": "warzywa sezonowe, masło ziołowe",
+          "price": "56 zł",
+          "tags": []
+        },
+        {
+          "name": "Łosoś grillowany",
+          "description": "szpinak, sos cytrynowy",
+          "price": "58 zł",
+          "tags": []
+        },
+        {
+          "name": "Policzki wołowe",
+          "description": "duszone w czerwonym winie, puree",
+          "price": "59 zł",
+          "tags": []
+        },
+        {
+          "name": "Risotto z warzywami",
+          "description": "z parmezanem",
+          "price": "42 zł",
+          "tags": [
+            "wegetariańskie",
+            "bez glutenu"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Desery",
+      "note": "",
+      "items": [
+        {
+          "name": "Sernik na ciepło",
+          "description": "z sosem żurawinowym",
+          "price": "20 zł",
+          "tags": []
+        },
+        {
+          "name": "Tarta cytrynowa",
+          "description": "z lekką bezą",
+          "price": "18 zł",
+          "tags": []
+        }
+      ]
+    }
+  ],
+  "features": [
+    {
+      "title": "Świeże składniki",
+      "text": "Gotujemy z produktów od lokalnych dostawców.",
+      "icon": "leaf"
+    },
+    {
+      "title": "Wyjątkowa atmosfera",
+      "text": "Klimatyczne wnętrze na każdą okazję.",
+      "icon": "heart"
+    },
+    {
+      "title": "Dla każdego",
+      "text": "Opcje wegetariańskie, wegańskie i bezglutenowe.",
+      "icon": "check"
+    }
+  ],
+  "process": [],
+  "stats": [
+    {
+      "value": "9",
+      "label": "lat na gdańskiej starówce"
+    },
+    {
+      "value": "4,8",
+      "label": "ocena w Google"
+    },
+    {
+      "value": "60k+",
+      "label": "zadowolonych gości"
+    },
+    {
+      "value": "100%",
+      "label": "świeżych składników"
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "Najlepsza ryba, jaką jadłem w Trójmieście. Taras z widokiem na Motławę to dodatkowy atut.",
+      "author": "Aleksander W.",
+      "role": "Gość",
+      "rating": 5
+    },
+    {
+      "quote": "Zorganizowali nam wymarzone przyjęcie urodzinowe. Obsługa i jedzenie na najwyższym poziomie.",
+      "author": "Paulina K.",
+      "role": "Rezerwacja sali",
+      "rating": 5
+    }
+  ],
+  "pricing": [],
+  "faq": [
+    {
+      "q": "Czy trzeba rezerwować stolik?",
+      "a": "W weekendy zdecydowanie zalecamy rezerwację. W tygodniu zwykle znajdzie się wolny stolik od ręki."
+    },
+    {
+      "q": "Czy macie dania wegańskie i bezglutenowe?",
+      "a": "Tak, w karcie znajdziesz oznaczone propozycje wegetariańskie, wegańskie i bezglutenowe."
+    },
+    {
+      "q": "Czy można u Was zorganizować przyjęcie zamknięte?",
+      "a": "Tak, wynajmujemy całą salę lub taras na okazje prywatne i firmowe. Przygotujemy dedykowane menu."
+    }
+  ],
+  "hero": {
+    "headline": "Smak Trójmiasta na talerzu",
+    "subheadline": "Świeże ryby z lokalnych połowów, sezonowe warzywa i autorskie dania w sercu gdańskiej starówki.",
+    "badges": [
+      "Świeże, lokalne składniki",
+      "Taras nad wodą",
+      "Menu wegańskie i bezglutenowe"
+    ],
+    "image": {
+      "src": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1680&q=70",
+      "alt": "Klimatyczne wnętrze restauracji",
+      "mode": "unsplash"
+    }
+  },
+  "about": {
+    "title": "Dlaczego my?",
+    "eyebrow": "O nas",
+    "text": [
+      "Tworzymy miejsce, do którego chce się wracać. Stawiamy na świeże, lokalne składniki i kuchnię z charakterem.",
+      "Każdy talerz to dla nas mała opowieść — o smaku, regionie i pasji do gotowania."
+    ],
+    "points": [
+      "Świeże składniki",
+      "Wyjątkowa atmosfera",
+      "Dla każdego"
+    ],
+    "image": {
+      "src": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=960&q=72",
+      "alt": "Nakryty stół w restauracji",
+      "mode": "unsplash"
+    }
+  },
+  "cta": {
+    "title": "Zarezerwuj stolik już dziś.",
+    "text": "Zadzwoń lub napisz — czekamy z wyjątkowym menu i ciepłą atmosferą."
+  },
+  "seo": {
+    "title": "Bistro Przystań — Restauracja | Gdańsk",
+    "description": "Bistro Przystań — restauracja. Gdańsk i okolice. Kuchnia sezonowa nad Motławą. Oferujemy: Menu sezonowe, Rezerwacje, Imprezy i bankiety i Catering.",
+    "keywords": [
+      "restauracja",
+      "menu",
+      "rezerwacja stolika",
+      "kuchnia",
+      "Gdańsk"
+    ],
+    "ogImage": null
+  },
+  "rating": "4,8",
+  "reviewCount": 412,
+  "priceRange": null,
+  "hoursWeekly": [
+    {
+      "open": "12:00",
+      "close": "22:00"
+    },
+    {
+      "open": "12:00",
+      "close": "22:00"
+    },
+    {
+      "open": "12:00",
+      "close": "22:00"
+    },
+    {
+      "open": "12:00",
+      "close": "22:00"
+    },
+    {
+      "open": "12:00",
+      "close": "23:00"
+    },
+    {
+      "open": "12:00",
+      "close": "23:00"
+    },
+    {
+      "open": "12:00",
+      "close": "21:00"
+    }
+  ],
+  "layout": [
+    "header",
+    "hero",
+    "trustbar",
+    "menu",
+    "map",
+    "about",
+    "gallery",
+    "stats",
+    "testimonials",
+    "faq",
+    "cta",
+    "contact",
+    "footer",
+    "cookie"
+  ],
+  "meta": {
+    "generator": "demo-stron-pl",
+    "industry": "restauracja",
+    "theme": "artisan",
+    "imageMode": "unsplash",
+    "generatedAt": "2026-06-17T17:16:05.035Z",
+    "warnings": []
+  }
+}

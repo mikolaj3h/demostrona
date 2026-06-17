@@ -1,0 +1,358 @@
+{
+  "name": "Fabryka Stron WWW",
+  "slug": "fabryka-stron-www",
+  "tagline": "Strona dla Twojej firmy — gotowa w 48 godzin",
+  "description": "Tworzymy profesjonalne strony WWW dla polskich firm. Z kilku informacji o Twojej działalności powstaje dopracowana, samodzielna strona gotowa do publikacji.",
+  "industry": "it",
+  "industryLabel": "Software house / usługi IT",
+  "schemaType": "ProfessionalService",
+  "servicesHeading": null,
+  "theme": {
+    "id": "modern",
+    "label": "Nowoczesny",
+    "heroStyle": "overlay",
+    "font": {
+      "heading": "'Plus Jakarta Sans', system-ui, -apple-system, Segoe UI, Roboto, sans-serif",
+      "body": "'Inter', system-ui, -apple-system, Segoe UI, Roboto, sans-serif",
+      "google": "Plus+Jakarta+Sans:wght@600;700;800&family=Inter:wght@400;500;600;700"
+    },
+    "type": {
+      "headingWeight": 800,
+      "headingSpacing": "-0.025em",
+      "headingTransform": "none",
+      "eyebrowSpacing": "0.08em",
+      "eyebrowTransform": "uppercase"
+    },
+    "radius": {
+      "card": "20px",
+      "button": "12px",
+      "input": "12px",
+      "pill": "999px"
+    },
+    "color": {
+      "primary": "#4f46e5",
+      "primaryDark": "#423bc0",
+      "primaryLight": "#9994f0",
+      "primarySoft": "#ededfc",
+      "onPrimary": "#ffffff",
+      "accent": "#06b6d4",
+      "accentDark": "#059db6",
+      "onAccent": "#0b1220",
+      "ink": "#0f172a",
+      "inkMuted": "#51607a",
+      "bg": "#ffffff",
+      "surface": "#ffffff",
+      "surfaceAlt": "#eff1fb",
+      "border": "#e6eaf2",
+      "footerBg": "#0b1220",
+      "footerInk": "#f8fafc",
+      "footerMuted": "#9ea2a8",
+      "heroOverlay": "#0a101d"
+    },
+    "shadow": {
+      "sm": "0 1px 2px rgba(30, 41, 59, 0.06), 0 1px 3px rgba(30, 41, 59, 0.1)",
+      "card": "0 6px 24px rgba(30, 41, 59, 0.08), 0 1px 2px rgba(30, 41, 59, 0.06)",
+      "hover": "0 18px 48px rgba(30, 41, 59, 0.16), 0 4px 12px rgba(30, 41, 59, 0.08)",
+      "header": "0 4px 20px rgba(30, 41, 59, 0.08)",
+      "button": "0 8px 20px rgba(79, 70, 229, 0.28)"
+    },
+    "_tint": "#1e293b"
+  },
+  "themeId": "modern",
+  "brand": {
+    "primary": "#4f46e5",
+    "accent": "#06b6d4"
+  },
+  "city": null,
+  "region": null,
+  "serviceArea": "cała Polska — pracujemy zdalnie",
+  "year": 2024,
+  "url": "https://twojadomena.pl",
+  "contact": {
+    "phone": "+48 600 700 800",
+    "phoneRaw": "+48 600 700 800",
+    "phoneValid": true,
+    "email": "kontakt@twojadomena.pl",
+    "address": {
+      "street": "ul. Przykładowa 1",
+      "postalCode": "00-000",
+      "city": "Twoje Miasto",
+      "full": "ul. Przykładowa 1, 00-000 Twoje Miasto"
+    },
+    "mapUrl": null
+  },
+  "hours": [
+    {
+      "label": "Poniedziałek – Piątek",
+      "value": "9:00 – 17:00"
+    },
+    {
+      "label": "Sobota",
+      "value": "po umówieniu"
+    },
+    {
+      "label": "Niedziela",
+      "value": "nieczynne"
+    }
+  ],
+  "social": {
+    "facebook": "https://facebook.com/twojafirma",
+    "instagram": "https://instagram.com/twojafirma",
+    "linkedin": "https://linkedin.com/company/twojafirma"
+  },
+  "legal": {
+    "fullName": "Fabryka Stron WWW",
+    "nip": null,
+    "regon": null,
+    "privacyUrl": "#polityka-prywatnosci"
+  },
+  "images": {
+    "hero": {
+      "src": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1680&q=70",
+      "alt": "Kod aplikacji na ekranie",
+      "mode": "unsplash"
+    },
+    "about": {
+      "src": "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=960&q=72",
+      "alt": "Zespół programistów przy pracy",
+      "mode": "unsplash"
+    },
+    "gallery": [
+      {
+        "src": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=70",
+        "alt": "Praca nad oprogramowaniem",
+        "mode": "unsplash"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=900&q=70",
+        "alt": "Programowanie i rozwój produktu",
+        "mode": "unsplash"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=900&q=70",
+        "alt": "Analiza danych i metryk",
+        "mode": "unsplash"
+      }
+    ]
+  },
+  "services": [
+    {
+      "name": "Strona wizytówka",
+      "description": "Jednostronicowa, dopracowana strona z ofertą, opiniami i kontaktem — wszystko, czego potrzebuje lokalna firma, na jednej stronie.",
+      "icon": "code"
+    },
+    {
+      "name": "Strona dopasowana do branży",
+      "description": "Dobieramy układ, kolory i teksty do Twojej branży — od usług lokalnych po gastronomię z menu i mapą dojazdu.",
+      "icon": "palette"
+    },
+    {
+      "name": "SEO i dane strukturalne",
+      "description": "Każda strona ma poprawne meta-tagi, dane strukturalne LocalBusiness i zgodność z RODO — od pierwszego dnia widoczna w Google.",
+      "icon": "chartUp"
+    },
+    {
+      "name": "Dostępność i responsywność",
+      "description": "Zgodność z WCAG AA i pełna responsywność — strona wygląda dobrze i działa wygodnie na telefonie, tablecie i komputerze.",
+      "icon": "shield"
+    },
+    {
+      "name": "Ekspresowa realizacja",
+      "description": "Typowo gotowe w 48 godzin. Bez długich brifów i czekania — szybko, sprawnie i z powtarzalną jakością.",
+      "icon": "clock"
+    },
+    {
+      "name": "Łatwa aktualizacja",
+      "description": "Chcesz zmienić ofertę, godziny albo dane kontaktowe? Aktualizujemy treści i wydajemy nową wersję strony tego samego dnia.",
+      "icon": "refresh"
+    }
+  ],
+  "menu": [],
+  "features": [
+    {
+      "title": "Sprawdzony proces",
+      "text": "Pracujemy w sprintach z regularnym feedbackiem.",
+      "icon": "cog"
+    },
+    {
+      "title": "Czysty kod",
+      "text": "Testy i dokumentacja to standard, nie dodatek.",
+      "icon": "check"
+    },
+    {
+      "title": "Partnerstwo",
+      "text": "Doradzamy biznesowo, nie tylko technicznie.",
+      "icon": "users"
+    }
+  ],
+  "process": [
+    {
+      "title": "Opisz firmę",
+      "text": "Wystarczy kilka zdań: czym się zajmujesz, gdzie działasz i co chcesz pokazać klientom."
+    },
+    {
+      "title": "Projektujemy",
+      "text": "Dobieramy branżę, motyw i paletę kolorów oraz piszemy przekonujące polskie teksty."
+    },
+    {
+      "title": "Generujemy stronę",
+      "text": "Składamy gotowy, samodzielny plik strony i sprawdzamy jego jakość, SEO oraz dostępność."
+    },
+    {
+      "title": "Publikujemy",
+      "text": "Nanosimy poprawki i pomagamy uruchomić stronę pod Twoją domeną."
+    }
+  ],
+  "stats": [
+    {
+      "value": "48 h",
+      "label": "typowy czas realizacji"
+    },
+    {
+      "value": "18",
+      "label": "obsługiwanych branż"
+    },
+    {
+      "value": "AA",
+      "label": "zgodność WCAG (dostępność)"
+    },
+    {
+      "value": "100%",
+      "label": "responsywność na każdym ekranie"
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "Zamówiłem stronę w piątek, w niedzielę była gotowa i online. Konkret, zero zbędnych pytań.",
+      "author": "opinia przykładowa",
+      "role": "Usługi lokalne",
+      "rating": 5
+    },
+    {
+      "quote": "Strona wygląda profesjonalnie i świetnie działa na telefonie. Klienci wreszcie nas znajdują w Google.",
+      "author": "opinia przykładowa",
+      "role": "Gastronomia",
+      "rating": 5
+    }
+  ],
+  "pricing": [],
+  "faq": [
+    {
+      "q": "Ile trwa przygotowanie strony?",
+      "a": "Zazwyczaj do 48 godzin od otrzymania kompletu informacji o firmie. Dokładny termin potwierdzamy po krótkiej rozmowie."
+    },
+    {
+      "q": "Co dokładnie dostaję?",
+      "a": "Gotową, samodzielną stronę WWW przygotowaną pod Twoją firmę — z ofertą, opiniami, FAQ i danymi kontaktowymi, gotową do opublikowania pod Twoją domeną."
+    },
+    {
+      "q": "Czy mogę później zmieniać treści?",
+      "a": "Tak. Wystarczy przesłać nam zmiany — zaktualizujemy treści i wydamy nową wersję strony, zwykle tego samego dnia."
+    },
+    {
+      "q": "Czy strona będzie dobrze działać na telefonie i w Google?",
+      "a": "Tak. Każda strona jest w pełni responsywna, zgodna z WCAG AA oraz wyposażona w meta-tagi i dane strukturalne, które pomagają w widoczności w wyszukiwarce."
+    }
+  ],
+  "hero": {
+    "headline": "Profesjonalna strona dla Twojej firmy — gotowa w 48 godzin",
+    "subheadline": "Opisz nam swoją działalność w kilku zdaniach. Resztą — projektem, tekstami i kodem — zajmiemy się my. Otrzymujesz gotową, samodzielną stronę, którą możesz od razu opublikować.",
+    "badges": [
+      "Realizacja w 48 godzin",
+      "WCAG AA + SEO w standardzie",
+      "Gotowy, samodzielny plik"
+    ],
+    "image": {
+      "src": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1680&q=70",
+      "alt": "Kod aplikacji na ekranie",
+      "mode": "unsplash"
+    }
+  },
+  "about": {
+    "title": "Strony, które po prostu działają",
+    "eyebrow": "O nas",
+    "text": [
+      "Pomagamy polskim firmom zaistnieć w sieci bez zbędnych komplikacji. Zamiast tygodni ustaleń i kosztownych wdrożeń dostajesz gotową, dopracowaną stronę — szybko i w przewidywalnej cenie.",
+      {
+        "\"Stawiamy na konkret": "czytelny układ, teksty pisane korzyściami dla klienta, poprawne SEO i pełną dostępność. Każda strona to jeden samodzielny plik, który łatwo opublikować i taniej utrzymać.\""
+      }
+    ],
+    "points": [
+      "Gotowa strona zwykle w 48 godzin",
+      "Treści i wygląd dopasowane do branży",
+      "WCAG AA, SEO i RODO w standardzie"
+    ],
+    "image": {
+      "src": "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=960&q=72",
+      "alt": "Zespół programistów przy pracy",
+      "mode": "unsplash"
+    }
+  },
+  "cta": {
+    "title": "Gotowy na własną stronę?",
+    "text": "Napisz lub zadzwoń — opisz nam swoją firmę, a my przygotujemy gotową stronę w 48 godzin."
+  },
+  "seo": {
+    "title": "Fabryka Stron WWW — Software house / usługi IT",
+    "description": "Fabryka Stron WWW — software house / usługi it. Strona dla Twojej firmy — gotowa w 48 godzin.",
+    "keywords": [
+      "software house",
+      "aplikacje",
+      "strony",
+      "oprogramowanie",
+      "it"
+    ],
+    "ogImage": null
+  },
+  "rating": null,
+  "reviewCount": null,
+  "priceRange": null,
+  "hoursWeekly": [
+    {
+      "open": "09:00",
+      "close": "17:00"
+    },
+    {
+      "open": "09:00",
+      "close": "17:00"
+    },
+    {
+      "open": "09:00",
+      "close": "17:00"
+    },
+    {
+      "open": "09:00",
+      "close": "17:00"
+    },
+    {
+      "open": "09:00",
+      "close": "17:00"
+    },
+    null,
+    null
+  ],
+  "layout": [
+    "header",
+    "hero",
+    "trustbar",
+    "services",
+    "about",
+    "process",
+    "stats",
+    "gallery",
+    "testimonials",
+    "faq",
+    "cta",
+    "contact",
+    "footer",
+    "cookie"
+  ],
+  "meta": {
+    "generator": "demo-stron-pl",
+    "industry": "it",
+    "theme": "modern",
+    "imageMode": "unsplash",
+    "generatedAt": "2026-06-17T17:16:05.035Z",
+    "warnings": []
+  }
+}

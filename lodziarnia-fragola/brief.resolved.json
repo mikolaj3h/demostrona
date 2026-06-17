@@ -1,6 +1,6 @@
 {
-  "name": "Lodziarnia Amarena",
-  "slug": "lodziarnia-amarena",
+  "name": "Lodziarnia Fragola",
+  "slug": "lodziarnia-fragola",
   "tagline": null,
   "description": null,
   "industry": "lodziarnia",
@@ -66,53 +66,41 @@
     "primary": "#c12f52",
     "accent": "#79c2a8"
   },
-  "city": "Kościerzyna",
+  "city": "Trzebiatów",
   "region": null,
-  "serviceArea": "Kościerzyna",
+  "serviceArea": "Trzebiatów",
   "year": null,
   "url": null,
   "contact": {
-    "phone": "+48 723 817 384",
-    "phoneRaw": "+48 723 817 384",
+    "phone": "+48 505 007 718",
+    "phoneRaw": "+48 505 007 718",
     "phoneValid": true,
     "email": null,
     "address": {
-      "street": "Długa 8",
-      "postalCode": "83-400",
-      "city": "Kościerzyna",
-      "full": "Długa 8, 83-400 Kościerzyna"
+      "street": "Wojska Polskiego 9",
+      "postalCode": "72-320",
+      "city": "Trzebiatów",
+      "full": "Wojska Polskiego 9, 72-320 Trzebiatów"
     },
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lodziarnia%20Amarena&query_place_id=ChIJVVVxqcl3AkcRluz53ZSk5UY"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lodziarnia%20Fragola&query_place_id=ChIJcX1abRtuAEcRiSYhzRfEjYQ"
   },
   "hours": [
     {
-      "label": "Poniedziałek – Czwartek",
-      "value": "11:00 – 19:00"
-    },
-    {
-      "label": "Piątek",
-      "value": "11:00 – 17:30"
-    },
-    {
-      "label": "Sobota",
-      "value": "11:00 – 19:00"
-    },
-    {
-      "label": "Niedziela",
-      "value": "11:00 – 18:00"
+      "label": "Poniedziałek – Niedziela",
+      "value": "10:00 – 19:30"
     }
   ],
   "social": {},
   "legal": {
-    "fullName": "Lodziarnia Amarena",
+    "fullName": "Lodziarnia Fragola",
     "nip": null,
     "regon": null,
     "privacyUrl": "#polityka-prywatnosci"
   },
   "images": {
     "hero": {
-      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFq531R_Z946EPiQLk3zwy637a_byiwFl_qGxrav5yYx1MtB4bJ7x_5ciXB4P79kwSKOBsZNl2wD5iaGSieePNmPPGMxW3whQQE00Q6wjjenGqSMKrzlbbBK1kS1pVtLpCjfxJAYQ=w1280-h960-k-no",
-      "alt": "Lodziarnia Amarena",
+      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAF6iUP0-hA8qGVZhTh3y4E7ECX_AEWn3DTPqksGB4ogBbmAogdfF0XviHuxHNZiXw3cHWBdD2CmjJ4LJsihdQ_QWButvu0H5JFNL3QELiQyHxb3KI-sYhZcLIPNAOgZfu6oRHTT=w1280-h960-k-no",
+      "alt": "Lodziarnia Fragola",
       "mode": "custom"
     },
     "about": {
@@ -264,14 +252,19 @@
   ],
   "features": [
     {
-      "title": "Płatność kartą",
-      "text": "",
-      "icon": "shield"
+      "title": "Naturalne składniki",
+      "text": "Prawdziwa śmietana, sezonowe owoce i żadnych zbędnych dodatków.",
+      "icon": "leaf"
     },
     {
-      "title": "Płatności zbliżeniowe",
-      "text": "",
-      "icon": "shield"
+      "title": "Codziennie świeże",
+      "text": "Nowe porcje kręcimy każdego dnia — smaki rotują wraz z sezonem.",
+      "icon": "sparkles"
+    },
+    {
+      "title": "Dla każdego",
+      "text": "Mamy też sorbety wegańskie i propozycje bez laktozy oraz bez glutenu.",
+      "icon": "heart"
     }
   ],
   "process": [],
@@ -328,14 +321,15 @@
   ],
   "hero": {
     "headline": "Lody, które robimy z głową i sercem.",
-    "subheadline": "Rzemieślnicza lodziarnia — Kościerzyna i okolice. Codziennie świeże lody z naturalnych składników — na miejscu i na wynos.",
+    "subheadline": "Rzemieślnicza lodziarnia — Trzebiatów i okolice. Codziennie świeże lody z naturalnych składników — na miejscu i na wynos.",
     "badges": [
-      "Płatność kartą",
-      "Płatności zbliżeniowe"
+      "Naturalne składniki",
+      "Codziennie świeże",
+      "Dla każdego"
     ],
     "image": {
-      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFq531R_Z946EPiQLk3zwy637a_byiwFl_qGxrav5yYx1MtB4bJ7x_5ciXB4P79kwSKOBsZNl2wD5iaGSieePNmPPGMxW3whQQE00Q6wjjenGqSMKrzlbbBK1kS1pVtLpCjfxJAYQ=w1280-h960-k-no",
-      "alt": "Lodziarnia Amarena",
+      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAF6iUP0-hA8qGVZhTh3y4E7ECX_AEWn3DTPqksGB4ogBbmAogdfF0XviHuxHNZiXw3cHWBdD2CmjJ4LJsihdQ_QWButvu0H5JFNL3QELiQyHxb3KI-sYhZcLIPNAOgZfu6oRHTT=w1280-h960-k-no",
+      "alt": "Lodziarnia Fragola",
       "mode": "custom"
     }
   },
@@ -362,49 +356,49 @@
     "text": "Czekamy ze świeżymi, rzemieślniczymi lodami — na miejscu i na wynos."
   },
   "seo": {
-    "title": "Lodziarnia Amarena — Lodziarnia rzemieślnicza | Kościerzyna",
-    "description": "Lodziarnia Amarena — lodziarnia rzemieślnicza. Kościerzyna i okolice. Oferujemy: Lody rzemieślnicze, Sorbety owocowe, Desery lodowe i Lody na wynos.",
+    "title": "Lodziarnia Fragola — Lodziarnia rzemieślnicza | Trzebiatów",
+    "description": "Lodziarnia Fragola — lodziarnia rzemieślnicza. Trzebiatów i okolice. Oferujemy: Lody rzemieślnicze, Sorbety owocowe, Desery lodowe i Lody na wynos.",
     "keywords": [
       "lodziarnia",
       "lody rzemieślnicze",
       "lody naturalne",
       "gelato",
       "desery lodowe",
-      "Kościerzyna"
+      "Trzebiatów"
     ],
     "ogImage": null
   },
   "rating": "4,9",
-  "reviewCount": 287,
+  "reviewCount": 395,
   "priceRange": null,
   "hoursWeekly": [
     {
-      "open": "11:00",
-      "close": "19:00"
+      "open": "10:00",
+      "close": "19:30"
     },
     {
-      "open": "11:00",
-      "close": "19:00"
+      "open": "10:00",
+      "close": "19:30"
     },
     {
-      "open": "11:00",
-      "close": "19:00"
+      "open": "10:00",
+      "close": "19:30"
     },
     {
-      "open": "11:00",
-      "close": "19:00"
+      "open": "10:00",
+      "close": "19:30"
     },
     {
-      "open": "11:00",
-      "close": "17:30"
+      "open": "10:00",
+      "close": "19:30"
     },
     {
-      "open": "11:00",
-      "close": "19:00"
+      "open": "10:00",
+      "close": "19:30"
     },
     {
-      "open": "11:00",
-      "close": "18:00"
+      "open": "10:00",
+      "close": "19:30"
     }
   ],
   "layout": [

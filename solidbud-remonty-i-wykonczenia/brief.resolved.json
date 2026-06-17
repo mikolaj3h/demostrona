@@ -1,0 +1,349 @@
+{
+  "name": "SolidBud — Remonty i Wykończenia",
+  "slug": "solidbud-remonty-i-wykonczenia",
+  "tagline": "Budujemy z głową, wykańczamy z pasją",
+  "description": null,
+  "industry": "budowlana",
+  "industryLabel": "Usługi budowlane i remontowe",
+  "schemaType": "GeneralContractor",
+  "servicesHeading": null,
+  "theme": {
+    "id": "bold",
+    "label": "Odważny",
+    "heroStyle": "overlay",
+    "font": {
+      "heading": "'Sora', system-ui, -apple-system, Segoe UI, sans-serif",
+      "body": "'Inter', system-ui, -apple-system, Segoe UI, sans-serif",
+      "google": "Sora:wght@600;700;800&family=Inter:wght@400;500;600;700"
+    },
+    "type": {
+      "headingWeight": 800,
+      "headingSpacing": "-0.03em",
+      "headingTransform": "none",
+      "eyebrowSpacing": "0.12em",
+      "eyebrowTransform": "uppercase"
+    },
+    "radius": {
+      "card": "14px",
+      "button": "10px",
+      "input": "10px",
+      "pill": "999px"
+    },
+    "color": {
+      "primary": "#ea580c",
+      "primaryDark": "#c54a0a",
+      "primaryLight": "#f39e72",
+      "primarySoft": "#fdeee7",
+      "onPrimary": "#0b1220",
+      "accent": "#0f172a",
+      "accentDark": "#0d1424",
+      "onAccent": "#ffffff",
+      "ink": "#0c0a09",
+      "inkMuted": "#57534e",
+      "bg": "#ffffff",
+      "surface": "#ffffff",
+      "surfaceAlt": "#f6f1ef",
+      "border": "#e7e5e4",
+      "footerBg": "#0c0a09",
+      "footerInk": "#f8fafc",
+      "footerMuted": "#9e9fa0",
+      "heroOverlay": "#0b0908"
+    },
+    "shadow": {
+      "sm": "0 1px 2px rgba(12, 10, 9, 0.06), 0 1px 3px rgba(12, 10, 9, 0.1)",
+      "card": "0 6px 24px rgba(12, 10, 9, 0.08), 0 1px 2px rgba(12, 10, 9, 0.06)",
+      "hover": "0 18px 48px rgba(12, 10, 9, 0.16), 0 4px 12px rgba(12, 10, 9, 0.08)",
+      "header": "0 4px 20px rgba(12, 10, 9, 0.08)",
+      "button": "0 8px 20px rgba(234, 88, 12, 0.28)"
+    },
+    "_tint": "#0c0a09"
+  },
+  "themeId": "bold",
+  "brand": {
+    "primary": "#ea580c",
+    "accent": "#0f172a"
+  },
+  "city": "Poznań",
+  "region": null,
+  "serviceArea": "Poznań",
+  "year": 2004,
+  "url": "https://solidbud.pl",
+  "contact": {
+    "phone": "+48 618 009 010",
+    "phoneRaw": "+48 61 800 90 10",
+    "phoneValid": true,
+    "email": "biuro@solidbud.pl",
+    "address": {
+      "street": "ul. Budowlanych 7",
+      "postalCode": "61-001",
+      "city": "Poznań",
+      "full": "ul. Budowlanych 7, 61-001 Poznań"
+    },
+    "mapUrl": null
+  },
+  "hours": [
+    {
+      "label": "Poniedziałek – Piątek",
+      "value": "7:00 – 17:00"
+    },
+    {
+      "label": "Sobota",
+      "value": "8:00 – 13:00"
+    },
+    {
+      "label": "Niedziela",
+      "value": "nieczynne"
+    }
+  ],
+  "social": {
+    "facebook": "https://facebook.com/solidbud.poznan",
+    "instagram": "https://instagram.com/solidbud_poznan"
+  },
+  "legal": {
+    "fullName": "SolidBud — Remonty i Wykończenia",
+    "nip": "779-234-56-78",
+    "regon": "634567890",
+    "privacyUrl": "#polityka-prywatnosci"
+  },
+  "images": {
+    "hero": {
+      "src": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1680&q=70",
+      "alt": "Pracownik budowlany na placu budowy",
+      "mode": "unsplash"
+    },
+    "about": {
+      "src": "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=960&q=72",
+      "alt": "Plac budowy w trakcie realizacji",
+      "mode": "unsplash"
+    },
+    "gallery": [
+      {
+        "src": "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=900&q=70",
+        "alt": "Prace wykończeniowe wnętrza",
+        "mode": "unsplash"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1503594384566-461fe158e797?auto=format&fit=crop&w=900&q=70",
+        "alt": "Nowoczesny budynek po realizacji",
+        "mode": "unsplash"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=900&q=70",
+        "alt": "Narzędzia budowlane",
+        "mode": "unsplash"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=900&q=70",
+        "alt": "Architektura nowoczesnego obiektu",
+        "mode": "unsplash"
+      }
+    ]
+  },
+  "services": [
+    {
+      "name": "Remonty kompleksowe",
+      "description": "Remont mieszkania lub domu pod klucz — od demontażu po ostatni detal wykończenia.",
+      "icon": "hammer"
+    },
+    {
+      "name": "Wykończenia wnętrz",
+      "description": "Gładzie, malowanie, podłogi, glazura i zabudowy z dbałością o najwyższą jakość.",
+      "icon": "paint"
+    },
+    {
+      "name": "Budowa domów",
+      "description": "Stany surowe otwarte i zamknięte dla inwestorów indywidualnych.",
+      "icon": "home"
+    },
+    {
+      "name": "Elewacje i docieplenia",
+      "description": "Termomodernizacja i estetyczne elewacje, które obniżają rachunki.",
+      "icon": "shield"
+    }
+  ],
+  "menu": [],
+  "features": [
+    {
+      "title": "Jeden odpowiedzialny wykonawca",
+      "text": "Koordynujemy wszystkie ekipy — masz jeden punkt kontaktu i jasną odpowiedzialność.",
+      "icon": "briefcase"
+    },
+    {
+      "title": "Harmonogram i budżet",
+      "text": "Pracujemy według ustalonego planu i pilnujemy kosztów do końca.",
+      "icon": "clock"
+    },
+    {
+      "title": "Gwarancja i jakość",
+      "text": "Sprawdzone materiały i pisemna gwarancja na wykonane prace.",
+      "icon": "award"
+    }
+  ],
+  "process": [
+    {
+      "title": "Spotkanie",
+      "text": "Oglądamy obiekt i poznajemy Twoje potrzeby."
+    },
+    {
+      "title": "Kosztorys",
+      "text": "Przygotowujemy wycenę i harmonogram."
+    },
+    {
+      "title": "Realizacja",
+      "text": "Prowadzimy prace pod stałym nadzorem."
+    },
+    {
+      "title": "Odbiór",
+      "text": "Przekazujemy gotowy obiekt z gwarancją."
+    }
+  ],
+  "stats": [
+    {
+      "value": "20+",
+      "label": "lat na rynku"
+    },
+    {
+      "value": "450+",
+      "label": "zakończonych realizacji"
+    },
+    {
+      "value": "98%",
+      "label": "klientów z polecenia"
+    },
+    {
+      "value": "5,0",
+      "label": "ocena inwestorów"
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "Remont całego mieszkania w terminie i bez niespodzianek w budżecie. Porządek na budowie każdego dnia.",
+      "author": "Tomasz N.",
+      "role": "Mieszkanie 68 m², Poznań",
+      "rating": 5
+    },
+    {
+      "quote": "Postawili nam dom w stanie surowym zamkniętym dokładnie według harmonogramu. Pełen profesjonalizm.",
+      "author": "Magdalena i Piotr R.",
+      "role": "Dom jednorodzinny",
+      "rating": 5
+    }
+  ],
+  "pricing": [],
+  "faq": [
+    {
+      "q": "Czy prowadzicie remont kompleksowo?",
+      "a": "Tak, realizujemy projekty pod klucz — od projektu, przez wszystkie branże, po sprzątanie."
+    },
+    {
+      "q": "Czy pomagacie w doborze materiałów?",
+      "a": "Tak, doradzamy w wyborze materiałów dopasowanych do budżetu i stylu."
+    },
+    {
+      "q": "Jak wygląda rozliczenie?",
+      "a": "Pracujemy etapami, z jasnym harmonogramem płatności ustalonym w umowie."
+    }
+  ],
+  "hero": {
+    "headline": "Budujemy i remontujemy. Solidnie, od A do Z.",
+    "subheadline": "Kompleksowe remonty i budowy — Poznań i okolice. Jeden wykonawca, jasny harmonogram i trwały efekt.",
+    "badges": [
+      "Jeden wykonawca",
+      "Terminowość",
+      "Gwarancja jakości"
+    ],
+    "image": {
+      "src": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1680&q=70",
+      "alt": "Pracownik budowlany na placu budowy",
+      "mode": "unsplash"
+    }
+  },
+  "about": {
+    "title": "Dlaczego my?",
+    "eyebrow": "O nas",
+    "text": [
+      "Realizujemy remonty i budowy od ponad 20 lat. Działamy kompleksowo, dzięki czemu klient ma jednego, odpowiedzialnego wykonawcę.",
+      "Liczą się dla nas terminy, czystość pracy i trwałość efektu — dlatego większość zleceń trafia do nas z polecenia."
+    ],
+    "points": [
+      "Jeden wykonawca",
+      "Terminowość",
+      "Gwarancja jakości"
+    ],
+    "image": {
+      "src": "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=960&q=72",
+      "alt": "Plac budowy w trakcie realizacji",
+      "mode": "unsplash"
+    }
+  },
+  "cta": {
+    "title": "Planujesz remont lub budowę?",
+    "text": "Umów bezpłatną wycenę — zajmiemy się wszystkim od A do Z."
+  },
+  "seo": {
+    "title": "SolidBud — Remonty i Wykończenia | Poznań",
+    "description": "SolidBud — Remonty i Wykończenia — usługi budowlane i remontowe. Poznań i okolice. Budujemy z głową, wykańczamy z pasją.",
+    "keywords": [
+      "remonty",
+      "budowa",
+      "wykończenia",
+      "firma budowlana",
+      "Poznań"
+    ],
+    "ogImage": null
+  },
+  "rating": "5,0",
+  "reviewCount": 64,
+  "priceRange": null,
+  "hoursWeekly": [
+    {
+      "open": "07:00",
+      "close": "17:00"
+    },
+    {
+      "open": "07:00",
+      "close": "17:00"
+    },
+    {
+      "open": "07:00",
+      "close": "17:00"
+    },
+    {
+      "open": "07:00",
+      "close": "17:00"
+    },
+    {
+      "open": "07:00",
+      "close": "17:00"
+    },
+    {
+      "open": "08:00",
+      "close": "13:00"
+    },
+    null
+  ],
+  "layout": [
+    "header",
+    "hero",
+    "trustbar",
+    "services",
+    "about",
+    "process",
+    "stats",
+    "gallery",
+    "testimonials",
+    "faq",
+    "cta",
+    "contact",
+    "footer",
+    "cookie"
+  ],
+  "meta": {
+    "generator": "demo-stron-pl",
+    "industry": "budowlana",
+    "theme": "bold",
+    "imageMode": "unsplash",
+    "generatedAt": "2026-06-17T17:16:05.035Z",
+    "warnings": []
+  }
+}

@@ -1,6 +1,6 @@
 {
-  "name": "Lodziarnia Amarena",
-  "slug": "lodziarnia-amarena",
+  "name": "Lodziarnia Lodova Kraina-Bolimów",
+  "slug": "lodziarnia-lodova-kraina-bolimow",
   "tagline": null,
   "description": null,
   "industry": "lodziarnia",
@@ -66,53 +66,45 @@
     "primary": "#c12f52",
     "accent": "#79c2a8"
   },
-  "city": "Kościerzyna",
+  "city": "Bolimów",
   "region": null,
-  "serviceArea": "Kościerzyna",
+  "serviceArea": "Bolimów",
   "year": null,
   "url": null,
   "contact": {
-    "phone": "+48 723 817 384",
-    "phoneRaw": "+48 723 817 384",
+    "phone": "+48 669 667 494",
+    "phoneRaw": "+48 669 667 494",
     "phoneValid": true,
     "email": null,
     "address": {
-      "street": "Długa 8",
-      "postalCode": "83-400",
-      "city": "Kościerzyna",
-      "full": "Długa 8, 83-400 Kościerzyna"
+      "street": "Rynek Tadeusza Kościuszki 19",
+      "postalCode": "99-417",
+      "city": "Bolimów",
+      "full": "Rynek Tadeusza Kościuszki 19, 99-417 Bolimów"
     },
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lodziarnia%20Amarena&query_place_id=ChIJVVVxqcl3AkcRluz53ZSk5UY"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lodziarnia%20Lodova%20Kraina-Bolim%C3%B3w&query_place_id=ChIJ--ol6TVfGUcRA53iVk7D4Aw"
   },
   "hours": [
     {
-      "label": "Poniedziałek – Czwartek",
-      "value": "11:00 – 19:00"
+      "label": "Poniedziałek – Piątek",
+      "value": "12:00 – 20:00"
     },
     {
-      "label": "Piątek",
-      "value": "11:00 – 17:30"
-    },
-    {
-      "label": "Sobota",
-      "value": "11:00 – 19:00"
-    },
-    {
-      "label": "Niedziela",
-      "value": "11:00 – 18:00"
+      "label": "Sobota – Niedziela",
+      "value": "11:00 – 20:00"
     }
   ],
   "social": {},
   "legal": {
-    "fullName": "Lodziarnia Amarena",
+    "fullName": "Lodziarnia Lodova Kraina-Bolimów",
     "nip": null,
     "regon": null,
     "privacyUrl": "#polityka-prywatnosci"
   },
   "images": {
     "hero": {
-      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFq531R_Z946EPiQLk3zwy637a_byiwFl_qGxrav5yYx1MtB4bJ7x_5ciXB4P79kwSKOBsZNl2wD5iaGSieePNmPPGMxW3whQQE00Q6wjjenGqSMKrzlbbBK1kS1pVtLpCjfxJAYQ=w1280-h960-k-no",
-      "alt": "Lodziarnia Amarena",
+      "src": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=KoIsjhqxGYmm6yhPRDG50g&cb_client=search.gws-prod.gps&w=408&h=240&yaw=153.85806&pitch=0&thumbfov=100",
+      "alt": "Lodziarnia Lodova Kraina-Bolimów",
       "mode": "custom"
     },
     "about": {
@@ -264,14 +256,24 @@
   ],
   "features": [
     {
-      "title": "Płatność kartą",
+      "title": "Miła atmosfera",
       "text": "",
-      "icon": "shield"
+      "icon": "heart"
     },
     {
-      "title": "Płatności zbliżeniowe",
+      "title": "Spokojne miejsce",
       "text": "",
-      "icon": "shield"
+      "icon": "heart"
+    },
+    {
+      "title": "Szybka obsługa",
+      "text": "",
+      "icon": "clock"
+    },
+    {
+      "title": "Przyjazne dzieciom",
+      "text": "",
+      "icon": "users"
     }
   ],
   "process": [],
@@ -328,14 +330,15 @@
   ],
   "hero": {
     "headline": "Lody, które robimy z głową i sercem.",
-    "subheadline": "Rzemieślnicza lodziarnia — Kościerzyna i okolice. Codziennie świeże lody z naturalnych składników — na miejscu i na wynos.",
+    "subheadline": "Rzemieślnicza lodziarnia — Bolimów i okolice. Codziennie świeże lody z naturalnych składników — na miejscu i na wynos.",
     "badges": [
-      "Płatność kartą",
-      "Płatności zbliżeniowe"
+      "Miła atmosfera",
+      "Spokojne miejsce",
+      "Szybka obsługa"
     ],
     "image": {
-      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFq531R_Z946EPiQLk3zwy637a_byiwFl_qGxrav5yYx1MtB4bJ7x_5ciXB4P79kwSKOBsZNl2wD5iaGSieePNmPPGMxW3whQQE00Q6wjjenGqSMKrzlbbBK1kS1pVtLpCjfxJAYQ=w1280-h960-k-no",
-      "alt": "Lodziarnia Amarena",
+      "src": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=KoIsjhqxGYmm6yhPRDG50g&cb_client=search.gws-prod.gps&w=408&h=240&yaw=153.85806&pitch=0&thumbfov=100",
+      "alt": "Lodziarnia Lodova Kraina-Bolimów",
       "mode": "custom"
     }
   },
@@ -362,49 +365,49 @@
     "text": "Czekamy ze świeżymi, rzemieślniczymi lodami — na miejscu i na wynos."
   },
   "seo": {
-    "title": "Lodziarnia Amarena — Lodziarnia rzemieślnicza | Kościerzyna",
-    "description": "Lodziarnia Amarena — lodziarnia rzemieślnicza. Kościerzyna i okolice. Oferujemy: Lody rzemieślnicze, Sorbety owocowe, Desery lodowe i Lody na wynos.",
+    "title": "Lodziarnia Lodova Kraina-Bolimów | Bolimów",
+    "description": "Lodziarnia Lodova Kraina-Bolimów — lodziarnia rzemieślnicza. Bolimów i okolice. Oferujemy: Lody rzemieślnicze, Sorbety owocowe, Desery lodowe i Lody na wynos.",
     "keywords": [
       "lodziarnia",
       "lody rzemieślnicze",
       "lody naturalne",
       "gelato",
       "desery lodowe",
-      "Kościerzyna"
+      "Bolimów"
     ],
     "ogImage": null
   },
   "rating": "4,9",
-  "reviewCount": 287,
+  "reviewCount": 14,
   "priceRange": null,
   "hoursWeekly": [
     {
-      "open": "11:00",
-      "close": "19:00"
+      "open": "12:00",
+      "close": "20:00"
+    },
+    {
+      "open": "12:00",
+      "close": "20:00"
+    },
+    {
+      "open": "12:00",
+      "close": "20:00"
+    },
+    {
+      "open": "12:00",
+      "close": "20:00"
+    },
+    {
+      "open": "12:00",
+      "close": "20:00"
     },
     {
       "open": "11:00",
-      "close": "19:00"
+      "close": "20:00"
     },
     {
       "open": "11:00",
-      "close": "19:00"
-    },
-    {
-      "open": "11:00",
-      "close": "19:00"
-    },
-    {
-      "open": "11:00",
-      "close": "17:30"
-    },
-    {
-      "open": "11:00",
-      "close": "19:00"
-    },
-    {
-      "open": "11:00",
-      "close": "18:00"
+      "close": "20:00"
     }
   ],
   "layout": [

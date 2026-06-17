@@ -1,6 +1,6 @@
 {
-  "name": "Lodziarnia Amarena",
-  "slug": "lodziarnia-amarena",
+  "name": "Lodziarnia Bazylek",
+  "slug": "lodziarnia-bazylek",
   "tagline": null,
   "description": null,
   "industry": "lodziarnia",
@@ -66,53 +66,41 @@
     "primary": "#c12f52",
     "accent": "#79c2a8"
   },
-  "city": "Kościerzyna",
+  "city": "Hrubieszów",
   "region": null,
-  "serviceArea": "Kościerzyna",
+  "serviceArea": "Hrubieszów",
   "year": null,
   "url": null,
   "contact": {
-    "phone": "+48 723 817 384",
-    "phoneRaw": "+48 723 817 384",
+    "phone": "+48 846 962 342",
+    "phoneRaw": "+48 84 696 23 42",
     "phoneValid": true,
     "email": null,
     "address": {
-      "street": "Długa 8",
-      "postalCode": "83-400",
-      "city": "Kościerzyna",
-      "full": "Długa 8, 83-400 Kościerzyna"
+      "street": "Marszałka Józefa Piłsudskiego 50",
+      "postalCode": "22-500",
+      "city": "Hrubieszów",
+      "full": "Marszałka Józefa Piłsudskiego 50, 22-500 Hrubieszów"
     },
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lodziarnia%20Amarena&query_place_id=ChIJVVVxqcl3AkcRluz53ZSk5UY"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lodziarnia%20Bazylek&query_place_id=ChIJw9ZDEiaPJEcRTLzOPhJFDZY"
   },
   "hours": [
     {
-      "label": "Poniedziałek – Czwartek",
-      "value": "11:00 – 19:00"
-    },
-    {
-      "label": "Piątek",
-      "value": "11:00 – 17:30"
-    },
-    {
-      "label": "Sobota",
-      "value": "11:00 – 19:00"
-    },
-    {
-      "label": "Niedziela",
-      "value": "11:00 – 18:00"
+      "label": "Poniedziałek – Niedziela",
+      "value": "09:00 – 21:00"
     }
   ],
   "social": {},
   "legal": {
-    "fullName": "Lodziarnia Amarena",
+    "fullName": "Lodziarnia Bazylek",
     "nip": null,
     "regon": null,
     "privacyUrl": "#polityka-prywatnosci"
   },
   "images": {
     "hero": {
-      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFq531R_Z946EPiQLk3zwy637a_byiwFl_qGxrav5yYx1MtB4bJ7x_5ciXB4P79kwSKOBsZNl2wD5iaGSieePNmPPGMxW3whQQE00Q6wjjenGqSMKrzlbbBK1kS1pVtLpCjfxJAYQ=w1280-h960-k-no",
-      "alt": "Lodziarnia Amarena",
+      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGHPM7eN8vbRwpN_xBSsb14VjFWcGF1nk3qJ1rhg_61OxvSOQENOgkK1nwP9aKQIFRo1J8ujdINHUpnQ5bPsl-wfbqu2fd2mOTDmpF233B7H6mKiquVPldFM44_WcdqCzw8Lb7Y=w1280-h960-k-no",
+      "alt": "Lodziarnia Bazylek",
       "mode": "custom"
     },
     "about": {
@@ -264,6 +252,26 @@
   ],
   "features": [
     {
+      "title": "Na wynos",
+      "text": "",
+      "icon": "truck"
+    },
+    {
+      "title": "Miła atmosfera",
+      "text": "",
+      "icon": "heart"
+    },
+    {
+      "title": "Spokojne miejsce",
+      "text": "",
+      "icon": "heart"
+    },
+    {
+      "title": "Szybka obsługa",
+      "text": "",
+      "icon": "clock"
+    },
+    {
       "title": "Płatność kartą",
       "text": "",
       "icon": "shield"
@@ -328,14 +336,15 @@
   ],
   "hero": {
     "headline": "Lody, które robimy z głową i sercem.",
-    "subheadline": "Rzemieślnicza lodziarnia — Kościerzyna i okolice. Codziennie świeże lody z naturalnych składników — na miejscu i na wynos.",
+    "subheadline": "Rzemieślnicza lodziarnia — Hrubieszów i okolice. Codziennie świeże lody z naturalnych składników — na miejscu i na wynos.",
     "badges": [
-      "Płatność kartą",
-      "Płatności zbliżeniowe"
+      "Na wynos",
+      "Miła atmosfera",
+      "Spokojne miejsce"
     ],
     "image": {
-      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFq531R_Z946EPiQLk3zwy637a_byiwFl_qGxrav5yYx1MtB4bJ7x_5ciXB4P79kwSKOBsZNl2wD5iaGSieePNmPPGMxW3whQQE00Q6wjjenGqSMKrzlbbBK1kS1pVtLpCjfxJAYQ=w1280-h960-k-no",
-      "alt": "Lodziarnia Amarena",
+      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGHPM7eN8vbRwpN_xBSsb14VjFWcGF1nk3qJ1rhg_61OxvSOQENOgkK1nwP9aKQIFRo1J8ujdINHUpnQ5bPsl-wfbqu2fd2mOTDmpF233B7H6mKiquVPldFM44_WcdqCzw8Lb7Y=w1280-h960-k-no",
+      "alt": "Lodziarnia Bazylek",
       "mode": "custom"
     }
   },
@@ -362,49 +371,49 @@
     "text": "Czekamy ze świeżymi, rzemieślniczymi lodami — na miejscu i na wynos."
   },
   "seo": {
-    "title": "Lodziarnia Amarena — Lodziarnia rzemieślnicza | Kościerzyna",
-    "description": "Lodziarnia Amarena — lodziarnia rzemieślnicza. Kościerzyna i okolice. Oferujemy: Lody rzemieślnicze, Sorbety owocowe, Desery lodowe i Lody na wynos.",
+    "title": "Lodziarnia Bazylek — Lodziarnia rzemieślnicza | Hrubieszów",
+    "description": "Lodziarnia Bazylek — lodziarnia rzemieślnicza. Hrubieszów i okolice. Oferujemy: Lody rzemieślnicze, Sorbety owocowe, Desery lodowe i Lody na wynos.",
     "keywords": [
       "lodziarnia",
       "lody rzemieślnicze",
       "lody naturalne",
       "gelato",
       "desery lodowe",
-      "Kościerzyna"
+      "Hrubieszów"
     ],
     "ogImage": null
   },
   "rating": "4,9",
-  "reviewCount": 287,
+  "reviewCount": 169,
   "priceRange": null,
   "hoursWeekly": [
     {
-      "open": "11:00",
-      "close": "19:00"
+      "open": "09:00",
+      "close": "21:00"
     },
     {
-      "open": "11:00",
-      "close": "19:00"
+      "open": "09:00",
+      "close": "21:00"
     },
     {
-      "open": "11:00",
-      "close": "19:00"
+      "open": "09:00",
+      "close": "21:00"
     },
     {
-      "open": "11:00",
-      "close": "19:00"
+      "open": "09:00",
+      "close": "21:00"
     },
     {
-      "open": "11:00",
-      "close": "17:30"
+      "open": "09:00",
+      "close": "21:00"
     },
     {
-      "open": "11:00",
-      "close": "19:00"
+      "open": "09:00",
+      "close": "21:00"
     },
     {
-      "open": "11:00",
-      "close": "18:00"
+      "open": "09:00",
+      "close": "21:00"
     }
   ],
   "layout": [

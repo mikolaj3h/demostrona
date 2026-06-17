@@ -1,0 +1,345 @@
+{
+  "name": "AquaFix — Hydraulik Kraków",
+  "slug": "aquafix-hydraulik-krakow",
+  "tagline": "Hydraulik z dojazdem 24/7",
+  "description": null,
+  "industry": "hydraulik",
+  "industryLabel": "Usługi hydrauliczne",
+  "schemaType": "Plumber",
+  "servicesHeading": null,
+  "theme": {
+    "id": "corporate",
+    "label": "Korporacyjny",
+    "heroStyle": "split",
+    "font": {
+      "heading": "'IBM Plex Sans', system-ui, -apple-system, Segoe UI, sans-serif",
+      "body": "'Inter', system-ui, -apple-system, Segoe UI, sans-serif",
+      "google": "IBM+Plex+Sans:wght@500;600;700&family=Inter:wght@400;500;600"
+    },
+    "type": {
+      "headingWeight": 700,
+      "headingSpacing": "-0.02em",
+      "headingTransform": "none",
+      "eyebrowSpacing": "0.1em",
+      "eyebrowTransform": "uppercase"
+    },
+    "radius": {
+      "card": "12px",
+      "button": "8px",
+      "input": "8px",
+      "pill": "999px"
+    },
+    "color": {
+      "primary": "#0369a1",
+      "primaryDark": "#035887",
+      "primaryLight": "#6da8c8",
+      "primarySoft": "#e6f0f6",
+      "onPrimary": "#ffffff",
+      "accent": "#0ea5e9",
+      "accentDark": "#0c8ec8",
+      "onAccent": "#0b1220",
+      "ink": "#0f1f33",
+      "inkMuted": "#4a5b71",
+      "bg": "#ffffff",
+      "surface": "#ffffff",
+      "surfaceAlt": "#e7f0f7",
+      "border": "#dde7f0",
+      "footerBg": "#0a1a2b",
+      "footerInk": "#f8fafc",
+      "footerMuted": "#9ea5ad",
+      "heroOverlay": "#091727"
+    },
+    "shadow": {
+      "sm": "0 1px 2px rgba(15, 31, 51, 0.06), 0 1px 3px rgba(15, 31, 51, 0.1)",
+      "card": "0 6px 24px rgba(15, 31, 51, 0.08), 0 1px 2px rgba(15, 31, 51, 0.06)",
+      "hover": "0 18px 48px rgba(15, 31, 51, 0.16), 0 4px 12px rgba(15, 31, 51, 0.08)",
+      "header": "0 4px 20px rgba(15, 31, 51, 0.08)",
+      "button": "0 8px 20px rgba(3, 105, 161, 0.28)"
+    },
+    "_tint": "#0f1f33"
+  },
+  "themeId": "corporate",
+  "brand": {
+    "primary": "#0369a1",
+    "accent": "#0ea5e9"
+  },
+  "city": "Kraków",
+  "region": null,
+  "serviceArea": "Kraków i okolice (do 30 km)",
+  "year": 2009,
+  "url": null,
+  "contact": {
+    "phone": "+48 600 700 800",
+    "phoneRaw": "+48 600 700 800",
+    "phoneValid": true,
+    "email": "kontakt@aquafix-krakow.pl",
+    "address": {
+      "street": "ul. Wodna 12",
+      "postalCode": "30-001",
+      "city": "Kraków",
+      "full": "ul. Wodna 12, 30-001 Kraków"
+    },
+    "mapUrl": null
+  },
+  "hours": [
+    {
+      "label": "Poniedziałek – Piątek",
+      "value": "7:00 – 19:00"
+    },
+    {
+      "label": "Sobota",
+      "value": "8:00 – 16:00"
+    },
+    {
+      "label": "Niedziela i święta",
+      "value": "tylko awarie 24/7"
+    }
+  ],
+  "social": {
+    "facebook": "https://facebook.com/aquafix.krakow",
+    "instagram": "https://instagram.com/aquafix_krakow"
+  },
+  "legal": {
+    "fullName": "AquaFix — Hydraulik Kraków",
+    "nip": "679-001-23-45",
+    "regon": "356789012",
+    "privacyUrl": "#polityka-prywatnosci"
+  },
+  "images": {
+    "hero": {
+      "src": "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&w=1680&q=70",
+      "alt": "Hydraulik podczas pracy przy instalacji",
+      "mode": "unsplash"
+    },
+    "about": {
+      "src": "https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=960&q=72",
+      "alt": "Instalacja rur i armatury hydraulicznej",
+      "mode": "unsplash"
+    },
+    "gallery": [
+      {
+        "src": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=900&q=70",
+        "alt": "Naprawa instalacji wodnej",
+        "mode": "unsplash"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=900&q=70",
+        "alt": "Profesjonalne narzędzia hydrauliczne",
+        "mode": "unsplash"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=900&q=70",
+        "alt": "Sprzęt i narzędzia do prac instalacyjnych",
+        "mode": "unsplash"
+      }
+    ]
+  },
+  "services": [
+    {
+      "name": "Awarie 24/7",
+      "description": "Pęknięta rura, zalanie, brak ciepłej wody? Przyjeżdżamy o każdej porze, także w weekendy i święta.",
+      "icon": "droplet"
+    },
+    {
+      "name": "Instalacje wod-kan",
+      "description": "Projekt i montaż instalacji wodnych oraz kanalizacyjnych w domach i mieszkaniach.",
+      "icon": "wrench"
+    },
+    {
+      "name": "Montaż armatury",
+      "description": "Baterie, umywalki, WC, wanny i kabiny prysznicowe — szczelnie i estetycznie.",
+      "icon": "cog"
+    },
+    {
+      "name": "Ogrzewanie i kotły",
+      "description": "Montaż i serwis pieców, grzejników oraz ogrzewania podłogowego.",
+      "icon": "flame"
+    }
+  ],
+  "menu": [],
+  "features": [
+    {
+      "title": "Dojazd tego samego dnia",
+      "text": "W nagłych awariach jesteśmy u Ciebie w kilkadziesiąt minut.",
+      "icon": "clock"
+    },
+    {
+      "title": "Gwarancja na pracę",
+      "text": "Każdą usługę obejmujemy pisemną gwarancją.",
+      "icon": "shield"
+    },
+    {
+      "title": "Uczciwa wycena",
+      "text": "Cena ustalana przed pracą — bez ukrytych kosztów.",
+      "icon": "check"
+    }
+  ],
+  "process": [
+    {
+      "title": "Zgłoszenie",
+      "text": "Dzwonisz lub piszesz — opisujesz problem."
+    },
+    {
+      "title": "Wycena",
+      "text": "Podajemy orientacyjny koszt i termin."
+    },
+    {
+      "title": "Naprawa",
+      "text": "Przyjeżdżamy z częściami i usuwamy usterkę."
+    },
+    {
+      "title": "Gwarancja",
+      "text": "Otrzymujesz gwarancję na wykonaną pracę."
+    }
+  ],
+  "stats": [
+    {
+      "value": "16+",
+      "label": "lat doświadczenia"
+    },
+    {
+      "value": "6000+",
+      "label": "wykonanych zleceń"
+    },
+    {
+      "value": "24/7",
+      "label": "dostępność przy awariach"
+    },
+    {
+      "value": "4,9",
+      "label": "średnia ocen Google"
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "Zalało mi łazienkę w sobotę wieczorem. Pan przyjechał w 35 minut i opanował sytuację. Złota rączka!",
+      "author": "Marek W.",
+      "role": "Klient z Krakowa",
+      "rating": 5
+    },
+    {
+      "quote": "Kompleksowy montaż instalacji w nowym domu — czysto, terminowo i bez żadnych poprawek.",
+      "author": "Anna K.",
+      "role": "Dom jednorodzinny, Wieliczka",
+      "rating": 5
+    }
+  ],
+  "pricing": [],
+  "faq": [
+    {
+      "q": "Czy przyjeżdżacie w nocy i w weekendy?",
+      "a": "Tak, awarie obsługujemy całą dobę, 7 dni w tygodniu, również w święta."
+    },
+    {
+      "q": "Ile kosztuje dojazd?",
+      "a": "Dojazd na terenie miasta jest bezpłatny przy zleceniu naprawy. Wycenę podajemy przed rozpoczęciem prac."
+    },
+    {
+      "q": "Czy wystawiacie faktury?",
+      "a": "Tak, wystawiamy faktury VAT zarówno dla klientów indywidualnych, jak i firm."
+    }
+  ],
+  "hero": {
+    "headline": "Awaria? Naprawimy szybciej, niż myślisz.",
+    "subheadline": "Hydraulik z dojazdem — Kraków i okolice. Usuwamy awarie, montujemy instalacje i dajemy gwarancję na każdą usługę.",
+    "badges": [
+      "Dojazd tego samego dnia",
+      "Gwarancja na pracę",
+      "Uczciwa wycena"
+    ],
+    "image": {
+      "src": "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&w=1680&q=70",
+      "alt": "Hydraulik podczas pracy przy instalacji",
+      "mode": "unsplash"
+    }
+  },
+  "about": {
+    "title": "Dlaczego my?",
+    "eyebrow": "O nas",
+    "text": [
+      "Od ponad 15 lat pomagamy mieszkańcom i firmom radzić sobie z awariami oraz montażem instalacji. Łączymy doświadczenie z nowoczesnym sprzętem i uczciwym podejściem.",
+      "Działamy szybko, bo wiemy, że woda nie czeka. Każde zlecenie traktujemy tak, jakby chodziło o nasz własny dom."
+    ],
+    "points": [
+      "Dojazd tego samego dnia",
+      "Gwarancja na pracę",
+      "Uczciwa wycena"
+    ],
+    "image": {
+      "src": "https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=960&q=72",
+      "alt": "Instalacja rur i armatury hydraulicznej",
+      "mode": "unsplash"
+    }
+  },
+  "cta": {
+    "title": "Masz awarię? Zadzwoń teraz.",
+    "text": "Przyjedziemy jeszcze dziś i przywrócimy sprawność Twojej instalacji."
+  },
+  "seo": {
+    "title": "AquaFix — Hydraulik Kraków — Usługi hydrauliczne | Kraków",
+    "description": "AquaFix — Hydraulik Kraków — usługi hydrauliczne. Kraków i okolice. Hydraulik z dojazdem 24/7.",
+    "keywords": [
+      "hydraulik",
+      "awaria",
+      "instalacje wodne",
+      "naprawa",
+      "montaż",
+      "Kraków"
+    ],
+    "ogImage": null
+  },
+  "rating": "4,9",
+  "reviewCount": 247,
+  "priceRange": null,
+  "hoursWeekly": [
+    {
+      "open": "07:00",
+      "close": "19:00"
+    },
+    {
+      "open": "07:00",
+      "close": "19:00"
+    },
+    {
+      "open": "07:00",
+      "close": "19:00"
+    },
+    {
+      "open": "07:00",
+      "close": "19:00"
+    },
+    {
+      "open": "07:00",
+      "close": "19:00"
+    },
+    {
+      "open": "08:00",
+      "close": "16:00"
+    },
+    null
+  ],
+  "layout": [
+    "header",
+    "hero",
+    "trustbar",
+    "services",
+    "about",
+    "process",
+    "stats",
+    "gallery",
+    "testimonials",
+    "faq",
+    "cta",
+    "contact",
+    "footer",
+    "cookie"
+  ],
+  "meta": {
+    "generator": "demo-stron-pl",
+    "industry": "hydraulik",
+    "theme": "corporate",
+    "imageMode": "unsplash",
+    "generatedAt": "2026-06-17T17:16:05.035Z",
+    "warnings": []
+  }
+}

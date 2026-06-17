@@ -1,6 +1,6 @@
 {
-  "name": "Lodziarnia Amarena",
-  "slug": "lodziarnia-amarena",
+  "name": "Lodziarnia OLKA Ostróda",
+  "slug": "lodziarnia-olka-ostroda",
   "tagline": null,
   "description": null,
   "industry": "lodziarnia",
@@ -66,53 +66,41 @@
     "primary": "#c12f52",
     "accent": "#79c2a8"
   },
-  "city": "Kościerzyna",
+  "city": "Ostróda",
   "region": null,
-  "serviceArea": "Kościerzyna",
+  "serviceArea": "Ostróda",
   "year": null,
   "url": null,
   "contact": {
-    "phone": "+48 723 817 384",
-    "phoneRaw": "+48 723 817 384",
+    "phone": "+48 513 149 844",
+    "phoneRaw": "+48 513 149 844",
     "phoneValid": true,
     "email": null,
     "address": {
-      "street": "Długa 8",
-      "postalCode": "83-400",
-      "city": "Kościerzyna",
-      "full": "Długa 8, 83-400 Kościerzyna"
+      "street": "Adama Mickiewicza 13B",
+      "postalCode": "14-100",
+      "city": "Ostróda",
+      "full": "Adama Mickiewicza 13B, 14-100 Ostróda"
     },
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lodziarnia%20Amarena&query_place_id=ChIJVVVxqcl3AkcRluz53ZSk5UY"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lodziarnia%20OLKA%20Ostr%C3%B3da&query_place_id=ChIJmU3bvepkHUcRdobBI8brRr8"
   },
   "hours": [
     {
-      "label": "Poniedziałek – Czwartek",
-      "value": "11:00 – 19:00"
-    },
-    {
-      "label": "Piątek",
-      "value": "11:00 – 17:30"
-    },
-    {
-      "label": "Sobota",
-      "value": "11:00 – 19:00"
-    },
-    {
-      "label": "Niedziela",
-      "value": "11:00 – 18:00"
+      "label": "Poniedziałek – Niedziela",
+      "value": "10:00 – 20:00"
     }
   ],
   "social": {},
   "legal": {
-    "fullName": "Lodziarnia Amarena",
+    "fullName": "Lodziarnia OLKA Ostróda",
     "nip": null,
     "regon": null,
     "privacyUrl": "#polityka-prywatnosci"
   },
   "images": {
     "hero": {
-      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFq531R_Z946EPiQLk3zwy637a_byiwFl_qGxrav5yYx1MtB4bJ7x_5ciXB4P79kwSKOBsZNl2wD5iaGSieePNmPPGMxW3whQQE00Q6wjjenGqSMKrzlbbBK1kS1pVtLpCjfxJAYQ=w1280-h960-k-no",
-      "alt": "Lodziarnia Amarena",
+      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEbzQhht0AhIVngcNavOvtZpm4ou25QwcWixW0_bZS7XBDPpQp1FtyeKW2hd-uuYTJH_9bWfWa9vBzQnl3rYnDSbQhlu05j4BYJwoN_Kw6kzB1a9d320kCkvEMKnzRn2a3pPPLfHQ25Kss=w1280-h960-k-no",
+      "alt": "Lodziarnia OLKA Ostróda",
       "mode": "custom"
     },
     "about": {
@@ -264,14 +252,9 @@
   ],
   "features": [
     {
-      "title": "Płatność kartą",
+      "title": "Dostępne dla wózków",
       "text": "",
-      "icon": "shield"
-    },
-    {
-      "title": "Płatności zbliżeniowe",
-      "text": "",
-      "icon": "shield"
+      "icon": "check"
     }
   ],
   "process": [],
@@ -328,14 +311,13 @@
   ],
   "hero": {
     "headline": "Lody, które robimy z głową i sercem.",
-    "subheadline": "Rzemieślnicza lodziarnia — Kościerzyna i okolice. Codziennie świeże lody z naturalnych składników — na miejscu i na wynos.",
+    "subheadline": "Rzemieślnicza lodziarnia — Ostróda i okolice. Codziennie świeże lody z naturalnych składników — na miejscu i na wynos.",
     "badges": [
-      "Płatność kartą",
-      "Płatności zbliżeniowe"
+      "Dostępne dla wózków"
     ],
     "image": {
-      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFq531R_Z946EPiQLk3zwy637a_byiwFl_qGxrav5yYx1MtB4bJ7x_5ciXB4P79kwSKOBsZNl2wD5iaGSieePNmPPGMxW3whQQE00Q6wjjenGqSMKrzlbbBK1kS1pVtLpCjfxJAYQ=w1280-h960-k-no",
-      "alt": "Lodziarnia Amarena",
+      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEbzQhht0AhIVngcNavOvtZpm4ou25QwcWixW0_bZS7XBDPpQp1FtyeKW2hd-uuYTJH_9bWfWa9vBzQnl3rYnDSbQhlu05j4BYJwoN_Kw6kzB1a9d320kCkvEMKnzRn2a3pPPLfHQ25Kss=w1280-h960-k-no",
+      "alt": "Lodziarnia OLKA Ostróda",
       "mode": "custom"
     }
   },
@@ -362,49 +344,49 @@
     "text": "Czekamy ze świeżymi, rzemieślniczymi lodami — na miejscu i na wynos."
   },
   "seo": {
-    "title": "Lodziarnia Amarena — Lodziarnia rzemieślnicza | Kościerzyna",
-    "description": "Lodziarnia Amarena — lodziarnia rzemieślnicza. Kościerzyna i okolice. Oferujemy: Lody rzemieślnicze, Sorbety owocowe, Desery lodowe i Lody na wynos.",
+    "title": "Lodziarnia OLKA Ostróda — Lodziarnia rzemieślnicza | Ostróda",
+    "description": "Lodziarnia OLKA Ostróda — lodziarnia rzemieślnicza. Ostróda i okolice. Oferujemy: Lody rzemieślnicze, Sorbety owocowe, Desery lodowe i Lody na wynos.",
     "keywords": [
       "lodziarnia",
       "lody rzemieślnicze",
       "lody naturalne",
       "gelato",
       "desery lodowe",
-      "Kościerzyna"
+      "Ostróda"
     ],
     "ogImage": null
   },
   "rating": "4,9",
-  "reviewCount": 287,
+  "reviewCount": 371,
   "priceRange": null,
   "hoursWeekly": [
     {
-      "open": "11:00",
-      "close": "19:00"
+      "open": "10:00",
+      "close": "20:00"
     },
     {
-      "open": "11:00",
-      "close": "19:00"
+      "open": "10:00",
+      "close": "20:00"
     },
     {
-      "open": "11:00",
-      "close": "19:00"
+      "open": "10:00",
+      "close": "20:00"
     },
     {
-      "open": "11:00",
-      "close": "19:00"
+      "open": "10:00",
+      "close": "20:00"
     },
     {
-      "open": "11:00",
-      "close": "17:30"
+      "open": "10:00",
+      "close": "20:00"
     },
     {
-      "open": "11:00",
-      "close": "19:00"
+      "open": "10:00",
+      "close": "20:00"
     },
     {
-      "open": "11:00",
-      "close": "18:00"
+      "open": "10:00",
+      "close": "20:00"
     }
   ],
   "layout": [

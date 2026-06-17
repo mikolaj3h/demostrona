@@ -1,0 +1,364 @@
+{
+  "name": "Studio Glamour",
+  "slug": "studio-glamour",
+  "tagline": "Twój moment piękna",
+  "description": null,
+  "industry": "fryzjer",
+  "industryLabel": "Salon fryzjersko-kosmetyczny",
+  "schemaType": "HairSalon",
+  "servicesHeading": null,
+  "theme": {
+    "id": "elegant",
+    "label": "Elegancki",
+    "heroStyle": "overlay",
+    "font": {
+      "heading": "'Fraunces', Georgia, 'Times New Roman', serif",
+      "body": "'Inter', system-ui, -apple-system, Segoe UI, sans-serif",
+      "google": "Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600"
+    },
+    "type": {
+      "headingWeight": 600,
+      "headingSpacing": "-0.01em",
+      "headingTransform": "none",
+      "eyebrowSpacing": "0.22em",
+      "eyebrowTransform": "uppercase"
+    },
+    "radius": {
+      "card": "8px",
+      "button": "6px",
+      "input": "6px",
+      "pill": "999px"
+    },
+    "color": {
+      "primary": "#9d174d",
+      "primaryDark": "#841341",
+      "primaryLight": "#c67898",
+      "primarySoft": "#f5e8ed",
+      "onPrimary": "#ffffff",
+      "accent": "#e879a6",
+      "accentDark": "#c8688f",
+      "onAccent": "#0b1220",
+      "ink": "#1c1a17",
+      "inkMuted": "#5f594f",
+      "bg": "#fbfaf7",
+      "surface": "#ffffff",
+      "surfaceAlt": "#f1e8e4",
+      "border": "#e7e1d6",
+      "footerBg": "#1b1916",
+      "footerInk": "#f8fafc",
+      "footerMuted": "#a4a5a5",
+      "heroOverlay": "#181714"
+    },
+    "shadow": {
+      "sm": "0 1px 2px rgba(43, 38, 32, 0.06), 0 1px 3px rgba(43, 38, 32, 0.1)",
+      "card": "0 6px 24px rgba(43, 38, 32, 0.08), 0 1px 2px rgba(43, 38, 32, 0.06)",
+      "hover": "0 18px 48px rgba(43, 38, 32, 0.16), 0 4px 12px rgba(43, 38, 32, 0.08)",
+      "header": "0 4px 20px rgba(43, 38, 32, 0.08)",
+      "button": "0 8px 20px rgba(157, 23, 77, 0.28)"
+    },
+    "_tint": "#2b2620"
+  },
+  "themeId": "elegant",
+  "brand": {
+    "primary": "#9d174d",
+    "accent": "#e879a6"
+  },
+  "city": "Łódź",
+  "region": null,
+  "serviceArea": "Łódź",
+  "year": 2017,
+  "url": "https://studioglamour.pl",
+  "contact": {
+    "phone": "+48 426 332 211",
+    "phoneRaw": "+48 42 633 22 11",
+    "phoneValid": true,
+    "email": "rezerwacje@studioglamour.pl",
+    "address": {
+      "street": "ul. Piotrkowska 120",
+      "postalCode": "90-006",
+      "city": "Łódź",
+      "full": "ul. Piotrkowska 120, 90-006 Łódź"
+    },
+    "mapUrl": null
+  },
+  "hours": [
+    {
+      "label": "Poniedziałek – Piątek",
+      "value": "9:00 – 20:00"
+    },
+    {
+      "label": "Sobota",
+      "value": "9:00 – 16:00"
+    },
+    {
+      "label": "Niedziela",
+      "value": "nieczynne"
+    }
+  ],
+  "social": {
+    "instagram": "https://instagram.com/studioglamour.lodz",
+    "facebook": "https://facebook.com/studioglamour.lodz",
+    "tiktok": "https://tiktok.com/@studioglamour"
+  },
+  "legal": {
+    "fullName": "Studio Glamour",
+    "nip": "725-234-56-78",
+    "regon": null,
+    "privacyUrl": "#polityka-prywatnosci"
+  },
+  "images": {
+    "hero": {
+      "src": "https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1680&q=70",
+      "alt": "Stylizacja włosów w salonie fryzjerskim",
+      "mode": "unsplash"
+    },
+    "about": {
+      "src": "https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=960&q=72",
+      "alt": "Wnętrze nowoczesnego salonu urody",
+      "mode": "unsplash"
+    },
+    "gallery": [
+      {
+        "src": "https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=900&q=70",
+        "alt": "Profesjonalne strzyżenie",
+        "mode": "unsplash"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=900&q=70",
+        "alt": "Stanowisko fryzjerskie",
+        "mode": "unsplash"
+      }
+    ]
+  },
+  "services": [
+    {
+      "name": "Strzyżenie i modelowanie",
+      "description": "Fryzury dopasowane do Twojego stylu, struktury włosów i kształtu twarzy.",
+      "icon": "scissors"
+    },
+    {
+      "name": "Koloryzacja",
+      "description": "Balayage, sombre, refleksy i pełna koloryzacja na profesjonalnych kosmetykach.",
+      "icon": "sparkles"
+    },
+    {
+      "name": "Pielęgnacja i regeneracja",
+      "description": "Zabiegi keratynowe i botoks na włosy, które przywracają blask i kondycję.",
+      "icon": "heart"
+    },
+    {
+      "name": "Stylizacja okolicznościowa",
+      "description": "Upięcia ślubne i wieczorowe oraz makijaż na wyjątkowe okazje.",
+      "icon": "star"
+    }
+  ],
+  "menu": [],
+  "features": [
+    {
+      "title": "Doświadczeni styliści",
+      "text": "Zespół, który stale podnosi kwalifikacje.",
+      "icon": "award"
+    },
+    {
+      "title": "Rezerwacja online",
+      "text": "Umów wizytę w kilka sekund, o każdej porze.",
+      "icon": "calendar"
+    },
+    {
+      "title": "Najlepsze kosmetyki",
+      "text": "Pracujemy na produktach renomowanych marek.",
+      "icon": "sparkles"
+    }
+  ],
+  "process": [],
+  "stats": [
+    {
+      "value": "11",
+      "label": "lat doświadczenia"
+    },
+    {
+      "value": "15k+",
+      "label": "zadowolonych klientek"
+    },
+    {
+      "value": "8",
+      "label": "stylistów w zespole"
+    },
+    {
+      "value": "5,0",
+      "label": "ocena w Google"
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "Najlepszy balayage w Łodzi! Dziewczyny zawsze doradzą i wychodzę stąd zachwycona.",
+      "author": "Karolina M.",
+      "role": "Stała klientka",
+      "rating": 5
+    },
+    {
+      "quote": "Stylizacja ślubna idealna — fryzura wytrzymała do końca wesela, a makijaż wyglądał pięknie na zdjęciach.",
+      "author": "Dominika F.",
+      "role": "Panna młoda",
+      "rating": 5
+    }
+  ],
+  "pricing": [
+    {
+      "name": "Strzyżenie damskie",
+      "price": "od 90 zł",
+      "period": "/ wizyta",
+      "features": [
+        "Konsultacja",
+        "Mycie i pielęgnacja",
+        "Strzyżenie",
+        "Modelowanie"
+      ],
+      "featured": false,
+      "cta": "Wybieram"
+    },
+    {
+      "name": "Koloryzacja + strzyżenie",
+      "price": "od 220 zł",
+      "period": "/ wizyta",
+      "features": [
+        "Dobór koloru",
+        "Profesjonalna koloryzacja",
+        "Strzyżenie",
+        "Stylizacja",
+        "Porada pielęgnacyjna"
+      ],
+      "featured": true,
+      "cta": "Wybieram"
+    },
+    {
+      "name": "Stylizacja ślubna",
+      "price": "od 350 zł",
+      "period": "/ pakiet",
+      "features": [
+        "Próbne upięcie",
+        "Upięcie w dniu ślubu",
+        "Makijaż okolicznościowy"
+      ],
+      "featured": false,
+      "cta": "Wybieram"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Czy mogę umówić wizytę online?",
+      "a": "Tak, rezerwacja online jest dostępna przez całą dobę."
+    },
+    {
+      "q": "Czy robicie stylizacje ślubne?",
+      "a": "Tak, oferujemy próbne upięcia oraz makijaż na dzień ślubu."
+    },
+    {
+      "q": "Jakich kosmetyków używacie?",
+      "a": "Pracujemy wyłącznie na profesjonalnych kosmetykach renomowanych marek."
+    }
+  ],
+  "hero": {
+    "headline": "Poczuj się wyjątkowo. Od pierwszej wizyty.",
+    "subheadline": "Salon fryzjersko-kosmetyczny — Łódź i okolice. Strzyżenie, koloryzacja i stylizacja w rękach doświadczonych specjalistów.",
+    "badges": [
+      "Doświadczeni styliści",
+      "Rezerwacja online",
+      "Najlepsze kosmetyki"
+    ],
+    "image": {
+      "src": "https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1680&q=70",
+      "alt": "Stylizacja włosów w salonie fryzjerskim",
+      "mode": "unsplash"
+    }
+  },
+  "about": {
+    "title": "Dlaczego my?",
+    "eyebrow": "O nas",
+    "text": [
+      "Nasz salon to miejsce, w którym łączymy modę, pielęgnację i relaks. Słuchamy i doradzamy, by efekt zachwycał Ciebie, nie tylko nas.",
+      "Dbamy o każdy detal — od powitania po ostatnie pociągnięcie grzebieniem."
+    ],
+    "points": [
+      "Doświadczeni styliści",
+      "Rezerwacja online",
+      "Najlepsze kosmetyki"
+    ],
+    "image": {
+      "src": "https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=960&q=72",
+      "alt": "Wnętrze nowoczesnego salonu urody",
+      "mode": "unsplash"
+    }
+  },
+  "cta": {
+    "title": "Czas na metamorfozę.",
+    "text": "Zarezerwuj wizytę online i poczuj się wyjątkowo."
+  },
+  "seo": {
+    "title": "Studio Glamour — Salon fryzjersko-kosmetyczny | Łódź",
+    "description": "Studio Glamour — salon fryzjersko-kosmetyczny. Łódź i okolice. Twój moment piękna.",
+    "keywords": [
+      "salon",
+      "fryzjer",
+      "strzyżenie",
+      "koloryzacja",
+      "stylizacja",
+      "Łódź"
+    ],
+    "ogImage": null
+  },
+  "rating": "5,0",
+  "reviewCount": 531,
+  "priceRange": "90–350 zł",
+  "hoursWeekly": [
+    {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    {
+      "open": "09:00",
+      "close": "20:00"
+    },
+    {
+      "open": "09:00",
+      "close": "16:00"
+    },
+    null
+  ],
+  "layout": [
+    "header",
+    "hero",
+    "trustbar",
+    "services",
+    "about",
+    "stats",
+    "gallery",
+    "testimonials",
+    "pricing",
+    "faq",
+    "cta",
+    "contact",
+    "footer",
+    "cookie"
+  ],
+  "meta": {
+    "generator": "demo-stron-pl",
+    "industry": "fryzjer",
+    "theme": "elegant",
+    "imageMode": "unsplash",
+    "generatedAt": "2026-06-17T17:16:05.035Z",
+    "warnings": []
+  }
+}
