@@ -1,6 +1,6 @@
 {
-  "name": "Lodziarnia Miś",
-  "slug": "lodziarnia-mis",
+  "name": "Lodziarnia Chiszczyńska",
+  "slug": "lodziarnia-chiszczynska",
   "tagline": null,
   "description": null,
   "industry": "lodziarnia",
@@ -66,45 +66,41 @@
     "primary": "#c12f52",
     "accent": "#79c2a8"
   },
-  "city": "Rowy",
+  "city": "Puławy",
   "region": null,
-  "serviceArea": "Rowy",
+  "serviceArea": "Puławy",
   "year": null,
   "url": null,
   "contact": {
-    "phone": "+48 697 322 068",
-    "phoneRaw": "+48 697 322 068",
+    "phone": "+48 695 344 645",
+    "phoneRaw": "+48 695 344 645",
     "phoneValid": true,
     "email": null,
     "address": {
-      "street": "Wczasowa 1E",
-      "postalCode": "76-212",
-      "city": "Rowy",
-      "full": "Wczasowa 1E, 76-212 Rowy"
+      "street": "Polskiego Czerwonego Krzyża 4",
+      "postalCode": "24-100",
+      "city": "Puławy",
+      "full": "Polskiego Czerwonego Krzyża 4, 24-100 Puławy"
     },
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lodziarnia%20Mi%C5%9B&query_place_id=ChIJV4A0AQlr_kYRbS-fquj3nDk"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lodziarnia%20Chiszczy%C5%84ska&query_place_id=ChIJ-eBpQECcGEcRQ8L4XrPxOfE"
   },
   "hours": [
     {
-      "label": "Poniedziałek – Piątek",
-      "value": "10:00 – 18:00"
-    },
-    {
-      "label": "Sobota – Niedziela",
-      "value": "10:00 – 20:00"
+      "label": "Poniedziałek – Niedziela",
+      "value": "11:00 – 19:00"
     }
   ],
   "social": {},
   "legal": {
-    "fullName": "Lodziarnia Miś",
+    "fullName": "Lodziarnia Chiszczyńska",
     "nip": null,
     "regon": null,
     "privacyUrl": "#polityka-prywatnosci"
   },
   "images": {
     "hero": {
-      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAG0y1GqGJOoouESDlGA5M8G3xdh_y7BAx0OpTBoNZ3ohyNuByltXfNW7Hvv4qy4kwjVn6oF2MbnZ3pHZ_PI30nxZv0CatpI75hWvyrWg-4G1G9iv0G-Yeckly_FxzrMaMorTbG7=w1280-h960-k-no",
-      "alt": "Lodziarnia Miś",
+      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGMpIz75OxSI8-YCONHLzDINzDijQFEnN8jqA7qOTg306dNsJxXx_r3JbxtqIiz-IQjyyEq_tXR19viWHTaxJmY0JSR9Iapoi_gm3u9dta4EjEp15fuOha-W0eFI7QjcRPGVypYNj47oQtP=w1280-h960-k-no",
+      "alt": "Lodziarnia Chiszczyńska",
       "mode": "custom"
     },
     "about": {
@@ -256,32 +252,12 @@
   ],
   "features": [
     {
-      "title": "Dostępne dla wózków",
-      "text": "",
-      "icon": "check"
-    },
-    {
-      "title": "Toaleta",
-      "text": "",
-      "icon": "check"
-    },
-    {
-      "title": "Miła atmosfera",
-      "text": "",
-      "icon": "heart"
-    },
-    {
-      "title": "Spokojne miejsce",
-      "text": "",
-      "icon": "heart"
-    },
-    {
-      "title": "Szybka obsługa",
-      "text": "",
-      "icon": "clock"
-    },
-    {
       "title": "Płatność kartą",
+      "text": "",
+      "icon": "shield"
+    },
+    {
+      "title": "Płatności zbliżeniowe",
       "text": "",
       "icon": "shield"
     }
@@ -340,15 +316,14 @@
   ],
   "hero": {
     "headline": "Lody, które robimy z głową i sercem.",
-    "subheadline": "Rzemieślnicza lodziarnia — Rowy i okolice. Codziennie świeże lody z naturalnych składników — na miejscu i na wynos.",
+    "subheadline": "Rzemieślnicza lodziarnia — Puławy i okolice. Codziennie świeże lody z naturalnych składników — na miejscu i na wynos.",
     "badges": [
-      "Dostępne dla wózków",
-      "Toaleta",
-      "Miła atmosfera"
+      "Płatność kartą",
+      "Płatności zbliżeniowe"
     ],
     "image": {
-      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAG0y1GqGJOoouESDlGA5M8G3xdh_y7BAx0OpTBoNZ3ohyNuByltXfNW7Hvv4qy4kwjVn6oF2MbnZ3pHZ_PI30nxZv0CatpI75hWvyrWg-4G1G9iv0G-Yeckly_FxzrMaMorTbG7=w1280-h960-k-no",
-      "alt": "Lodziarnia Miś",
+      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGMpIz75OxSI8-YCONHLzDINzDijQFEnN8jqA7qOTg306dNsJxXx_r3JbxtqIiz-IQjyyEq_tXR19viWHTaxJmY0JSR9Iapoi_gm3u9dta4EjEp15fuOha-W0eFI7QjcRPGVypYNj47oQtP=w1280-h960-k-no",
+      "alt": "Lodziarnia Chiszczyńska",
       "mode": "custom"
     }
   },
@@ -375,49 +350,49 @@
     "text": "Czekamy ze świeżymi, rzemieślniczymi lodami — na miejscu i na wynos."
   },
   "seo": {
-    "title": "Lodziarnia Miś — Lodziarnia rzemieślnicza | Rowy",
-    "description": "Lodziarnia Miś — lodziarnia rzemieślnicza. Rowy i okolice. Oferujemy: Lody rzemieślnicze, Sorbety owocowe, Desery lodowe i Lody na wynos.",
+    "title": "Lodziarnia Chiszczyńska — Lodziarnia rzemieślnicza | Puławy",
+    "description": "Lodziarnia Chiszczyńska — lodziarnia rzemieślnicza. Puławy i okolice. Oferujemy: Lody rzemieślnicze, Sorbety owocowe, Desery lodowe i Lody na wynos.",
     "keywords": [
       "lodziarnia",
       "lody rzemieślnicze",
       "lody naturalne",
       "gelato",
       "desery lodowe",
-      "Rowy"
+      "Puławy"
     ],
     "ogImage": null
   },
   "rating": "4,9",
-  "reviewCount": 192,
+  "reviewCount": 82,
   "priceRange": null,
   "hoursWeekly": [
     {
-      "open": "10:00",
-      "close": "18:00"
+      "open": "11:00",
+      "close": "19:00"
     },
     {
-      "open": "10:00",
-      "close": "18:00"
+      "open": "11:00",
+      "close": "19:00"
     },
     {
-      "open": "10:00",
-      "close": "18:00"
+      "open": "11:00",
+      "close": "19:00"
     },
     {
-      "open": "10:00",
-      "close": "18:00"
+      "open": "11:00",
+      "close": "19:00"
     },
     {
-      "open": "10:00",
-      "close": "18:00"
+      "open": "11:00",
+      "close": "19:00"
     },
     {
-      "open": "10:00",
-      "close": "20:00"
+      "open": "11:00",
+      "close": "19:00"
     },
     {
-      "open": "10:00",
-      "close": "20:00"
+      "open": "11:00",
+      "close": "19:00"
     }
   ],
   "layout": [

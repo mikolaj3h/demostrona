@@ -1,6 +1,6 @@
 {
-  "name": "Lodziarnia Miś",
-  "slug": "lodziarnia-mis",
+  "name": "Lodziarnia Lodówka",
+  "slug": "lodziarnia-lodowka",
   "tagline": null,
   "description": null,
   "industry": "lodziarnia",
@@ -66,45 +66,45 @@
     "primary": "#c12f52",
     "accent": "#79c2a8"
   },
-  "city": "Rowy",
+  "city": "Warszawa",
   "region": null,
-  "serviceArea": "Rowy",
+  "serviceArea": "Warszawa",
   "year": null,
   "url": null,
   "contact": {
-    "phone": "+48 697 322 068",
-    "phoneRaw": "+48 697 322 068",
+    "phone": "+48 882 838 622",
+    "phoneRaw": "+48 882 838 622",
     "phoneValid": true,
     "email": null,
     "address": {
-      "street": "Wczasowa 1E",
-      "postalCode": "76-212",
-      "city": "Rowy",
-      "full": "Wczasowa 1E, 76-212 Rowy"
+      "street": "Krzyżówki 3",
+      "postalCode": "03-193",
+      "city": "Warszawa",
+      "full": "Krzyżówki 3, 03-193 Warszawa"
     },
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lodziarnia%20Mi%C5%9B&query_place_id=ChIJV4A0AQlr_kYRbS-fquj3nDk"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lodziarnia%20Lod%C3%B3wka&query_place_id=ChIJJTNd4lzJHkcRXsjEFw_WBqE"
   },
   "hours": [
     {
       "label": "Poniedziałek – Piątek",
-      "value": "10:00 – 18:00"
+      "value": "12:00 – 19:00"
     },
     {
       "label": "Sobota – Niedziela",
-      "value": "10:00 – 20:00"
+      "value": "11:00 – 19:00"
     }
   ],
   "social": {},
   "legal": {
-    "fullName": "Lodziarnia Miś",
+    "fullName": "Lodziarnia Lodówka",
     "nip": null,
     "regon": null,
     "privacyUrl": "#polityka-prywatnosci"
   },
   "images": {
     "hero": {
-      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAG0y1GqGJOoouESDlGA5M8G3xdh_y7BAx0OpTBoNZ3ohyNuByltXfNW7Hvv4qy4kwjVn6oF2MbnZ3pHZ_PI30nxZv0CatpI75hWvyrWg-4G1G9iv0G-Yeckly_FxzrMaMorTbG7=w1280-h960-k-no",
-      "alt": "Lodziarnia Miś",
+      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEdIG98t4uEDx1SoLG-78XtRrU4KtcRy8C5AL_QGj_ZLBI8Kh3s4b4o0sjg3IvFE06OzE64mksL7wHMQn39hy1LGZbgAGal76DnjUF9HDLxsCMa_z5o5pe2V2V3vjvU7HVSeYW3Pg=w1280-h960-k-no",
+      "alt": "Lodziarnia Lodówka",
       "mode": "custom"
     },
     "about": {
@@ -256,29 +256,14 @@
   ],
   "features": [
     {
+      "title": "Na wynos",
+      "text": "",
+      "icon": "truck"
+    },
+    {
       "title": "Dostępne dla wózków",
       "text": "",
       "icon": "check"
-    },
-    {
-      "title": "Toaleta",
-      "text": "",
-      "icon": "check"
-    },
-    {
-      "title": "Miła atmosfera",
-      "text": "",
-      "icon": "heart"
-    },
-    {
-      "title": "Spokojne miejsce",
-      "text": "",
-      "icon": "heart"
-    },
-    {
-      "title": "Szybka obsługa",
-      "text": "",
-      "icon": "clock"
     },
     {
       "title": "Płatność kartą",
@@ -340,15 +325,15 @@
   ],
   "hero": {
     "headline": "Lody, które robimy z głową i sercem.",
-    "subheadline": "Rzemieślnicza lodziarnia — Rowy i okolice. Codziennie świeże lody z naturalnych składników — na miejscu i na wynos.",
+    "subheadline": "Rzemieślnicza lodziarnia — Warszawa i okolice. Codziennie świeże lody z naturalnych składników — na miejscu i na wynos.",
     "badges": [
+      "Na wynos",
       "Dostępne dla wózków",
-      "Toaleta",
-      "Miła atmosfera"
+      "Płatność kartą"
     ],
     "image": {
-      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAG0y1GqGJOoouESDlGA5M8G3xdh_y7BAx0OpTBoNZ3ohyNuByltXfNW7Hvv4qy4kwjVn6oF2MbnZ3pHZ_PI30nxZv0CatpI75hWvyrWg-4G1G9iv0G-Yeckly_FxzrMaMorTbG7=w1280-h960-k-no",
-      "alt": "Lodziarnia Miś",
+      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEdIG98t4uEDx1SoLG-78XtRrU4KtcRy8C5AL_QGj_ZLBI8Kh3s4b4o0sjg3IvFE06OzE64mksL7wHMQn39hy1LGZbgAGal76DnjUF9HDLxsCMa_z5o5pe2V2V3vjvU7HVSeYW3Pg=w1280-h960-k-no",
+      "alt": "Lodziarnia Lodówka",
       "mode": "custom"
     }
   },
@@ -375,49 +360,49 @@
     "text": "Czekamy ze świeżymi, rzemieślniczymi lodami — na miejscu i na wynos."
   },
   "seo": {
-    "title": "Lodziarnia Miś — Lodziarnia rzemieślnicza | Rowy",
-    "description": "Lodziarnia Miś — lodziarnia rzemieślnicza. Rowy i okolice. Oferujemy: Lody rzemieślnicze, Sorbety owocowe, Desery lodowe i Lody na wynos.",
+    "title": "Lodziarnia Lodówka — Lodziarnia rzemieślnicza | Warszawa",
+    "description": "Lodziarnia Lodówka — lodziarnia rzemieślnicza. Warszawa i okolice. Oferujemy: Lody rzemieślnicze, Sorbety owocowe, Desery lodowe i Lody na wynos.",
     "keywords": [
       "lodziarnia",
       "lody rzemieślnicze",
       "lody naturalne",
       "gelato",
       "desery lodowe",
-      "Rowy"
+      "Warszawa"
     ],
     "ogImage": null
   },
   "rating": "4,9",
-  "reviewCount": 192,
+  "reviewCount": 574,
   "priceRange": null,
   "hoursWeekly": [
     {
-      "open": "10:00",
-      "close": "18:00"
+      "open": "12:00",
+      "close": "19:00"
     },
     {
-      "open": "10:00",
-      "close": "18:00"
+      "open": "12:00",
+      "close": "19:00"
     },
     {
-      "open": "10:00",
-      "close": "18:00"
+      "open": "12:00",
+      "close": "19:00"
     },
     {
-      "open": "10:00",
-      "close": "18:00"
+      "open": "12:00",
+      "close": "19:00"
     },
     {
-      "open": "10:00",
-      "close": "18:00"
+      "open": "12:00",
+      "close": "19:00"
     },
     {
-      "open": "10:00",
-      "close": "20:00"
+      "open": "11:00",
+      "close": "19:00"
     },
     {
-      "open": "10:00",
-      "close": "20:00"
+      "open": "11:00",
+      "close": "19:00"
     }
   ],
   "layout": [

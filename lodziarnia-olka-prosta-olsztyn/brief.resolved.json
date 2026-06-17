@@ -1,6 +1,6 @@
 {
-  "name": "Lodziarnia Miś",
-  "slug": "lodziarnia-mis",
+  "name": "Lodziarnia Olka Prosta Olsztyn",
+  "slug": "lodziarnia-olka-prosta-olsztyn",
   "tagline": null,
   "description": null,
   "industry": "lodziarnia",
@@ -66,45 +66,41 @@
     "primary": "#c12f52",
     "accent": "#79c2a8"
   },
-  "city": "Rowy",
+  "city": "Olsztyn",
   "region": null,
-  "serviceArea": "Rowy",
+  "serviceArea": "Olsztyn",
   "year": null,
   "url": null,
   "contact": {
-    "phone": "+48 697 322 068",
-    "phoneRaw": "+48 697 322 068",
+    "phone": "+48 513 149 844",
+    "phoneRaw": "+48 513 149 844",
     "phoneValid": true,
     "email": null,
     "address": {
-      "street": "Wczasowa 1E",
-      "postalCode": "76-212",
-      "city": "Rowy",
-      "full": "Wczasowa 1E, 76-212 Rowy"
+      "street": "Prosta 1/2 1",
+      "postalCode": "10-029",
+      "city": "Olsztyn",
+      "full": "Prosta 1/2 1, 10-029 Olsztyn"
     },
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lodziarnia%20Mi%C5%9B&query_place_id=ChIJV4A0AQlr_kYRbS-fquj3nDk"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lodziarnia%20Olka%20Prosta%20Olsztyn&query_place_id=ChIJRZWTyc5_4kYRfyAfbpoXHJg"
   },
   "hours": [
     {
-      "label": "Poniedziałek – Piątek",
-      "value": "10:00 – 18:00"
-    },
-    {
-      "label": "Sobota – Niedziela",
+      "label": "Poniedziałek – Niedziela",
       "value": "10:00 – 20:00"
     }
   ],
   "social": {},
   "legal": {
-    "fullName": "Lodziarnia Miś",
+    "fullName": "Lodziarnia Olka Prosta Olsztyn",
     "nip": null,
     "regon": null,
     "privacyUrl": "#polityka-prywatnosci"
   },
   "images": {
     "hero": {
-      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAG0y1GqGJOoouESDlGA5M8G3xdh_y7BAx0OpTBoNZ3ohyNuByltXfNW7Hvv4qy4kwjVn6oF2MbnZ3pHZ_PI30nxZv0CatpI75hWvyrWg-4G1G9iv0G-Yeckly_FxzrMaMorTbG7=w1280-h960-k-no",
-      "alt": "Lodziarnia Miś",
+      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGoURNpvH---CRGftaIweDQY-L3IA9ixK7Q-hbh-dgchGmhjq4ynNfTZOC_6mF7Cm4C4UhLe3nKwKgmORIY4AWmR4B3EuvU6aSnrcPvj97M0Ws5TrmsSP3TOLze6JTwIJuO8oo=w1280-h960-k-no",
+      "alt": "Lodziarnia Olka Prosta Olsztyn",
       "mode": "custom"
     },
     "about": {
@@ -256,14 +252,9 @@
   ],
   "features": [
     {
-      "title": "Dostępne dla wózków",
+      "title": "Na wynos",
       "text": "",
-      "icon": "check"
-    },
-    {
-      "title": "Toaleta",
-      "text": "",
-      "icon": "check"
+      "icon": "truck"
     },
     {
       "title": "Miła atmosfera",
@@ -276,14 +267,19 @@
       "icon": "heart"
     },
     {
-      "title": "Szybka obsługa",
-      "text": "",
-      "icon": "clock"
-    },
-    {
       "title": "Płatność kartą",
       "text": "",
       "icon": "shield"
+    },
+    {
+      "title": "Płatności zbliżeniowe",
+      "text": "",
+      "icon": "shield"
+    },
+    {
+      "title": "Przyjazne dzieciom",
+      "text": "",
+      "icon": "users"
     }
   ],
   "process": [],
@@ -340,15 +336,15 @@
   ],
   "hero": {
     "headline": "Lody, które robimy z głową i sercem.",
-    "subheadline": "Rzemieślnicza lodziarnia — Rowy i okolice. Codziennie świeże lody z naturalnych składników — na miejscu i na wynos.",
+    "subheadline": "Rzemieślnicza lodziarnia — Olsztyn i okolice. Codziennie świeże lody z naturalnych składników — na miejscu i na wynos.",
     "badges": [
-      "Dostępne dla wózków",
-      "Toaleta",
-      "Miła atmosfera"
+      "Na wynos",
+      "Miła atmosfera",
+      "Spokojne miejsce"
     ],
     "image": {
-      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAG0y1GqGJOoouESDlGA5M8G3xdh_y7BAx0OpTBoNZ3ohyNuByltXfNW7Hvv4qy4kwjVn6oF2MbnZ3pHZ_PI30nxZv0CatpI75hWvyrWg-4G1G9iv0G-Yeckly_FxzrMaMorTbG7=w1280-h960-k-no",
-      "alt": "Lodziarnia Miś",
+      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGoURNpvH---CRGftaIweDQY-L3IA9ixK7Q-hbh-dgchGmhjq4ynNfTZOC_6mF7Cm4C4UhLe3nKwKgmORIY4AWmR4B3EuvU6aSnrcPvj97M0Ws5TrmsSP3TOLze6JTwIJuO8oo=w1280-h960-k-no",
+      "alt": "Lodziarnia Olka Prosta Olsztyn",
       "mode": "custom"
     }
   },
@@ -375,41 +371,41 @@
     "text": "Czekamy ze świeżymi, rzemieślniczymi lodami — na miejscu i na wynos."
   },
   "seo": {
-    "title": "Lodziarnia Miś — Lodziarnia rzemieślnicza | Rowy",
-    "description": "Lodziarnia Miś — lodziarnia rzemieślnicza. Rowy i okolice. Oferujemy: Lody rzemieślnicze, Sorbety owocowe, Desery lodowe i Lody na wynos.",
+    "title": "Lodziarnia Olka Prosta Olsztyn | Olsztyn",
+    "description": "Lodziarnia Olka Prosta Olsztyn — lodziarnia rzemieślnicza. Olsztyn i okolice. Oferujemy: Lody rzemieślnicze, Sorbety owocowe, Desery lodowe i Lody na wynos.",
     "keywords": [
       "lodziarnia",
       "lody rzemieślnicze",
       "lody naturalne",
       "gelato",
       "desery lodowe",
-      "Rowy"
+      "Olsztyn"
     ],
     "ogImage": null
   },
   "rating": "4,9",
-  "reviewCount": 192,
+  "reviewCount": 138,
   "priceRange": null,
   "hoursWeekly": [
     {
       "open": "10:00",
-      "close": "18:00"
+      "close": "20:00"
     },
     {
       "open": "10:00",
-      "close": "18:00"
+      "close": "20:00"
     },
     {
       "open": "10:00",
-      "close": "18:00"
+      "close": "20:00"
     },
     {
       "open": "10:00",
-      "close": "18:00"
+      "close": "20:00"
     },
     {
       "open": "10:00",
-      "close": "18:00"
+      "close": "20:00"
     },
     {
       "open": "10:00",

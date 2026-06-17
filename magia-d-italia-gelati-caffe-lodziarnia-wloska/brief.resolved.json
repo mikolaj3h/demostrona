@@ -1,5 +1,5 @@
 {
-  "name": "magia d’italia gelati caffe - lodziarnia włoska",
+  "name": "magia d'italia gelati caffe - lodziarnia włoska",
   "slug": "magia-d-italia-gelati-caffe-lodziarnia-wloska",
   "tagline": null,
   "description": null,
@@ -66,9 +66,9 @@
     "primary": "#c12f52",
     "accent": "#79c2a8"
   },
-  "city": "Legionowo",
+  "city": "Radom",
   "region": null,
-  "serviceArea": "Legionowo",
+  "serviceArea": "Radom",
   "year": null,
   "url": null,
   "contact": {
@@ -77,17 +77,17 @@
     "phoneValid": true,
     "email": null,
     "address": {
-      "street": "Jerzego Siwińskiego 2",
-      "postalCode": "05-120",
-      "city": "Legionowo",
-      "full": "Jerzego Siwińskiego 2, 05-120 Legionowo"
+      "street": "Aleja Józefa Grzecznarowskiego 28",
+      "postalCode": "26-604",
+      "city": "Radom",
+      "full": "Aleja Józefa Grzecznarowskiego 28, 26-604 Radom"
     },
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=magia%20d%E2%80%99italia%20gelati%20caffe%20-%20lodziarnia%20w%C5%82oska&query_place_id=ChIJhf7CKAC5HkcR0YmF7Np8Mtw"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=magia%20d'italia%20gelati%20caffe%20-%20lodziarnia%20w%C5%82oska&query_place_id=ChIJp6QdE1VfGEcRWRJLGcmwLVk"
   },
   "hours": [
     {
       "label": "Poniedziałek – Sobota",
-      "value": "10:00 – 21:00"
+      "value": "09:00 – 21:00"
     },
     {
       "label": "Niedziela",
@@ -96,15 +96,15 @@
   ],
   "social": {},
   "legal": {
-    "fullName": "magia d’italia gelati caffe - lodziarnia włoska",
+    "fullName": "magia d'italia gelati caffe - lodziarnia włoska",
     "nip": null,
     "regon": null,
     "privacyUrl": "#polityka-prywatnosci"
   },
   "images": {
     "hero": {
-      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAE2GqiEM168uIRsY10Ykqr-j-AmcSX0Z5LPHqI6MsbixObRX5aPH5iaqO7AtYQgtQaU8ipAsCU26tGaJINHy_q9h6MbwMUqky5gOMirVJp8HjoZJxFHu6tWb8WBwLiQab4lRcPyGQ=w1280-h960-k-no",
-      "alt": "magia d’italia gelati caffe - lodziarnia włoska",
+      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHH69qjZ0KJ0F4TuJ2X6bi_OSeyMrKU2rouq9I5mus-cf1Tj7X4kbo6_U2w30n7WtLHoLabJVwc0GPfAmrQjbiLSi4vSijqP2OhQ3HgjnbTChsoTXOahfDES5Vgb3qUr7GdwZV2a5FX05sY=w1280-h960-k-no",
+      "alt": "magia d'italia gelati caffe - lodziarnia włoska",
       "mode": "custom"
     },
     "about": {
@@ -271,19 +271,19 @@
       "icon": "check"
     },
     {
-      "title": "Miła atmosfera",
+      "title": "Toaleta",
       "text": "",
-      "icon": "heart"
-    },
-    {
-      "title": "Spokojne miejsce",
-      "text": "",
-      "icon": "heart"
+      "icon": "check"
     },
     {
       "title": "Płatność kartą",
       "text": "",
       "icon": "shield"
+    },
+    {
+      "title": "Przyjazne dzieciom",
+      "text": "",
+      "icon": "users"
     }
   ],
   "process": [],
@@ -340,15 +340,15 @@
   ],
   "hero": {
     "headline": "Lody, które robimy z głową i sercem.",
-    "subheadline": "Rzemieślnicza lodziarnia — Legionowo i okolice. Codziennie świeże lody z naturalnych składników — na miejscu i na wynos.",
+    "subheadline": "Rzemieślnicza lodziarnia — Radom i okolice. Codziennie świeże lody z naturalnych składników — na miejscu i na wynos.",
     "badges": [
       "Na wynos",
       "Miejsca na miejscu",
       "Dostępne dla wózków"
     ],
     "image": {
-      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAE2GqiEM168uIRsY10Ykqr-j-AmcSX0Z5LPHqI6MsbixObRX5aPH5iaqO7AtYQgtQaU8ipAsCU26tGaJINHy_q9h6MbwMUqky5gOMirVJp8HjoZJxFHu6tWb8WBwLiQab4lRcPyGQ=w1280-h960-k-no",
-      "alt": "magia d’italia gelati caffe - lodziarnia włoska",
+      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHH69qjZ0KJ0F4TuJ2X6bi_OSeyMrKU2rouq9I5mus-cf1Tj7X4kbo6_U2w30n7WtLHoLabJVwc0GPfAmrQjbiLSi4vSijqP2OhQ3HgjnbTChsoTXOahfDES5Vgb3qUr7GdwZV2a5FX05sY=w1280-h960-k-no",
+      "alt": "magia d'italia gelati caffe - lodziarnia włoska",
       "mode": "custom"
     }
   },
@@ -375,44 +375,44 @@
     "text": "Czekamy ze świeżymi, rzemieślniczymi lodami — na miejscu i na wynos."
   },
   "seo": {
-    "title": "magia d’italia gelati caffe - lodziarnia włoska | Legionowo",
-    "description": "magia d’italia gelati caffe - lodziarnia włoska — lodziarnia rzemieślnicza. Legionowo i okolice.",
+    "title": "magia d'italia gelati caffe - lodziarnia włoska | Radom",
+    "description": "magia d'italia gelati caffe - lodziarnia włoska — lodziarnia rzemieślnicza. Radom i okolice.",
     "keywords": [
       "lodziarnia",
       "lody rzemieślnicze",
       "lody naturalne",
       "gelato",
       "desery lodowe",
-      "Legionowo"
+      "Radom"
     ],
     "ogImage": null
   },
   "rating": "4,9",
-  "reviewCount": 119,
+  "reviewCount": 16,
   "priceRange": null,
   "hoursWeekly": [
     {
-      "open": "10:00",
+      "open": "09:00",
       "close": "21:00"
     },
     {
-      "open": "10:00",
+      "open": "09:00",
       "close": "21:00"
     },
     {
-      "open": "10:00",
+      "open": "09:00",
       "close": "21:00"
     },
     {
-      "open": "10:00",
+      "open": "09:00",
       "close": "21:00"
     },
     {
-      "open": "10:00",
+      "open": "09:00",
       "close": "21:00"
     },
     {
-      "open": "10:00",
+      "open": "09:00",
       "close": "21:00"
     },
     {
@@ -441,7 +441,7 @@
     "industry": "lodziarnia",
     "theme": "artisan",
     "imageMode": "unsplash",
-    "generatedAt": "2026-06-17T17:22:57.009Z",
+    "generatedAt": "2026-06-17T18:40:59.038Z",
     "warnings": []
   }
 }
