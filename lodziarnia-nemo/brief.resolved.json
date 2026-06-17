@@ -1,6 +1,6 @@
 {
-  "name": "Lodziarnia",
-  "slug": "lodziarnia",
+  "name": "Lodziarnia Nemo",
+  "slug": "lodziarnia-nemo",
   "tagline": null,
   "description": null,
   "industry": "lodziarnia",
@@ -66,36 +66,45 @@
     "primary": "#c12f52",
     "accent": "#79c2a8"
   },
-  "city": "Knurów",
+  "city": "Skorochów",
   "region": null,
-  "serviceArea": "Knurów",
+  "serviceArea": "Skorochów",
   "year": null,
   "url": null,
   "contact": {
-    "phone": "+48 322 368 572",
-    "phoneRaw": "+48 32 236 85 72",
+    "phone": "+48 608 034 123",
+    "phoneRaw": "+48 608 034 123",
     "phoneValid": true,
     "email": null,
     "address": {
-      "street": "Hugo Kołłątaja 2",
-      "postalCode": "44-193",
-      "city": "Knurów",
-      "full": "Hugo Kołłątaja 2, 44-193 Knurów"
+      "street": "Kasztanowa 15b",
+      "postalCode": "48-300",
+      "city": "Skorochów",
+      "full": "Kasztanowa 15b, 48-300 Skorochów"
     },
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lodziarnia&query_place_id=ChIJIdbS3js2EUcRVRmLXUhYMDc"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lodziarnia%20Nemo&query_place_id=ChIJ64N4UT7DEUcR-mz5dhr7feU"
   },
-  "hours": [],
+  "hours": [
+    {
+      "label": "Poniedziałek – Sobota",
+      "value": "14:00 – 21:00"
+    },
+    {
+      "label": "Niedziela",
+      "value": "12:00 – 21:00"
+    }
+  ],
   "social": {},
   "legal": {
-    "fullName": "Lodziarnia",
+    "fullName": "Lodziarnia Nemo",
     "nip": null,
     "regon": null,
     "privacyUrl": "#polityka-prywatnosci"
   },
   "images": {
     "hero": {
-      "src": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=eFeL23BRFC_ixPn9PKrGcA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=40.050777&pitch=0&thumbfov=100",
-      "alt": "Lodziarnia",
+      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAG9-jEkUSJqeshFfdBAdZvOqmVeOF2T511GWfRYqnp3VlpLVlIptgFJY5cpxecO0tA879D_6PcxEgULLdqTkH4nqND3Vku3ymtaU6B8rtL-YhZQRr7Kyr17OFh659bFQwh78xdk=w1280-h960-k-no",
+      "alt": "Lodziarnia Nemo",
       "mode": "custom"
     },
     "about": {
@@ -316,15 +325,15 @@
   ],
   "hero": {
     "headline": "Lody, które robimy z głową i sercem.",
-    "subheadline": "Rzemieślnicza lodziarnia — Knurów i okolice. Codziennie świeże lody z naturalnych składników — na miejscu i na wynos.",
+    "subheadline": "Rzemieślnicza lodziarnia — Skorochów i okolice. Codziennie świeże lody z naturalnych składników — na miejscu i na wynos.",
     "badges": [
       "Miła atmosfera",
       "Spokojne miejsce",
       "Przyjazne dzieciom"
     ],
     "image": {
-      "src": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=eFeL23BRFC_ixPn9PKrGcA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=40.050777&pitch=0&thumbfov=100",
-      "alt": "Lodziarnia",
+      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAG9-jEkUSJqeshFfdBAdZvOqmVeOF2T511GWfRYqnp3VlpLVlIptgFJY5cpxecO0tA879D_6PcxEgULLdqTkH4nqND3Vku3ymtaU6B8rtL-YhZQRr7Kyr17OFh659bFQwh78xdk=w1280-h960-k-no",
+      "alt": "Lodziarnia Nemo",
       "mode": "custom"
     }
   },
@@ -351,29 +360,50 @@
     "text": "Czekamy ze świeżymi, rzemieślniczymi lodami — na miejscu i na wynos."
   },
   "seo": {
-    "title": "Lodziarnia — Lodziarnia rzemieślnicza | Knurów",
-    "description": "Lodziarnia — lodziarnia rzemieślnicza. Knurów i okolice. Oferujemy: Lody rzemieślnicze, Sorbety owocowe, Desery lodowe i Lody na wynos.",
+    "title": "Lodziarnia Nemo — Lodziarnia rzemieślnicza | Skorochów",
+    "description": "Lodziarnia Nemo — lodziarnia rzemieślnicza. Skorochów i okolice. Oferujemy: Lody rzemieślnicze, Sorbety owocowe, Desery lodowe i Lody na wynos.",
     "keywords": [
       "lodziarnia",
       "lody rzemieślnicze",
       "lody naturalne",
       "gelato",
       "desery lodowe",
-      "Knurów"
+      "Skorochów"
     ],
     "ogImage": null
   },
   "rating": "4,9",
-  "reviewCount": 6,
+  "reviewCount": 1,
   "priceRange": null,
   "hoursWeekly": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
+    {
+      "open": "14:00",
+      "close": "21:00"
+    },
+    {
+      "open": "14:00",
+      "close": "21:00"
+    },
+    {
+      "open": "14:00",
+      "close": "21:00"
+    },
+    {
+      "open": "14:00",
+      "close": "21:00"
+    },
+    {
+      "open": "14:00",
+      "close": "21:00"
+    },
+    {
+      "open": "14:00",
+      "close": "21:00"
+    },
+    {
+      "open": "12:00",
+      "close": "21:00"
+    }
   ],
   "layout": [
     "header",

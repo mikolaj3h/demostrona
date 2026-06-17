@@ -1,6 +1,6 @@
 {
-  "name": "Lodziarnia",
-  "slug": "lodziarnia",
+  "name": "Różowa Lodziarnia",
+  "slug": "rozowa-lodziarnia",
   "tagline": null,
   "description": null,
   "industry": "lodziarnia",
@@ -66,36 +66,41 @@
     "primary": "#c12f52",
     "accent": "#79c2a8"
   },
-  "city": "Knurów",
+  "city": "Konstantynów Łódzki",
   "region": null,
-  "serviceArea": "Knurów",
+  "serviceArea": "Konstantynów Łódzki",
   "year": null,
   "url": null,
   "contact": {
-    "phone": "+48 322 368 572",
-    "phoneRaw": "+48 32 236 85 72",
+    "phone": "+48 660 850 210",
+    "phoneRaw": "+48 660 850 210",
     "phoneValid": true,
     "email": null,
     "address": {
-      "street": "Hugo Kołłątaja 2",
-      "postalCode": "44-193",
-      "city": "Knurów",
-      "full": "Hugo Kołłątaja 2, 44-193 Knurów"
+      "street": "Łódzka 10",
+      "postalCode": "95-050",
+      "city": "Konstantynów Łódzki",
+      "full": "Łódzka 10, 95-050 Konstantynów Łódzki"
     },
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lodziarnia&query_place_id=ChIJIdbS3js2EUcRVRmLXUhYMDc"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=R%C3%B3%C5%BCowa%20Lodziarnia&query_place_id=ChIJV7h2NABLGkcRuDHVygUEP8M"
   },
-  "hours": [],
+  "hours": [
+    {
+      "label": "Poniedziałek – Niedziela",
+      "value": "10:00 – 18:00"
+    }
+  ],
   "social": {},
   "legal": {
-    "fullName": "Lodziarnia",
+    "fullName": "Różowa Lodziarnia",
     "nip": null,
     "regon": null,
     "privacyUrl": "#polityka-prywatnosci"
   },
   "images": {
     "hero": {
-      "src": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=eFeL23BRFC_ixPn9PKrGcA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=40.050777&pitch=0&thumbfov=100",
-      "alt": "Lodziarnia",
+      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFHivE21c88dVKJim-nRpQBNg8A-RmwbZK-NeKS6u2vrmOwVmJP2ZtD6GPuNdaYc3tp_KBjREK4gRcQ5eHUQ8dj-HX-Ne5O3-vUnlcBm_NetCw8lkS4i7Q2zOvoKeTztMC416rV6Kfy1bQo=w1280-h960-k-no",
+      "alt": "Różowa Lodziarnia",
       "mode": "custom"
     },
     "about": {
@@ -247,6 +252,16 @@
   ],
   "features": [
     {
+      "title": "Na wynos",
+      "text": "",
+      "icon": "truck"
+    },
+    {
+      "title": "Miejsca na miejscu",
+      "text": "",
+      "icon": "users"
+    },
+    {
       "title": "Miła atmosfera",
       "text": "",
       "icon": "heart"
@@ -257,9 +272,14 @@
       "icon": "heart"
     },
     {
-      "title": "Przyjazne dzieciom",
+      "title": "Płatność kartą",
       "text": "",
-      "icon": "users"
+      "icon": "shield"
+    },
+    {
+      "title": "Płatności zbliżeniowe",
+      "text": "",
+      "icon": "shield"
     }
   ],
   "process": [],
@@ -316,15 +336,15 @@
   ],
   "hero": {
     "headline": "Lody, które robimy z głową i sercem.",
-    "subheadline": "Rzemieślnicza lodziarnia — Knurów i okolice. Codziennie świeże lody z naturalnych składników — na miejscu i na wynos.",
+    "subheadline": "Rzemieślnicza lodziarnia — Konstantynów Łódzki i okolice. Codziennie świeże lody z naturalnych składników — na miejscu i na wynos.",
     "badges": [
-      "Miła atmosfera",
-      "Spokojne miejsce",
-      "Przyjazne dzieciom"
+      "Na wynos",
+      "Miejsca na miejscu",
+      "Miła atmosfera"
     ],
     "image": {
-      "src": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=eFeL23BRFC_ixPn9PKrGcA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=40.050777&pitch=0&thumbfov=100",
-      "alt": "Lodziarnia",
+      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFHivE21c88dVKJim-nRpQBNg8A-RmwbZK-NeKS6u2vrmOwVmJP2ZtD6GPuNdaYc3tp_KBjREK4gRcQ5eHUQ8dj-HX-Ne5O3-vUnlcBm_NetCw8lkS4i7Q2zOvoKeTztMC416rV6Kfy1bQo=w1280-h960-k-no",
+      "alt": "Różowa Lodziarnia",
       "mode": "custom"
     }
   },
@@ -351,29 +371,50 @@
     "text": "Czekamy ze świeżymi, rzemieślniczymi lodami — na miejscu i na wynos."
   },
   "seo": {
-    "title": "Lodziarnia — Lodziarnia rzemieślnicza | Knurów",
-    "description": "Lodziarnia — lodziarnia rzemieślnicza. Knurów i okolice. Oferujemy: Lody rzemieślnicze, Sorbety owocowe, Desery lodowe i Lody na wynos.",
+    "title": "Różowa Lodziarnia | Konstantynów Łódzki",
+    "description": "Różowa Lodziarnia — lodziarnia rzemieślnicza. Konstantynów Łódzki i okolice. Oferujemy: Lody rzemieślnicze, Sorbety owocowe, Desery lodowe i Lody na wynos.",
     "keywords": [
       "lodziarnia",
       "lody rzemieślnicze",
       "lody naturalne",
       "gelato",
       "desery lodowe",
-      "Knurów"
+      "Konstantynów Łódzki"
     ],
     "ogImage": null
   },
   "rating": "4,9",
-  "reviewCount": 6,
+  "reviewCount": 32,
   "priceRange": null,
   "hoursWeekly": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
+    {
+      "open": "10:00",
+      "close": "18:00"
+    },
+    {
+      "open": "10:00",
+      "close": "18:00"
+    },
+    {
+      "open": "10:00",
+      "close": "18:00"
+    },
+    {
+      "open": "10:00",
+      "close": "18:00"
+    },
+    {
+      "open": "10:00",
+      "close": "18:00"
+    },
+    {
+      "open": "10:00",
+      "close": "18:00"
+    },
+    {
+      "open": "10:00",
+      "close": "18:00"
+    }
   ],
   "layout": [
     "header",

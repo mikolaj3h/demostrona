@@ -1,6 +1,6 @@
 {
-  "name": "Lodziarnia",
-  "slug": "lodziarnia",
+  "name": "Berkowski Tomasz. Lodziarnia",
+  "slug": "berkowski-tomasz-lodziarnia",
   "tagline": null,
   "description": null,
   "industry": "lodziarnia",
@@ -66,36 +66,36 @@
     "primary": "#c12f52",
     "accent": "#79c2a8"
   },
-  "city": "Knurów",
+  "city": "Krotoszyn",
   "region": null,
-  "serviceArea": "Knurów",
+  "serviceArea": "Krotoszyn",
   "year": null,
   "url": null,
   "contact": {
-    "phone": "+48 322 368 572",
-    "phoneRaw": "+48 32 236 85 72",
+    "phone": "+48 515 757 977",
+    "phoneRaw": "+48 515 757 977",
     "phoneValid": true,
     "email": null,
     "address": {
-      "street": "Hugo Kołłątaja 2",
-      "postalCode": "44-193",
-      "city": "Knurów",
-      "full": "Hugo Kołłątaja 2, 44-193 Knurów"
+      "street": "Rynek 25",
+      "postalCode": "63-700",
+      "city": "Krotoszyn",
+      "full": "Rynek 25, 63-700 Krotoszyn"
     },
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lodziarnia&query_place_id=ChIJIdbS3js2EUcRVRmLXUhYMDc"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Berkowski%20Tomasz.%20Lodziarnia&query_place_id=ChIJSWvVbFRGBUcR4K2HruPVxXw"
   },
   "hours": [],
   "social": {},
   "legal": {
-    "fullName": "Lodziarnia",
+    "fullName": "Berkowski Tomasz. Lodziarnia",
     "nip": null,
     "regon": null,
     "privacyUrl": "#polityka-prywatnosci"
   },
   "images": {
     "hero": {
-      "src": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=eFeL23BRFC_ixPn9PKrGcA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=40.050777&pitch=0&thumbfov=100",
-      "alt": "Lodziarnia",
+      "src": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=KCUY7-VOxep8U4lNj1kycQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=93.002785&pitch=0&thumbfov=100",
+      "alt": "Berkowski Tomasz. Lodziarnia",
       "mode": "custom"
     },
     "about": {
@@ -247,19 +247,19 @@
   ],
   "features": [
     {
-      "title": "Miła atmosfera",
+      "title": "Szybka obsługa",
       "text": "",
-      "icon": "heart"
+      "icon": "clock"
     },
     {
-      "title": "Spokojne miejsce",
+      "title": "Płatność kartą",
       "text": "",
-      "icon": "heart"
+      "icon": "shield"
     },
     {
-      "title": "Przyjazne dzieciom",
+      "title": "Płatności zbliżeniowe",
       "text": "",
-      "icon": "users"
+      "icon": "shield"
     }
   ],
   "process": [],
@@ -316,15 +316,15 @@
   ],
   "hero": {
     "headline": "Lody, które robimy z głową i sercem.",
-    "subheadline": "Rzemieślnicza lodziarnia — Knurów i okolice. Codziennie świeże lody z naturalnych składników — na miejscu i na wynos.",
+    "subheadline": "Rzemieślnicza lodziarnia — Krotoszyn i okolice. Codziennie świeże lody z naturalnych składników — na miejscu i na wynos.",
     "badges": [
-      "Miła atmosfera",
-      "Spokojne miejsce",
-      "Przyjazne dzieciom"
+      "Szybka obsługa",
+      "Płatność kartą",
+      "Płatności zbliżeniowe"
     ],
     "image": {
-      "src": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=eFeL23BRFC_ixPn9PKrGcA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=40.050777&pitch=0&thumbfov=100",
-      "alt": "Lodziarnia",
+      "src": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=KCUY7-VOxep8U4lNj1kycQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=93.002785&pitch=0&thumbfov=100",
+      "alt": "Berkowski Tomasz. Lodziarnia",
       "mode": "custom"
     }
   },
@@ -351,20 +351,20 @@
     "text": "Czekamy ze świeżymi, rzemieślniczymi lodami — na miejscu i na wynos."
   },
   "seo": {
-    "title": "Lodziarnia — Lodziarnia rzemieślnicza | Knurów",
-    "description": "Lodziarnia — lodziarnia rzemieślnicza. Knurów i okolice. Oferujemy: Lody rzemieślnicze, Sorbety owocowe, Desery lodowe i Lody na wynos.",
+    "title": "Berkowski Tomasz. Lodziarnia | Krotoszyn",
+    "description": "Berkowski Tomasz. Lodziarnia — lodziarnia rzemieślnicza. Krotoszyn i okolice. Oferujemy: Lody rzemieślnicze, Sorbety owocowe, Desery lodowe i Lody na wynos.",
     "keywords": [
       "lodziarnia",
       "lody rzemieślnicze",
       "lody naturalne",
       "gelato",
       "desery lodowe",
-      "Knurów"
+      "Krotoszyn"
     ],
     "ogImage": null
   },
   "rating": "4,9",
-  "reviewCount": 6,
+  "reviewCount": 3,
   "priceRange": null,
   "hoursWeekly": [
     null,

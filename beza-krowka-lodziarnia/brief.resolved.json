@@ -1,6 +1,6 @@
 {
-  "name": "Lodziarnia",
-  "slug": "lodziarnia",
+  "name": "Beza-Krówka lodziarnia",
+  "slug": "beza-krowka-lodziarnia",
   "tagline": null,
   "description": null,
   "industry": "lodziarnia",
@@ -66,36 +66,49 @@
     "primary": "#c12f52",
     "accent": "#79c2a8"
   },
-  "city": "Knurów",
+  "city": "Aleksandrów Łódzki",
   "region": null,
-  "serviceArea": "Knurów",
+  "serviceArea": "Aleksandrów Łódzki",
   "year": null,
   "url": null,
   "contact": {
-    "phone": "+48 322 368 572",
-    "phoneRaw": "+48 32 236 85 72",
+    "phone": "+48 605 994 682",
+    "phoneRaw": "+48 605 994 682",
     "phoneValid": true,
     "email": null,
     "address": {
-      "street": "Hugo Kołłątaja 2",
-      "postalCode": "44-193",
-      "city": "Knurów",
-      "full": "Hugo Kołłątaja 2, 44-193 Knurów"
+      "street": "Aleja Wyzwolenia 20",
+      "postalCode": "95-069",
+      "city": "Aleksandrów Łódzki",
+      "full": "Aleja Wyzwolenia 20, 95-069 Aleksandrów Łódzki"
     },
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lodziarnia&query_place_id=ChIJIdbS3js2EUcRVRmLXUhYMDc"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Beza-Kr%C3%B3wka%20lodziarnia&query_place_id=ChIJ5czMmpu0G0cRJ-fyQKnrxk0"
   },
-  "hours": [],
+  "hours": [
+    {
+      "label": "Poniedziałek",
+      "value": "nieczynne"
+    },
+    {
+      "label": "Wtorek – Piątek",
+      "value": "12:00 – 20:00"
+    },
+    {
+      "label": "Sobota – Niedziela",
+      "value": "10:00 – 20:00"
+    }
+  ],
   "social": {},
   "legal": {
-    "fullName": "Lodziarnia",
+    "fullName": "Beza-Krówka lodziarnia",
     "nip": null,
     "regon": null,
     "privacyUrl": "#polityka-prywatnosci"
   },
   "images": {
     "hero": {
-      "src": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=eFeL23BRFC_ixPn9PKrGcA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=40.050777&pitch=0&thumbfov=100",
-      "alt": "Lodziarnia",
+      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFoRV_p7o5Vney2JkFCsFDk5FORRysBWEwyQAZ1hvdRpJ44pbUZBQa6-e0RU52ErOV_c09g_69AKJ8f57OpINpCxaZHx2mVOLeg3RNhCJDlUrUP1tF_eNZyqM7cGuvIMaHf6I466cd52AMI=w1280-h960-k-no",
+      "alt": "Beza-Krówka lodziarnia",
       "mode": "custom"
     },
     "about": {
@@ -247,19 +260,14 @@
   ],
   "features": [
     {
-      "title": "Miła atmosfera",
+      "title": "Płatność kartą",
       "text": "",
-      "icon": "heart"
+      "icon": "shield"
     },
     {
-      "title": "Spokojne miejsce",
+      "title": "Płatności zbliżeniowe",
       "text": "",
-      "icon": "heart"
-    },
-    {
-      "title": "Przyjazne dzieciom",
-      "text": "",
-      "icon": "users"
+      "icon": "shield"
     }
   ],
   "process": [],
@@ -316,15 +324,14 @@
   ],
   "hero": {
     "headline": "Lody, które robimy z głową i sercem.",
-    "subheadline": "Rzemieślnicza lodziarnia — Knurów i okolice. Codziennie świeże lody z naturalnych składników — na miejscu i na wynos.",
+    "subheadline": "Rzemieślnicza lodziarnia — Aleksandrów Łódzki i okolice. Codziennie świeże lody z naturalnych składników — na miejscu i na wynos.",
     "badges": [
-      "Miła atmosfera",
-      "Spokojne miejsce",
-      "Przyjazne dzieciom"
+      "Płatność kartą",
+      "Płatności zbliżeniowe"
     ],
     "image": {
-      "src": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=eFeL23BRFC_ixPn9PKrGcA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=40.050777&pitch=0&thumbfov=100",
-      "alt": "Lodziarnia",
+      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFoRV_p7o5Vney2JkFCsFDk5FORRysBWEwyQAZ1hvdRpJ44pbUZBQa6-e0RU52ErOV_c09g_69AKJ8f57OpINpCxaZHx2mVOLeg3RNhCJDlUrUP1tF_eNZyqM7cGuvIMaHf6I466cd52AMI=w1280-h960-k-no",
+      "alt": "Beza-Krówka lodziarnia",
       "mode": "custom"
     }
   },
@@ -351,29 +358,47 @@
     "text": "Czekamy ze świeżymi, rzemieślniczymi lodami — na miejscu i na wynos."
   },
   "seo": {
-    "title": "Lodziarnia — Lodziarnia rzemieślnicza | Knurów",
-    "description": "Lodziarnia — lodziarnia rzemieślnicza. Knurów i okolice. Oferujemy: Lody rzemieślnicze, Sorbety owocowe, Desery lodowe i Lody na wynos.",
+    "title": "Beza-Krówka lodziarnia | Aleksandrów Łódzki",
+    "description": "Beza-Krówka lodziarnia — lodziarnia rzemieślnicza. Aleksandrów Łódzki i okolice. Oferujemy: Lody rzemieślnicze, Sorbety owocowe, Desery lodowe i Lody na wynos.",
     "keywords": [
       "lodziarnia",
       "lody rzemieślnicze",
       "lody naturalne",
       "gelato",
       "desery lodowe",
-      "Knurów"
+      "Aleksandrów Łódzki"
     ],
     "ogImage": null
   },
   "rating": "4,9",
-  "reviewCount": 6,
+  "reviewCount": 136,
   "priceRange": null,
   "hoursWeekly": [
     null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
+    {
+      "open": "12:00",
+      "close": "20:00"
+    },
+    {
+      "open": "12:00",
+      "close": "20:00"
+    },
+    {
+      "open": "12:00",
+      "close": "20:00"
+    },
+    {
+      "open": "12:00",
+      "close": "20:00"
+    },
+    {
+      "open": "10:00",
+      "close": "20:00"
+    },
+    {
+      "open": "10:00",
+      "close": "20:00"
+    }
   ],
   "layout": [
     "header",

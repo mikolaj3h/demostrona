@@ -1,6 +1,6 @@
 {
-  "name": "Lodziarnia",
-  "slug": "lodziarnia",
+  "name": "Bacio Lodziarnia-Kawiarnia",
+  "slug": "bacio-lodziarnia-kawiarnia",
   "tagline": null,
   "description": null,
   "industry": "lodziarnia",
@@ -66,36 +66,41 @@
     "primary": "#c12f52",
     "accent": "#79c2a8"
   },
-  "city": "Knurów",
+  "city": "Ustka",
   "region": null,
-  "serviceArea": "Knurów",
+  "serviceArea": "Ustka",
   "year": null,
   "url": null,
   "contact": {
-    "phone": "+48 322 368 572",
-    "phoneRaw": "+48 32 236 85 72",
+    "phone": "+48 506 835 715",
+    "phoneRaw": "+48 506 835 715",
     "phoneValid": true,
     "email": null,
     "address": {
-      "street": "Hugo Kołłątaja 2",
-      "postalCode": "44-193",
-      "city": "Knurów",
-      "full": "Hugo Kołłątaja 2, 44-193 Knurów"
+      "street": "Bolesława Limanowskiego 1",
+      "postalCode": "76-270",
+      "city": "Ustka",
+      "full": "Bolesława Limanowskiego 1, 76-270 Ustka"
     },
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lodziarnia&query_place_id=ChIJIdbS3js2EUcRVRmLXUhYMDc"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Bacio%20Lodziarnia-Kawiarnia&query_place_id=ChIJS5DoEsg__kYRqcwXRG3vXIQ"
   },
-  "hours": [],
+  "hours": [
+    {
+      "label": "Poniedziałek – Niedziela",
+      "value": "10:00 – 20:00"
+    }
+  ],
   "social": {},
   "legal": {
-    "fullName": "Lodziarnia",
+    "fullName": "Bacio Lodziarnia-Kawiarnia",
     "nip": null,
     "regon": null,
     "privacyUrl": "#polityka-prywatnosci"
   },
   "images": {
     "hero": {
-      "src": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=eFeL23BRFC_ixPn9PKrGcA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=40.050777&pitch=0&thumbfov=100",
-      "alt": "Lodziarnia",
+      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFzEsd3uovpgTcq-D6YrKkeuoC4u0Pv2I2kOJXYsICUPwVCHipYIc8-_mkmlexnJNvJ54JrG5XR2VJ1fo8gOQhlDjUp03SFr_YY4vFzOgrZQxQdcZuc_clxjW83vWvi29SHkEjbLamhsSAL=w1280-h960-k-no",
+      "alt": "Bacio Lodziarnia-Kawiarnia",
       "mode": "custom"
     },
     "about": {
@@ -247,19 +252,19 @@
   ],
   "features": [
     {
-      "title": "Miła atmosfera",
-      "text": "",
-      "icon": "heart"
+      "title": "Naturalne składniki",
+      "text": "Prawdziwa śmietana, sezonowe owoce i żadnych zbędnych dodatków.",
+      "icon": "leaf"
     },
     {
-      "title": "Spokojne miejsce",
-      "text": "",
-      "icon": "heart"
+      "title": "Codziennie świeże",
+      "text": "Nowe porcje kręcimy każdego dnia — smaki rotują wraz z sezonem.",
+      "icon": "sparkles"
     },
     {
-      "title": "Przyjazne dzieciom",
-      "text": "",
-      "icon": "users"
+      "title": "Dla każdego",
+      "text": "Mamy też sorbety wegańskie i propozycje bez laktozy oraz bez glutenu.",
+      "icon": "heart"
     }
   ],
   "process": [],
@@ -316,15 +321,15 @@
   ],
   "hero": {
     "headline": "Lody, które robimy z głową i sercem.",
-    "subheadline": "Rzemieślnicza lodziarnia — Knurów i okolice. Codziennie świeże lody z naturalnych składników — na miejscu i na wynos.",
+    "subheadline": "Rzemieślnicza lodziarnia — Ustka i okolice. Codziennie świeże lody z naturalnych składników — na miejscu i na wynos.",
     "badges": [
-      "Miła atmosfera",
-      "Spokojne miejsce",
-      "Przyjazne dzieciom"
+      "Naturalne składniki",
+      "Codziennie świeże",
+      "Dla każdego"
     ],
     "image": {
-      "src": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=eFeL23BRFC_ixPn9PKrGcA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=40.050777&pitch=0&thumbfov=100",
-      "alt": "Lodziarnia",
+      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFzEsd3uovpgTcq-D6YrKkeuoC4u0Pv2I2kOJXYsICUPwVCHipYIc8-_mkmlexnJNvJ54JrG5XR2VJ1fo8gOQhlDjUp03SFr_YY4vFzOgrZQxQdcZuc_clxjW83vWvi29SHkEjbLamhsSAL=w1280-h960-k-no",
+      "alt": "Bacio Lodziarnia-Kawiarnia",
       "mode": "custom"
     }
   },
@@ -351,29 +356,50 @@
     "text": "Czekamy ze świeżymi, rzemieślniczymi lodami — na miejscu i na wynos."
   },
   "seo": {
-    "title": "Lodziarnia — Lodziarnia rzemieślnicza | Knurów",
-    "description": "Lodziarnia — lodziarnia rzemieślnicza. Knurów i okolice. Oferujemy: Lody rzemieślnicze, Sorbety owocowe, Desery lodowe i Lody na wynos.",
+    "title": "Bacio Lodziarnia-Kawiarnia — Lodziarnia rzemieślnicza | Ustka",
+    "description": "Bacio Lodziarnia-Kawiarnia — lodziarnia rzemieślnicza. Ustka i okolice. Oferujemy: Lody rzemieślnicze, Sorbety owocowe, Desery lodowe i Lody na wynos.",
     "keywords": [
       "lodziarnia",
       "lody rzemieślnicze",
       "lody naturalne",
       "gelato",
       "desery lodowe",
-      "Knurów"
+      "Ustka"
     ],
     "ogImage": null
   },
   "rating": "4,9",
-  "reviewCount": 6,
+  "reviewCount": 217,
   "priceRange": null,
   "hoursWeekly": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
+    {
+      "open": "10:00",
+      "close": "20:00"
+    },
+    {
+      "open": "10:00",
+      "close": "20:00"
+    },
+    {
+      "open": "10:00",
+      "close": "20:00"
+    },
+    {
+      "open": "10:00",
+      "close": "20:00"
+    },
+    {
+      "open": "10:00",
+      "close": "20:00"
+    },
+    {
+      "open": "10:00",
+      "close": "20:00"
+    },
+    {
+      "open": "10:00",
+      "close": "20:00"
+    }
   ],
   "layout": [
     "header",

@@ -1,6 +1,6 @@
 {
-  "name": "Lodziarnia",
-  "slug": "lodziarnia",
+  "name": "Lodziarnia nad zalewem",
+  "slug": "lodziarnia-nad-zalewem",
   "tagline": null,
   "description": null,
   "industry": "lodziarnia",
@@ -66,36 +66,49 @@
     "primary": "#c12f52",
     "accent": "#79c2a8"
   },
-  "city": "Knurów",
+  "city": "Majdan Sopocki Drugi",
   "region": null,
-  "serviceArea": "Knurów",
+  "serviceArea": "Majdan Sopocki Drugi",
   "year": null,
   "url": null,
   "contact": {
-    "phone": "+48 322 368 572",
-    "phoneRaw": "+48 32 236 85 72",
+    "phone": "+48 539 777 771",
+    "phoneRaw": "+48 539 777 771",
     "phoneValid": true,
     "email": null,
     "address": {
-      "street": "Hugo Kołłątaja 2",
-      "postalCode": "44-193",
-      "city": "Knurów",
-      "full": "Hugo Kołłątaja 2, 44-193 Knurów"
+      "street": "28a",
+      "postalCode": "22-672",
+      "city": "Majdan Sopocki Drugi",
+      "full": "28a, 22-672 Majdan Sopocki Drugi"
     },
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lodziarnia&query_place_id=ChIJIdbS3js2EUcRVRmLXUhYMDc"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lodziarnia%20nad%20zalewem&query_place_id=ChIJw0FWXEFXI0cRasC6j0ujTgs"
   },
-  "hours": [],
+  "hours": [
+    {
+      "label": "Poniedziałek – Piątek",
+      "value": "nieczynne"
+    },
+    {
+      "label": "Sobota",
+      "value": "10:00 – 18:00"
+    },
+    {
+      "label": "Niedziela",
+      "value": "nieczynne"
+    }
+  ],
   "social": {},
   "legal": {
-    "fullName": "Lodziarnia",
+    "fullName": "Lodziarnia nad zalewem",
     "nip": null,
     "regon": null,
     "privacyUrl": "#polityka-prywatnosci"
   },
   "images": {
     "hero": {
-      "src": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=eFeL23BRFC_ixPn9PKrGcA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=40.050777&pitch=0&thumbfov=100",
-      "alt": "Lodziarnia",
+      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAH_IZUqzGLj7Ag9Vuo7fONje8U1tbSvzpSJs1pXlfSoFqG8URssp29o-InbkX_EHboAWjKmKYMgvje98Rb9bsuosEG1pEEtlx53fW5b1qgBB5aS8kRvrurv7-eyLHDXI9W7BZPf=w1280-h960-k-no",
+      "alt": "Lodziarnia nad zalewem",
       "mode": "custom"
     },
     "about": {
@@ -247,19 +260,19 @@
   ],
   "features": [
     {
-      "title": "Miła atmosfera",
+      "title": "Dostawa do domu",
       "text": "",
-      "icon": "heart"
+      "icon": "truck"
     },
     {
-      "title": "Spokojne miejsce",
+      "title": "Płatność kartą",
       "text": "",
-      "icon": "heart"
+      "icon": "shield"
     },
     {
-      "title": "Przyjazne dzieciom",
+      "title": "Płatności zbliżeniowe",
       "text": "",
-      "icon": "users"
+      "icon": "shield"
     }
   ],
   "process": [],
@@ -316,15 +329,15 @@
   ],
   "hero": {
     "headline": "Lody, które robimy z głową i sercem.",
-    "subheadline": "Rzemieślnicza lodziarnia — Knurów i okolice. Codziennie świeże lody z naturalnych składników — na miejscu i na wynos.",
+    "subheadline": "Rzemieślnicza lodziarnia — Majdan Sopocki Drugi i okolice. Codziennie świeże lody z naturalnych składników — na miejscu i na wynos.",
     "badges": [
-      "Miła atmosfera",
-      "Spokojne miejsce",
-      "Przyjazne dzieciom"
+      "Dostawa do domu",
+      "Płatność kartą",
+      "Płatności zbliżeniowe"
     ],
     "image": {
-      "src": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=eFeL23BRFC_ixPn9PKrGcA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=40.050777&pitch=0&thumbfov=100",
-      "alt": "Lodziarnia",
+      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAH_IZUqzGLj7Ag9Vuo7fONje8U1tbSvzpSJs1pXlfSoFqG8URssp29o-InbkX_EHboAWjKmKYMgvje98Rb9bsuosEG1pEEtlx53fW5b1qgBB5aS8kRvrurv7-eyLHDXI9W7BZPf=w1280-h960-k-no",
+      "alt": "Lodziarnia nad zalewem",
       "mode": "custom"
     }
   },
@@ -351,20 +364,20 @@
     "text": "Czekamy ze świeżymi, rzemieślniczymi lodami — na miejscu i na wynos."
   },
   "seo": {
-    "title": "Lodziarnia — Lodziarnia rzemieślnicza | Knurów",
-    "description": "Lodziarnia — lodziarnia rzemieślnicza. Knurów i okolice. Oferujemy: Lody rzemieślnicze, Sorbety owocowe, Desery lodowe i Lody na wynos.",
+    "title": "Lodziarnia nad zalewem | Majdan Sopocki Drugi",
+    "description": "Lodziarnia nad zalewem — lodziarnia rzemieślnicza. Majdan Sopocki Drugi i okolice.",
     "keywords": [
       "lodziarnia",
       "lody rzemieślnicze",
       "lody naturalne",
       "gelato",
       "desery lodowe",
-      "Knurów"
+      "Majdan Sopocki Drugi"
     ],
     "ogImage": null
   },
   "rating": "4,9",
-  "reviewCount": 6,
+  "reviewCount": 34,
   "priceRange": null,
   "hoursWeekly": [
     null,
@@ -372,7 +385,10 @@
     null,
     null,
     null,
-    null,
+    {
+      "open": "10:00",
+      "close": "18:00"
+    },
     null
   ],
   "layout": [

@@ -1,6 +1,6 @@
 {
-  "name": "Lodziarnia",
-  "slug": "lodziarnia",
+  "name": "Lodziarnia LODOWIEC Warszawa, Ursus - Lody Produkcji Własnej",
+  "slug": "lodziarnia-lodowiec-warszawa-ursus-lody-produkcji-wlasnej",
   "tagline": null,
   "description": null,
   "industry": "lodziarnia",
@@ -66,36 +66,49 @@
     "primary": "#c12f52",
     "accent": "#79c2a8"
   },
-  "city": "Knurów",
+  "city": "Warszawa",
   "region": null,
-  "serviceArea": "Knurów",
+  "serviceArea": "Warszawa",
   "year": null,
   "url": null,
   "contact": {
-    "phone": "+48 322 368 572",
-    "phoneRaw": "+48 32 236 85 72",
+    "phone": "+48 508 041 204",
+    "phoneRaw": "+48 508 041 204",
     "phoneValid": true,
     "email": null,
     "address": {
-      "street": "Hugo Kołłątaja 2",
-      "postalCode": "44-193",
-      "city": "Knurów",
-      "full": "Hugo Kołłątaja 2, 44-193 Knurów"
+      "street": "Stanisława Wojciechowskiego 33/Lokal 47",
+      "postalCode": "02-495",
+      "city": "Warszawa",
+      "full": "Stanisława Wojciechowskiego 33/Lokal 47, 02-495 Warszawa"
     },
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lodziarnia&query_place_id=ChIJIdbS3js2EUcRVRmLXUhYMDc"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lodziarnia%20LODOWIEC%20Warszawa%2C%20Ursus%20-%20Lody%20Produkcji%20W%C5%82asnej&query_place_id=ChIJPTBxvxs1GUcRZpiTqty1yoQ"
   },
-  "hours": [],
+  "hours": [
+    {
+      "label": "Poniedziałek",
+      "value": "10:00 – 20:00"
+    },
+    {
+      "label": "Wtorek – Sobota",
+      "value": "12:00 – 20:00"
+    },
+    {
+      "label": "Niedziela",
+      "value": "11:30 – 20:00"
+    }
+  ],
   "social": {},
   "legal": {
-    "fullName": "Lodziarnia",
+    "fullName": "Lodziarnia LODOWIEC Warszawa, Ursus - Lody Produkcji Własnej",
     "nip": null,
     "regon": null,
     "privacyUrl": "#polityka-prywatnosci"
   },
   "images": {
     "hero": {
-      "src": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=eFeL23BRFC_ixPn9PKrGcA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=40.050777&pitch=0&thumbfov=100",
-      "alt": "Lodziarnia",
+      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAETw5AdS23wCbIu8xUwSuLPbWlZ_8W346DdHRZwCw_IXzgifJy5LRKgmd9nbK0soESlCxZgifrQxBxTXaDtEb822xS8uUm1To9zUgi828C4zV2eT543A8es31Fv-BUkyutgL5_33A=w1280-h960-k-no",
+      "alt": "Lodziarnia LODOWIEC Warszawa, Ursus - Lody Produkcji Własnej",
       "mode": "custom"
     },
     "about": {
@@ -247,19 +260,14 @@
   ],
   "features": [
     {
-      "title": "Miła atmosfera",
+      "title": "Dostępne dla wózków",
       "text": "",
-      "icon": "heart"
+      "icon": "check"
     },
     {
-      "title": "Spokojne miejsce",
+      "title": "Płatność kartą",
       "text": "",
-      "icon": "heart"
-    },
-    {
-      "title": "Przyjazne dzieciom",
-      "text": "",
-      "icon": "users"
+      "icon": "shield"
     }
   ],
   "process": [],
@@ -316,15 +324,14 @@
   ],
   "hero": {
     "headline": "Lody, które robimy z głową i sercem.",
-    "subheadline": "Rzemieślnicza lodziarnia — Knurów i okolice. Codziennie świeże lody z naturalnych składników — na miejscu i na wynos.",
+    "subheadline": "Rzemieślnicza lodziarnia — Warszawa i okolice. Codziennie świeże lody z naturalnych składników — na miejscu i na wynos.",
     "badges": [
-      "Miła atmosfera",
-      "Spokojne miejsce",
-      "Przyjazne dzieciom"
+      "Dostępne dla wózków",
+      "Płatność kartą"
     ],
     "image": {
-      "src": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=eFeL23BRFC_ixPn9PKrGcA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=40.050777&pitch=0&thumbfov=100",
-      "alt": "Lodziarnia",
+      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAETw5AdS23wCbIu8xUwSuLPbWlZ_8W346DdHRZwCw_IXzgifJy5LRKgmd9nbK0soESlCxZgifrQxBxTXaDtEb822xS8uUm1To9zUgi828C4zV2eT543A8es31Fv-BUkyutgL5_33A=w1280-h960-k-no",
+      "alt": "Lodziarnia LODOWIEC Warszawa, Ursus - Lody Produkcji Własnej",
       "mode": "custom"
     }
   },
@@ -351,29 +358,50 @@
     "text": "Czekamy ze świeżymi, rzemieślniczymi lodami — na miejscu i na wynos."
   },
   "seo": {
-    "title": "Lodziarnia — Lodziarnia rzemieślnicza | Knurów",
-    "description": "Lodziarnia — lodziarnia rzemieślnicza. Knurów i okolice. Oferujemy: Lody rzemieślnicze, Sorbety owocowe, Desery lodowe i Lody na wynos.",
+    "title": "Lodziarnia LODOWIEC Warszawa, Ursus - Lody Produkcji Własnej",
+    "description": "Lodziarnia LODOWIEC Warszawa, Ursus - Lody Produkcji Własnej — lodziarnia rzemieślnicza. Warszawa i okolice.",
     "keywords": [
       "lodziarnia",
       "lody rzemieślnicze",
       "lody naturalne",
       "gelato",
       "desery lodowe",
-      "Knurów"
+      "Warszawa"
     ],
     "ogImage": null
   },
   "rating": "4,9",
-  "reviewCount": 6,
+  "reviewCount": 711,
   "priceRange": null,
   "hoursWeekly": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
+    {
+      "open": "10:00",
+      "close": "20:00"
+    },
+    {
+      "open": "12:00",
+      "close": "20:00"
+    },
+    {
+      "open": "12:00",
+      "close": "20:00"
+    },
+    {
+      "open": "12:00",
+      "close": "20:00"
+    },
+    {
+      "open": "12:00",
+      "close": "20:00"
+    },
+    {
+      "open": "12:00",
+      "close": "20:00"
+    },
+    {
+      "open": "11:30",
+      "close": "20:00"
+    }
   ],
   "layout": [
     "header",

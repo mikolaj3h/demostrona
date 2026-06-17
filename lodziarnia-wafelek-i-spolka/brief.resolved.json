@@ -1,6 +1,6 @@
 {
-  "name": "Lodziarnia",
-  "slug": "lodziarnia",
+  "name": "Lodziarnia Wafelek i spółka",
+  "slug": "lodziarnia-wafelek-i-spolka",
   "tagline": null,
   "description": null,
   "industry": "lodziarnia",
@@ -66,36 +66,45 @@
     "primary": "#c12f52",
     "accent": "#79c2a8"
   },
-  "city": "Knurów",
+  "city": "Kutno",
   "region": null,
-  "serviceArea": "Knurów",
+  "serviceArea": "Kutno",
   "year": null,
   "url": null,
   "contact": {
-    "phone": "+48 322 368 572",
-    "phoneRaw": "+48 32 236 85 72",
+    "phone": "+48 792 802 376",
+    "phoneRaw": "+48 792 802 376",
     "phoneValid": true,
     "email": null,
     "address": {
-      "street": "Hugo Kołłątaja 2",
-      "postalCode": "44-193",
-      "city": "Knurów",
-      "full": "Hugo Kołłątaja 2, 44-193 Knurów"
+      "street": "Plac Marszałka Józefa Piłsudskiego 13",
+      "postalCode": "99-300",
+      "city": "Kutno",
+      "full": "Plac Marszałka Józefa Piłsudskiego 13, 99-300 Kutno"
     },
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lodziarnia&query_place_id=ChIJIdbS3js2EUcRVRmLXUhYMDc"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lodziarnia%20Wafelek%20i%20sp%C3%B3%C5%82ka&query_place_id=ChIJ88XmEV2bG0cRAhRpH_x5GI4"
   },
-  "hours": [],
+  "hours": [
+    {
+      "label": "Poniedziałek – Piątek",
+      "value": "12:00 – 19:00"
+    },
+    {
+      "label": "Sobota – Niedziela",
+      "value": "10:00 – 19:00"
+    }
+  ],
   "social": {},
   "legal": {
-    "fullName": "Lodziarnia",
+    "fullName": "Lodziarnia Wafelek i spółka",
     "nip": null,
     "regon": null,
     "privacyUrl": "#polityka-prywatnosci"
   },
   "images": {
     "hero": {
-      "src": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=eFeL23BRFC_ixPn9PKrGcA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=40.050777&pitch=0&thumbfov=100",
-      "alt": "Lodziarnia",
+      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGG3TLU0VgTnXeeyUI6DmR2Vvz95Ut3XjG8VnWDa3SPV1RCH7tYd5hGg5jeIAQRcC1jhzlyjpWtciiAOPVSSF2T2QM-5a9Ht3zfBXGPxcQZ6_vbprbyAmYOvcCLxiN6-B8kJVoJ3BbtWlM1=w1280-h960-k-no",
+      "alt": "Lodziarnia Wafelek i spółka",
       "mode": "custom"
     },
     "about": {
@@ -247,14 +256,24 @@
   ],
   "features": [
     {
-      "title": "Miła atmosfera",
+      "title": "Miejsca na miejscu",
       "text": "",
-      "icon": "heart"
+      "icon": "users"
     },
     {
-      "title": "Spokojne miejsce",
+      "title": "Toaleta",
       "text": "",
-      "icon": "heart"
+      "icon": "check"
+    },
+    {
+      "title": "Płatność kartą",
+      "text": "",
+      "icon": "shield"
+    },
+    {
+      "title": "Płatności zbliżeniowe",
+      "text": "",
+      "icon": "shield"
     },
     {
       "title": "Przyjazne dzieciom",
@@ -316,15 +335,15 @@
   ],
   "hero": {
     "headline": "Lody, które robimy z głową i sercem.",
-    "subheadline": "Rzemieślnicza lodziarnia — Knurów i okolice. Codziennie świeże lody z naturalnych składników — na miejscu i na wynos.",
+    "subheadline": "Rzemieślnicza lodziarnia — Kutno i okolice. Codziennie świeże lody z naturalnych składników — na miejscu i na wynos.",
     "badges": [
-      "Miła atmosfera",
-      "Spokojne miejsce",
-      "Przyjazne dzieciom"
+      "Miejsca na miejscu",
+      "Toaleta",
+      "Płatność kartą"
     ],
     "image": {
-      "src": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=eFeL23BRFC_ixPn9PKrGcA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=40.050777&pitch=0&thumbfov=100",
-      "alt": "Lodziarnia",
+      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGG3TLU0VgTnXeeyUI6DmR2Vvz95Ut3XjG8VnWDa3SPV1RCH7tYd5hGg5jeIAQRcC1jhzlyjpWtciiAOPVSSF2T2QM-5a9Ht3zfBXGPxcQZ6_vbprbyAmYOvcCLxiN6-B8kJVoJ3BbtWlM1=w1280-h960-k-no",
+      "alt": "Lodziarnia Wafelek i spółka",
       "mode": "custom"
     }
   },
@@ -351,29 +370,50 @@
     "text": "Czekamy ze świeżymi, rzemieślniczymi lodami — na miejscu i na wynos."
   },
   "seo": {
-    "title": "Lodziarnia — Lodziarnia rzemieślnicza | Knurów",
-    "description": "Lodziarnia — lodziarnia rzemieślnicza. Knurów i okolice. Oferujemy: Lody rzemieślnicze, Sorbety owocowe, Desery lodowe i Lody na wynos.",
+    "title": "Lodziarnia Wafelek i spółka — Lodziarnia rzemieślnicza | Kutno",
+    "description": "Lodziarnia Wafelek i spółka — lodziarnia rzemieślnicza. Kutno i okolice. Oferujemy: Lody rzemieślnicze, Sorbety owocowe, Desery lodowe i Lody na wynos.",
     "keywords": [
       "lodziarnia",
       "lody rzemieślnicze",
       "lody naturalne",
       "gelato",
       "desery lodowe",
-      "Knurów"
+      "Kutno"
     ],
     "ogImage": null
   },
   "rating": "4,9",
-  "reviewCount": 6,
+  "reviewCount": 209,
   "priceRange": null,
   "hoursWeekly": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
+    {
+      "open": "12:00",
+      "close": "19:00"
+    },
+    {
+      "open": "12:00",
+      "close": "19:00"
+    },
+    {
+      "open": "12:00",
+      "close": "19:00"
+    },
+    {
+      "open": "12:00",
+      "close": "19:00"
+    },
+    {
+      "open": "12:00",
+      "close": "19:00"
+    },
+    {
+      "open": "10:00",
+      "close": "19:00"
+    },
+    {
+      "open": "10:00",
+      "close": "19:00"
+    }
   ],
   "layout": [
     "header",

@@ -1,6 +1,6 @@
 {
-  "name": "Lodziarnia",
-  "slug": "lodziarnia",
+  "name": "Lodziarnia \"Rotatoria \"",
+  "slug": "lodziarnia-rotatoria",
   "tagline": null,
   "description": null,
   "industry": "lodziarnia",
@@ -66,36 +66,41 @@
     "primary": "#c12f52",
     "accent": "#79c2a8"
   },
-  "city": "Knurów",
+  "city": "Jarnołtówek",
   "region": null,
-  "serviceArea": "Knurów",
+  "serviceArea": "Jarnołtówek",
   "year": null,
   "url": null,
   "contact": {
-    "phone": "+48 322 368 572",
-    "phoneRaw": "+48 32 236 85 72",
+    "phone": "+48 537 651 028",
+    "phoneRaw": "+48 537 651 028",
     "phoneValid": true,
     "email": null,
     "address": {
-      "street": "Hugo Kołłątaja 2",
-      "postalCode": "44-193",
-      "city": "Knurów",
-      "full": "Hugo Kołłątaja 2, 44-193 Knurów"
+      "street": "Jarnołtówek 70A",
+      "postalCode": "48-340",
+      "city": "Jarnołtówek",
+      "full": "Jarnołtówek 70A, 48-340 Jarnołtówek"
     },
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lodziarnia&query_place_id=ChIJIdbS3js2EUcRVRmLXUhYMDc"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lodziarnia%20%22Rotatoria%20%22&query_place_id=ChIJ-wkgTwCVEUcRa4vIglHQbE4"
   },
-  "hours": [],
+  "hours": [
+    {
+      "label": "Poniedziałek – Niedziela",
+      "value": "12:00 – 20:00"
+    }
+  ],
   "social": {},
   "legal": {
-    "fullName": "Lodziarnia",
+    "fullName": "Lodziarnia \"Rotatoria \"",
     "nip": null,
     "regon": null,
     "privacyUrl": "#polityka-prywatnosci"
   },
   "images": {
     "hero": {
-      "src": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=eFeL23BRFC_ixPn9PKrGcA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=40.050777&pitch=0&thumbfov=100",
-      "alt": "Lodziarnia",
+      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGOIasziBT4iQ0N3v3G9XzavIGrvBlJFOwbesdCMVTi5ImF-oYhUoPZJw-QzTKKJGc__pmI_nAEWCyVfyNAPt5cwwTwhKuEJFYAxv9BnH7bpPohBf0c5ipvzscYAXkr4V3ZDQhkI6uLX6_z=w1280-h960-k-no",
+      "alt": "Lodziarnia \"Rotatoria \"",
       "mode": "custom"
     },
     "about": {
@@ -247,19 +252,19 @@
   ],
   "features": [
     {
-      "title": "Miła atmosfera",
-      "text": "",
-      "icon": "heart"
+      "title": "Naturalne składniki",
+      "text": "Prawdziwa śmietana, sezonowe owoce i żadnych zbędnych dodatków.",
+      "icon": "leaf"
     },
     {
-      "title": "Spokojne miejsce",
-      "text": "",
-      "icon": "heart"
+      "title": "Codziennie świeże",
+      "text": "Nowe porcje kręcimy każdego dnia — smaki rotują wraz z sezonem.",
+      "icon": "sparkles"
     },
     {
-      "title": "Przyjazne dzieciom",
-      "text": "",
-      "icon": "users"
+      "title": "Dla każdego",
+      "text": "Mamy też sorbety wegańskie i propozycje bez laktozy oraz bez glutenu.",
+      "icon": "heart"
     }
   ],
   "process": [],
@@ -316,15 +321,15 @@
   ],
   "hero": {
     "headline": "Lody, które robimy z głową i sercem.",
-    "subheadline": "Rzemieślnicza lodziarnia — Knurów i okolice. Codziennie świeże lody z naturalnych składników — na miejscu i na wynos.",
+    "subheadline": "Rzemieślnicza lodziarnia — Jarnołtówek i okolice. Codziennie świeże lody z naturalnych składników — na miejscu i na wynos.",
     "badges": [
-      "Miła atmosfera",
-      "Spokojne miejsce",
-      "Przyjazne dzieciom"
+      "Naturalne składniki",
+      "Codziennie świeże",
+      "Dla każdego"
     ],
     "image": {
-      "src": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=eFeL23BRFC_ixPn9PKrGcA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=40.050777&pitch=0&thumbfov=100",
-      "alt": "Lodziarnia",
+      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGOIasziBT4iQ0N3v3G9XzavIGrvBlJFOwbesdCMVTi5ImF-oYhUoPZJw-QzTKKJGc__pmI_nAEWCyVfyNAPt5cwwTwhKuEJFYAxv9BnH7bpPohBf0c5ipvzscYAXkr4V3ZDQhkI6uLX6_z=w1280-h960-k-no",
+      "alt": "Lodziarnia \"Rotatoria \"",
       "mode": "custom"
     }
   },
@@ -351,29 +356,50 @@
     "text": "Czekamy ze świeżymi, rzemieślniczymi lodami — na miejscu i na wynos."
   },
   "seo": {
-    "title": "Lodziarnia — Lodziarnia rzemieślnicza | Knurów",
-    "description": "Lodziarnia — lodziarnia rzemieślnicza. Knurów i okolice. Oferujemy: Lody rzemieślnicze, Sorbety owocowe, Desery lodowe i Lody na wynos.",
+    "title": "Lodziarnia \"Rotatoria \" — Lodziarnia rzemieślnicza | Jarnołtówek",
+    "description": "Lodziarnia \"Rotatoria \" — lodziarnia rzemieślnicza. Jarnołtówek i okolice. Oferujemy: Lody rzemieślnicze, Sorbety owocowe, Desery lodowe i Lody na wynos.",
     "keywords": [
       "lodziarnia",
       "lody rzemieślnicze",
       "lody naturalne",
       "gelato",
       "desery lodowe",
-      "Knurów"
+      "Jarnołtówek"
     ],
     "ogImage": null
   },
   "rating": "4,9",
-  "reviewCount": 6,
+  "reviewCount": 13,
   "priceRange": null,
   "hoursWeekly": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
+    {
+      "open": "12:00",
+      "close": "20:00"
+    },
+    {
+      "open": "12:00",
+      "close": "20:00"
+    },
+    {
+      "open": "12:00",
+      "close": "20:00"
+    },
+    {
+      "open": "12:00",
+      "close": "20:00"
+    },
+    {
+      "open": "12:00",
+      "close": "20:00"
+    },
+    {
+      "open": "12:00",
+      "close": "20:00"
+    },
+    {
+      "open": "12:00",
+      "close": "20:00"
+    }
   ],
   "layout": [
     "header",

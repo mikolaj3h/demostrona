@@ -1,6 +1,6 @@
 {
-  "name": "Lodziarnia",
-  "slug": "lodziarnia",
+  "name": "Lodziarnia w Złocieńcu",
+  "slug": "lodziarnia-w-zlociencu",
   "tagline": null,
   "description": null,
   "industry": "lodziarnia",
@@ -66,36 +66,41 @@
     "primary": "#c12f52",
     "accent": "#79c2a8"
   },
-  "city": "Knurów",
+  "city": "Złocieniec",
   "region": null,
-  "serviceArea": "Knurów",
+  "serviceArea": "Złocieniec",
   "year": null,
   "url": null,
   "contact": {
-    "phone": "+48 322 368 572",
-    "phoneRaw": "+48 32 236 85 72",
+    "phone": "+48 604 601 593",
+    "phoneRaw": "+48 604 601 593",
     "phoneValid": true,
     "email": null,
     "address": {
-      "street": "Hugo Kołłątaja 2",
-      "postalCode": "44-193",
-      "city": "Knurów",
-      "full": "Hugo Kołłątaja 2, 44-193 Knurów"
+      "street": "I Dywizji Wojska Polskiego 2",
+      "postalCode": "78-520",
+      "city": "Złocieniec",
+      "full": "I Dywizji Wojska Polskiego 2, 78-520 Złocieniec"
     },
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lodziarnia&query_place_id=ChIJIdbS3js2EUcRVRmLXUhYMDc"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lodziarnia%20w%20Z%C5%82ocie%C5%84cu&query_place_id=ChIJ_1Yw8v4FAUcR2hIjrEqyEsU"
   },
-  "hours": [],
+  "hours": [
+    {
+      "label": "Poniedziałek – Niedziela",
+      "value": "11:00 – 20:00"
+    }
+  ],
   "social": {},
   "legal": {
-    "fullName": "Lodziarnia",
+    "fullName": "Lodziarnia w Złocieńcu",
     "nip": null,
     "regon": null,
     "privacyUrl": "#polityka-prywatnosci"
   },
   "images": {
     "hero": {
-      "src": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=eFeL23BRFC_ixPn9PKrGcA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=40.050777&pitch=0&thumbfov=100",
-      "alt": "Lodziarnia",
+      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHpFnKT_RmTUjrNu9Jg_gBzn-wOs6jxavHU5LT1oojuTcCioJmq3o2nMylWtYjRvJ3mtkgicRtmOrZEP1oPUgkT8rOU8nP1vp5uyJYbSaUUJW-GdRUwERxaMaAecxXn7YiS0tomFQOKmrs=w1280-h960-k-no",
+      "alt": "Lodziarnia w Złocieńcu",
       "mode": "custom"
     },
     "about": {
@@ -247,19 +252,19 @@
   ],
   "features": [
     {
-      "title": "Miła atmosfera",
+      "title": "Dostępne dla wózków",
       "text": "",
-      "icon": "heart"
+      "icon": "check"
     },
     {
-      "title": "Spokojne miejsce",
+      "title": "Płatność kartą",
       "text": "",
-      "icon": "heart"
+      "icon": "shield"
     },
     {
-      "title": "Przyjazne dzieciom",
+      "title": "Płatności zbliżeniowe",
       "text": "",
-      "icon": "users"
+      "icon": "shield"
     }
   ],
   "process": [],
@@ -316,15 +321,15 @@
   ],
   "hero": {
     "headline": "Lody, które robimy z głową i sercem.",
-    "subheadline": "Rzemieślnicza lodziarnia — Knurów i okolice. Codziennie świeże lody z naturalnych składników — na miejscu i na wynos.",
+    "subheadline": "Rzemieślnicza lodziarnia — Złocieniec i okolice. Codziennie świeże lody z naturalnych składników — na miejscu i na wynos.",
     "badges": [
-      "Miła atmosfera",
-      "Spokojne miejsce",
-      "Przyjazne dzieciom"
+      "Dostępne dla wózków",
+      "Płatność kartą",
+      "Płatności zbliżeniowe"
     ],
     "image": {
-      "src": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=eFeL23BRFC_ixPn9PKrGcA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=40.050777&pitch=0&thumbfov=100",
-      "alt": "Lodziarnia",
+      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHpFnKT_RmTUjrNu9Jg_gBzn-wOs6jxavHU5LT1oojuTcCioJmq3o2nMylWtYjRvJ3mtkgicRtmOrZEP1oPUgkT8rOU8nP1vp5uyJYbSaUUJW-GdRUwERxaMaAecxXn7YiS0tomFQOKmrs=w1280-h960-k-no",
+      "alt": "Lodziarnia w Złocieńcu",
       "mode": "custom"
     }
   },
@@ -351,29 +356,50 @@
     "text": "Czekamy ze świeżymi, rzemieślniczymi lodami — na miejscu i na wynos."
   },
   "seo": {
-    "title": "Lodziarnia — Lodziarnia rzemieślnicza | Knurów",
-    "description": "Lodziarnia — lodziarnia rzemieślnicza. Knurów i okolice. Oferujemy: Lody rzemieślnicze, Sorbety owocowe, Desery lodowe i Lody na wynos.",
+    "title": "Lodziarnia w Złocieńcu — Lodziarnia rzemieślnicza | Złocieniec",
+    "description": "Lodziarnia w Złocieńcu — lodziarnia rzemieślnicza. Złocieniec i okolice. Oferujemy: Lody rzemieślnicze, Sorbety owocowe, Desery lodowe i Lody na wynos.",
     "keywords": [
       "lodziarnia",
       "lody rzemieślnicze",
       "lody naturalne",
       "gelato",
       "desery lodowe",
-      "Knurów"
+      "Złocieniec"
     ],
     "ogImage": null
   },
   "rating": "4,9",
-  "reviewCount": 6,
+  "reviewCount": 78,
   "priceRange": null,
   "hoursWeekly": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
+    {
+      "open": "11:00",
+      "close": "20:00"
+    },
+    {
+      "open": "11:00",
+      "close": "20:00"
+    },
+    {
+      "open": "11:00",
+      "close": "20:00"
+    },
+    {
+      "open": "11:00",
+      "close": "20:00"
+    },
+    {
+      "open": "11:00",
+      "close": "20:00"
+    },
+    {
+      "open": "11:00",
+      "close": "20:00"
+    },
+    {
+      "open": "11:00",
+      "close": "20:00"
+    }
   ],
   "layout": [
     "header",

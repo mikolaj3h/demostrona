@@ -1,6 +1,6 @@
 {
-  "name": "Lodziarnia",
-  "slug": "lodziarnia",
+  "name": "Bursztynek Lodziarnia & Kawiarnia",
+  "slug": "bursztynek-lodziarnia-kawiarnia",
   "tagline": null,
   "description": null,
   "industry": "lodziarnia",
@@ -66,36 +66,41 @@
     "primary": "#c12f52",
     "accent": "#79c2a8"
   },
-  "city": "Knurów",
+  "city": "Władysławowo",
   "region": null,
-  "serviceArea": "Knurów",
+  "serviceArea": "Władysławowo",
   "year": null,
   "url": null,
   "contact": {
-    "phone": "+48 322 368 572",
-    "phoneRaw": "+48 32 236 85 72",
+    "phone": "+48 602 624 794",
+    "phoneRaw": "+48 602 624 794",
     "phoneValid": true,
     "email": null,
     "address": {
-      "street": "Hugo Kołłątaja 2",
-      "postalCode": "44-193",
-      "city": "Knurów",
-      "full": "Hugo Kołłątaja 2, 44-193 Knurów"
+      "street": "Zielona 12",
+      "postalCode": "84-120",
+      "city": "Władysławowo",
+      "full": "Zielona 12, 84-120 Władysławowo"
     },
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lodziarnia&query_place_id=ChIJIdbS3js2EUcRVRmLXUhYMDc"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Bursztynek%20Lodziarnia%20%26%20Kawiarnia&query_place_id=ChIJZ4O5o6tM_EYROlnzAR9COEo"
   },
-  "hours": [],
+  "hours": [
+    {
+      "label": "Poniedziałek – Niedziela",
+      "value": "10:00 – 20:00"
+    }
+  ],
   "social": {},
   "legal": {
-    "fullName": "Lodziarnia",
+    "fullName": "Bursztynek Lodziarnia & Kawiarnia",
     "nip": null,
     "regon": null,
     "privacyUrl": "#polityka-prywatnosci"
   },
   "images": {
     "hero": {
-      "src": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=eFeL23BRFC_ixPn9PKrGcA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=40.050777&pitch=0&thumbfov=100",
-      "alt": "Lodziarnia",
+      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFmql0ieH1u0Lbw77Ch_Hs20Hy-4Q-HpLUb_8fNOEuokxZle6l2MZJHyiC4gKTm5I2ynOYYyfc_d_42CLIKYx1pi1JiomyaLG5hxo8IXqVcQrILT9pphAV5ILtZAH5hbFyjMTKWLA=w1280-h960-k-no",
+      "alt": "Bursztynek Lodziarnia & Kawiarnia",
       "mode": "custom"
     },
     "about": {
@@ -247,6 +252,16 @@
   ],
   "features": [
     {
+      "title": "Na wynos",
+      "text": "",
+      "icon": "truck"
+    },
+    {
+      "title": "Dostępne dla wózków",
+      "text": "",
+      "icon": "check"
+    },
+    {
       "title": "Miła atmosfera",
       "text": "",
       "icon": "heart"
@@ -257,9 +272,14 @@
       "icon": "heart"
     },
     {
-      "title": "Przyjazne dzieciom",
+      "title": "Szybka obsługa",
       "text": "",
-      "icon": "users"
+      "icon": "clock"
+    },
+    {
+      "title": "Płatność kartą",
+      "text": "",
+      "icon": "shield"
     }
   ],
   "process": [],
@@ -316,15 +336,15 @@
   ],
   "hero": {
     "headline": "Lody, które robimy z głową i sercem.",
-    "subheadline": "Rzemieślnicza lodziarnia — Knurów i okolice. Codziennie świeże lody z naturalnych składników — na miejscu i na wynos.",
+    "subheadline": "Rzemieślnicza lodziarnia — Władysławowo i okolice. Codziennie świeże lody z naturalnych składników — na miejscu i na wynos.",
     "badges": [
-      "Miła atmosfera",
-      "Spokojne miejsce",
-      "Przyjazne dzieciom"
+      "Na wynos",
+      "Dostępne dla wózków",
+      "Miła atmosfera"
     ],
     "image": {
-      "src": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=eFeL23BRFC_ixPn9PKrGcA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=40.050777&pitch=0&thumbfov=100",
-      "alt": "Lodziarnia",
+      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFmql0ieH1u0Lbw77Ch_Hs20Hy-4Q-HpLUb_8fNOEuokxZle6l2MZJHyiC4gKTm5I2ynOYYyfc_d_42CLIKYx1pi1JiomyaLG5hxo8IXqVcQrILT9pphAV5ILtZAH5hbFyjMTKWLA=w1280-h960-k-no",
+      "alt": "Bursztynek Lodziarnia & Kawiarnia",
       "mode": "custom"
     }
   },
@@ -351,29 +371,50 @@
     "text": "Czekamy ze świeżymi, rzemieślniczymi lodami — na miejscu i na wynos."
   },
   "seo": {
-    "title": "Lodziarnia — Lodziarnia rzemieślnicza | Knurów",
-    "description": "Lodziarnia — lodziarnia rzemieślnicza. Knurów i okolice. Oferujemy: Lody rzemieślnicze, Sorbety owocowe, Desery lodowe i Lody na wynos.",
+    "title": "Bursztynek Lodziarnia & Kawiarnia | Władysławowo",
+    "description": "Bursztynek Lodziarnia & Kawiarnia — lodziarnia rzemieślnicza. Władysławowo i okolice.",
     "keywords": [
       "lodziarnia",
       "lody rzemieślnicze",
       "lody naturalne",
       "gelato",
       "desery lodowe",
-      "Knurów"
+      "Władysławowo"
     ],
     "ogImage": null
   },
   "rating": "4,9",
-  "reviewCount": 6,
+  "reviewCount": 89,
   "priceRange": null,
   "hoursWeekly": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
+    {
+      "open": "10:00",
+      "close": "20:00"
+    },
+    {
+      "open": "10:00",
+      "close": "20:00"
+    },
+    {
+      "open": "10:00",
+      "close": "20:00"
+    },
+    {
+      "open": "10:00",
+      "close": "20:00"
+    },
+    {
+      "open": "10:00",
+      "close": "20:00"
+    },
+    {
+      "open": "10:00",
+      "close": "20:00"
+    },
+    {
+      "open": "10:00",
+      "close": "20:00"
+    }
   ],
   "layout": [
     "header",

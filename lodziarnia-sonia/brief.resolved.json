@@ -1,6 +1,6 @@
 {
-  "name": "Lodziarnia",
-  "slug": "lodziarnia",
+  "name": "Lodziarnia \"Sonia\"",
+  "slug": "lodziarnia-sonia",
   "tagline": null,
   "description": null,
   "industry": "lodziarnia",
@@ -66,36 +66,49 @@
     "primary": "#c12f52",
     "accent": "#79c2a8"
   },
-  "city": "Knurów",
+  "city": "Mikołów",
   "region": null,
-  "serviceArea": "Knurów",
+  "serviceArea": "Mikołów",
   "year": null,
   "url": null,
   "contact": {
-    "phone": "+48 322 368 572",
-    "phoneRaw": "+48 32 236 85 72",
+    "phone": "+48 516 091 336",
+    "phoneRaw": "+48 516 091 336",
     "phoneValid": true,
     "email": null,
     "address": {
-      "street": "Hugo Kołłątaja 2",
-      "postalCode": "44-193",
-      "city": "Knurów",
-      "full": "Hugo Kołłątaja 2, 44-193 Knurów"
+      "street": "Równoległa 99",
+      "postalCode": "43-190",
+      "city": "Mikołów",
+      "full": "Równoległa 99, 43-190 Mikołów"
     },
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lodziarnia&query_place_id=ChIJIdbS3js2EUcRVRmLXUhYMDc"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lodziarnia%20%22Sonia%22&query_place_id=ChIJxYCa2ag0EUcRiN26FB4jjuM"
   },
-  "hours": [],
+  "hours": [
+    {
+      "label": "Poniedziałek",
+      "value": "13:00 – 20:00"
+    },
+    {
+      "label": "Wtorek – Sobota",
+      "value": "11:00 – 20:00"
+    },
+    {
+      "label": "Niedziela",
+      "value": "11:30 – 20:00"
+    }
+  ],
   "social": {},
   "legal": {
-    "fullName": "Lodziarnia",
+    "fullName": "Lodziarnia \"Sonia\"",
     "nip": null,
     "regon": null,
     "privacyUrl": "#polityka-prywatnosci"
   },
   "images": {
     "hero": {
-      "src": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=eFeL23BRFC_ixPn9PKrGcA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=40.050777&pitch=0&thumbfov=100",
-      "alt": "Lodziarnia",
+      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEBVSvgrwpHgUAQuy2PW4qn1r4w7K5Dm-FnSERHwlnfBbpeFQ5TIt8wtQx-rMRLP3GYFvCNQ6I4pYWg7VHdu5YvrnQDNdrXTgo7R1is1j8c7LhnLkr0VcOz_85Ep-nk9c6C8WV0=w1280-h960-k-no",
+      "alt": "Lodziarnia \"Sonia\"",
       "mode": "custom"
     },
     "about": {
@@ -247,19 +260,14 @@
   ],
   "features": [
     {
-      "title": "Miła atmosfera",
+      "title": "Na wynos",
       "text": "",
-      "icon": "heart"
+      "icon": "truck"
     },
     {
-      "title": "Spokojne miejsce",
+      "title": "Dostępne dla wózków",
       "text": "",
-      "icon": "heart"
-    },
-    {
-      "title": "Przyjazne dzieciom",
-      "text": "",
-      "icon": "users"
+      "icon": "check"
     }
   ],
   "process": [],
@@ -316,15 +324,14 @@
   ],
   "hero": {
     "headline": "Lody, które robimy z głową i sercem.",
-    "subheadline": "Rzemieślnicza lodziarnia — Knurów i okolice. Codziennie świeże lody z naturalnych składników — na miejscu i na wynos.",
+    "subheadline": "Rzemieślnicza lodziarnia — Mikołów i okolice. Codziennie świeże lody z naturalnych składników — na miejscu i na wynos.",
     "badges": [
-      "Miła atmosfera",
-      "Spokojne miejsce",
-      "Przyjazne dzieciom"
+      "Na wynos",
+      "Dostępne dla wózków"
     ],
     "image": {
-      "src": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=eFeL23BRFC_ixPn9PKrGcA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=40.050777&pitch=0&thumbfov=100",
-      "alt": "Lodziarnia",
+      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEBVSvgrwpHgUAQuy2PW4qn1r4w7K5Dm-FnSERHwlnfBbpeFQ5TIt8wtQx-rMRLP3GYFvCNQ6I4pYWg7VHdu5YvrnQDNdrXTgo7R1is1j8c7LhnLkr0VcOz_85Ep-nk9c6C8WV0=w1280-h960-k-no",
+      "alt": "Lodziarnia \"Sonia\"",
       "mode": "custom"
     }
   },
@@ -351,29 +358,50 @@
     "text": "Czekamy ze świeżymi, rzemieślniczymi lodami — na miejscu i na wynos."
   },
   "seo": {
-    "title": "Lodziarnia — Lodziarnia rzemieślnicza | Knurów",
-    "description": "Lodziarnia — lodziarnia rzemieślnicza. Knurów i okolice. Oferujemy: Lody rzemieślnicze, Sorbety owocowe, Desery lodowe i Lody na wynos.",
+    "title": "Lodziarnia \"Sonia\" — Lodziarnia rzemieślnicza | Mikołów",
+    "description": "Lodziarnia \"Sonia\" — lodziarnia rzemieślnicza. Mikołów i okolice. Oferujemy: Lody rzemieślnicze, Sorbety owocowe, Desery lodowe i Lody na wynos.",
     "keywords": [
       "lodziarnia",
       "lody rzemieślnicze",
       "lody naturalne",
       "gelato",
       "desery lodowe",
-      "Knurów"
+      "Mikołów"
     ],
     "ogImage": null
   },
   "rating": "4,9",
-  "reviewCount": 6,
+  "reviewCount": 842,
   "priceRange": null,
   "hoursWeekly": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
+    {
+      "open": "13:00",
+      "close": "20:00"
+    },
+    {
+      "open": "11:00",
+      "close": "20:00"
+    },
+    {
+      "open": "11:00",
+      "close": "20:00"
+    },
+    {
+      "open": "11:00",
+      "close": "20:00"
+    },
+    {
+      "open": "11:00",
+      "close": "20:00"
+    },
+    {
+      "open": "11:00",
+      "close": "20:00"
+    },
+    {
+      "open": "11:30",
+      "close": "20:00"
+    }
   ],
   "layout": [
     "header",

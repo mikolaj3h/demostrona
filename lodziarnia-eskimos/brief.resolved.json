@@ -1,6 +1,6 @@
 {
-  "name": "Lodziarnia",
-  "slug": "lodziarnia",
+  "name": "Lodziarnia Eskimos",
+  "slug": "lodziarnia-eskimos",
   "tagline": null,
   "description": null,
   "industry": "lodziarnia",
@@ -66,36 +66,41 @@
     "primary": "#c12f52",
     "accent": "#79c2a8"
   },
-  "city": "Knurów",
+  "city": "Tarnowskie Góry",
   "region": null,
-  "serviceArea": "Knurów",
+  "serviceArea": "Tarnowskie Góry",
   "year": null,
   "url": null,
   "contact": {
-    "phone": "+48 322 368 572",
-    "phoneRaw": "+48 32 236 85 72",
+    "phone": "+48 322 854 343",
+    "phoneRaw": "+48 32 285 43 43",
     "phoneValid": true,
     "email": null,
     "address": {
-      "street": "Hugo Kołłątaja 2",
-      "postalCode": "44-193",
-      "city": "Knurów",
-      "full": "Hugo Kołłątaja 2, 44-193 Knurów"
+      "street": "Witosa 78",
+      "postalCode": "42-603",
+      "city": "Tarnowskie Góry",
+      "full": "Witosa 78, 42-603 Tarnowskie Góry"
     },
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lodziarnia&query_place_id=ChIJIdbS3js2EUcRVRmLXUhYMDc"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lodziarnia%20Eskimos&query_place_id=ChIJaZetQw0pEUcRneSNAvtxrC0"
   },
-  "hours": [],
+  "hours": [
+    {
+      "label": "Poniedziałek – Niedziela",
+      "value": "11:00 – 20:00"
+    }
+  ],
   "social": {},
   "legal": {
-    "fullName": "Lodziarnia",
+    "fullName": "Lodziarnia Eskimos",
     "nip": null,
     "regon": null,
     "privacyUrl": "#polityka-prywatnosci"
   },
   "images": {
     "hero": {
-      "src": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=eFeL23BRFC_ixPn9PKrGcA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=40.050777&pitch=0&thumbfov=100",
-      "alt": "Lodziarnia",
+      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGGcPE-la9J_Zf9h-1EigoeBwY5pC39PbHQa9EXbthlG7FLT62a1IGyBAo-Q4rgZY1oWrjFm3izK4fg-cz1M1W-yTjsNKxK7Wkx5gysRLuk9ZtxNw5xgR-iLV2bTBcnJRKKhycuTfEwGCSr=w1280-h960-k-no",
+      "alt": "Lodziarnia Eskimos",
       "mode": "custom"
     },
     "about": {
@@ -247,19 +252,14 @@
   ],
   "features": [
     {
-      "title": "Miła atmosfera",
+      "title": "Płatność kartą",
       "text": "",
-      "icon": "heart"
+      "icon": "shield"
     },
     {
-      "title": "Spokojne miejsce",
+      "title": "Płatności zbliżeniowe",
       "text": "",
-      "icon": "heart"
-    },
-    {
-      "title": "Przyjazne dzieciom",
-      "text": "",
-      "icon": "users"
+      "icon": "shield"
     }
   ],
   "process": [],
@@ -316,15 +316,14 @@
   ],
   "hero": {
     "headline": "Lody, które robimy z głową i sercem.",
-    "subheadline": "Rzemieślnicza lodziarnia — Knurów i okolice. Codziennie świeże lody z naturalnych składników — na miejscu i na wynos.",
+    "subheadline": "Rzemieślnicza lodziarnia — Tarnowskie Góry i okolice. Codziennie świeże lody z naturalnych składników — na miejscu i na wynos.",
     "badges": [
-      "Miła atmosfera",
-      "Spokojne miejsce",
-      "Przyjazne dzieciom"
+      "Płatność kartą",
+      "Płatności zbliżeniowe"
     ],
     "image": {
-      "src": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=eFeL23BRFC_ixPn9PKrGcA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=40.050777&pitch=0&thumbfov=100",
-      "alt": "Lodziarnia",
+      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGGcPE-la9J_Zf9h-1EigoeBwY5pC39PbHQa9EXbthlG7FLT62a1IGyBAo-Q4rgZY1oWrjFm3izK4fg-cz1M1W-yTjsNKxK7Wkx5gysRLuk9ZtxNw5xgR-iLV2bTBcnJRKKhycuTfEwGCSr=w1280-h960-k-no",
+      "alt": "Lodziarnia Eskimos",
       "mode": "custom"
     }
   },
@@ -351,29 +350,50 @@
     "text": "Czekamy ze świeżymi, rzemieślniczymi lodami — na miejscu i na wynos."
   },
   "seo": {
-    "title": "Lodziarnia — Lodziarnia rzemieślnicza | Knurów",
-    "description": "Lodziarnia — lodziarnia rzemieślnicza. Knurów i okolice. Oferujemy: Lody rzemieślnicze, Sorbety owocowe, Desery lodowe i Lody na wynos.",
+    "title": "Lodziarnia Eskimos — Lodziarnia rzemieślnicza | Tarnowskie Góry",
+    "description": "Lodziarnia Eskimos — lodziarnia rzemieślnicza. Tarnowskie Góry i okolice. Oferujemy: Lody rzemieślnicze, Sorbety owocowe, Desery lodowe i Lody na wynos.",
     "keywords": [
       "lodziarnia",
       "lody rzemieślnicze",
       "lody naturalne",
       "gelato",
       "desery lodowe",
-      "Knurów"
+      "Tarnowskie Góry"
     ],
     "ogImage": null
   },
   "rating": "4,9",
-  "reviewCount": 6,
+  "reviewCount": 36,
   "priceRange": null,
   "hoursWeekly": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
+    {
+      "open": "11:00",
+      "close": "20:00"
+    },
+    {
+      "open": "11:00",
+      "close": "20:00"
+    },
+    {
+      "open": "11:00",
+      "close": "20:00"
+    },
+    {
+      "open": "11:00",
+      "close": "20:00"
+    },
+    {
+      "open": "11:00",
+      "close": "20:00"
+    },
+    {
+      "open": "11:00",
+      "close": "20:00"
+    },
+    {
+      "open": "11:00",
+      "close": "20:00"
+    }
   ],
   "layout": [
     "header",

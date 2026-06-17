@@ -1,6 +1,6 @@
 {
-  "name": "Lodziarnia",
-  "slug": "lodziarnia",
+  "name": "Lodziarnia Favola",
+  "slug": "lodziarnia-favola",
   "tagline": null,
   "description": null,
   "industry": "lodziarnia",
@@ -66,36 +66,41 @@
     "primary": "#c12f52",
     "accent": "#79c2a8"
   },
-  "city": "Knurów",
+  "city": "Smardzew",
   "region": null,
-  "serviceArea": "Knurów",
+  "serviceArea": "Smardzew",
   "year": null,
   "url": null,
   "contact": {
-    "phone": "+48 322 368 572",
-    "phoneRaw": "+48 32 236 85 72",
+    "phone": "+48 500 631 826",
+    "phoneRaw": "+48 500 631 826",
     "phoneValid": true,
     "email": null,
     "address": {
-      "street": "Hugo Kołłątaja 2",
-      "postalCode": "44-193",
-      "city": "Knurów",
-      "full": "Hugo Kołłątaja 2, 44-193 Knurów"
+      "street": "Kościelna 23",
+      "postalCode": "95-002",
+      "city": "Smardzew",
+      "full": "Kościelna 23, 95-002 Smardzew"
     },
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lodziarnia&query_place_id=ChIJIdbS3js2EUcRVRmLXUhYMDc"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lodziarnia%20Favola&query_place_id=ChIJuVcYDADJG0cRpo_K1VxmaWs"
   },
-  "hours": [],
+  "hours": [
+    {
+      "label": "Poniedziałek – Niedziela",
+      "value": "11:00 – 21:00"
+    }
+  ],
   "social": {},
   "legal": {
-    "fullName": "Lodziarnia",
+    "fullName": "Lodziarnia Favola",
     "nip": null,
     "regon": null,
     "privacyUrl": "#polityka-prywatnosci"
   },
   "images": {
     "hero": {
-      "src": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=eFeL23BRFC_ixPn9PKrGcA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=40.050777&pitch=0&thumbfov=100",
-      "alt": "Lodziarnia",
+      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEvJ9pmeJ2NWW3g5bMXqSAtwLjal40aUIgs0xrsG9ZWWByFSyT20in4w7YtlWxaWpFH9Jny84SYGfSfy2iNRCsROPrRH9WhW1GVNINSCDBPj69GxRa_RYmKTQ7JPFMdCNFPAoyV2A=w1280-h960-k-no",
+      "alt": "Lodziarnia Favola",
       "mode": "custom"
     },
     "about": {
@@ -316,15 +321,15 @@
   ],
   "hero": {
     "headline": "Lody, które robimy z głową i sercem.",
-    "subheadline": "Rzemieślnicza lodziarnia — Knurów i okolice. Codziennie świeże lody z naturalnych składników — na miejscu i na wynos.",
+    "subheadline": "Rzemieślnicza lodziarnia — Smardzew i okolice. Codziennie świeże lody z naturalnych składników — na miejscu i na wynos.",
     "badges": [
       "Miła atmosfera",
       "Spokojne miejsce",
       "Przyjazne dzieciom"
     ],
     "image": {
-      "src": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=eFeL23BRFC_ixPn9PKrGcA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=40.050777&pitch=0&thumbfov=100",
-      "alt": "Lodziarnia",
+      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEvJ9pmeJ2NWW3g5bMXqSAtwLjal40aUIgs0xrsG9ZWWByFSyT20in4w7YtlWxaWpFH9Jny84SYGfSfy2iNRCsROPrRH9WhW1GVNINSCDBPj69GxRa_RYmKTQ7JPFMdCNFPAoyV2A=w1280-h960-k-no",
+      "alt": "Lodziarnia Favola",
       "mode": "custom"
     }
   },
@@ -351,29 +356,50 @@
     "text": "Czekamy ze świeżymi, rzemieślniczymi lodami — na miejscu i na wynos."
   },
   "seo": {
-    "title": "Lodziarnia — Lodziarnia rzemieślnicza | Knurów",
-    "description": "Lodziarnia — lodziarnia rzemieślnicza. Knurów i okolice. Oferujemy: Lody rzemieślnicze, Sorbety owocowe, Desery lodowe i Lody na wynos.",
+    "title": "Lodziarnia Favola — Lodziarnia rzemieślnicza | Smardzew",
+    "description": "Lodziarnia Favola — lodziarnia rzemieślnicza. Smardzew i okolice. Oferujemy: Lody rzemieślnicze, Sorbety owocowe, Desery lodowe i Lody na wynos.",
     "keywords": [
       "lodziarnia",
       "lody rzemieślnicze",
       "lody naturalne",
       "gelato",
       "desery lodowe",
-      "Knurów"
+      "Smardzew"
     ],
     "ogImage": null
   },
   "rating": "4,9",
-  "reviewCount": 6,
+  "reviewCount": 17,
   "priceRange": null,
   "hoursWeekly": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
+    {
+      "open": "11:00",
+      "close": "21:00"
+    },
+    {
+      "open": "11:00",
+      "close": "21:00"
+    },
+    {
+      "open": "11:00",
+      "close": "21:00"
+    },
+    {
+      "open": "11:00",
+      "close": "21:00"
+    },
+    {
+      "open": "11:00",
+      "close": "21:00"
+    },
+    {
+      "open": "11:00",
+      "close": "21:00"
+    },
+    {
+      "open": "11:00",
+      "close": "21:00"
+    }
   ],
   "layout": [
     "header",

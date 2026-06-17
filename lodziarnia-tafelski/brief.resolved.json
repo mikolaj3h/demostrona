@@ -1,6 +1,6 @@
 {
-  "name": "Lodziarnia",
-  "slug": "lodziarnia",
+  "name": "Lodziarnia Tafelski",
+  "slug": "lodziarnia-tafelski",
   "tagline": null,
   "description": null,
   "industry": "lodziarnia",
@@ -66,36 +66,36 @@
     "primary": "#c12f52",
     "accent": "#79c2a8"
   },
-  "city": "Knurów",
+  "city": "Kaźmierz",
   "region": null,
-  "serviceArea": "Knurów",
+  "serviceArea": "Kaźmierz",
   "year": null,
   "url": null,
   "contact": {
-    "phone": "+48 322 368 572",
-    "phoneRaw": "+48 32 236 85 72",
+    "phone": "+48 607 413 753",
+    "phoneRaw": "+48 607 413 753",
     "phoneValid": true,
     "email": null,
     "address": {
-      "street": "Hugo Kołłątaja 2",
-      "postalCode": "44-193",
-      "city": "Knurów",
-      "full": "Hugo Kołłątaja 2, 44-193 Knurów"
+      "street": "64-530 Kaźmierz",
+      "postalCode": null,
+      "city": "Kaźmierz",
+      "full": "64-530 Kaźmierz, Kaźmierz"
     },
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lodziarnia&query_place_id=ChIJIdbS3js2EUcRVRmLXUhYMDc"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lodziarnia%20Tafelski&query_place_id=ChIJqzK_DgA_BEcRr2VOOPJA8U4"
   },
   "hours": [],
   "social": {},
   "legal": {
-    "fullName": "Lodziarnia",
+    "fullName": "Lodziarnia Tafelski",
     "nip": null,
     "regon": null,
     "privacyUrl": "#polityka-prywatnosci"
   },
   "images": {
     "hero": {
-      "src": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=eFeL23BRFC_ixPn9PKrGcA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=40.050777&pitch=0&thumbfov=100",
-      "alt": "Lodziarnia",
+      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAF77zm1b8jsBpe7E1InHGE1_p-DkYisKdpH_ZlBRK8Ir7GcKTCoZpXIvH0qZnKHwT453eRJRrDyLOAdDy8FXaImceio_oVlJ--XHChu_A6DIUicDqfOkP-RealpFQWqVTt5Bgav0LkQrqg=w1280-h960-k-no",
+      "alt": "Lodziarnia Tafelski",
       "mode": "custom"
     },
     "about": {
@@ -257,6 +257,21 @@
       "icon": "heart"
     },
     {
+      "title": "Szybka obsługa",
+      "text": "",
+      "icon": "clock"
+    },
+    {
+      "title": "Płatność kartą",
+      "text": "",
+      "icon": "shield"
+    },
+    {
+      "title": "Płatności zbliżeniowe",
+      "text": "",
+      "icon": "shield"
+    },
+    {
       "title": "Przyjazne dzieciom",
       "text": "",
       "icon": "users"
@@ -316,15 +331,15 @@
   ],
   "hero": {
     "headline": "Lody, które robimy z głową i sercem.",
-    "subheadline": "Rzemieślnicza lodziarnia — Knurów i okolice. Codziennie świeże lody z naturalnych składników — na miejscu i na wynos.",
+    "subheadline": "Rzemieślnicza lodziarnia — Kaźmierz i okolice. Codziennie świeże lody z naturalnych składników — na miejscu i na wynos.",
     "badges": [
       "Miła atmosfera",
       "Spokojne miejsce",
-      "Przyjazne dzieciom"
+      "Szybka obsługa"
     ],
     "image": {
-      "src": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=eFeL23BRFC_ixPn9PKrGcA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=40.050777&pitch=0&thumbfov=100",
-      "alt": "Lodziarnia",
+      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAF77zm1b8jsBpe7E1InHGE1_p-DkYisKdpH_ZlBRK8Ir7GcKTCoZpXIvH0qZnKHwT453eRJRrDyLOAdDy8FXaImceio_oVlJ--XHChu_A6DIUicDqfOkP-RealpFQWqVTt5Bgav0LkQrqg=w1280-h960-k-no",
+      "alt": "Lodziarnia Tafelski",
       "mode": "custom"
     }
   },
@@ -351,20 +366,20 @@
     "text": "Czekamy ze świeżymi, rzemieślniczymi lodami — na miejscu i na wynos."
   },
   "seo": {
-    "title": "Lodziarnia — Lodziarnia rzemieślnicza | Knurów",
-    "description": "Lodziarnia — lodziarnia rzemieślnicza. Knurów i okolice. Oferujemy: Lody rzemieślnicze, Sorbety owocowe, Desery lodowe i Lody na wynos.",
+    "title": "Lodziarnia Tafelski — Lodziarnia rzemieślnicza | Kaźmierz",
+    "description": "Lodziarnia Tafelski — lodziarnia rzemieślnicza. Kaźmierz i okolice. Oferujemy: Lody rzemieślnicze, Sorbety owocowe, Desery lodowe i Lody na wynos.",
     "keywords": [
       "lodziarnia",
       "lody rzemieślnicze",
       "lody naturalne",
       "gelato",
       "desery lodowe",
-      "Knurów"
+      "Kaźmierz"
     ],
     "ogImage": null
   },
   "rating": "4,9",
-  "reviewCount": 6,
+  "reviewCount": 38,
   "priceRange": null,
   "hoursWeekly": [
     null,

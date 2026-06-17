@@ -1,6 +1,6 @@
 {
-  "name": "Lodziarnia",
-  "slug": "lodziarnia",
+  "name": "Lodziarnia Malwina Ostrzeszów",
+  "slug": "lodziarnia-malwina-ostrzeszow",
   "tagline": null,
   "description": null,
   "industry": "lodziarnia",
@@ -66,36 +66,41 @@
     "primary": "#c12f52",
     "accent": "#79c2a8"
   },
-  "city": "Knurów",
+  "city": "Ostrzeszów",
   "region": null,
-  "serviceArea": "Knurów",
+  "serviceArea": "Ostrzeszów",
   "year": null,
   "url": null,
   "contact": {
-    "phone": "+48 322 368 572",
-    "phoneRaw": "+48 32 236 85 72",
+    "phone": "+48 601 544 774",
+    "phoneRaw": "+48 601 544 774",
     "phoneValid": true,
     "email": null,
     "address": {
-      "street": "Hugo Kołłątaja 2",
-      "postalCode": "44-193",
-      "city": "Knurów",
-      "full": "Hugo Kołłątaja 2, 44-193 Knurów"
+      "street": "Rynek 8",
+      "postalCode": "63-500",
+      "city": "Ostrzeszów",
+      "full": "Rynek 8, 63-500 Ostrzeszów"
     },
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lodziarnia&query_place_id=ChIJIdbS3js2EUcRVRmLXUhYMDc"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lodziarnia%20Malwina%20Ostrzesz%C3%B3w&query_place_id=ChIJZ_DQ3UilGkcROmH0P2dA8xc"
   },
-  "hours": [],
+  "hours": [
+    {
+      "label": "Poniedziałek – Niedziela",
+      "value": "09:00 – 19:00"
+    }
+  ],
   "social": {},
   "legal": {
-    "fullName": "Lodziarnia",
+    "fullName": "Lodziarnia Malwina Ostrzeszów",
     "nip": null,
     "regon": null,
     "privacyUrl": "#polityka-prywatnosci"
   },
   "images": {
     "hero": {
-      "src": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=eFeL23BRFC_ixPn9PKrGcA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=40.050777&pitch=0&thumbfov=100",
-      "alt": "Lodziarnia",
+      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEcYa-F_Ln2wJ-Pg310UZ0ga-PBeBgCMdZvxsM0R8ULHVIIfHsf4QMW86c7hYljnBfuDYoQSSGQsQU3Gv9UXRgO_xIjQVDwxhMOkaaPWX19qFAftA7p2Xlbxh2V_DD-bQQpzC5W6eeD4X4=w1280-h960-k-no",
+      "alt": "Lodziarnia Malwina Ostrzeszów",
       "mode": "custom"
     },
     "about": {
@@ -257,6 +262,11 @@
       "icon": "heart"
     },
     {
+      "title": "Szybka obsługa",
+      "text": "",
+      "icon": "clock"
+    },
+    {
       "title": "Przyjazne dzieciom",
       "text": "",
       "icon": "users"
@@ -316,15 +326,15 @@
   ],
   "hero": {
     "headline": "Lody, które robimy z głową i sercem.",
-    "subheadline": "Rzemieślnicza lodziarnia — Knurów i okolice. Codziennie świeże lody z naturalnych składników — na miejscu i na wynos.",
+    "subheadline": "Rzemieślnicza lodziarnia — Ostrzeszów i okolice. Codziennie świeże lody z naturalnych składników — na miejscu i na wynos.",
     "badges": [
       "Miła atmosfera",
       "Spokojne miejsce",
-      "Przyjazne dzieciom"
+      "Szybka obsługa"
     ],
     "image": {
-      "src": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=eFeL23BRFC_ixPn9PKrGcA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=40.050777&pitch=0&thumbfov=100",
-      "alt": "Lodziarnia",
+      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEcYa-F_Ln2wJ-Pg310UZ0ga-PBeBgCMdZvxsM0R8ULHVIIfHsf4QMW86c7hYljnBfuDYoQSSGQsQU3Gv9UXRgO_xIjQVDwxhMOkaaPWX19qFAftA7p2Xlbxh2V_DD-bQQpzC5W6eeD4X4=w1280-h960-k-no",
+      "alt": "Lodziarnia Malwina Ostrzeszów",
       "mode": "custom"
     }
   },
@@ -351,29 +361,50 @@
     "text": "Czekamy ze świeżymi, rzemieślniczymi lodami — na miejscu i na wynos."
   },
   "seo": {
-    "title": "Lodziarnia — Lodziarnia rzemieślnicza | Knurów",
-    "description": "Lodziarnia — lodziarnia rzemieślnicza. Knurów i okolice. Oferujemy: Lody rzemieślnicze, Sorbety owocowe, Desery lodowe i Lody na wynos.",
+    "title": "Lodziarnia Malwina Ostrzeszów | Ostrzeszów",
+    "description": "Lodziarnia Malwina Ostrzeszów — lodziarnia rzemieślnicza. Ostrzeszów i okolice. Oferujemy: Lody rzemieślnicze, Sorbety owocowe, Desery lodowe i Lody na wynos.",
     "keywords": [
       "lodziarnia",
       "lody rzemieślnicze",
       "lody naturalne",
       "gelato",
       "desery lodowe",
-      "Knurów"
+      "Ostrzeszów"
     ],
     "ogImage": null
   },
   "rating": "4,9",
-  "reviewCount": 6,
+  "reviewCount": 23,
   "priceRange": null,
   "hoursWeekly": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
+    {
+      "open": "09:00",
+      "close": "19:00"
+    },
+    {
+      "open": "09:00",
+      "close": "19:00"
+    },
+    {
+      "open": "09:00",
+      "close": "19:00"
+    },
+    {
+      "open": "09:00",
+      "close": "19:00"
+    },
+    {
+      "open": "09:00",
+      "close": "19:00"
+    },
+    {
+      "open": "09:00",
+      "close": "19:00"
+    },
+    {
+      "open": "09:00",
+      "close": "19:00"
+    }
   ],
   "layout": [
     "header",

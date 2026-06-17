@@ -1,6 +1,6 @@
 {
-  "name": "Lodziarnia",
-  "slug": "lodziarnia",
+  "name": "Lodziarnia Rurański",
+  "slug": "lodziarnia-ruranski",
   "tagline": null,
   "description": null,
   "industry": "lodziarnia",
@@ -66,36 +66,36 @@
     "primary": "#c12f52",
     "accent": "#79c2a8"
   },
-  "city": "Knurów",
+  "city": "Łaziska Górne",
   "region": null,
-  "serviceArea": "Knurów",
+  "serviceArea": "Łaziska Górne",
   "year": null,
   "url": null,
   "contact": {
-    "phone": "+48 322 368 572",
-    "phoneRaw": "+48 32 236 85 72",
+    "phone": "+48 601 868 822",
+    "phoneRaw": "+48 601 868 822",
     "phoneValid": true,
     "email": null,
     "address": {
-      "street": "Hugo Kołłątaja 2",
-      "postalCode": "44-193",
-      "city": "Knurów",
-      "full": "Hugo Kołłątaja 2, 44-193 Knurów"
+      "street": "Energetyków 14C",
+      "postalCode": "43-173",
+      "city": "Łaziska Górne",
+      "full": "Energetyków 14C, 43-173 Łaziska Górne"
     },
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lodziarnia&query_place_id=ChIJIdbS3js2EUcRVRmLXUhYMDc"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lodziarnia%20Rura%C5%84ski&query_place_id=ChIJAf_k_L7LFkcRuNVHB_vS4hw"
   },
   "hours": [],
   "social": {},
   "legal": {
-    "fullName": "Lodziarnia",
+    "fullName": "Lodziarnia Rurański",
     "nip": null,
     "regon": null,
     "privacyUrl": "#polityka-prywatnosci"
   },
   "images": {
     "hero": {
-      "src": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=eFeL23BRFC_ixPn9PKrGcA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=40.050777&pitch=0&thumbfov=100",
-      "alt": "Lodziarnia",
+      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAH7a24D5dWQDxbeqfGFUVcVRa5qrB2YS8wd_o4eL0tXMTA5gG-EcrNBSTPfMSpsOqqyONYIGoQFv2rgMRFG-1EReSS8y5PD0PZ3xwMeI2RJKCLa3i1crOTc6lPWSsuQ2PBfvhSLog=w1280-h960-k-no",
+      "alt": "Lodziarnia Rurański",
       "mode": "custom"
     },
     "about": {
@@ -247,19 +247,14 @@
   ],
   "features": [
     {
-      "title": "Miła atmosfera",
+      "title": "Płatność kartą",
       "text": "",
-      "icon": "heart"
+      "icon": "shield"
     },
     {
-      "title": "Spokojne miejsce",
+      "title": "Płatności zbliżeniowe",
       "text": "",
-      "icon": "heart"
-    },
-    {
-      "title": "Przyjazne dzieciom",
-      "text": "",
-      "icon": "users"
+      "icon": "shield"
     }
   ],
   "process": [],
@@ -316,15 +311,14 @@
   ],
   "hero": {
     "headline": "Lody, które robimy z głową i sercem.",
-    "subheadline": "Rzemieślnicza lodziarnia — Knurów i okolice. Codziennie świeże lody z naturalnych składników — na miejscu i na wynos.",
+    "subheadline": "Rzemieślnicza lodziarnia — Łaziska Górne i okolice. Codziennie świeże lody z naturalnych składników — na miejscu i na wynos.",
     "badges": [
-      "Miła atmosfera",
-      "Spokojne miejsce",
-      "Przyjazne dzieciom"
+      "Płatność kartą",
+      "Płatności zbliżeniowe"
     ],
     "image": {
-      "src": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=eFeL23BRFC_ixPn9PKrGcA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=40.050777&pitch=0&thumbfov=100",
-      "alt": "Lodziarnia",
+      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAH7a24D5dWQDxbeqfGFUVcVRa5qrB2YS8wd_o4eL0tXMTA5gG-EcrNBSTPfMSpsOqqyONYIGoQFv2rgMRFG-1EReSS8y5PD0PZ3xwMeI2RJKCLa3i1crOTc6lPWSsuQ2PBfvhSLog=w1280-h960-k-no",
+      "alt": "Lodziarnia Rurański",
       "mode": "custom"
     }
   },
@@ -351,20 +345,20 @@
     "text": "Czekamy ze świeżymi, rzemieślniczymi lodami — na miejscu i na wynos."
   },
   "seo": {
-    "title": "Lodziarnia — Lodziarnia rzemieślnicza | Knurów",
-    "description": "Lodziarnia — lodziarnia rzemieślnicza. Knurów i okolice. Oferujemy: Lody rzemieślnicze, Sorbety owocowe, Desery lodowe i Lody na wynos.",
+    "title": "Lodziarnia Rurański — Lodziarnia rzemieślnicza | Łaziska Górne",
+    "description": "Lodziarnia Rurański — lodziarnia rzemieślnicza. Łaziska Górne i okolice. Oferujemy: Lody rzemieślnicze, Sorbety owocowe, Desery lodowe i Lody na wynos.",
     "keywords": [
       "lodziarnia",
       "lody rzemieślnicze",
       "lody naturalne",
       "gelato",
       "desery lodowe",
-      "Knurów"
+      "Łaziska Górne"
     ],
     "ogImage": null
   },
   "rating": "4,9",
-  "reviewCount": 6,
+  "reviewCount": 13,
   "priceRange": null,
   "hoursWeekly": [
     null,

@@ -1,6 +1,6 @@
 {
-  "name": "Lodziarnia",
-  "slug": "lodziarnia",
+  "name": "Lodziarnia \"Na Zimno\" Zabrze",
+  "slug": "lodziarnia-na-zimno-zabrze",
   "tagline": null,
   "description": null,
   "industry": "lodziarnia",
@@ -66,36 +66,45 @@
     "primary": "#c12f52",
     "accent": "#79c2a8"
   },
-  "city": "Knurów",
+  "city": "Zabrze",
   "region": null,
-  "serviceArea": "Knurów",
+  "serviceArea": "Zabrze",
   "year": null,
   "url": null,
   "contact": {
-    "phone": "+48 322 368 572",
-    "phoneRaw": "+48 32 236 85 72",
+    "phone": "+48 511 514 401",
+    "phoneRaw": "+48 511 514 401",
     "phoneValid": true,
     "email": null,
     "address": {
-      "street": "Hugo Kołłątaja 2",
-      "postalCode": "44-193",
-      "city": "Knurów",
-      "full": "Hugo Kołłątaja 2, 44-193 Knurów"
+      "street": "Heweliusza 2",
+      "postalCode": "41-818",
+      "city": "Zabrze",
+      "full": "Heweliusza 2, 41-818 Zabrze"
     },
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lodziarnia&query_place_id=ChIJIdbS3js2EUcRVRmLXUhYMDc"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lodziarnia%20%22Na%20Zimno%22%20Zabrze&query_place_id=ChIJp7DUXGYtEUcRZJS9FwoImyc"
   },
-  "hours": [],
+  "hours": [
+    {
+      "label": "Poniedziałek – Piątek",
+      "value": "11:00 – 20:00"
+    },
+    {
+      "label": "Sobota – Niedziela",
+      "value": "10:00 – 20:00"
+    }
+  ],
   "social": {},
   "legal": {
-    "fullName": "Lodziarnia",
+    "fullName": "Lodziarnia \"Na Zimno\" Zabrze",
     "nip": null,
     "regon": null,
     "privacyUrl": "#polityka-prywatnosci"
   },
   "images": {
     "hero": {
-      "src": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=eFeL23BRFC_ixPn9PKrGcA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=40.050777&pitch=0&thumbfov=100",
-      "alt": "Lodziarnia",
+      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFJXBfC_uDT09EFCLm9a-IHJH6Ry5QQNc-_37vDPTv4GJisGrJZOfwFSH33F5OEf8iT-jWrsxHuHs-2OoqY6QWT4_E1X02OzPTU7tFXFfuYj1yILyqiomZh3pclY2fkkT-3JXpXRsHndEkq=w1280-h960-k-no",
+      "alt": "Lodziarnia \"Na Zimno\" Zabrze",
       "mode": "custom"
     },
     "about": {
@@ -247,14 +256,19 @@
   ],
   "features": [
     {
-      "title": "Miła atmosfera",
+      "title": "Miejsca na miejscu",
       "text": "",
-      "icon": "heart"
+      "icon": "users"
     },
     {
-      "title": "Spokojne miejsce",
+      "title": "Na wynos",
       "text": "",
-      "icon": "heart"
+      "icon": "truck"
+    },
+    {
+      "title": "Płatność kartą",
+      "text": "",
+      "icon": "shield"
     },
     {
       "title": "Przyjazne dzieciom",
@@ -316,15 +330,15 @@
   ],
   "hero": {
     "headline": "Lody, które robimy z głową i sercem.",
-    "subheadline": "Rzemieślnicza lodziarnia — Knurów i okolice. Codziennie świeże lody z naturalnych składników — na miejscu i na wynos.",
+    "subheadline": "Rzemieślnicza lodziarnia — Zabrze i okolice. Codziennie świeże lody z naturalnych składników — na miejscu i na wynos.",
     "badges": [
-      "Miła atmosfera",
-      "Spokojne miejsce",
-      "Przyjazne dzieciom"
+      "Miejsca na miejscu",
+      "Na wynos",
+      "Płatność kartą"
     ],
     "image": {
-      "src": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=eFeL23BRFC_ixPn9PKrGcA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=40.050777&pitch=0&thumbfov=100",
-      "alt": "Lodziarnia",
+      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFJXBfC_uDT09EFCLm9a-IHJH6Ry5QQNc-_37vDPTv4GJisGrJZOfwFSH33F5OEf8iT-jWrsxHuHs-2OoqY6QWT4_E1X02OzPTU7tFXFfuYj1yILyqiomZh3pclY2fkkT-3JXpXRsHndEkq=w1280-h960-k-no",
+      "alt": "Lodziarnia \"Na Zimno\" Zabrze",
       "mode": "custom"
     }
   },
@@ -351,29 +365,50 @@
     "text": "Czekamy ze świeżymi, rzemieślniczymi lodami — na miejscu i na wynos."
   },
   "seo": {
-    "title": "Lodziarnia — Lodziarnia rzemieślnicza | Knurów",
-    "description": "Lodziarnia — lodziarnia rzemieślnicza. Knurów i okolice. Oferujemy: Lody rzemieślnicze, Sorbety owocowe, Desery lodowe i Lody na wynos.",
+    "title": "Lodziarnia \"Na Zimno\" Zabrze — Lodziarnia rzemieślnicza | Zabrze",
+    "description": "Lodziarnia \"Na Zimno\" Zabrze — lodziarnia rzemieślnicza. Zabrze i okolice. Oferujemy: Lody rzemieślnicze, Sorbety owocowe, Desery lodowe i Lody na wynos.",
     "keywords": [
       "lodziarnia",
       "lody rzemieślnicze",
       "lody naturalne",
       "gelato",
       "desery lodowe",
-      "Knurów"
+      "Zabrze"
     ],
     "ogImage": null
   },
   "rating": "4,9",
-  "reviewCount": 6,
+  "reviewCount": 97,
   "priceRange": null,
   "hoursWeekly": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
+    {
+      "open": "11:00",
+      "close": "20:00"
+    },
+    {
+      "open": "11:00",
+      "close": "20:00"
+    },
+    {
+      "open": "11:00",
+      "close": "20:00"
+    },
+    {
+      "open": "11:00",
+      "close": "20:00"
+    },
+    {
+      "open": "11:00",
+      "close": "20:00"
+    },
+    {
+      "open": "10:00",
+      "close": "20:00"
+    },
+    {
+      "open": "10:00",
+      "close": "20:00"
+    }
   ],
   "layout": [
     "header",

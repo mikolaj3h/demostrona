@@ -1,6 +1,6 @@
 {
-  "name": "Lodziarnia",
-  "slug": "lodziarnia",
+  "name": "Lodziarnia Miętove.pl",
+  "slug": "lodziarnia-mietove-pl",
   "tagline": null,
   "description": null,
   "industry": "lodziarnia",
@@ -66,36 +66,45 @@
     "primary": "#c12f52",
     "accent": "#79c2a8"
   },
-  "city": "Knurów",
+  "city": "Wieliszew",
   "region": null,
-  "serviceArea": "Knurów",
+  "serviceArea": "Wieliszew",
   "year": null,
   "url": null,
   "contact": {
-    "phone": "+48 322 368 572",
-    "phoneRaw": "+48 32 236 85 72",
+    "phone": "+48 602 722 403",
+    "phoneRaw": "+48 602 722 403",
     "phoneValid": true,
     "email": null,
     "address": {
-      "street": "Hugo Kołłątaja 2",
-      "postalCode": "44-193",
-      "city": "Knurów",
-      "full": "Hugo Kołłątaja 2, 44-193 Knurów"
+      "street": "Świętojańska 37",
+      "postalCode": "05-135",
+      "city": "Wieliszew",
+      "full": "Świętojańska 37, 05-135 Wieliszew"
     },
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lodziarnia&query_place_id=ChIJIdbS3js2EUcRVRmLXUhYMDc"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lodziarnia%20Mi%C4%99tove.pl&query_place_id=ChIJ2Ze9Yo65HkcRBtHassOaFGo"
   },
-  "hours": [],
+  "hours": [
+    {
+      "label": "Poniedziałek – Sobota",
+      "value": "13:00 – 19:00"
+    },
+    {
+      "label": "Niedziela",
+      "value": "11:00 – 19:00"
+    }
+  ],
   "social": {},
   "legal": {
-    "fullName": "Lodziarnia",
+    "fullName": "Lodziarnia Miętove.pl",
     "nip": null,
     "regon": null,
     "privacyUrl": "#polityka-prywatnosci"
   },
   "images": {
     "hero": {
-      "src": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=eFeL23BRFC_ixPn9PKrGcA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=40.050777&pitch=0&thumbfov=100",
-      "alt": "Lodziarnia",
+      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFlbazzKP2VdVsg58ImuNw0fELeS7xlOfQEPP0AXwNW-grcWJV-ogct3wMgBD5m7TP4BXtNk-AsikhHkaaJb_OHvFWouzevMTdZjP81wWmmm9WyklHm-OGvh8Dgde9uDGx777g=w1280-h960-k-no",
+      "alt": "Lodziarnia Miętove.pl",
       "mode": "custom"
     },
     "about": {
@@ -247,19 +256,19 @@
   ],
   "features": [
     {
-      "title": "Miła atmosfera",
-      "text": "",
-      "icon": "heart"
+      "title": "Naturalne składniki",
+      "text": "Prawdziwa śmietana, sezonowe owoce i żadnych zbędnych dodatków.",
+      "icon": "leaf"
     },
     {
-      "title": "Spokojne miejsce",
-      "text": "",
-      "icon": "heart"
+      "title": "Codziennie świeże",
+      "text": "Nowe porcje kręcimy każdego dnia — smaki rotują wraz z sezonem.",
+      "icon": "sparkles"
     },
     {
-      "title": "Przyjazne dzieciom",
-      "text": "",
-      "icon": "users"
+      "title": "Dla każdego",
+      "text": "Mamy też sorbety wegańskie i propozycje bez laktozy oraz bez glutenu.",
+      "icon": "heart"
     }
   ],
   "process": [],
@@ -316,15 +325,15 @@
   ],
   "hero": {
     "headline": "Lody, które robimy z głową i sercem.",
-    "subheadline": "Rzemieślnicza lodziarnia — Knurów i okolice. Codziennie świeże lody z naturalnych składników — na miejscu i na wynos.",
+    "subheadline": "Rzemieślnicza lodziarnia — Wieliszew i okolice. Codziennie świeże lody z naturalnych składników — na miejscu i na wynos.",
     "badges": [
-      "Miła atmosfera",
-      "Spokojne miejsce",
-      "Przyjazne dzieciom"
+      "Naturalne składniki",
+      "Codziennie świeże",
+      "Dla każdego"
     ],
     "image": {
-      "src": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=eFeL23BRFC_ixPn9PKrGcA&cb_client=search.gws-prod.gps&w=408&h=240&yaw=40.050777&pitch=0&thumbfov=100",
-      "alt": "Lodziarnia",
+      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFlbazzKP2VdVsg58ImuNw0fELeS7xlOfQEPP0AXwNW-grcWJV-ogct3wMgBD5m7TP4BXtNk-AsikhHkaaJb_OHvFWouzevMTdZjP81wWmmm9WyklHm-OGvh8Dgde9uDGx777g=w1280-h960-k-no",
+      "alt": "Lodziarnia Miętove.pl",
       "mode": "custom"
     }
   },
@@ -351,29 +360,50 @@
     "text": "Czekamy ze świeżymi, rzemieślniczymi lodami — na miejscu i na wynos."
   },
   "seo": {
-    "title": "Lodziarnia — Lodziarnia rzemieślnicza | Knurów",
-    "description": "Lodziarnia — lodziarnia rzemieślnicza. Knurów i okolice. Oferujemy: Lody rzemieślnicze, Sorbety owocowe, Desery lodowe i Lody na wynos.",
+    "title": "Lodziarnia Miętove.pl — Lodziarnia rzemieślnicza | Wieliszew",
+    "description": "Lodziarnia Miętove.pl — lodziarnia rzemieślnicza. Wieliszew i okolice. Oferujemy: Lody rzemieślnicze, Sorbety owocowe, Desery lodowe i Lody na wynos.",
     "keywords": [
       "lodziarnia",
       "lody rzemieślnicze",
       "lody naturalne",
       "gelato",
       "desery lodowe",
-      "Knurów"
+      "Wieliszew"
     ],
     "ogImage": null
   },
   "rating": "4,9",
-  "reviewCount": 6,
+  "reviewCount": 134,
   "priceRange": null,
   "hoursWeekly": [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
+    {
+      "open": "13:00",
+      "close": "19:00"
+    },
+    {
+      "open": "13:00",
+      "close": "19:00"
+    },
+    {
+      "open": "13:00",
+      "close": "19:00"
+    },
+    {
+      "open": "13:00",
+      "close": "19:00"
+    },
+    {
+      "open": "13:00",
+      "close": "19:00"
+    },
+    {
+      "open": "13:00",
+      "close": "19:00"
+    },
+    {
+      "open": "11:00",
+      "close": "19:00"
+    }
   ],
   "layout": [
     "header",
