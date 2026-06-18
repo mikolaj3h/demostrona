@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Kawiarnia [Nazwa] — Profesjonalna kawa w sercu miasta</title>
+<meta name="description" content="Kawiarnia [Nazwa] — rzemieślnicza kawa, świeże wypieki i przytulna atmosfera. Zarezerwuj stolik online." />
+
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Fonts: Playfair Display (display) + Inter (body) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Lucide icons -->
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+<!-- Leaflet (mapa) -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          espresso: '#2A1A12',
+          mocha:    '#3E2618',
+          crema:    '#F4E9D8',
+          cream:    '#FBF5EB',
+          amber:    '#C9974A',
+          amberDark:'#A87833',
+          ink:      '#1A110B',
+        },
+        fontFamily: {
+          display: ['"Playfair Display"', 'serif'],
+          sans:    ['Inter', 'system-ui', 'sans-serif'],
+        },
+        boxShadow: {
+          soft: '0 10px 40px -10px rgba(42,26,18,0.35)',
+          glow: '0 0 0 1px rgba(201,151,74,0.25), 0 20px 60px -20px rgba(201,151,74,0.35)',
+        }
+      }
+    }
+  }
+</script>
+
+<style>
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #FBF5EB;
+    color: #1A110B;
+    -webkit-font-smoothing: antialiased;
+  }
+  .font-display { font-family: 'Playfair Display', serif; }
+
+  /* Grain texture overlay */
+  .grain::after {
+    content:"";
+    position:absolute; inset:0; pointer-events:none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.35 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+    opacity:.35;
+    mix-blend-mode: overlay;
+  }
+
+  /* Hero background image */
+  .hero-bg {
+    background-image:
+      linear-gradient(180deg, rgba(26,17,11,0.55) 0%, rgba(26,17,11,0.65) 55%, rgba(26,17,11,0.85) 100%),
+      url('https://images.unsplash.com/photo-1453614512568-c4024d13c247?auto=format&fit=crop&w=2000&q=80');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .about-bg {
+    background-image:
+      linear-gradient(180deg, rgba(251,245,235,0) 0%, rgba(251,245,235,0.9) 100%),
+      url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1600&q=80');
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* Pill nav */
+  .nav-link { position: relative; }
+  .nav-link::after{
+    content:""; position:absolute; left:0; bottom:-6px; height:1px; width:0;
+    background: currentColor; transition: width .35s ease;
+  }
+  .nav-link:hover::after{ width:100%; }
+
+  /* Buttons */
+  .btn-amber {
+    background: linear-gradient(180deg,#D6A55A 0%,#C9974A 50%,#A87833 100%);
+    color:#1A110B;
+    box-shadow: 0 8px 24px -8px rgba(201,151,74,0.55), inset 0 1px 0 rgba(255,255,255,0.25);
+    transition: transform .25s ease, box-shadow .25s ease, filter .25s ease;
+  }
+  .btn-amber:hover { transform: translateY(-2px); filter: brightness(1.05); }
+  .btn-ghost {
+    border:1px solid rgba(244,233,216,0.3);
+    color:#F4E9D8;
+    transition: all .25s ease;
+  }
+  .btn-ghost:hover { background: rgba(244,233,216,0.08); border-color: rgba(244,233,216,0.6); }
+
+  /* Reveal animation */
+  .reveal { opacity:0; transform: translateY(20px); transition: opacity .8s ease, transform .8s ease; }
+  .reveal.in { opacity:1; transform:none; }
+
+  /* Status dot pulse */
+  .pulse-dot{
+    width:8px; height:8px; border-radius:9999px; background:#4ade80; position:relative;
+    box-shadow:0 0 0 0 rgba(74,222,128,0.6);
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse{
+    0% { box-shadow:0 0 0 0 rgba(74,222,128,0.55);}
+    70%{ box-shadow:0 0 0 12px rgba(74,222,128,0);}
+    100%{ box-shadow:0 0 0 0 rgba(74,222,128,0);}
+  }
+
+  /* Menu card hover */
+  .menu-item { transition: background .3s ease, transform .3s ease; }
+  .menu-item:hover { background: rgba(201,151,74,0.06); transform: translateX(4px); }
+
+  /* Gallery zoom */
+  .gallery-tile img { transition: transform .8s cubic-bezier(.2,.7,.2,1), filter .4s ease; }
+  .gallery-tile:hover img { transform: scale(1.06); filter: brightness(1.05); }
+
+  /* Marquee */
+  .marquee { display:flex; gap:3rem; animation: scroll 30s linear infinite; }
+  @keyframes scroll {
+    0% { transform: translateX(0);}
+    100% { transform: translateX(-50%);}
+  }
+
+  /* Map */
+  #map { height: 100%; width:100%; border-radius: 14px; }
+  .leaflet-container { background:#2A1A12; }
+
+  /* Form inputs */
+  .input {
+    width:100%; padding:.85rem 1rem;
+    border:1px solid rgba(42,26,18,0.15);
+    background: #FBF5EB;
+    color:#1A110B;
+    border-radius:10px;
+    transition: border-color .2s ease, box-shadow .2s ease, background .2s ease;
+    font-size: 0.95rem;
+  }
+  .input:focus { outline:none; border-color:#C9974A; box-shadow: 0 0 0 4px rgba(201,151,74,0.15); background:#fff; }
+
+  /* Mobile menu */
+  .mobile-menu { transform: translateY(-110%); transition: transform .4s ease; }
+  .mobile-menu.open { transform: translateY(0); }
+
+  /* Selection color */
+  ::selection { background:#C9974A; color:#1A110B; }
+</style>
+</head>
+<body>
+
+<!-- ====================== NAV ====================== -->
+<header class="fixed top-0 left-0 right-0 z-50">
+  <div class="backdrop-blur-md bg-espresso/70 border-b border-white/5">
+    <nav class="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between text-crema">
+      <a href="#" class="flex items-center gap-3" data-testid="nav-logo">
+        <span class="w-9 h-9 rounded-full bg-amber/15 border border-amber/40 flex items-center justify-center">
+          <i data-lucide="coffee" class="w-4 h-4 text-amber"></i>
+        </span>
+        <span class="font-display text-xl tracking-wide">Kawiarnia <span class="text-amber">[Nazwa]</span></span>
+      </a>
+
+      <div class="hidden lg:flex items-center gap-10 text-sm tracking-wide">
+        <a href="#hero" class="nav-link" data-testid="nav-home">Start</a>
+        <a href="#menu" class="nav-link" data-testid="nav-menu">Menu</a>
+        <a href="#about" class="nav-link" data-testid="nav-about">O nas</a>
+        <a href="#gallery" class="nav-link" data-testid="nav-gallery">Galeria</a>
+        <a href="#reviews" class="nav-link" data-testid="nav-reviews">Opinie</a>
+        <a href="#contact" class="nav-link" data-testid="nav-contact">Kontakt</a>
+      </div>
+
+      <div class="hidden lg:block">
+        <a href="#reservation" class="btn-amber inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium" data-testid="nav-reserve-btn">
+          Zarezerwuj stolik <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+
+      <button id="mobileBtn" class="lg:hidden w-10 h-10 flex items-center justify-center rounded-full border border-white/15" data-testid="mobile-menu-button">
+        <i data-lucide="menu" class="w-5 h-5"></i>
+      </button>
+    </nav>
+  </div>
+
+  <!-- Mobile menu -->
+  <div id="mobileMenu" class="mobile-menu lg:hidden absolute top-20 left-0 right-0 bg-espresso/95 backdrop-blur-md border-b border-white/5">
+    <div class="px-6 py-6 flex flex-col gap-4 text-crema">
+      <a href="#hero" class="mobile-link py-2">Start</a>
+      <a href="#menu" class="mobile-link py-2">Menu</a>
+      <a href="#about" class="mobile-link py-2">O nas</a>
+      <a href="#gallery" class="mobile-link py-2">Galeria</a>
+      <a href="#reviews" class="mobile-link py-2">Opinie</a>
+      <a href="#contact" class="mobile-link py-2">Kontakt</a>
+      <a href="#reservation" class="mobile-link btn-amber text-center px-5 py-3 rounded-full font-medium mt-2">Zarezerwuj stolik</a>
+    </div>
+  </div>
+</header>
+
+<!-- ====================== HERO ====================== -->
+<section id="hero" class="relative hero-bg grain min-h-screen flex items-end">
+  <div class="absolute inset-0 pointer-events-none">
+    <div class="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-amber/10 blur-3xl"></div>
+  </div>
+
+  <div class="relative max-w-7xl mx-auto px-6 lg:px-10 pt-40 pb-16 w-full">
+    <div class="grid lg:grid-cols-12 gap-10 items-end">
+      <div class="lg:col-span-7 text-crema">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-amber/40 bg-amber/10 text-amber text-xs tracking-[0.2em] uppercase reveal" data-testid="hero-eyebrow">
+          <i data-lucide="sparkles" class="w-3.5 h-3.5"></i> Rzemieślnicza kawiarnia · Polska
+        </div>
+
+        <h1 class="font-display text-5xl sm:text-6xl lg:text-7xl leading-[1.05] mt-6 reveal" data-testid="hero-title">
+          Smak ziarna,<br/>
+          <span class="italic text-amber">duch miejsca.</span>
+        </h1>
+
+        <p class="mt-6 max-w-xl text-base sm:text-lg text-crema/80 leading-relaxed reveal" data-testid="hero-subtitle">
+          Wypalamy ziarno z pasją, parzymy z precyzją, podajemy z uśmiechem. 
+          Odwiedź nas i odkryj kawę, która ma swój charakter — taki jak nasze miasto.
+        </p>
+
+        <div class="mt-10 flex flex-wrap items-center gap-4 reveal">
+          <a href="#reservation" class="btn-amber inline-flex items-center gap-2 px-6 py-3.5 rounded-full font-medium" data-testid="hero-reserve-btn">
+            <i data-lucide="calendar-check" class="w-4 h-4"></i> Zarezerwuj stolik
+          </a>
+          <a href="#menu" class="btn-ghost inline-flex items-center gap-2 px-6 py-3.5 rounded-full font-medium" data-testid="hero-menu-btn">
+            Zobacz menu <i data-lucide="arrow-down-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <!-- Quick stats -->
+        <div class="mt-14 grid grid-cols-3 gap-6 max-w-lg reveal">
+          <div>
+            <div class="font-display text-3xl text-amber">12+</div>
+            <div class="text-xs uppercase tracking-widest text-crema/60 mt-1">lat doświadczenia</div>
+          </div>
+          <div>
+            <div class="font-display text-3xl text-amber">24</div>
+            <div class="text-xs uppercase tracking-widest text-crema/60 mt-1">rodzaje kaw</div>
+          </div>
+          <div>
+            <div class="font-display text-3xl text-amber">4.9★</div>
+            <div class="text-xs uppercase tracking-widest text-crema/60 mt-1">średnia ocena</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Map card -->
+      <div class="lg:col-span-5 reveal">
+        <div class="relative rounded-2xl bg-cream/95 backdrop-blur p-5 shadow-soft border border-amber/20" data-testid="hero-map-card">
+          <div class="flex items-center justify-between mb-4">
+            <div>
+              <div class="text-xs uppercase tracking-widest text-mocha/60">Znajdź nas</div>
+              <div class="font-display text-xl text-espresso mt-1">ul. Przykładowa 12, [Miasto]</div>
+            </div>
+            <div id="statusBadge" class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-green-50 border border-green-200" data-testid="hero-status-badge">
+              <span class="pulse-dot"></span>
+              <span id="statusText" class="text-xs font-semibold text-green-700">Otwarte</span>
+            </div>
+          </div>
+
+          <div class="h-56 rounded-xl overflow-hidden border border-mocha/10">
+            <div id="map" data-testid="hero-map"></div>
+          </div>
+
+          <div class="mt-4 flex items-center justify-between text-sm">
+            <div class="flex items-center gap-2 text-mocha/80">
+              <i data-lucide="clock-3" class="w-4 h-4 text-amberDark"></i>
+              <span id="hoursToday">Dziś: 08:00 – 21:00</span>
+            </div>
+            <a href="#contact" class="text-amberDark font-medium inline-flex items-center gap-1 hover:gap-2 transition-all">Dojazd <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Marquee -->
+    <div class="mt-20 overflow-hidden border-y border-white/10 py-5">
+      <div class="marquee text-crema/70 font-display text-lg italic whitespace-nowrap">
+        <span>· Speciality Coffee ·</span><span>Świeże wypieki</span><span>· Single Origin ·</span><span>Roastery</span><span>· Slow brew ·</span><span>Latte Art</span><span>· Speciality Coffee ·</span><span>Świeże wypieki</span><span>· Single Origin ·</span><span>Roastery</span><span>· Slow brew ·</span><span>Latte Art</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== MENU ====================== -->
+<section id="menu" class="relative py-28 bg-cream">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+    <div class="grid lg:grid-cols-12 gap-10 items-end mb-16">
+      <div class="lg:col-span-7 reveal">
+        <div class="text-xs uppercase tracking-[0.3em] text-amberDark">Nasze menu</div>
+        <h2 class="font-display text-5xl lg:text-6xl text-espresso mt-4 leading-[1.05]">
+          Karta <span class="italic text-amberDark">smaków</span>
+        </h2>
+      </div>
+      <div class="lg:col-span-5 reveal">
+        <p class="text-mocha/80 leading-relaxed">
+          Każda pozycja w naszym menu to historia ziarna, regionu i baristy. 
+          Sprawdź najpopularniejsze propozycje z naszej karty.
+        </p>
+      </div>
+    </div>
+
+    <!-- Tabs -->
+    <div class="flex flex-wrap gap-2 mb-10 reveal">
+      <button class="menu-tab active px-5 py-2 rounded-full text-sm border border-espresso/15 bg-espresso text-crema" data-tab="kawa">Kawa</button>
+      <button class="menu-tab px-5 py-2 rounded-full text-sm border border-espresso/15 text-espresso hover:bg-espresso hover:text-crema transition" data-tab="herbata">Herbata</button>
+      <button class="menu-tab px-5 py-2 rounded-full text-sm border border-espresso/15 text-espresso hover:bg-espresso hover:text-crema transition" data-tab="wypieki">Wypieki</button>
+      <button class="menu-tab px-5 py-2 rounded-full text-sm border border-espresso/15 text-espresso hover:bg-espresso hover:text-crema transition" data-tab="sniadania">Śniadania</button>
+    </div>
+
+    <!-- Menu grid -->
+    <div class="grid md:grid-cols-2 gap-x-14 gap-y-4 reveal" id="menuList">
+      <!-- populated by JS -->
+    </div>
+
+    <div class="mt-14 text-center reveal">
+      <a href="#" class="inline-flex items-center gap-2 text-espresso font-medium hover:text-amberDark transition" data-testid="menu-download-btn">
+        Pobierz pełną kartę (PDF) <i data-lucide="download" class="w-4 h-4"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== ABOUT ====================== -->
+<section id="about" class="relative py-28 bg-espresso text-crema overflow-hidden">
+  <div class="absolute -right-40 top-20 w-[500px] h-[500px] bg-amber/10 rounded-full blur-3xl pointer-events-none"></div>
+
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+    <div class="grid lg:grid-cols-12 gap-14 items-center">
+      <div class="lg:col-span-6 reveal">
+        <div class="relative">
+          <img src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?auto=format&fit=crop&w=1200&q=80"
+               alt="Wnętrze kawiarni" class="rounded-2xl shadow-soft w-full h-[520px] object-cover" />
+          <div class="absolute -bottom-6 -right-6 bg-cream text-espresso p-5 rounded-2xl shadow-glow hidden sm:block max-w-[220px]">
+            <div class="font-display text-3xl text-amberDark">since 2013</div>
+            <div class="text-xs uppercase tracking-widest text-mocha/70 mt-1">w sercu miasta</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:col-span-6 reveal">
+        <div class="text-xs uppercase tracking-[0.3em] text-amber">O nas</div>
+        <h2 class="font-display text-5xl lg:text-6xl mt-4 leading-[1.05]">
+          Historia, którą<br/>czuć w <span class="italic text-amber">filiżance</span>.
+        </h2>
+        <p class="mt-6 text-crema/80 leading-relaxed">
+          [Nazwa] to miejsce stworzone przez ludzi, którzy traktują kawę jak rzemiosło. 
+          Współpracujemy bezpośrednio z plantatorami, palimy ziarno w naszej palarni 
+          i każdą filiżankę przygotowujemy z dbałością o każdy detal.
+        </p>
+
+        <div class="mt-10 grid sm:grid-cols-2 gap-6">
+          <div class="flex gap-4">
+            <div class="w-11 h-11 rounded-xl bg-amber/15 border border-amber/30 flex items-center justify-center shrink-0">
+              <i data-lucide="leaf" class="w-5 h-5 text-amber"></i>
+            </div>
+            <div>
+              <div class="font-display text-lg">Ziarno z certyfikatem</div>
+              <p class="text-sm text-crema/70 mt-1">Direct trade i specialty grade z najlepszych regionów świata.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="w-11 h-11 rounded-xl bg-amber/15 border border-amber/30 flex items-center justify-center shrink-0">
+              <i data-lucide="flame" class="w-5 h-5 text-amber"></i>
+            </div>
+            <div>
+              <div class="font-display text-lg">Świeży wypał</div>
+              <p class="text-sm text-crema/70 mt-1">Palimy w małych partiach, parzymy w 14 dni od wypalu.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="w-11 h-11 rounded-xl bg-amber/15 border border-amber/30 flex items-center justify-center shrink-0">
+              <i data-lucide="hand-heart" class="w-5 h-5 text-amber"></i>
+            </div>
+            <div>
+              <div class="font-display text-lg">Bariści z pasją</div>
+              <p class="text-sm text-crema/70 mt-1">Nasz zespół to mistrzowie SCA i finaliści mistrzostw Polski.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="w-11 h-11 rounded-xl bg-amber/15 border border-amber/30 flex items-center justify-center shrink-0">
+              <i data-lucide="croissant" class="w-5 h-5 text-amber"></i>
+            </div>
+            <div>
+              <div class="font-display text-lg">Lokalne wypieki</div>
+              <p class="text-sm text-crema/70 mt-1">Pieczemy codziennie rano z mąk od polskich młynarzy.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== GALLERY ====================== -->
+<section id="gallery" class="relative py-28 bg-cream">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+    <div class="flex items-end justify-between mb-16 flex-wrap gap-6 reveal">
+      <div>
+        <div class="text-xs uppercase tracking-[0.3em] text-amberDark">Galeria</div>
+        <h2 class="font-display text-5xl lg:text-6xl text-espresso mt-4 leading-[1.05]">
+          Klimat<span class="italic text-amberDark">, który zostaje</span>
+        </h2>
+      </div>
+      <p class="max-w-md text-mocha/80">Drewno, ceramika, światło i para z ekspresu. Mała poezja codzienności.</p>
+    </div>
+
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 reveal">
+      <div class="gallery-tile relative overflow-hidden rounded-2xl row-span-2 col-span-2 h-[420px]">
+        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=1200&q=80" class="w-full h-full object-cover" alt=""/>
+      </div>
+      <div class="gallery-tile relative overflow-hidden rounded-2xl h-[200px]">
+        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover" alt=""/>
+      </div>
+      <div class="gallery-tile relative overflow-hidden rounded-2xl h-[200px]">
+        <img src="https://images.unsplash.com/photo-1442550528053-c431ecb55509?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover" alt=""/>
+      </div>
+      <div class="gallery-tile relative overflow-hidden rounded-2xl h-[200px]">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover" alt=""/>
+      </div>
+      <div class="gallery-tile relative overflow-hidden rounded-2xl h-[200px]">
+        <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover" alt=""/>
+      </div>
+      <div class="gallery-tile relative overflow-hidden rounded-2xl col-span-2 h-[260px]">
+        <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&w=1200&q=80" class="w-full h-full object-cover" alt=""/>
+      </div>
+      <div class="gallery-tile relative overflow-hidden rounded-2xl h-[260px]">
+        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover" alt=""/>
+      </div>
+      <div class="gallery-tile relative overflow-hidden rounded-2xl h-[260px]">
+        <img src="https://images.unsplash.com/photo-1521305916504-4a1121188589?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover" alt=""/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== REVIEWS ====================== -->
+<section id="reviews" class="relative py-28 bg-espresso text-crema overflow-hidden">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+    <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+      <div class="text-xs uppercase tracking-[0.3em] text-amber">Opinie klientów</div>
+      <h2 class="font-display text-5xl lg:text-6xl mt-4 leading-[1.05]">
+        Słowa, które<br/>nas <span class="italic text-amber">napędzają</span>
+      </h2>
+      <div class="mt-6 flex items-center justify-center gap-2">
+        <div class="flex">
+          <i data-lucide="star" class="w-5 h-5 text-amber fill-amber"></i>
+          <i data-lucide="star" class="w-5 h-5 text-amber fill-amber"></i>
+          <i data-lucide="star" class="w-5 h-5 text-amber fill-amber"></i>
+          <i data-lucide="star" class="w-5 h-5 text-amber fill-amber"></i>
+          <i data-lucide="star" class="w-5 h-5 text-amber fill-amber"></i>
+        </div>
+        <span class="text-crema/70 text-sm">4.9 / 5 z 1 248 opinii Google</span>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6 reveal">
+      <article class="relative p-7 rounded-2xl bg-mocha/40 border border-white/5 hover:border-amber/40 transition" data-testid="review-1">
+        <i data-lucide="quote" class="w-7 h-7 text-amber mb-4"></i>
+        <p class="text-crema/90 leading-relaxed">"Najlepsze flat white w mieście. Atmosfera jak z dobrego włoskiego baru, ale z polską serdecznością. Wracam co tydzień."</p>
+        <div class="mt-6 flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-amber/20 flex items-center justify-center text-amber font-medium">AK</div>
+          <div>
+            <div class="font-medium">Anna K.</div>
+            <div class="text-xs text-crema/60">stała klientka</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="relative p-7 rounded-2xl bg-mocha/40 border border-white/5 hover:border-amber/40 transition" data-testid="review-2">
+        <i data-lucide="quote" class="w-7 h-7 text-amber mb-4"></i>
+        <p class="text-crema/90 leading-relaxed">"Bariści wiedzą, o czym mówią. Polecili mi metodę Aeropress i wreszcie czuję smak ziarna z Etiopii."</p>
+        <div class="mt-6 flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-amber/20 flex items-center justify-center text-amber font-medium">MP</div>
+          <div>
+            <div class="font-medium">Michał P.</div>
+            <div class="text-xs text-crema/60">kawowy entuzjasta</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="relative p-7 rounded-2xl bg-mocha/40 border border-white/5 hover:border-amber/40 transition" data-testid="review-3">
+        <i data-lucide="quote" class="w-7 h-7 text-amber mb-4"></i>
+        <p class="text-crema/90 leading-relaxed">"Cynamonki rozpływające się w ustach i cisza, w której da się pracować. Moje ulubione biuro w mieście."</p>
+        <div class="mt-6 flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-amber/20 flex items-center justify-center text-amber font-medium">JZ</div>
+          <div>
+            <div class="font-medium">Julia Z.</div>
+            <div class="text-xs text-crema/60">freelancerka</div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== RESERVATION + NEWSLETTER ====================== -->
+<section id="reservation" class="relative py-28 bg-cream">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-14">
+
+    <!-- Reservation -->
+    <div class="reveal" data-testid="reservation-block">
+      <div class="text-xs uppercase tracking-[0.3em] text-amberDark">Rezerwacja</div>
+      <h2 class="font-display text-4xl lg:text-5xl text-espresso mt-4 leading-[1.05]">
+        Zarezerwuj <span class="italic text-amberDark">swój stolik</span>
+      </h2>
+      <p class="mt-4 text-mocha/80">Zostaw nam kilka informacji — potwierdzimy rezerwację telefonicznie lub mailowo w ciągu godziny.</p>
+
+      <form class="mt-8 grid sm:grid-cols-2 gap-4" id="reservationForm" data-testid="reservation-form">
+        <div class="sm:col-span-2">
+          <label class="text-xs uppercase tracking-widest text-mocha/60">Imię i nazwisko</label>
+          <input required type="text" placeholder="np. Anna Kowalska" class="input mt-2" data-testid="res-name"/>
+        </div>
+        <div>
+          <label class="text-xs uppercase tracking-widest text-mocha/60">Telefon</label>
+          <input required type="tel" placeholder="+48 600 000 000" class="input mt-2" data-testid="res-phone"/>
+        </div>
+        <div>
+          <label class="text-xs uppercase tracking-widest text-mocha/60">E-mail</label>
+          <input required type="email" placeholder="adres@email.pl" class="input mt-2" data-testid="res-email"/>
+        </div>
+        <div>
+          <label class="text-xs uppercase tracking-widest text-mocha/60">Data</label>
+          <input required type="date" class="input mt-2" data-testid="res-date"/>
+        </div>
+        <div>
+          <label class="text-xs uppercase tracking-widest text-mocha/60">Godzina</label>
+          <input required type="time" class="input mt-2" data-testid="res-time"/>
+        </div>
+        <div class="sm:col-span-2">
+          <label class="text-xs uppercase tracking-widest text-mocha/60">Liczba osób</label>
+          <select class="input mt-2" data-testid="res-guests">
+            <option>2 osoby</option>
+            <option>3 osoby</option>
+            <option>4 osoby</option>
+            <option>5 osób</option>
+            <option>6+ osób</option>
+          </select>
+        </div>
+        <div class="sm:col-span-2">
+          <label class="text-xs uppercase tracking-widest text-mocha/60">Wiadomość (opcjonalnie)</label>
+          <textarea rows="3" placeholder="Specjalne życzenia, alergie, okazja..." class="input mt-2 resize-none" data-testid="res-message"></textarea>
+        </div>
+        <div class="sm:col-span-2 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mt-2">
+          <label class="flex items-start gap-3 text-sm text-mocha/80">
+            <input type="checkbox" required class="mt-1 accent-amberDark" data-testid="res-consent"/>
+            <span>Akceptuję regulamin oraz politykę prywatności.</span>
+          </label>
+          <button type="submit" class="btn-amber inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full font-medium" data-testid="res-submit">
+            Zarezerwuj <i data-lucide="check" class="w-4 h-4"></i>
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Newsletter + info card -->
+    <div class="reveal flex flex-col gap-8">
+      <div class="relative rounded-3xl overflow-hidden p-10 text-crema shadow-soft" style="background: linear-gradient(135deg,#2A1A12 0%, #3E2618 100%);" data-testid="newsletter-block">
+        <div class="absolute -top-20 -right-20 w-72 h-72 rounded-full bg-amber/20 blur-3xl"></div>
+        <div class="relative">
+          <i data-lucide="mail" class="w-7 h-7 text-amber"></i>
+          <h3 class="font-display text-3xl lg:text-4xl mt-5">Bądź na bieżąco z nowościami</h3>
+          <p class="mt-3 text-crema/80">Premiery sezonowych ziaren, warsztaty baristyczne i kawowe ciekawostki — prosto na Twojego maila.</p>
+
+          <form id="newsletterForm" class="mt-7 flex flex-col sm:flex-row gap-3" data-testid="newsletter-form">
+            <input required type="email" placeholder="Twój e-mail" class="flex-1 px-5 py-3.5 rounded-full bg-crema/10 border border-crema/15 text-crema placeholder:text-crema/50 focus:outline-none focus:border-amber transition" data-testid="news-email"/>
+            <button type="submit" class="btn-amber inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full font-medium" data-testid="news-submit">
+              Zapisz mnie
+            </button>
+          </form>
+          <p class="text-xs text-crema/50 mt-3">Wysyłamy 1–2 maile miesięcznie. W każdej chwili możesz się wypisać.</p>
+        </div>
+      </div>
+
+      <div class="rounded-3xl border border-amber/30 bg-amber/5 p-7">
+        <div class="flex items-center gap-3">
+          <i data-lucide="gift" class="w-5 h-5 text-amberDark"></i>
+          <div class="font-display text-xl text-espresso">Bonus dla nowych gości</div>
+        </div>
+        <p class="text-mocha/80 mt-3">Pokaż tę stronę przy zamówieniu i odbierz <strong>−20%</strong> na drugą kawę.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== CONTACT ====================== -->
+<section id="contact" class="relative py-28 bg-espresso text-crema">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-3 gap-10">
+    <div class="reveal">
+      <div class="text-xs uppercase tracking-[0.3em] text-amber">Kontakt</div>
+      <h2 class="font-display text-4xl lg:text-5xl mt-4 leading-[1.05]">
+        Wpadnij na <span class="italic text-amber">kawę</span>
+      </h2>
+      <p class="mt-5 text-crema/80 leading-relaxed">Czekamy w naszym lokalu codziennie. Możesz też zadzwonić lub napisać — chętnie odpowiemy.</p>
+    </div>
+
+    <div class="space-y-5 reveal">
+      <div class="flex items-start gap-4">
+        <div class="w-11 h-11 rounded-xl bg-amber/15 border border-amber/30 flex items-center justify-center shrink-0">
+          <i data-lucide="map-pin" class="w-5 h-5 text-amber"></i>
+        </div>
+        <div>
+          <div class="text-xs uppercase tracking-widest text-crema/60">Adres</div>
+          <div class="mt-1">ul. Przykładowa 12<br/>00-000 [Miasto], Polska</div>
+        </div>
+      </div>
+      <div class="flex items-start gap-4">
+        <div class="w-11 h-11 rounded-xl bg-amber/15 border border-amber/30 flex items-center justify-center shrink-0">
+          <i data-lucide="phone" class="w-5 h-5 text-amber"></i>
+        </div>
+        <div>
+          <div class="text-xs uppercase tracking-widest text-crema/60">Telefon</div>
+          <div class="mt-1">+48 600 000 000</div>
+        </div>
+      </div>
+      <div class="flex items-start gap-4">
+        <div class="w-11 h-11 rounded-xl bg-amber/15 border border-amber/30 flex items-center justify-center shrink-0">
+          <i data-lucide="at-sign" class="w-5 h-5 text-amber"></i>
+        </div>
+        <div>
+          <div class="text-xs uppercase tracking-widest text-crema/60">E-mail</div>
+          <div class="mt-1">kontakt@nazwa-kawiarni.pl</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="reveal">
+      <div class="text-xs uppercase tracking-widest text-crema/60 mb-3">Godziny otwarcia</div>
+      <ul class="divide-y divide-white/10">
+        <li class="flex justify-between py-2.5"><span>Poniedziałek – Piątek</span><span class="text-amber">08:00 – 21:00</span></li>
+        <li class="flex justify-between py-2.5"><span>Sobota</span><span class="text-amber">09:00 – 22:00</span></li>
+        <li class="flex justify-between py-2.5"><span>Niedziela</span><span class="text-amber">10:00 – 20:00</span></li>
+      </ul>
+
+      <div class="mt-6 flex items-center gap-3">
+        <a href="#" class="w-10 h-10 rounded-full border border-white/15 flex items-center justify-center hover:bg-amber/10 hover:border-amber transition" data-testid="social-instagram"><i data-lucide="instagram" class="w-4 h-4"></i></a>
+        <a href="#" class="w-10 h-10 rounded-full border border-white/15 flex items-center justify-center hover:bg-amber/10 hover:border-amber transition" data-testid="social-facebook"><i data-lucide="facebook" class="w-4 h-4"></i></a>
+        <a href="#" class="w-10 h-10 rounded-full border border-white/15 flex items-center justify-center hover:bg-amber/10 hover:border-amber transition" data-testid="social-tiktok"><i data-lucide="music-2" class="w-4 h-4"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== FOOTER ====================== -->
+<footer class="bg-ink text-crema/70">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 py-10 flex flex-col md:flex-row items-center justify-between gap-4 text-sm">
+    <div class="flex items-center gap-3">
+      <span class="w-8 h-8 rounded-full bg-amber/15 border border-amber/30 flex items-center justify-center">
+        <i data-lucide="coffee" class="w-3.5 h-3.5 text-amber"></i>
+      </span>
+      <span class="font-display text-base text-crema">Kawiarnia [Nazwa]</span>
+    </div>
+    <div>© <span id="year"></span> Kawiarnia [Nazwa]. Wszelkie prawa zastrzeżone.</div>
+    <div class="flex gap-5">
+      <a href="#" class="hover:text-amber transition">Polityka prywatności</a>
+      <a href="#" class="hover:text-amber transition">Regulamin</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ====================== TOAST ====================== -->
+<div id="toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 px-5 py-3 rounded-full bg-espresso text-crema shadow-soft text-sm opacity-0 pointer-events-none transition-opacity duration-300 z-[100]" data-testid="toast"></div>
+
+<!-- ====================== SCRIPTS ====================== -->
+<script>
+  // Lucide icons
+  lucide.createIcons();
+
+  // Year
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Mobile menu
+  const mobileBtn = document.getElementById('mobileBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  mobileBtn.addEventListener('click', () => mobileMenu.classList.toggle('open'));
+  document.querySelectorAll('.mobile-link').forEach(a => a.addEventListener('click', () => mobileMenu.classList.remove('open')));
+
+  // Reveal on scroll
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // Map (Warszawa as placeholder center)
+  const map = L.map('map', { zoomControl: false, attributionControl: false }).setView([52.2297, 21.0122], 14);
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+    subdomains: 'abcd', maxZoom: 19
+  }).addTo(map);
+  const cafeIcon = L.divIcon({
+    className: '',
+    html: `<div style="width:34px;height:34px;border-radius:50%;background:#C9974A;border:3px solid #FBF5EB;box-shadow:0 6px 18px rgba(201,151,74,.55);display:flex;align-items:center;justify-content:center;color:#1A110B;font-weight:700;">☕</div>`,
+    iconSize: [34, 34], iconAnchor: [17, 17]
+  });
+  L.marker([52.2297, 21.0122], { icon: cafeIcon }).addTo(map);
+
+  // Open/Closed status
+  const hours = {
+    0: [10, 20],  // Sunday
+    1: [8, 21], 2: [8, 21], 3: [8, 21], 4: [8, 21], 5: [8, 21],
+    6: [9, 22]   // Saturday
+  };
+  function updateStatus() {
+    const now = new Date();
+    const [open, close] = hours[now.getDay()];
+    const h = now.getHours() + now.getMinutes()/60;
+    const isOpen = h >= open && h < close;
+    const badge = document.getElementById('statusBadge');
+    const text = document.getElementById('statusText');
+    const today = document.getElementById('hoursToday');
+    today.textContent = `Dziś: ${String(open).padStart(2,'0')}:00 – ${String(close).padStart(2,'0')}:00`;
+    if (isOpen) {
+      badge.className = 'flex items-center gap-2 px-3 py-1.5 rounded-full bg-green-50 border border-green-200';
+      badge.innerHTML = `<span class="pulse-dot"></span><span class="text-xs font-semibold text-green-700">Otwarte teraz</span>`;
+    } else {
+      badge.className = 'flex items-center gap-2 px-3 py-1.5 rounded-full bg-red-50 border border-red-200';
+      badge.innerHTML = `<span style="width:8px;height:8px;border-radius:9999px;background:#ef4444;display:inline-block"></span><span class="text-xs font-semibold text-red-700">Zamknięte</span>`;
+    }
+  }
+  updateStatus();
+  setInterval(updateStatus, 60000);
+
+  // Menu data
+  const menuData = {
+    kawa: [
+      { name:'Espresso', desc:'Klasyka — 30 ml intensywności z naszego blendu Sezon.', price:'10 zł' },
+      { name:'Flat White', desc:'Dwa shoty, jedwabista mikropiana, 150 ml.', price:'16 zł' },
+      { name:'Cappuccino', desc:'Espresso, mleko i puszysta pianka — w równowadze.', price:'14 zł' },
+      { name:'Latte', desc:'Łagodne i kremowe, do wyboru mleko owsiane / migdałowe.', price:'15 zł' },
+      { name:'Filter V60', desc:'Single origin, ręczne parzenie, 250 ml czystego smaku.', price:'18 zł' },
+      { name:'Cold Brew', desc:'12 godzin maceracji na zimno. Owocowy, niska kwasowość.', price:'17 zł' },
+    ],
+    herbata: [
+      { name:'Earl Grey Supreme', desc:'Czarna herbata z bergamotką i chabrem.', price:'12 zł' },
+      { name:'Japan Sencha', desc:'Świeża, trawiasta, delikatnie słodka.', price:'14 zł' },
+      { name:'Rooibos Vanilla', desc:'Kojąca, bez kofeiny, z laską wanilii.', price:'13 zł' },
+      { name:'Imbir & Cytryna', desc:'Korzenny, rozgrzewający napar na zimne dni.', price:'13 zł' },
+    ],
+    wypieki: [
+      { name:'Cynamonka', desc:'Maślane ciasto drożdżowe z karmelem.', price:'12 zł' },
+      { name:'Croissant maślany', desc:'48-godzinne ciasto, francuskie masło.', price:'10 zł' },
+      { name:'Sernik baskijski', desc:'Karmelizowana skórka, jedwabiste wnętrze.', price:'15 zł' },
+      { name:'Tarta cytrynowa', desc:'Krem cytrynowy i lekka beza.', price:'14 zł' },
+    ],
+    sniadania: [
+      { name:'Avocado toast', desc:'Chleb na zakwasie, awokado, jajko poche, chili.', price:'28 zł' },
+      { name:'Granola', desc:'Pieczona z miodem, jogurt grecki, sezonowe owoce.', price:'22 zł' },
+      { name:'Omlet z ziołami', desc:'Trzy jajka, koper, szczypior, ser feta.', price:'26 zł' },
+      { name:'Tost z masłem orzechowym', desc:'Banan, kakao surowe, prażone migdały.', price:'18 zł' },
+    ],
+  };
+
+  function renderMenu(tab) {
+    const list = document.getElementById('menuList');
+    list.innerHTML = menuData[tab].map(item => `
+      <div class="menu-item p-4 -mx-4 rounded-xl flex justify-between gap-6 border-b border-espresso/10" data-testid="menu-item-${item.name.toLowerCase().replace(/\s+/g,'-')}">
+        <div>
+          <div class="font-display text-xl text-espresso">${item.name}</div>
+          <div class="text-mocha/70 text-sm mt-1.5">${item.desc}</div>
+        </div>
+        <div class="font-display text-lg text-amberDark whitespace-nowrap">${item.price}</div>
+      </div>
+    `).join('');
+  }
+  renderMenu('kawa');
+
+  document.querySelectorAll('.menu-tab').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.menu-tab').forEach(b => {
+        b.classList.remove('active','bg-espresso','text-crema');
+        b.classList.add('text-espresso');
+      });
+      btn.classList.add('active','bg-espresso','text-crema');
+      btn.classList.remove('text-espresso');
+      renderMenu(btn.dataset.tab);
+    });
+  });
+
+  // Toast
+  function toast(msg) {
+    const t = document.getElementById('toast');
+    t.textContent = msg;
+    t.style.opacity = 1;
+    setTimeout(() => t.style.opacity = 0, 3000);
+  }
+
+  // Forms
+  document.getElementById('reservationForm').addEventListener('submit', e => {
+    e.preventDefault();
+    toast('Dziękujemy! Potwierdzimy rezerwację wkrótce ☕');
+    e.target.reset();
+  });
+  document.getElementById('newsletterForm').addEventListener('submit', e => {
+    e.preventDefault();
+    toast('Zapisano do newslettera. Do zobaczenia w skrzynce!');
+    e.target.reset();
+  });
+
+  // Set today's min date for reservation
+  const dateInput = document.querySelector('input[type="date"]');
+  if (dateInput) dateInput.min = new Date().toISOString().split('T')[0];
+</script>
+
+</body>
+</html>
+
