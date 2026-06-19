@@ -1,0 +1,443 @@
+{
+  "name": "SREBRNA GÓRA Restauracja Kawiarnia Winiarnia Zielona Góra",
+  "slug": "srebrna-gora-restauracja-kawiarnia-winiarnia-zielona-gora",
+  "tagline": null,
+  "description": null,
+  "industry": "restauracja",
+  "industryLabel": "Restauracja",
+  "schemaType": "Restaurant",
+  "servicesHeading": {
+    "eyebrow": "Nasza karta",
+    "title": "Co u nas zjesz"
+  },
+  "theme": {
+    "id": "artisan",
+    "label": "Rzemieślniczy",
+    "heroStyle": "split",
+    "font": {
+      "heading": "'Playfair Display', Georgia, 'Times New Roman', serif",
+      "body": "'DM Sans', system-ui, -apple-system, Segoe UI, sans-serif",
+      "google": "Playfair+Display:wght@600;700;800&family=DM+Sans:wght@400;500;600"
+    },
+    "type": {
+      "headingWeight": 700,
+      "headingSpacing": "-0.01em",
+      "headingTransform": "none",
+      "eyebrowSpacing": "0.18em",
+      "eyebrowTransform": "uppercase"
+    },
+    "radius": {
+      "card": "18px",
+      "button": "999px",
+      "input": "12px",
+      "pill": "999px"
+    },
+    "color": {
+      "primary": "#b91c1c",
+      "primaryDark": "#9b1818",
+      "primaryLight": "#d67b7b",
+      "primarySoft": "#f8e8e8",
+      "onPrimary": "#ffffff",
+      "accent": "#f59e0b",
+      "accentDark": "#d38809",
+      "onAccent": "#0b1220",
+      "ink": "#241c15",
+      "inkMuted": "#5c5247",
+      "bg": "#fffaf3",
+      "surface": "#ffffff",
+      "surfaceAlt": "#f5e7db",
+      "border": "#ece0d0",
+      "footerBg": "#241a13",
+      "footerInk": "#f8fafc",
+      "footerMuted": "#a7a5a3",
+      "heroOverlay": "#201711"
+    },
+    "shadow": {
+      "sm": "0 1px 2px rgba(42, 33, 24, 0.06), 0 1px 3px rgba(42, 33, 24, 0.1)",
+      "card": "0 6px 24px rgba(42, 33, 24, 0.08), 0 1px 2px rgba(42, 33, 24, 0.06)",
+      "hover": "0 18px 48px rgba(42, 33, 24, 0.16), 0 4px 12px rgba(42, 33, 24, 0.08)",
+      "header": "0 4px 20px rgba(42, 33, 24, 0.08)",
+      "button": "0 8px 20px rgba(185, 28, 28, 0.28)"
+    },
+    "_tint": "#2a2118"
+  },
+  "themeId": "artisan",
+  "brand": {
+    "primary": "#b91c1c",
+    "accent": "#f59e0b"
+  },
+  "city": "Zielona Góra",
+  "region": null,
+  "serviceArea": "Zielona Góra",
+  "year": null,
+  "url": null,
+  "contact": {
+    "phone": "+48 684 567 050",
+    "phoneRaw": "+48 68 456 70 50",
+    "phoneValid": true,
+    "email": null,
+    "address": {
+      "street": "plac Słowiański 10",
+      "postalCode": "65-069",
+      "city": "Zielona Góra",
+      "full": "plac Słowiański 10, 65-069 Zielona Góra"
+    },
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=SREBRNA%20G%C3%93RA%20Restauracja%20Kawiarnia%20Winiarnia%20Zielona%20G%C3%B3ra&query_place_id=ChIJiaUkD3wTBkcR_9kHcL8jxhk"
+  },
+  "hours": [
+    {
+      "label": "Poniedziałek – Niedziela",
+      "value": "13:00 – 22:00"
+    }
+  ],
+  "social": {},
+  "legal": {
+    "fullName": "SREBRNA GÓRA Restauracja Kawiarnia Winiarnia Zielona Góra",
+    "nip": null,
+    "regon": null,
+    "privacyUrl": "#polityka-prywatnosci"
+  },
+  "images": {
+    "hero": {
+      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFXCIos0ELFMILqGhmWYg1ylzcWKnUINxko-S7topFTHyt-C2JRKVX5zDMEhedCArml74cTO_AwoBYpHLstzmyZbr15EJEMH22THPlRXRCzFdBcNQJCMDnfTTyV2xP1SEn4v39WefdgdA84=w1280-h960-k-no",
+      "alt": "SREBRNA GÓRA Restauracja Kawiarnia Winiarnia Zielona Góra",
+      "mode": "custom"
+    },
+    "about": {
+      "src": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=960&q=72",
+      "alt": "Nakryty stół w restauracji",
+      "mode": "unsplash"
+    },
+    "gallery": [
+      {
+        "src": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=900&q=70",
+        "alt": "Szef kuchni komponuje danie",
+        "mode": "unsplash"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?auto=format&fit=crop&w=900&q=70",
+        "alt": "Apetyczne danie na talerzu",
+        "mode": "unsplash"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=900&q=70",
+        "alt": "Świeżo przygotowany posiłek",
+        "mode": "unsplash"
+      }
+    ]
+  },
+  "services": [
+    {
+      "name": "Menu sezonowe",
+      "description": "Dania z lokalnych, świeżych składników, zmieniane wraz z porami roku.",
+      "icon": "utensils"
+    },
+    {
+      "name": "Rezerwacje",
+      "description": "Zarezerwuj stolik na wieczór we dwoje lub większą okazję.",
+      "icon": "calendar"
+    },
+    {
+      "name": "Imprezy i bankiety",
+      "description": "Organizujemy urodziny, komunie i spotkania firmowe.",
+      "icon": "users"
+    },
+    {
+      "name": "Catering",
+      "description": "Dowozimy nasze dania na Twoje wydarzenie.",
+      "icon": "truck"
+    }
+  ],
+  "menu": [
+    {
+      "name": "Przystawki",
+      "note": "",
+      "items": [
+        {
+          "name": "Tatar wołowy",
+          "description": "z piklami, kaparami i żółtkiem",
+          "price": "32 zł",
+          "tags": []
+        },
+        {
+          "name": "Śledź po kaszubsku",
+          "description": "z jabłkiem i czerwoną cebulą",
+          "price": "24 zł",
+          "tags": []
+        },
+        {
+          "name": "Zupa dnia",
+          "description": "codziennie świeża, z pieczywem",
+          "price": "18 zł",
+          "tags": [
+            "wegetariańskie"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Dania główne",
+      "note": "kuchnia sezonowa",
+      "items": [
+        {
+          "name": "Dorsz z pieca",
+          "description": "z warzywami i masłem ziołowym",
+          "price": "54 zł",
+          "tags": []
+        },
+        {
+          "name": "Policzki wołowe",
+          "description": "duszone w czerwonym winie, puree",
+          "price": "58 zł",
+          "tags": []
+        },
+        {
+          "name": "Pierogi ruskie",
+          "description": "z okrasą lub na maśle",
+          "price": "29 zł",
+          "tags": [
+            "wegetariańskie"
+          ]
+        },
+        {
+          "name": "Risotto z grzybami",
+          "description": "z parmezanem i natką",
+          "price": "42 zł",
+          "tags": [
+            "wegetariańskie",
+            "bez glutenu"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Desery",
+      "note": "",
+      "items": [
+        {
+          "name": "Sernik na ciepło",
+          "description": "z sosem żurawinowym",
+          "price": "19 zł",
+          "tags": []
+        },
+        {
+          "name": "Tarta cytrynowa",
+          "description": "z lekką bezą",
+          "price": "18 zł",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "name": "Napoje",
+      "note": "",
+      "items": [
+        {
+          "name": "Lemoniada domowa",
+          "description": "sezonowa, lekko gazowana",
+          "price": "14 zł",
+          "tags": [
+            "sezonowe"
+          ]
+        },
+        {
+          "name": "Kawa",
+          "description": "espresso / z mlekiem",
+          "price": "10 zł",
+          "tags": []
+        },
+        {
+          "name": "Wino — kieliszek",
+          "description": "białe / czerwone",
+          "price": "od 18 zł",
+          "tags": []
+        }
+      ]
+    }
+  ],
+  "features": [
+    {
+      "title": "Miejsca na miejscu",
+      "text": "",
+      "icon": "users"
+    },
+    {
+      "title": "Na wynos",
+      "text": "",
+      "icon": "truck"
+    },
+    {
+      "title": "Dostępne dla wózków",
+      "text": "",
+      "icon": "check"
+    },
+    {
+      "title": "Toaleta",
+      "text": "",
+      "icon": "check"
+    },
+    {
+      "title": "Wi-Fi",
+      "text": "",
+      "icon": "briefcase"
+    },
+    {
+      "title": "Miła atmosfera",
+      "text": "",
+      "icon": "heart"
+    }
+  ],
+  "process": [],
+  "stats": [
+    {
+      "value": "9",
+      "label": "lat na rynku"
+    },
+    {
+      "value": "120+",
+      "label": "pozycji w menu"
+    },
+    {
+      "value": "50k+",
+      "label": "gości rocznie"
+    },
+    {
+      "value": "4,8",
+      "label": "ocena Google"
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "Najlepsza kolacja od dawna — smak, obsługa i klimat na najwyższym poziomie.",
+      "author": "Aleksandra W.",
+      "role": "Gość",
+      "rating": 5
+    },
+    {
+      "quote": "Zorganizowali nam wspaniałe przyjęcie. Goście do dziś wspominają jedzenie.",
+      "author": "Paweł K.",
+      "role": "Organizator urodzin",
+      "rating": 5
+    }
+  ],
+  "pricing": [],
+  "faq": [
+    {
+      "q": "Czy trzeba rezerwować stolik?",
+      "a": "W weekendy zalecamy rezerwację — w tygodniu zwykle znajdzie się miejsce od ręki."
+    },
+    {
+      "q": "Czy macie dania wegańskie?",
+      "a": "Tak, w menu znajdziesz propozycje wegetariańskie, wegańskie i bezglutenowe."
+    },
+    {
+      "q": "Czy organizujecie imprezy zamknięte?",
+      "a": "Tak, przyjmujemy rezerwacje całej sali na okazje prywatne i firmowe."
+    }
+  ],
+  "hero": {
+    "headline": "Smak, który zapamiętasz.",
+    "subheadline": "Restauracja z kuchnią z charakterem — Zielona Góra i okolice. Świeże, lokalne składniki i atmosfera na każdą okazję.",
+    "badges": [
+      "Miejsca na miejscu",
+      "Na wynos",
+      "Dostępne dla wózków"
+    ],
+    "image": {
+      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFXCIos0ELFMILqGhmWYg1ylzcWKnUINxko-S7topFTHyt-C2JRKVX5zDMEhedCArml74cTO_AwoBYpHLstzmyZbr15EJEMH22THPlRXRCzFdBcNQJCMDnfTTyV2xP1SEn4v39WefdgdA84=w1280-h960-k-no",
+      "alt": "SREBRNA GÓRA Restauracja Kawiarnia Winiarnia Zielona Góra",
+      "mode": "custom"
+    }
+  },
+  "about": {
+    "title": "Dlaczego my?",
+    "eyebrow": "O nas",
+    "text": [
+      "Tworzymy miejsce, do którego chce się wracać. Stawiamy na świeże, lokalne składniki i kuchnię z charakterem.",
+      "Każdy talerz to dla nas mała opowieść — o smaku, regionie i pasji do gotowania."
+    ],
+    "points": [
+      "Świeże składniki",
+      "Wyjątkowa atmosfera",
+      "Dla każdego"
+    ],
+    "image": {
+      "src": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=960&q=72",
+      "alt": "Nakryty stół w restauracji",
+      "mode": "unsplash"
+    }
+  },
+  "cta": {
+    "title": "Zarezerwuj stolik już dziś.",
+    "text": "Zadzwoń lub napisz — czekamy z wyjątkowym menu i ciepłą atmosferą."
+  },
+  "seo": {
+    "title": "SREBRNA GÓRA Restauracja Kawiarnia Winiarnia Zielona Góra",
+    "description": "SREBRNA GÓRA Restauracja Kawiarnia Winiarnia Zielona Góra — restauracja. Zielona Góra i okolice.",
+    "keywords": [
+      "restauracja",
+      "menu",
+      "rezerwacja stolika",
+      "kuchnia",
+      "Zielona Góra"
+    ],
+    "ogImage": null
+  },
+  "rating": "4,8",
+  "reviewCount": 440,
+  "priceRange": null,
+  "hoursWeekly": [
+    {
+      "open": "13:00",
+      "close": "22:00"
+    },
+    {
+      "open": "13:00",
+      "close": "22:00"
+    },
+    {
+      "open": "13:00",
+      "close": "22:00"
+    },
+    {
+      "open": "13:00",
+      "close": "22:00"
+    },
+    {
+      "open": "13:00",
+      "close": "22:00"
+    },
+    {
+      "open": "13:00",
+      "close": "22:00"
+    },
+    {
+      "open": "13:00",
+      "close": "22:00"
+    }
+  ],
+  "layout": [
+    "header",
+    "hero",
+    "trustbar",
+    "menu",
+    "map",
+    "about",
+    "gallery",
+    "stats",
+    "testimonials",
+    "faq",
+    "cta",
+    "contact",
+    "footer",
+    "cookie"
+  ],
+  "meta": {
+    "generator": "demo-stron-pl",
+    "industry": "restauracja",
+    "theme": "artisan",
+    "imageMode": "unsplash",
+    "generatedAt": "2026-06-19T07:21:25.620Z",
+    "warnings": []
+  }
+}
