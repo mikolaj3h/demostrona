@@ -1,6 +1,6 @@
 {
-  "name": "Piekarnia Kawiarnia iGizmo",
-  "slug": "piekarnia-kawiarnia-igizmo",
+  "name": "Lodziarnio-kawiarnia Klaudia",
+  "slug": "lodziarnio-kawiarnia-klaudia",
   "tagline": null,
   "description": null,
   "industry": "kawiarnia",
@@ -66,51 +66,47 @@
     "primary": "#6b4226",
     "accent": "#c9893f"
   },
-  "city": "Żagań",
+  "city": "Kostrzyn nad Odrą",
   "region": null,
-  "serviceArea": "Żagań",
+  "serviceArea": "Kostrzyn nad Odrą",
   "year": null,
   "url": null,
   "contact": {
-    "phone": null,
-    "phoneRaw": null,
-    "phoneValid": false,
-    "email": "biuro@igizmo.eu",
+    "phone": "+48 518 723 258",
+    "phoneRaw": "+48 518 723 258",
+    "phoneValid": true,
+    "email": "anulka_1234@poczta.fm",
     "address": {
-      "street": "Szprotawska 9",
-      "postalCode": "68-100",
-      "city": "Żagań",
-      "full": "Szprotawska 9, 68-100 Żagań"
+      "street": "Niepodległości",
+      "postalCode": "66-470",
+      "city": "Kostrzyn nad Odrą",
+      "full": "Niepodległości, 66-470 Kostrzyn nad Odrą"
     },
-    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Piekarnia%20Kawiarnia%20iGizmo&query_place_id=ChIJw-pjQwCnCEcRsxNxzsC9XLE"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lodziarnio-kawiarnia%20Klaudia&query_place_id=ChIJazgu2AxzB0cRgPtAoNbIgdk"
   },
   "hours": [
     {
-      "label": "Poniedziałek – Piątek",
-      "value": "05:30 – 17:30"
-    },
-    {
-      "label": "Sobota",
-      "value": "08:00 – 11:00"
+      "label": "Poniedziałek – Sobota",
+      "value": "11:00 – 19:00"
     },
     {
       "label": "Niedziela",
-      "value": "nieczynne"
+      "value": "12:00 – 19:00"
     }
   ],
   "social": {
-    "facebook": "https://www.facebook.com/igizmo.eu"
+    "facebook": "https://www.facebook.com/Lodziarnio-Kawiarnia-Klaudia-153851884728077/"
   },
   "legal": {
-    "fullName": "Piekarnia Kawiarnia iGizmo",
+    "fullName": "Lodziarnio-kawiarnia Klaudia",
     "nip": null,
     "regon": null,
     "privacyUrl": "#polityka-prywatnosci"
   },
   "images": {
     "hero": {
-      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAG2JDPlXDOWhGf_1GqqPXfh3QRx0vmXOwSuUu6jAvmZE_-MfWbbbu4hlAJPveOUGCTY4wmrlhSJztbdR4atvL4U3GqC-hFWwKvTf96sJG57cO6EuZbZcQhjJPs_ZllVUnDpgLpKZ_kXQJo=w1280-h960-k-no",
-      "alt": "Piekarnia Kawiarnia iGizmo",
+      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGLf3zIOTsW7OpmdZcHXAPRzobLvMeGxdZXRKGeJUSbIukt-MZDLCAguHP6e6J86RdXQhjzaArya8fPR7MQxH-dUJjd5Jh2RXxDqG5KehXYKEt0kOp3eKKCULkakRHPANikAje2cA=w1280-h960-k-no",
+      "alt": "Lodziarnio-kawiarnia Klaudia",
       "mode": "custom"
     },
     "about": {
@@ -264,6 +260,16 @@
       "icon": "users"
     },
     {
+      "title": "Dostępne dla wózków",
+      "text": "",
+      "icon": "check"
+    },
+    {
+      "title": "Toaleta",
+      "text": "",
+      "icon": "check"
+    },
+    {
       "title": "Miła atmosfera",
       "text": "",
       "icon": "heart"
@@ -277,16 +283,6 @@
       "title": "Płatność kartą",
       "text": "",
       "icon": "shield"
-    },
-    {
-      "title": "Płatności zbliżeniowe",
-      "text": "",
-      "icon": "shield"
-    },
-    {
-      "title": "Przyjazne dzieciom",
-      "text": "",
-      "icon": "users"
     }
   ],
   "process": [],
@@ -343,15 +339,15 @@
   ],
   "hero": {
     "headline": "Dobra kawa i chwila tylko dla Ciebie.",
-    "subheadline": "Kameralna kawiarnia — Żagań i okolice. Starannie parzona kawa, domowe wypieki i spokojne miejsce na przerwę.",
+    "subheadline": "Kameralna kawiarnia — Kostrzyn nad Odrą i okolice. Starannie parzona kawa, domowe wypieki i spokojne miejsce na przerwę.",
     "badges": [
       "Miejsca na miejscu",
-      "Miła atmosfera",
-      "Spokojne miejsce"
+      "Dostępne dla wózków",
+      "Toaleta"
     ],
     "image": {
-      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAG2JDPlXDOWhGf_1GqqPXfh3QRx0vmXOwSuUu6jAvmZE_-MfWbbbu4hlAJPveOUGCTY4wmrlhSJztbdR4atvL4U3GqC-hFWwKvTf96sJG57cO6EuZbZcQhjJPs_ZllVUnDpgLpKZ_kXQJo=w1280-h960-k-no",
-      "alt": "Piekarnia Kawiarnia iGizmo",
+      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGLf3zIOTsW7OpmdZcHXAPRzobLvMeGxdZXRKGeJUSbIukt-MZDLCAguHP6e6J86RdXQhjzaArya8fPR7MQxH-dUJjd5Jh2RXxDqG5KehXYKEt0kOp3eKKCULkakRHPANikAje2cA=w1280-h960-k-no",
+      "alt": "Lodziarnio-kawiarnia Klaudia",
       "mode": "custom"
     }
   },
@@ -378,47 +374,50 @@
     "text": "Zajrzyj do nas — czekamy z aromatyczną kawą, domowymi wypiekami i spokojną atmosferą."
   },
   "seo": {
-    "title": "Piekarnia Kawiarnia iGizmo — Kawiarnia | Żagań",
-    "description": "Piekarnia Kawiarnia iGizmo — kawiarnia. Żagań i okolice. Oferujemy: Kawa z charakterem, Domowe wypieki, Śniadania i lunch i Miejsce dla siebie.",
+    "title": "Lodziarnio-kawiarnia Klaudia — Kawiarnia | Kostrzyn nad Odrą",
+    "description": "Lodziarnio-kawiarnia Klaudia — kawiarnia. Kostrzyn nad Odrą i okolice. Oferujemy: Kawa z charakterem, Domowe wypieki, Śniadania i lunch i Miejsce dla siebie.",
     "keywords": [
       "kawiarnia",
       "kawa",
       "speciality coffee",
       "domowe wypieki",
       "śniadania",
-      "Żagań"
+      "Kostrzyn nad Odrą"
     ],
     "ogImage": null
   },
   "rating": "4,9",
-  "reviewCount": 2,
+  "reviewCount": 225,
   "priceRange": null,
   "hoursWeekly": [
     {
-      "open": "05:30",
-      "close": "17:30"
+      "open": "11:00",
+      "close": "19:00"
     },
     {
-      "open": "05:30",
-      "close": "17:30"
+      "open": "11:00",
+      "close": "19:00"
     },
     {
-      "open": "05:30",
-      "close": "17:30"
+      "open": "11:00",
+      "close": "19:00"
     },
     {
-      "open": "05:30",
-      "close": "17:30"
+      "open": "11:00",
+      "close": "19:00"
     },
     {
-      "open": "05:30",
-      "close": "17:30"
+      "open": "11:00",
+      "close": "19:00"
     },
     {
-      "open": "08:00",
-      "close": "11:00"
+      "open": "11:00",
+      "close": "19:00"
     },
-    null
+    {
+      "open": "12:00",
+      "close": "19:00"
+    }
   ],
   "layout": [
     "header",
