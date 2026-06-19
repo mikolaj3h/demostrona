@@ -1,0 +1,446 @@
+{
+  "name": "I Coffee. Kawiarnia",
+  "slug": "i-coffee-kawiarnia",
+  "tagline": null,
+  "description": null,
+  "industry": "kawiarnia",
+  "industryLabel": "Kawiarnia",
+  "schemaType": "CafeOrCoffeeShop",
+  "servicesHeading": {
+    "eyebrow": "Nasza karta",
+    "title": "Co u nas wypijesz i zjesz"
+  },
+  "theme": {
+    "id": "artisan",
+    "label": "Rzemieślniczy",
+    "heroStyle": "split",
+    "font": {
+      "heading": "'Playfair Display', Georgia, 'Times New Roman', serif",
+      "body": "'DM Sans', system-ui, -apple-system, Segoe UI, sans-serif",
+      "google": "Playfair+Display:wght@600;700;800&family=DM+Sans:wght@400;500;600"
+    },
+    "type": {
+      "headingWeight": 700,
+      "headingSpacing": "-0.01em",
+      "headingTransform": "none",
+      "eyebrowSpacing": "0.18em",
+      "eyebrowTransform": "uppercase"
+    },
+    "radius": {
+      "card": "18px",
+      "button": "999px",
+      "input": "12px",
+      "pill": "999px"
+    },
+    "color": {
+      "primary": "#6b4226",
+      "primaryDark": "#5a3720",
+      "primaryLight": "#a99181",
+      "primarySoft": "#f0ece9",
+      "onPrimary": "#ffffff",
+      "accent": "#c9893f",
+      "accentDark": "#ad7636",
+      "onAccent": "#0b1220",
+      "ink": "#241c15",
+      "inkMuted": "#5c5247",
+      "bg": "#fffaf3",
+      "surface": "#ffffff",
+      "surfaceAlt": "#f1e8db",
+      "border": "#ece0d0",
+      "footerBg": "#241a13",
+      "footerInk": "#f8fafc",
+      "footerMuted": "#a7a5a3",
+      "heroOverlay": "#201711"
+    },
+    "shadow": {
+      "sm": "0 1px 2px rgba(42, 33, 24, 0.06), 0 1px 3px rgba(42, 33, 24, 0.1)",
+      "card": "0 6px 24px rgba(42, 33, 24, 0.08), 0 1px 2px rgba(42, 33, 24, 0.06)",
+      "hover": "0 18px 48px rgba(42, 33, 24, 0.16), 0 4px 12px rgba(42, 33, 24, 0.08)",
+      "header": "0 4px 20px rgba(42, 33, 24, 0.08)",
+      "button": "0 8px 20px rgba(107, 66, 38, 0.28)"
+    },
+    "_tint": "#2a2118"
+  },
+  "themeId": "artisan",
+  "brand": {
+    "primary": "#6b4226",
+    "accent": "#c9893f"
+  },
+  "city": "Łódź",
+  "region": null,
+  "serviceArea": "Łódź",
+  "year": null,
+  "url": null,
+  "contact": {
+    "phone": "+48 504 075 411",
+    "phoneRaw": "+48 504 075 411",
+    "phoneValid": true,
+    "email": null,
+    "address": {
+      "street": "Al. Marsz. Józefa Piłsudskiego 15/23",
+      "postalCode": "90-329",
+      "city": "Łódź",
+      "full": "Al. Marsz. Józefa Piłsudskiego 15/23, 90-329 Łódź"
+    },
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=I%20Coffee.%20Kawiarnia&query_place_id=ChIJrbFyStI0GkcReS_lOaH1MNA"
+  },
+  "hours": [
+    {
+      "label": "Poniedziałek – Piątek",
+      "value": "08:30 – 20:00"
+    },
+    {
+      "label": "Sobota – Niedziela",
+      "value": "10:00 – 19:00"
+    }
+  ],
+  "social": {
+    "facebook": "https://www.facebook.com/CostaCoffeePoland"
+  },
+  "legal": {
+    "fullName": "I Coffee. Kawiarnia",
+    "nip": null,
+    "regon": null,
+    "privacyUrl": "#polityka-prywatnosci"
+  },
+  "images": {
+    "hero": {
+      "src": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=XF4sXu6NFyDNEFKVAznOVw&cb_client=search.gws-prod.gps&w=408&h=240&yaw=172.11832&pitch=0&thumbfov=100",
+      "alt": "I Coffee. Kawiarnia",
+      "mode": "custom"
+    },
+    "about": {
+      "src": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=960&q=72",
+      "alt": "Filiżanka świeżo zaparzonej kawy",
+      "mode": "unsplash"
+    },
+    "gallery": [
+      {
+        "src": "https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=900&q=70",
+        "alt": "Latte art w filiżance",
+        "mode": "unsplash"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=900&q=70",
+        "alt": "Domowe wypieki na ladzie kawiarni",
+        "mode": "unsplash"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1453614512568-c4024d13c247?auto=format&fit=crop&w=900&q=70",
+        "alt": "Barista parzy kawę",
+        "mode": "unsplash"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1559496417-e7f25cb247f3?auto=format&fit=crop&w=900&q=70",
+        "alt": "Stolik z kawą i ciastem",
+        "mode": "unsplash"
+      }
+    ]
+  },
+  "services": [
+    {
+      "name": "Kawa z charakterem",
+      "description": "Starannie parzona kawa z palarni rzemieślniczych — espresso, flat white i przelewowa.",
+      "icon": "coffee"
+    },
+    {
+      "name": "Domowe wypieki",
+      "description": "Świeże ciasta, ciastka i drożdżówki pieczone z myślą o tych, którzy lubią dobrze zjeść.",
+      "icon": "cake"
+    },
+    {
+      "name": "Śniadania i lunch",
+      "description": "Domowe śniadania, kanapki i lekki lunch — dobre na początek dnia i przerwę w trasie.",
+      "icon": "utensils"
+    },
+    {
+      "name": "Miejsce dla siebie",
+      "description": "Spokojne wnętrze do pracy przy laptopie, spotkania albo chwili z książką.",
+      "icon": "heart"
+    }
+  ],
+  "menu": [
+    {
+      "name": "Kawa",
+      "note": "na mleku roślinnym + 2 zł",
+      "items": [
+        {
+          "name": "Espresso",
+          "description": "podwójne, z palarni rzemieślniczej",
+          "price": "9 zł",
+          "tags": []
+        },
+        {
+          "name": "Flat white",
+          "description": "mocne espresso, aksamitne mleko",
+          "price": "14 zł",
+          "tags": []
+        },
+        {
+          "name": "Cappuccino",
+          "description": "klasyka z gęstą pianką",
+          "price": "13 zł",
+          "tags": []
+        },
+        {
+          "name": "Kawa przelewowa",
+          "description": "ziarno tygodnia, metoda V60",
+          "price": "12 zł",
+          "tags": [
+            "speciality"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Herbata i napoje",
+      "note": "",
+      "items": [
+        {
+          "name": "Herbata liściasta",
+          "description": "duży wybór, parzona do dzbanka",
+          "price": "11 zł",
+          "tags": []
+        },
+        {
+          "name": "Czekolada na gorąco",
+          "description": "gęsta, z prawdziwej czekolady",
+          "price": "14 zł",
+          "tags": []
+        },
+        {
+          "name": "Lemoniada domowa",
+          "description": "sezonowa, lekko gazowana",
+          "price": "12 zł",
+          "tags": [
+            "sezonowe"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Słodkości i wypieki",
+      "note": "codziennie świeże",
+      "items": [
+        {
+          "name": "Sernik domowy",
+          "description": "puszysty, na kruchym spodzie",
+          "price": "13 zł",
+          "tags": []
+        },
+        {
+          "name": "Tarta sezonowa",
+          "description": "z owocami wedle dnia",
+          "price": "14 zł",
+          "tags": [
+            "sezonowe"
+          ]
+        },
+        {
+          "name": "Cynamonka",
+          "description": "drożdżowa, prosto z pieca",
+          "price": "10 zł",
+          "tags": []
+        },
+        {
+          "name": "Brownie",
+          "description": "wilgotne, z gorzkiej czekolady",
+          "price": "12 zł",
+          "tags": [
+            "bez glutenu"
+          ]
+        }
+      ]
+    }
+  ],
+  "features": [
+    {
+      "title": "Na wynos",
+      "text": "",
+      "icon": "truck"
+    },
+    {
+      "title": "Miejsca na miejscu",
+      "text": "",
+      "icon": "users"
+    },
+    {
+      "title": "Dostępne dla wózków",
+      "text": "",
+      "icon": "check"
+    },
+    {
+      "title": "Miła atmosfera",
+      "text": "",
+      "icon": "heart"
+    },
+    {
+      "title": "Spokojne miejsce",
+      "text": "",
+      "icon": "heart"
+    },
+    {
+      "title": "Płatność kartą",
+      "text": "",
+      "icon": "shield"
+    }
+  ],
+  "process": [],
+  "stats": [
+    {
+      "value": "12",
+      "label": "rodzajów kawy"
+    },
+    {
+      "value": "codziennie",
+      "label": "świeże wypieki"
+    },
+    {
+      "value": "Wi-Fi",
+      "label": "do pracy i nauki"
+    },
+    {
+      "value": "4,9",
+      "label": "ocena Google"
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "Najlepsza kawa w okolicy i przepyszne sernik. Spokojnie można tu posiedzieć z laptopem godzinę czy dwie.",
+      "author": "Ola",
+      "role": "opinia przykładowa",
+      "rating": 5
+    },
+    {
+      "quote": "Kameralnie, pachnąco i bez pośpiechu. Wpadam tu na poranną kawę niemal codziennie.",
+      "author": "Marcin",
+      "role": "opinia przykładowa",
+      "rating": 5
+    }
+  ],
+  "pricing": [],
+  "faq": [
+    {
+      "q": "Czy można u Was popracować przy laptopie?",
+      "a": "Jak najbardziej — to spokojne, kameralne miejsce z Wi-Fi, w sam raz na pracę albo naukę przy dobrej kawie."
+    },
+    {
+      "q": "Czy serwujecie śniadania?",
+      "a": "Tak, codziennie przygotowujemy domowe śniadania i lekki lunch — zapraszamy od rana."
+    },
+    {
+      "q": "Czy macie ciasta wegańskie lub bezglutenowe?",
+      "a": "W ofercie regularnie pojawiają się propozycje wegańskie i bezglutenowe — pytaj o aktualny wybór w ladzie."
+    },
+    {
+      "q": "Jak mogę zapłacić?",
+      "a": "Przyjmujemy gotówkę, karty oraz płatności telefonem (NFC) i BLIK."
+    }
+  ],
+  "hero": {
+    "headline": "Dobra kawa i chwila tylko dla Ciebie.",
+    "subheadline": "Kameralna kawiarnia — Łódź i okolice. Starannie parzona kawa, domowe wypieki i spokojne miejsce na przerwę.",
+    "badges": [
+      "Na wynos",
+      "Miejsca na miejscu",
+      "Dostępne dla wózków"
+    ],
+    "image": {
+      "src": "https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=XF4sXu6NFyDNEFKVAznOVw&cb_client=search.gws-prod.gps&w=408&h=240&yaw=172.11832&pitch=0&thumbfov=100",
+      "alt": "I Coffee. Kawiarnia",
+      "mode": "custom"
+    }
+  },
+  "about": {
+    "title": "Dlaczego my?",
+    "eyebrow": "O nas",
+    "text": [
+      "Jesteśmy kameralną kawiarnią, w której można na chwilę zwolnić — przy filiżance starannie parzonej kawy i kawałku domowego ciasta. Stawiamy na jakość ziaren i przyjazną obsługę.",
+      "To miejsce dla każdego, kto chce dobrze zacząć dzień, spokojnie popracować albo spotkać się ze znajomymi. Niezobowiązująca atmosfera sprawia, że łatwo poczuć się tu jak u siebie."
+    ],
+    "points": [
+      "Starannie parzona kawa",
+      "Domowe wypieki",
+      "Kameralny klimat"
+    ],
+    "image": {
+      "src": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=960&q=72",
+      "alt": "Filiżanka świeżo zaparzonej kawy",
+      "mode": "unsplash"
+    }
+  },
+  "cta": {
+    "title": "Wpadnij na dobrą kawę.",
+    "text": "Zajrzyj do nas — czekamy z aromatyczną kawą, domowymi wypiekami i spokojną atmosferą."
+  },
+  "seo": {
+    "title": "I Coffee. Kawiarnia — Kawiarnia | Łódź",
+    "description": "I Coffee. Kawiarnia — kawiarnia. Łódź i okolice. Oferujemy: Kawa z charakterem, Domowe wypieki, Śniadania i lunch i Miejsce dla siebie.",
+    "keywords": [
+      "kawiarnia",
+      "kawa",
+      "speciality coffee",
+      "domowe wypieki",
+      "śniadania",
+      "Łódź"
+    ],
+    "ogImage": null
+  },
+  "rating": "4,9",
+  "reviewCount": 4,
+  "priceRange": null,
+  "hoursWeekly": [
+    {
+      "open": "08:30",
+      "close": "20:00"
+    },
+    {
+      "open": "08:30",
+      "close": "20:00"
+    },
+    {
+      "open": "08:30",
+      "close": "20:00"
+    },
+    {
+      "open": "08:30",
+      "close": "20:00"
+    },
+    {
+      "open": "08:30",
+      "close": "20:00"
+    },
+    {
+      "open": "10:00",
+      "close": "19:00"
+    },
+    {
+      "open": "10:00",
+      "close": "19:00"
+    }
+  ],
+  "layout": [
+    "header",
+    "hero",
+    "trustbar",
+    "menu",
+    "map",
+    "about",
+    "gallery",
+    "stats",
+    "testimonials",
+    "faq",
+    "cta",
+    "contact",
+    "footer",
+    "cookie"
+  ],
+  "meta": {
+    "generator": "demo-stron-pl",
+    "industry": "kawiarnia",
+    "theme": "artisan",
+    "imageMode": "unsplash",
+    "generatedAt": "2026-06-19T07:49:46.040Z",
+    "warnings": []
+  }
+}

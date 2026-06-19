@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>Kawiarnia Don Limon — Kawiarnia | Zabrze</title>
+<meta name="description" content="Kawiarnia Don Limon — kawiarnia. Zabrze i okolice. Oferujemy: Kawa z charakterem, Domowe wypieki, Śniadania i lunch i Miejsce dla siebie." />
+<meta name="theme-color" content="#2A1A12" />
+
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Fonts: Playfair Display (display) + Inter (body) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Lucide icons -->
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          espresso: '#2A1A12',
+          mocha:    '#3E2618',
+          crema:    '#F4E9D8',
+          cream:    '#FBF5EB',
+          amber:    '#C9974A',
+          amberDark:'#A87833',
+          ink:      '#1A110B',
+        },
+        fontFamily: {
+          display: ['"Playfair Display"', 'serif'],
+          sans:    ['Inter', 'system-ui', 'sans-serif'],
+        },
+        boxShadow: {
+          soft: '0 10px 40px -10px rgba(42,26,18,0.35)',
+          glow: '0 0 0 1px rgba(201,151,74,0.25), 0 20px 60px -20px rgba(201,151,74,0.35)',
+        }
+      }
+    }
+  }
+</script>
+
+<style>
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #FBF5EB;
+    color: #1A110B;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;            /* zapobiega poziomemu przewijaniu na mobile */
+  }
+  .font-display { font-family: 'Playfair Display', serif; }
+
+  /* Offset kotwic pod stały nagłówek */
+  section[id] { scroll-margin-top: 5.5rem; }
+
+  /* Grain texture overlay */
+  .grain::after {
+    content:"";
+    position:absolute; inset:0; pointer-events:none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.35 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+    opacity:.35;
+    mix-blend-mode: overlay;
+  }
+
+  /* Tło hero — PLACEHOLDER (gradient zamiast zdjęcia lokalu).
+     Aby użyć własnego zdjęcia, dodaj jego URL jako pierwszą warstwę background-image:
+     background-image: url('TWOJE-ZDJECIE.jpg'),
+       linear-gradient(180deg, rgba(26,17,11,0.55) 0%, rgba(26,17,11,0.85) 100%); */
+  .hero-bg {
+    background:
+      radial-gradient(1200px 600px at 72% -10%, rgba(201,151,74,0.28), transparent 60%),
+      linear-gradient(180deg, rgba(26,17,11,0.55) 0%, rgba(26,17,11,0.78) 55%, rgba(26,17,11,0.95) 100%),
+      linear-gradient(135deg, #2A1A12 0%, #3E2618 55%, #2A1A12 100%);
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* Pill nav */
+  .nav-link { position: relative; }
+  .nav-link::after{
+    content:""; position:absolute; left:0; bottom:-6px; height:1px; width:0;
+    background: currentColor; transition: width .35s ease;
+  }
+  .nav-link:hover::after{ width:100%; }
+
+  /* Buttons */
+  .btn-amber {
+    background: linear-gradient(180deg,#D6A55A 0%,#C9974A 50%,#A87833 100%);
+    color:#1A110B;
+    box-shadow: 0 8px 24px -8px rgba(201,151,74,0.55), inset 0 1px 0 rgba(255,255,255,0.25);
+    transition: transform .25s ease, box-shadow .25s ease, filter .25s ease;
+  }
+  .btn-amber:hover { transform: translateY(-2px); filter: brightness(1.05); }
+  .btn-ghost {
+    border:1px solid rgba(244,233,216,0.3);
+    color:#F4E9D8;
+    transition: all .25s ease;
+  }
+  .btn-ghost:hover { background: rgba(244,233,216,0.08); border-color: rgba(244,233,216,0.6); }
+
+  /* Reveal animation */
+  .reveal { opacity:0; transform: translateY(20px); transition: opacity .8s ease, transform .8s ease; }
+  .reveal.in { opacity:1; transform:none; }
+
+  /* Status dot pulse */
+  .pulse-dot{
+    width:8px; height:8px; border-radius:9999px; background:#4ade80; position:relative;
+    box-shadow:0 0 0 0 rgba(74,222,128,0.6);
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse{
+    0% { box-shadow:0 0 0 0 rgba(74,222,128,0.55);}
+    70%{ box-shadow:0 0 0 12px rgba(74,222,128,0);}
+    100%{ box-shadow:0 0 0 0 rgba(74,222,128,0);}
+  }
+
+  /* Menu card hover */
+  .menu-item { transition: background .3s ease, transform .3s ease; }
+  .menu-item:hover { background: rgba(201,151,74,0.06); transform: translateX(4px); }
+
+  /* Gallery zoom (efekt po najechaniu na zdjęcie) */
+  .gallery-tile img { transition: transform .8s cubic-bezier(.2,.7,.2,1), filter .4s ease; width:100%; height:100%; object-fit:cover; }
+  .gallery-tile:hover img { transform: scale(1.06); filter: brightness(1.05); }
+
+  /* Placeholder zdjęcia (gdy brak realnego zdjęcia) */
+  .gallery-ph{
+    display:flex; flex-direction:column; align-items:center; justify-content:center; gap:.5rem;
+    width:100%; height:100%; text-align:center; padding:1rem;
+    background:
+      repeating-linear-gradient(45deg, rgba(201,151,74,.06) 0 14px, transparent 14px 28px),
+      linear-gradient(135deg,#F4E9D8 0%, #EADBC3 100%);
+    color:#A87833;
+    border:2px dashed rgba(201,151,74,.45);
+    border-radius:1rem;
+  }
+  .gallery-ph span{ font-size:.72rem; letter-spacing:.12em; text-transform:uppercase; font-weight:600; }
+
+  /* Marquee */
+  .marquee { display:flex; gap:3rem; animation: scroll 30s linear infinite; }
+  @keyframes scroll {
+    0% { transform: translateX(0);}
+    100% { transform: translateX(-50%);}
+  }
+
+  /* Map (osadzona mapa Google) */
+  .map-embed { height: 100%; width:100%; border:0; display:block; background:#2A1A12; }
+
+  /* Form inputs */
+  .input {
+    width:100%; padding:.85rem 1rem;
+    border:1px solid rgba(42,26,18,0.15);
+    background: #FBF5EB;
+    color:#1A110B;
+    border-radius:10px;
+    transition: border-color .2s ease, box-shadow .2s ease, background .2s ease;
+    font-size: 1rem;            /* 16px — zapobiega zoomowi pól na iOS */
+  }
+  .input:focus { outline:none; border-color:#C9974A; box-shadow: 0 0 0 4px rgba(201,151,74,0.15); background:#fff; }
+  .input:disabled { opacity:.55; cursor:not-allowed; }
+
+  /* Rozwijana wiadomość (sekcja rezerwacji) */
+  .msg-details { transition: border-color .2s ease; }
+  .msg-details[open]{ border-color: rgba(201,151,74,.45); }
+  .msg-details summary{ list-style:none; }
+  .msg-details summary::-webkit-details-marker{ display:none; }
+  .msg-details[open] .msg-chev{ transform: rotate(180deg); }
+  .msg-chev{ transition: transform .25s ease; }
+
+  /* Mobile menu — zwinięte jest w pełni ukryte (transform sam nie wystarcza, bo menu
+     jest zakotwiczone na top-20, więc jego dolny fragment potrafił wystawać na górze).
+     Wzorzec visibility + opóźnienie: na otwarciu widoczne natychmiast, na zamknięciu
+     znika dopiero po zakończeniu animacji wysuwania (brak wystającego fragmentu w spoczynku). */
+  .mobile-menu { transform: translateY(-110%); opacity: 0; visibility: hidden; pointer-events: none; transition: transform .4s ease, opacity .3s ease, visibility 0s linear .4s; }
+  .mobile-menu.open { transform: translateY(0); opacity: 1; visibility: visible; pointer-events: auto; transition: transform .4s ease, opacity .3s ease, visibility 0s; }
+
+  /* Karuzela opinii — ukryty pasek przewijania */
+  .no-scrollbar::-webkit-scrollbar{ display:none; }
+  .no-scrollbar{ -ms-overflow-style:none; scrollbar-width:none; }
+
+  /* Selection color */
+  ::selection { background:#C9974A; color:#1A110B; }
+
+  /* Skip-link (przejdź do treści) + widoczny focus dla dostępności */
+  .skip-link{
+    position:absolute; left:-999px; top:0; z-index:120;
+    background:#2A1A12; color:#F4E9D8; padding:.65rem 1rem; border-radius:0 0 .6rem 0;
+  }
+  .skip-link:focus{ left:0; }
+  :focus-visible{ outline:2px solid #C9974A; outline-offset:2px; }
+
+  /* Baner zgody na pliki cookie (RODO) */
+  .cookie-banner{
+    position:fixed; left:1rem; right:1rem; bottom:1rem; z-index:110;
+    max-width:44rem; margin:0 auto;
+    background:#2A1A12; color:#F4E9D8;
+    border:1px solid rgba(201,151,74,.3); border-radius:1rem;
+    padding:1rem 1.25rem; box-shadow:0 20px 60px -20px rgba(0,0,0,.6);
+    display:none;
+  }
+  .cookie-banner.show{ display:flex; flex-wrap:wrap; gap:.75rem 1.25rem; align-items:center; justify-content:space-between; }
+  .cookie-banner a{ color:#C9974A; text-decoration:underline; }
+  .cookie-banner__btns{ display:flex; gap:.5rem; flex-wrap:wrap; }
+
+  /* Szanuj preferencję ograniczenia ruchu */
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior:auto; }
+    .marquee{ animation:none; }
+    .reveal{ opacity:1 !important; transform:none !important; transition:none; }
+    .pulse-dot{ animation:none; }
+    .gallery-tile:hover img{ transform:none; }
+    *{ animation-duration:.01ms !important; transition-duration:.01ms !important; }
+  }
+</style>
+<meta name="robots" content="index, follow">
+<meta name="author" content="Kawiarnia Don Limon">
+<meta name="keywords" content="kawiarnia, kawa, speciality coffee, domowe wypieki, śniadania, Zabrze">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pl_PL">
+<meta property="og:site_name" content="Kawiarnia Don Limon">
+<meta property="og:title" content="Kawiarnia Don Limon — Kawiarnia | Zabrze">
+<meta property="og:description" content="Kawiarnia Don Limon — kawiarnia. Zabrze i okolice. Oferujemy: Kawa z charakterem, Domowe wypieki, Śniadania i lunch i Miejsce dla siebie.">
+<meta property="og:image" content="https://lh3.googleusercontent.com/gps-cs-s/APNQkAGYfit04ZXla93x2nxE7gwuLV_wd3m_ukVXGF4UlGcPVK2cLnSP0RdgF6RACacL1lTpvL999lzLLSgCKzwz3-wMBc7-i6_GF__IpUJMVrLTfSFtpzRXahR6o_WAgCW5pfAW4smskNkEl4kI=w1280-h960-k-no">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Kawiarnia Don Limon — Kawiarnia | Zabrze">
+<meta name="twitter:description" content="Kawiarnia Don Limon — kawiarnia. Zabrze i okolice. Oferujemy: Kawa z charakterem, Domowe wypieki, Śniadania i lunch i Miejsce dla siebie.">
+<meta name="twitter:image" content="https://lh3.googleusercontent.com/gps-cs-s/APNQkAGYfit04ZXla93x2nxE7gwuLV_wd3m_ukVXGF4UlGcPVK2cLnSP0RdgF6RACacL1lTpvL999lzLLSgCKzwz3-wMBc7-i6_GF__IpUJMVrLTfSFtpzRXahR6o_WAgCW5pfAW4smskNkEl4kI=w1280-h960-k-no">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%236b4226'/%3E%3Cstop offset='1' stop-color='%23c9893f'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='url(%23g)'/%3E%3Ctext x='32' y='44' font-family='Segoe UI, sans-serif' font-size='32' font-weight='700' fill='%23ffffff' text-anchor='middle'%3EKD%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CafeOrCoffeeShop",
+  "name": "Kawiarnia Don Limon",
+  "description": "Kawiarnia Don Limon — kawiarnia. Zabrze i okolice. Oferujemy: Kawa z charakterem, Domowe wypieki, Śniadania i lunch i Miejsce dla siebie.",
+  "image": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGYfit04ZXla93x2nxE7gwuLV_wd3m_ukVXGF4UlGcPVK2cLnSP0RdgF6RACacL1lTpvL999lzLLSgCKzwz3-wMBc7-i6_GF__IpUJMVrLTfSFtpzRXahR6o_WAgCW5pfAW4smskNkEl4kI=w1280-h960-k-no",
+  "telephone": "+48518188889",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Wolności 274",
+    "postalCode": "41-800",
+    "addressLocality": "Zabrze",
+    "addressCountry": "PL"
+  },
+  "areaServed": "Zabrze",
+  "openingHours": [
+    "Mo-Fr 08:00-20:00",
+    "Sa-Su 09:00-20:00"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Kawa",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "Espresso",
+            "description": "podwójne, z palarni rzemieślniczej",
+            "offers": {
+              "@type": "Offer",
+              "price": "9",
+              "priceCurrency": "PLN"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Flat white",
+            "description": "mocne espresso, aksamitne mleko",
+            "offers": {
+              "@type": "Offer",
+              "price": "14",
+              "priceCurrency": "PLN"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Cappuccino",
+            "description": "klasyka z gęstą pianką",
+            "offers": {
+              "@type": "Offer",
+              "price": "13",
+              "priceCurrency": "PLN"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Kawa przelewowa",
+            "description": "ziarno tygodnia, metoda V60",
+            "offers": {
+              "@type": "Offer",
+              "price": "12",
+              "priceCurrency": "PLN"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Herbata i napoje",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "Herbata liściasta",
+            "description": "duży wybór, parzona do dzbanka",
+            "offers": {
+              "@type": "Offer",
+              "price": "11",
+              "priceCurrency": "PLN"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Czekolada na gorąco",
+            "description": "gęsta, z prawdziwej czekolady",
+            "offers": {
+              "@type": "Offer",
+              "price": "14",
+              "priceCurrency": "PLN"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Lemoniada domowa",
+            "description": "sezonowa, lekko gazowana",
+            "offers": {
+              "@type": "Offer",
+              "price": "12",
+              "priceCurrency": "PLN"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Słodkości i wypieki",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "Sernik domowy",
+            "description": "puszysty, na kruchym spodzie",
+            "offers": {
+              "@type": "Offer",
+              "price": "13",
+              "priceCurrency": "PLN"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Tarta sezonowa",
+            "description": "z owocami wedle dnia",
+            "offers": {
+              "@type": "Offer",
+              "price": "14",
+              "priceCurrency": "PLN"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Cynamonka",
+            "description": "drożdżowa, prosto z pieca",
+            "offers": {
+              "@type": "Offer",
+              "price": "10",
+              "priceCurrency": "PLN"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Brownie",
+            "description": "wilgotne, z gorzkiej czekolady",
+            "offers": {
+              "@type": "Offer",
+              "price": "12",
+              "priceCurrency": "PLN"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": 231
+  }
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Przejdź do treści</a>
+
+<!-- ====================== NAV ====================== -->
+<header class="fixed top-0 left-0 right-0 z-50">
+  <div class="backdrop-blur-md bg-espresso/70 border-b border-white/5">
+    <nav class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-10 h-20 flex items-center justify-between text-crema">
+      <a href="#hero" class="flex items-center gap-3" data-testid="nav-logo" aria-label="Kawiarnia Don Limon — strona główna">
+        <span class="w-9 h-9 rounded-full bg-amber/15 border border-amber/40 flex items-center justify-center shrink-0">
+          <i data-lucide="coffee" class="w-4 h-4 text-amber"></i>
+        </span>
+        <span class="font-display text-lg sm:text-xl tracking-wide truncate max-w-[60vw]"><span class="text-amber">Kawiarnia Don Limon</span></span>
+      </a>
+
+      <div class="hidden lg:flex items-center gap-10 text-sm tracking-wide">
+        <a href="#hero" class="nav-link" data-testid="nav-home">Start</a>
+        <a href="#menu" class="nav-link" data-testid="nav-menu">Menu</a>
+        <a href="#gallery" class="nav-link" data-testid="nav-gallery">Galeria</a>
+        <a href="#reviews" class="nav-link" data-testid="nav-reviews">Opinie</a>
+        <a href="#contact" class="nav-link" data-testid="nav-contact">Kontakt</a>
+      </div>
+
+      <div class="hidden lg:block">
+        <a href="#reservation" class="btn-amber inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium" data-testid="nav-reserve-btn">
+          Zarezerwuj stolik <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+
+      <button id="mobileBtn" class="lg:hidden w-11 h-11 flex items-center justify-center rounded-full border border-white/15" data-testid="mobile-menu-button" aria-label="Otwórz menu" aria-expanded="false" aria-controls="mobileMenu">
+        <i data-lucide="menu" class="w-5 h-5"></i>
+      </button>
+    </nav>
+  </div>
+
+  <!-- Mobile menu -->
+  <div id="mobileMenu" class="mobile-menu lg:hidden absolute top-20 left-0 right-0 bg-espresso/95 backdrop-blur-md border-b border-white/5">
+    <div class="px-5 sm:px-6 py-6 flex flex-col gap-2 text-crema">
+      <a href="#hero" class="mobile-link py-3 border-b border-white/5">Start</a>
+      <a href="#menu" class="mobile-link py-3 border-b border-white/5">Menu</a>
+      <a href="#gallery" class="mobile-link py-3 border-b border-white/5">Galeria</a>
+      <a href="#reviews" class="mobile-link py-3 border-b border-white/5">Opinie</a>
+      <a href="#contact" class="mobile-link py-3 border-b border-white/5">Kontakt</a>
+      <a href="#reservation" class="mobile-link btn-amber text-center px-5 py-3.5 rounded-full font-medium mt-3">Zarezerwuj stolik</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<!-- ====================== HERO ====================== -->
+<section id="hero" class="relative hero-bg grain min-h-screen flex items-end" style="background-image: radial-gradient(1200px 600px at 72% -10%, rgba(201,151,74,0.28), transparent 60%), linear-gradient(180deg, rgba(26,17,11,0.62) 0%, rgba(26,17,11,0.80) 55%, rgba(26,17,11,0.93) 100%), url('https://lh3.googleusercontent.com/gps-cs-s/APNQkAGYfit04ZXla93x2nxE7gwuLV_wd3m_ukVXGF4UlGcPVK2cLnSP0RdgF6RACacL1lTpvL999lzLLSgCKzwz3-wMBc7-i6_GF__IpUJMVrLTfSFtpzRXahR6o_WAgCW5pfAW4smskNkEl4kI=w1280-h960-k-no'); background-size: cover; background-position: center;">
+  <div class="absolute inset-0 pointer-events-none">
+    <div class="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-amber/10 blur-3xl"></div>
+  </div>
+
+  <div class="relative max-w-7xl mx-auto px-5 sm:px-6 lg:px-10 pt-32 sm:pt-40 pb-14 sm:pb-16 w-full">
+    <div class="grid lg:grid-cols-12 gap-8 lg:gap-10 items-end">
+      <div class="lg:col-span-7 text-crema">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-amber/40 bg-amber/10 text-amber text-[0.7rem] sm:text-xs tracking-[0.2em] uppercase reveal" data-testid="hero-eyebrow">
+          Rzemieślnicza kawiarnia · Zabrze
+        </div>
+
+        <h1 class="font-sans font-semibold tracking-tight text-4xl sm:text-6xl lg:text-7xl leading-[1.05] mt-5 sm:mt-6 reveal break-words" data-testid="hero-title">
+          <span class="text-amber">Kawiarnia Don Limon</span>
+        </h1>
+
+        <p class="mt-5 sm:mt-6 max-w-xl text-base sm:text-lg text-crema/80 leading-relaxed reveal" data-testid="hero-subtitle">
+          Kameralna kawiarnia — Zabrze i okolice. Starannie parzona kawa, domowe wypieki i spokojne miejsce na przerwę.
+        </p>
+
+        <div class="mt-8 sm:mt-10 flex flex-wrap items-center gap-2.5 sm:gap-4 reveal">
+          <a href="#reservation" class="btn-amber inline-flex items-center justify-center gap-2 px-4 py-2.5 sm:px-6 sm:py-3.5 rounded-full text-sm sm:text-base font-medium whitespace-nowrap" data-testid="hero-reserve-btn">
+            <i data-lucide="calendar-check" class="w-4 h-4"></i> Zarezerwuj stolik
+          </a>
+          <a href="#menu" class="btn-ghost inline-flex items-center justify-center gap-2 px-4 py-2.5 sm:px-6 sm:py-3.5 rounded-full text-sm sm:text-base font-medium whitespace-nowrap" data-testid="hero-menu-btn">
+            Zobacz menu <i data-lucide="arrow-down-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <!-- Quick stats (edytowalne) -->
+        <div class="mt-12 sm:mt-14 grid grid-cols-3 gap-4 sm:gap-6 max-w-lg reveal">
+          <div>
+            <div class="font-display text-2xl sm:text-3xl text-amber">4,9★</div>
+            <div class="text-[0.65rem] sm:text-xs uppercase tracking-widest text-crema/60 mt-1">ocena Google</div>
+          </div>
+          <div>
+            <div class="font-display text-2xl sm:text-3xl text-amber">231</div>
+            <div class="text-[0.65rem] sm:text-xs uppercase tracking-widest text-crema/60 mt-1">opinii Google</div>
+          </div>
+          <div>
+            <div class="font-display text-2xl sm:text-3xl text-amber">12</div>
+            <div class="text-[0.65rem] sm:text-xs uppercase tracking-widest text-crema/60 mt-1">rodzajów kawy</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Map card -->
+      <div class="lg:col-span-5 reveal">
+        <div class="relative rounded-2xl bg-cream/95 backdrop-blur p-4 sm:p-5 shadow-soft border border-amber/20" data-testid="hero-map-card">
+          <div class="flex items-center justify-between gap-3 mb-4">
+            <div class="min-w-0">
+              <div class="text-xs uppercase tracking-widest text-mocha/60">Znajdź nas</div>
+              <div class="font-display text-lg sm:text-xl text-espresso mt-1 truncate">Wolności 274, Zabrze</div>
+            </div>
+            <div id="statusBadge" class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-green-50 border border-green-200 shrink-0" data-testid="hero-status-badge">
+              <span class="pulse-dot"></span>
+              <span id="statusText" class="text-xs font-semibold text-green-700">Otwarte</span>
+            </div>
+          </div>
+
+          <div class="h-52 sm:h-56 rounded-xl overflow-hidden border border-mocha/10">
+            <iframe class="map-embed" title="Mapa dojazdu — Kawiarnia Don Limon" src="https://maps.google.com/maps?q=Wolno%C5%9Bci%20274%2C%2041-800%20Zabrze&amp;z=15&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen data-testid="hero-map"></iframe>
+          </div>
+
+          <div class="mt-4 flex items-center justify-between gap-3 text-sm">
+            <div class="flex items-center gap-2 text-mocha/80 min-w-0">
+              <i data-lucide="clock-3" class="w-4 h-4 text-amberDark shrink-0"></i>
+              <span id="hoursToday" class="truncate">Dziś: 08:00 – 21:00</span>
+            </div>
+            <!-- Przycisk „Nawigacja" → Google Maps (href ustawiany przez JS z CONFIG) -->
+            <a data-nav-link href="#" target="_blank" rel="noopener" class="text-amberDark font-medium inline-flex items-center gap-1 hover:gap-2 transition-all shrink-0" data-testid="hero-nav-link">
+              Nawigacja <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Marquee -->
+    <div class="mt-14 sm:mt-20 overflow-hidden border-y border-white/10 py-5" aria-hidden="true">
+      <div class="marquee text-crema/70 font-display text-base sm:text-lg italic whitespace-nowrap">
+        <span>· Speciality Coffee ·</span><span>Świeże wypieki</span><span>· Single Origin ·</span><span>Roastery</span><span>· Slow brew ·</span><span>Latte Art</span><span>· Speciality Coffee ·</span><span>Świeże wypieki</span><span>· Single Origin ·</span><span>Roastery</span><span>· Slow brew ·</span><span>Latte Art</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== MENU ====================== -->
+<section id="menu" class="relative py-16 sm:py-20 lg:py-28 bg-cream">
+  <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-10">
+    <div class="grid lg:grid-cols-12 gap-6 lg:gap-10 items-end mb-10 lg:mb-16">
+      <div class="lg:col-span-7 reveal">
+        <div class="text-xs uppercase tracking-[0.3em] text-amberDark">Nasze menu</div>
+        <h2 class="font-display text-3xl sm:text-4xl lg:text-6xl text-espresso mt-3 sm:mt-4 leading-[1.05]">
+          Karta <span class="italic text-amberDark">smaków</span>
+        </h2>
+      </div>
+      <div class="lg:col-span-5 reveal">
+        <p class="text-mocha/80 leading-relaxed">
+          Każda pozycja to historia ziarna, regionu i baristy. Pod nazwą znajdziesz
+          skład oraz łączną ilość produktu — bez niespodzianek.
+        </p>
+      </div>
+    </div>
+
+    <!-- Tabs -->
+    <div class="flex flex-wrap gap-2 mb-8 sm:mb-10 reveal" role="tablist" aria-label="Kategorie menu">
+      <button id="tab-kawa" role="tab" aria-selected="true" aria-controls="menuList" tabindex="0" class="menu-tab active px-4 sm:px-5 py-2 rounded-full text-sm border border-espresso/15 bg-espresso text-crema" data-tab="kawa">Kawa</button>
+      <button id="tab-herbata" role="tab" aria-selected="false" aria-controls="menuList" tabindex="-1" class="menu-tab px-4 sm:px-5 py-2 rounded-full text-sm border border-espresso/15 text-espresso hover:bg-espresso hover:text-crema transition" data-tab="herbata">Herbata</button>
+      <button id="tab-wypieki" role="tab" aria-selected="false" aria-controls="menuList" tabindex="-1" class="menu-tab px-4 sm:px-5 py-2 rounded-full text-sm border border-espresso/15 text-espresso hover:bg-espresso hover:text-crema transition" data-tab="wypieki">Wypieki</button>
+      <button id="tab-sniadania" role="tab" aria-selected="false" aria-controls="menuList" tabindex="-1" class="menu-tab px-4 sm:px-5 py-2 rounded-full text-sm border border-espresso/15 text-espresso hover:bg-espresso hover:text-crema transition" data-tab="sniadania">Śniadania</button>
+    </div>
+
+    <!-- Menu grid -->
+    <div class="grid md:grid-cols-2 gap-x-10 lg:gap-x-14 gap-y-2 sm:gap-y-4 reveal" id="menuList" role="tabpanel" aria-labelledby="tab-kawa" tabindex="0">
+      <!-- uzupełniane przez JS -->
+    </div>
+  </div>
+</section>
+
+<!-- ====================== GALLERY ====================== -->
+<section id="gallery" class="relative py-16 sm:py-20 lg:py-28 bg-espresso text-crema overflow-hidden">
+  <div class="absolute -right-40 top-20 w-[500px] h-[500px] bg-amber/10 rounded-full blur-3xl pointer-events-none"></div>
+  <div class="relative max-w-7xl mx-auto px-5 sm:px-6 lg:px-10">
+    <div class="flex items-end justify-between mb-8 sm:mb-10 lg:mb-14 flex-wrap gap-4 sm:gap-6 reveal">
+      <div>
+        <div class="text-xs uppercase tracking-[0.3em] text-amber">Galeria</div>
+        <h2 class="font-display text-3xl sm:text-4xl lg:text-6xl mt-3 sm:mt-4 leading-[1.05]">
+          Klimat<span class="italic text-amber">, który zostaje</span>
+        </h2>
+      </div>
+      <p class="max-w-md text-crema/70">Drewno, ceramika, światło i para z ekspresu. Mała poezja codzienności.</p>
+    </div>
+
+    <div class="reveal">
+      <!-- Główne zdjęcie -->
+      <div class="gallery-tile relative overflow-hidden rounded-2xl h-[260px] sm:h-[380px] lg:h-[460px]" data-testid="gallery-main">
+        <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&amp;fit=crop&amp;w=900&amp;q=70" alt="Latte art w filiżance" loading="lazy" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&amp;fit=crop&amp;w=900&amp;q=70'" />
+      </div>
+
+      <!-- Pozostałe zdjęcia — ukryte domyślnie, rozwijane przyciskiem -->
+      <div id="galleryMore" class="hidden mt-3 sm:mt-4 grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4" data-testid="gallery-more" aria-hidden="true">
+        <div class="gallery-tile relative overflow-hidden rounded-2xl h-[150px] sm:h-[220px]"><img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&amp;fit=crop&amp;w=900&amp;q=70" alt="Domowe wypieki na ladzie kawiarni" loading="lazy" /></div>
+        <div class="gallery-tile relative overflow-hidden rounded-2xl h-[150px] sm:h-[220px]"><img src="https://images.unsplash.com/photo-1453614512568-c4024d13c247?auto=format&amp;fit=crop&amp;w=900&amp;q=70" alt="Barista parzy kawę" loading="lazy" /></div>
+        <div class="gallery-tile relative overflow-hidden rounded-2xl h-[150px] sm:h-[220px]"><img src="https://images.unsplash.com/photo-1559496417-e7f25cb247f3?auto=format&amp;fit=crop&amp;w=900&amp;q=70" alt="Stolik z kawą i ciastem" loading="lazy" /></div>
+      </div>
+
+      <div class="mt-6 sm:mt-8 text-center">
+        <button id="galleryToggle" type="button" aria-expanded="false" aria-controls="galleryMore"
+          class="btn-amber inline-flex items-center gap-2 px-6 py-3 rounded-full font-medium" data-testid="gallery-toggle">
+          <i data-lucide="images" class="w-4 h-4"></i> <span class="gallery-toggle-label">Pokaż więcej zdjęć</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== REVIEWS ====================== -->
+<section id="reviews" class="relative py-16 sm:py-20 lg:py-28 bg-cream overflow-hidden">
+  <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-10">
+    <div class="text-center max-w-2xl mx-auto mb-10 sm:mb-14 reveal">
+      <div class="text-xs uppercase tracking-[0.3em] text-amberDark">Opinie klientów</div>
+      <h2 class="font-display text-3xl sm:text-4xl lg:text-6xl text-espresso mt-3 sm:mt-4 leading-[1.05]">
+        Słowa, które<br/>nas <span class="italic text-amberDark">napędzają</span>
+      </h2>
+      <div class="mt-5 sm:mt-6 flex items-center justify-center gap-2">
+        <div class="flex">
+          <i data-lucide="star" class="w-5 h-5 text-amber fill-amber"></i>
+          <i data-lucide="star" class="w-5 h-5 text-amber fill-amber"></i>
+          <i data-lucide="star" class="w-5 h-5 text-amber fill-amber"></i>
+          <i data-lucide="star" class="w-5 h-5 text-amber fill-amber"></i>
+          <i data-lucide="star" class="w-5 h-5 text-amber fill-amber"></i>
+        </div>
+        <span class="text-mocha/70 text-sm">4,9 / 5 z 231 opinii Google</span>
+      </div>
+    </div>
+
+    <!-- Mobile: karuzela pozioma (jedna po drugiej, przesuwana) · Desktop: siatka 3 kolumn -->
+    <div id="reviewsScroller" class="reviews-scroller flex md:grid md:grid-cols-3 gap-4 sm:gap-6 overflow-x-auto md:overflow-visible snap-x snap-mandatory no-scrollbar -mx-5 px-5 sm:-mx-6 sm:px-6 md:mx-0 md:px-0 pb-2 reveal" data-testid="reviews-scroller">
+      <article class="snap-center shrink-0 w-[85%] sm:w-[55%] md:w-auto relative p-6 sm:p-7 rounded-2xl bg-white border border-mocha/10 shadow-soft hover:border-amber/40 transition" data-testid="review-1">
+        <i data-lucide="quote" class="w-7 h-7 text-amber mb-4"></i>
+        <p class="text-espresso/90 leading-relaxed">„Najlepsza kawa w okolicy i przepyszne sernik. Spokojnie można tu posiedzieć z laptopem godzinę czy dwie."</p>
+        <div class="mt-6 flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-amber/20 flex items-center justify-center text-amberDark font-medium">O</div>
+          <div>
+            <div class="font-medium text-espresso">Ola</div>
+            <div class="text-xs text-mocha/60">opinia przykładowa</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="snap-center shrink-0 w-[85%] sm:w-[55%] md:w-auto relative p-6 sm:p-7 rounded-2xl bg-white border border-mocha/10 shadow-soft hover:border-amber/40 transition" data-testid="review-2">
+        <i data-lucide="quote" class="w-7 h-7 text-amber mb-4"></i>
+        <p class="text-espresso/90 leading-relaxed">„Kameralnie, pachnąco i bez pośpiechu. Wpadam tu na poranną kawę niemal codziennie."</p>
+        <div class="mt-6 flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-amber/20 flex items-center justify-center text-amberDark font-medium">M</div>
+          <div>
+            <div class="font-medium text-espresso">Marcin</div>
+            <div class="text-xs text-mocha/60">opinia przykładowa</div>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- Wskazówka i kropki — tylko mobile -->
+    <div class="md:hidden mt-5 flex flex-col items-center gap-3">
+      <div id="reviewsDots" class="flex items-center gap-2" aria-hidden="true"></div>
+      <div class="text-xs text-mocha/50 inline-flex items-center gap-1.5"><i data-lucide="move-horizontal" class="w-3.5 h-3.5"></i> Przesuń, aby zobaczyć więcej</div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== RESERVATION + NEWSLETTER ====================== -->
+<section id="reservation" class="relative py-16 sm:py-20 lg:py-28 bg-espresso text-crema overflow-hidden">
+  <div class="absolute -right-40 -top-20 w-[480px] h-[480px] bg-amber/10 rounded-full blur-3xl pointer-events-none"></div>
+  <div class="relative max-w-7xl mx-auto px-5 sm:px-6 lg:px-10 grid lg:grid-cols-2 gap-10 lg:gap-14">
+
+    <!-- Reservation -->
+    <div class="reveal" data-testid="reservation-block">
+      <div class="text-xs uppercase tracking-[0.3em] text-amber">Rezerwacja</div>
+      <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl mt-3 sm:mt-4 leading-[1.05]">
+        Zarezerwuj <span class="italic text-amber">swój stolik</span>
+      </h2>
+      <p class="mt-4 text-crema/80">Zostaw nam kilka informacji — potwierdzimy rezerwację telefonicznie lub mailowo w ciągu godziny.</p>
+
+      <form class="mt-7 sm:mt-8 grid sm:grid-cols-2 gap-4 bg-cream text-espresso rounded-2xl p-5 sm:p-6 shadow-soft" id="reservationForm" data-testid="reservation-form" novalidate>
+        <div class="sm:col-span-2">
+          <label for="resName" class="text-xs uppercase tracking-widest text-mocha/60">Imię i nazwisko</label>
+          <input id="resName" required type="text" placeholder="np. Anna Kowalska" class="input mt-2" data-testid="res-name"/>
+        </div>
+        <div>
+          <label for="resPhone" class="text-xs uppercase tracking-widest text-mocha/60">Telefon</label>
+          <input id="resPhone" required type="tel" inputmode="tel" placeholder="+48 600 000 000" class="input mt-2" data-testid="res-phone"/>
+        </div>
+        <div>
+          <label for="resEmail" class="text-xs uppercase tracking-widest text-mocha/60">E-mail</label>
+          <input id="resEmail" required type="email" inputmode="email" placeholder="adres@email.pl" class="input mt-2" data-testid="res-email"/>
+        </div>
+        <div>
+          <label for="resDate" class="text-xs uppercase tracking-widest text-mocha/60">Data</label>
+          <input id="resDate" required type="date" class="input mt-2" data-testid="res-date"/>
+        </div>
+        <div>
+          <label for="resTime" class="text-xs uppercase tracking-widest text-mocha/60">Godzina</label>
+          <!-- Lepsze wybieranie godziny: lista wolnych slotów co 30 min wg dnia i godzin otwarcia -->
+          <select id="resTime" required class="input mt-2" data-testid="res-time">
+            <option value="" disabled selected>Najpierw wybierz datę</option>
+          </select>
+        </div>
+        <div class="sm:col-span-2">
+          <label for="resGuests" class="text-xs uppercase tracking-widest text-mocha/60">Liczba osób</label>
+          <select id="resGuests" class="input mt-2" data-testid="res-guests">
+            <option>2 osoby</option>
+            <option>3 osoby</option>
+            <option>4 osoby</option>
+            <option>5 osób</option>
+            <option>6+ osób</option>
+          </select>
+        </div>
+
+        <!-- Rozwijana wiadomość — domyślnie zamknięta -->
+        <div class="sm:col-span-2">
+          <details class="msg-details rounded-[10px] border border-mocha/15 bg-cream/60" data-testid="res-message-details">
+            <summary class="cursor-pointer px-4 py-3 text-sm text-mocha/80 flex items-center justify-between gap-3">
+              <span class="inline-flex items-center gap-2"><i data-lucide="message-square-plus" class="w-4 h-4 text-amberDark"></i> Dodaj wiadomość (opcjonalnie)</span>
+              <i data-lucide="chevron-down" class="w-4 h-4 msg-chev text-mocha/60"></i>
+            </summary>
+            <div class="px-4 pb-4">
+              <label for="resMessage" class="sr-only">Wiadomość</label>
+              <textarea id="resMessage" rows="3" placeholder="Specjalne życzenia, alergie, okazja..." class="input resize-none" data-testid="res-message"></textarea>
+            </div>
+          </details>
+        </div>
+
+        <div class="sm:col-span-2 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mt-1">
+          <label class="flex items-start gap-3 text-sm text-mocha/80">
+            <input type="checkbox" required class="mt-1 accent-amberDark w-4 h-4" data-testid="res-consent"/>
+            <span>Akceptuję regulamin oraz politykę prywatności.</span>
+          </label>
+          <button type="submit" class="btn-amber w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full font-medium" data-testid="res-submit">
+            Zarezerwuj <i data-lucide="check" class="w-4 h-4"></i>
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Newsletter + info card -->
+    <div class="reveal flex flex-col gap-6 sm:gap-8">
+      <div class="relative rounded-3xl overflow-hidden p-7 sm:p-10 text-crema shadow-soft" style="background: linear-gradient(135deg,#3E2618 0%, #2A1A12 100%);" data-testid="newsletter-block">
+        <div class="absolute -top-20 -right-20 w-72 h-72 rounded-full bg-amber/20 blur-3xl"></div>
+        <div class="relative">
+          <i data-lucide="mail" class="w-7 h-7 text-amber"></i>
+          <h3 class="font-display text-2xl sm:text-3xl lg:text-4xl mt-4 sm:mt-5">Bądź na bieżąco z nowościami</h3>
+          <p class="mt-3 text-crema/80">Premiery sezonowych ziaren, warsztaty baristyczne i kawowe ciekawostki — prosto na Twojego maila.</p>
+
+          <form id="newsletterForm" class="mt-6 sm:mt-7 flex flex-col sm:flex-row gap-3" data-testid="newsletter-form" novalidate>
+            <label for="newsEmail" class="sr-only">Twój e-mail</label>
+            <input id="newsEmail" required type="email" inputmode="email" placeholder="Twój e-mail" class="flex-1 px-5 py-3.5 rounded-full bg-crema/10 border border-crema/15 text-crema placeholder:text-crema/50 focus:outline-none focus:border-amber transition" data-testid="news-email"/>
+            <button type="submit" class="btn-amber inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full font-medium" data-testid="news-submit">
+              Zapisz mnie
+            </button>
+          </form>
+          <p class="text-xs text-crema/50 mt-3">Wysyłamy 1–2 maile miesięcznie. W każdej chwili możesz się wypisać.</p>
+        </div>
+      </div>
+
+      <!-- Praktyczne informacje o rezerwacji (zamiast bonusu dla nowych gości) -->
+      <div class="rounded-3xl border border-amber/30 bg-amber/5 p-6 sm:p-7" data-testid="reservation-info">
+        <div class="flex items-center gap-3">
+          <i data-lucide="info" class="w-5 h-5 text-amber"></i>
+          <div class="font-display text-lg sm:text-xl text-crema">Dobrze wiedzieć</div>
+        </div>
+        <ul class="mt-4 space-y-2.5 text-crema/80 text-sm">
+          <li class="flex items-start gap-2.5"><i data-lucide="users" class="w-4 h-4 text-amberDark mt-0.5 shrink-0"></i> Rezerwacje online dla grup do 6 osób. Większe grupy prosimy o kontakt telefoniczny.</li>
+          <li class="flex items-start gap-2.5"><i data-lucide="clock" class="w-4 h-4 text-amberDark mt-0.5 shrink-0"></i> Stolik przygotowujemy i przytrzymujemy 15 minut od godziny rezerwacji.</li>
+          <li class="flex items-start gap-2.5"><i data-lucide="dog" class="w-4 h-4 text-amberDark mt-0.5 shrink-0"></i> Jesteśmy przyjaźni zwierzakom — Twój pupil jest mile widziany.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== CONTACT ====================== -->
+<section id="contact" class="relative py-16 sm:py-20 lg:py-28 bg-cream text-espresso">
+  <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-10 grid lg:grid-cols-3 gap-8 lg:gap-10">
+    <div class="reveal">
+      <div class="text-xs uppercase tracking-[0.3em] text-amberDark">Kontakt</div>
+      <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl mt-3 sm:mt-4 leading-[1.05]">
+        Wpadnij na <span class="italic text-amberDark">kawę</span>
+      </h2>
+      <p class="mt-4 sm:mt-5 text-mocha/80 leading-relaxed">Czekamy w naszym lokalu codziennie. Możesz też zadzwonić lub napisać — chętnie odpowiemy.</p>
+      <a data-nav-link href="#" target="_blank" rel="noopener" class="mt-6 btn-amber inline-flex items-center gap-2 px-5 py-3 rounded-full text-sm font-medium" data-testid="contact-nav-link">
+        Nawigacja <i data-lucide="arrow-right" class="w-4 h-4"></i>
+      </a>
+    </div>
+
+    <div class="space-y-5 reveal">
+      <div class="flex items-start gap-4">
+        <div class="w-11 h-11 rounded-xl bg-amber/15 border border-amber/30 flex items-center justify-center shrink-0">
+          <i data-lucide="map-pin" class="w-5 h-5 text-amberDark"></i>
+        </div>
+        <div>
+          <div class="text-xs uppercase tracking-widest text-mocha/60">Adres</div>
+          <div class="mt-1">Wolności 274<br/>41-800 Zabrze, Polska</div>
+        </div>
+      </div>
+      <div class="flex items-start gap-4">
+        <div class="w-11 h-11 rounded-xl bg-amber/15 border border-amber/30 flex items-center justify-center shrink-0">
+          <i data-lucide="phone" class="w-5 h-5 text-amberDark"></i>
+        </div>
+        <div>
+          <div class="text-xs uppercase tracking-widest text-mocha/60">Telefon</div>
+          <div class="mt-1"><a href="tel:+48518188889" class="hover:text-amberDark transition">+48 518 188 889</a></div>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="reveal">
+      <div class="text-xs uppercase tracking-widest text-mocha/60 mb-3">Godziny otwarcia</div>
+      <ul class="divide-y divide-espresso/10" data-testid="hours-list">
+        <li class="flex justify-between py-2.5"><span>Poniedziałek – Piątek</span><span class="text-amberDark font-medium">08:00 – 20:00</span></li>
+        <li class="flex justify-between py-2.5"><span>Sobota – Niedziela</span><span class="text-amberDark font-medium">09:00 – 20:00</span></li>
+      </ul>
+
+      <div class="mt-6 flex items-center gap-3">
+        <a href="#" aria-label="Instagram" class="w-11 h-11 rounded-full border border-espresso/15 flex items-center justify-center hover:bg-amber/10 hover:border-amber transition" data-testid="social-instagram">
+          <svg viewBox="0 0 24 24" class="w-4 h-4" fill="currentColor" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.43-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.3-1.46.72-2.12 1.38C1.35 2.68.94 3.35.63 4.14.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.72 1.46 1.38 2.12.66.66 1.33 1.08 2.12 1.38.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.9 5.9 0 0 0 2.12-1.38 5.9 5.9 0 0 0 1.38-2.12c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.9 5.9 0 0 0-1.38-2.12A5.9 5.9 0 0 0 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.41-10.41a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/></svg>
+        </a>
+        <a href="#" aria-label="Facebook" class="w-11 h-11 rounded-full border border-espresso/15 flex items-center justify-center hover:bg-amber/10 hover:border-amber transition" data-testid="social-facebook">
+          <svg viewBox="0 0 24 24" class="w-4 h-4" fill="currentColor" aria-hidden="true"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07c0 6 4.39 10.95 10.13 11.85v-8.38H7.08v-3.47h3.05V9.43c0-3 1.79-4.67 4.53-4.67 1.31 0 2.69.24 2.69.24v2.95h-1.51c-1.49 0-1.96.93-1.96 1.87v2.25h3.33l-.53 3.47h-2.8v8.38C19.61 23.02 24 18.07 24 12.07z"/></svg>
+        </a>
+        <a href="#" aria-label="TikTok" class="w-11 h-11 rounded-full border border-espresso/15 flex items-center justify-center hover:bg-amber/10 hover:border-amber transition" data-testid="social-tiktok">
+          <svg viewBox="0 0 24 24" class="w-4 h-4" fill="currentColor" aria-hidden="true"><path d="M12.53.02c1.31-.02 2.6-.01 3.9-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ====================== FOOTER ====================== -->
+<footer class="bg-ink text-crema/70">
+  <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-10 py-8 sm:py-10">
+    <!-- Informacja RODO / cele kotwicy „Polityka prywatności" -->
+    <div id="polityka-prywatnosci" class="max-w-3xl mb-8 text-sm leading-relaxed text-crema/60">
+      <h2 class="font-display text-base text-crema mb-2">Prywatność i pliki cookie (RODO)</h2>
+      <p>Administratorem danych podanych w formularzu rezerwacji i kontaktu jest Kawiarnia Don Limon. Dane przetwarzamy wyłącznie w celu obsługi zapytania, zgodnie z RODO. Strona może używać plików cookie do celów statystycznych — możesz nimi zarządzać w ustawieniach przeglądarki. Masz prawo dostępu do swoich danych, ich poprawiania i usunięcia.</p>
+    </div>
+    <div class="border-t border-white/5 pt-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-center md:text-left">
+      <div class="flex items-center gap-3">
+        <span class="w-8 h-8 rounded-full bg-amber/15 border border-amber/30 flex items-center justify-center">
+          <i data-lucide="coffee" class="w-3.5 h-3.5 text-amber"></i>
+        </span>
+        <span class="font-display text-base text-crema">Kawiarnia Don Limon</span>
+      </div>
+      <div>© <span id="year"></span> Kawiarnia Don Limon. Wszelkie prawa zastrzeżone.</div>
+      <div class="flex gap-5">
+        <a href="#polityka-prywatnosci" class="hover:text-amber transition">Polityka prywatności</a>
+        <a href="#reservation" class="hover:text-amber transition">Rezerwacja</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ====================== COOKIE (RODO) ====================== -->
+<div class="cookie-banner" id="cookie-banner" role="region" aria-live="polite" aria-label="Zgoda na pliki cookie">
+  <p class="text-sm text-crema/80 flex-1 min-w-[16rem]">Używamy plików cookie, aby zapewnić najlepsze działanie strony i analizować ruch. Szczegóły znajdziesz w <a href="#polityka-prywatnosci">polityce prywatności</a>.</p>
+  <div class="cookie-banner__btns">
+    <button type="button" class="btn-amber px-4 py-2 rounded-full text-sm font-medium" data-cookie="accept">Akceptuję</button>
+    <button type="button" class="px-4 py-2 rounded-full text-sm font-medium border border-crema/30 text-crema hover:bg-crema/10 transition" data-cookie="reject">Tylko niezbędne</button>
+  </div>
+</div>
+
+<!-- ====================== TOAST ====================== -->
+<div id="toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 px-5 py-3 rounded-full bg-espresso text-crema shadow-soft text-sm opacity-0 pointer-events-none transition-opacity duration-300 z-[100]" data-testid="toast" role="status" aria-live="polite"></div>
+
+<!-- ====================== SCRIPTS ====================== -->
+<script>
+  /* ============================================================
+     KONFIGURACJA LOKALU — edytuj tylko ten obiekt.
+     ============================================================ */
+  const CONFIG = {
+    name: "Kawiarnia Don Limon",
+    // Cel przycisku „Nawigacja" (Google Maps Directions) — adres lokalu.
+    navUrl: "https://www.google.com/maps/dir/?api=1\u0026destination=Wolno%C5%9Bci%20274%2C%2041-800%20Zabrze\u0026dir_action=navigate",
+    // Godziny otwarcia [otwarcie, zamknięcie] wg dnia tygodnia (0 = niedziela ... 6 = sobota).
+    // Wartości mogą być ułamkowe (9.5 = 09:30). Brak klucza dnia = zamknięte.
+    hours: {
+  "0": [
+    9,
+    20
+  ],
+  "1": [
+    8,
+    20
+  ],
+  "2": [
+    8,
+    20
+  ],
+  "3": [
+    8,
+    20
+  ],
+  "4": [
+    8,
+    20
+  ],
+  "5": [
+    8,
+    20
+  ],
+  "6": [
+    9,
+    20
+  ]
+},
+  };
+  const HAS_HOURS = Object.keys(CONFIG.hours).length > 0;
+  // Formatuje godzinę ułamkową na „HH:MM".
+  function fmtHour(x){ const h=Math.floor(x); const m=Math.round((x-h)*60); return String(h).padStart(2,'0')+':'+String(m).padStart(2,'0'); }
+
+  // Rysowanie ikon Lucide — odporne na brak biblioteki (np. awaria CDN)
+  function drawIcons(){ if (window.lucide && typeof lucide.createIcons === 'function') lucide.createIcons(); }
+  drawIcons();
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  /* --- Przycisk „Nawigacja" → Google Maps (uruchamia trasę do lokalu) --- */
+  if (CONFIG.navUrl) document.querySelectorAll('[data-nav-link]').forEach(a => { a.href = CONFIG.navUrl; });
+
+  /* --- Menu mobilne --- */
+  const mobileBtn = document.getElementById('mobileBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  mobileBtn.addEventListener('click', () => {
+    const open = mobileMenu.classList.toggle('open');
+    mobileBtn.setAttribute('aria-expanded', String(open));
+  });
+  document.querySelectorAll('.mobile-link').forEach(a => a.addEventListener('click', () => {
+    mobileMenu.classList.remove('open');
+    mobileBtn.setAttribute('aria-expanded', 'false');
+  }));
+
+  /* --- Reveal on scroll --- */
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  /* --- Status: otwarte / zamknięte (liczone z godzin otwarcia) --- */
+  const statusBadge = document.getElementById('statusBadge');
+  const hoursToday = document.getElementById('hoursToday');
+  function setClosed() {
+    if (statusBadge) {
+      statusBadge.className = 'flex items-center gap-2 px-3 py-1.5 rounded-full bg-red-50 border border-red-200 shrink-0';
+      statusBadge.innerHTML = `<span style="width:8px;height:8px;border-radius:9999px;background:#ef4444;display:inline-block"></span><span class="text-xs font-semibold text-red-700">Zamknięte</span>`;
+    }
+  }
+  function updateStatus() {
+    if (!HAS_HOURS) {
+      if (statusBadge) statusBadge.style.display = 'none';
+      if (hoursToday) hoursToday.textContent = 'Godziny — zapytaj w lokalu';
+      return;
+    }
+    const now = new Date();
+    const todayHours = CONFIG.hours[now.getDay()];
+    if (!todayHours) { if (hoursToday) hoursToday.textContent = 'Dziś nieczynne'; setClosed(); return; }
+    const [open, close] = todayHours;
+    const h = now.getHours() + now.getMinutes()/60;
+    if (hoursToday) hoursToday.textContent = `Dziś: ${fmtHour(open)} – ${fmtHour(close)}`;
+    if (h >= open && h < close) {
+      if (statusBadge) {
+        statusBadge.className = 'flex items-center gap-2 px-3 py-1.5 rounded-full bg-green-50 border border-green-200 shrink-0';
+        statusBadge.innerHTML = `<span class="pulse-dot"></span><span class="text-xs font-semibold text-green-700">Otwarte teraz</span>`;
+      }
+    } else { setClosed(); }
+  }
+  updateStatus();
+  setInterval(updateStatus, 60000);
+
+  /* --- Galeria: rozwijanie pozostałych zdjęć --- */
+  const galleryToggle = document.getElementById('galleryToggle');
+  const galleryMore = document.getElementById('galleryMore');
+  if (galleryToggle && galleryMore) {
+    galleryToggle.addEventListener('click', () => {
+      const isOpen = galleryMore.classList.toggle('hidden') === false;
+      galleryToggle.setAttribute('aria-expanded', String(isOpen));
+      galleryMore.setAttribute('aria-hidden', String(!isOpen));
+      galleryToggle.querySelector('.gallery-toggle-label').textContent = isOpen ? 'Ukryj zdjęcia' : 'Pokaż więcej zdjęć';
+      if (isOpen) drawIcons();
+    });
+  }
+
+  /* --- Dane menu: nazwa + skład + łączna ilość + cena --- */
+  const menuData = {
+    kawa: [
+      { name:'Espresso',     ingredients:'100% Arabica, blend „Sezon"',                   amount:'30 ml',  price:'10 zł' },
+      { name:'Flat White',   ingredients:'podwójne espresso, mleko, mikropianka',         amount:'150 ml', price:'16 zł' },
+      { name:'Cappuccino',   ingredients:'espresso, mleko, puszysta pianka',              amount:'180 ml', price:'14 zł' },
+      { name:'Latte',        ingredients:'espresso, mleko (owsiane / migdałowe gratis)',  amount:'300 ml', price:'15 zł' },
+      { name:'Filter V60',   ingredients:'single origin, ręczne przelewowe parzenie',     amount:'250 ml', price:'18 zł' },
+      { name:'Cold Brew',    ingredients:'kawa macerowana 12 h na zimno, lód',            amount:'330 ml', price:'17 zł' },
+    ],
+    herbata: [
+      { name:'Earl Grey Supreme', ingredients:'czarna herbata, bergamotka, płatki chabru', amount:'400 ml', price:'12 zł' },
+      { name:'Japan Sencha',      ingredients:'zielona herbata sencha',                    amount:'400 ml', price:'14 zł' },
+      { name:'Rooibos Vanilla',   ingredients:'rooibos, laska wanilii (bez kofeiny)',      amount:'400 ml', price:'13 zł' },
+      { name:'Imbir & Cytryna',   ingredients:'świeży imbir, cytryna, miód',               amount:'400 ml', price:'13 zł' },
+    ],
+    wypieki: [
+      { name:'Cynamonka',        ingredients:'ciasto drożdżowe, masło, cynamon, karmel',  amount:'120 g', price:'12 zł' },
+      { name:'Croissant maślany',ingredients:'ciasto 48 h, francuskie masło',             amount:'90 g',  price:'10 zł' },
+      { name:'Sernik baskijski', ingredients:'ser, śmietana, jajka, wanilia',             amount:'140 g', price:'15 zł' },
+      { name:'Tarta cytrynowa',  ingredients:'kruchy spód, krem cytrynowy, beza',         amount:'130 g', price:'14 zł' },
+    ],
+    sniadania: [
+      { name:'Avocado toast',          ingredients:'chleb na zakwasie, awokado, jajko poche, chili', amount:'320 g', price:'28 zł' },
+      { name:'Granola',                ingredients:'granola pieczona z miodem, jogurt grecki, owoce', amount:'350 g', price:'22 zł' },
+      { name:'Omlet z ziołami',        ingredients:'3 jajka, koper, szczypior, ser feta',            amount:'260 g', price:'26 zł' },
+      { name:'Tost z masłem orzechowym',ingredients:'chleb, masło orzechowe, banan, kakao, migdały', amount:'240 g', price:'18 zł' },
+    ],
+  };
+
+  function esc(s){ return String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+
+  function renderMenu(tab) {
+    const list = document.getElementById('menuList');
+    list.innerHTML = menuData[tab].map(item => `
+      <div class="menu-item p-4 -mx-4 rounded-xl flex justify-between gap-5 sm:gap-6 border-b border-espresso/10" data-testid="menu-item-${esc(item.name.toLowerCase().replace(/\s+/g,'-'))}">
+        <div class="min-w-0">
+          <div class="font-display text-lg sm:text-xl text-espresso">${esc(item.name)}</div>
+          <div class="text-mocha/70 text-sm mt-1.5"><span class="font-medium text-mocha/80">Skład:</span> ${esc(item.ingredients)}</div>
+          <div class="text-mocha/60 text-xs mt-1 inline-flex items-center gap-1.5"><i data-lucide="scale" class="w-3.5 h-3.5"></i> Ilość łączna: ${esc(item.amount)}</div>
+        </div>
+        <div class="font-display text-lg text-amberDark whitespace-nowrap">${esc(item.price)}</div>
+      </div>
+    `).join('');
+    drawIcons();   // doczytaj ikony „scale" w nowych pozycjach
+  }
+  renderMenu('kawa');
+
+  // Zakładki menu — pełny wzorzec WAI-ARIA „tabs" (role, aria-selected, klawiatura)
+  const menuTabs = Array.from(document.querySelectorAll('.menu-tab'));
+  const menuPanel = document.getElementById('menuList');
+  function selectTab(btn, setFocus) {
+    menuTabs.forEach(b => {
+      const on = b === btn;
+      b.classList.toggle('active', on);
+      b.classList.toggle('bg-espresso', on);
+      b.classList.toggle('text-crema', on);
+      b.classList.toggle('text-espresso', !on);
+      b.setAttribute('aria-selected', String(on));
+      b.tabIndex = on ? 0 : -1;
+    });
+    menuPanel.setAttribute('aria-labelledby', btn.id);
+    renderMenu(btn.dataset.tab);
+    if (setFocus) btn.focus();
+  }
+  menuTabs.forEach((btn, i) => {
+    btn.addEventListener('click', () => selectTab(btn));
+    btn.addEventListener('keydown', e => {
+      let idx = null;
+      if (e.key === 'ArrowRight' || e.key === 'ArrowDown') idx = (i + 1) % menuTabs.length;
+      else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') idx = (i - 1 + menuTabs.length) % menuTabs.length;
+      else if (e.key === 'Home') idx = 0;
+      else if (e.key === 'End') idx = menuTabs.length - 1;
+      if (idx !== null) { e.preventDefault(); selectTab(menuTabs[idx], true); }
+    });
+  });
+
+  /* --- Toast --- */
+  function toast(msg) {
+    const t = document.getElementById('toast');
+    t.textContent = msg;
+    t.style.opacity = 1;
+    setTimeout(() => t.style.opacity = 0, 3000);
+  }
+
+  /* --- Rezerwacja: data + lista wolnych godzin (sloty co 30 min wg godzin otwarcia) --- */
+  const dateInput = document.getElementById('resDate');
+  const timeSelect = document.getElementById('resTime');
+
+  function localISO(d){
+    return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+  }
+
+  function buildTimeSlots() {
+    const val = dateInput.value;
+    timeSelect.innerHTML = '';
+    if (!val) {
+      timeSelect.appendChild(new Option('Najpierw wybierz datę', '', true, true));
+      timeSelect.options[0].disabled = true;
+      timeSelect.disabled = true;
+      return;
+    }
+    const d = new Date(val + 'T00:00:00');
+    const now = new Date();
+    const isToday = val === localISO(now);
+    const nowH = now.getHours() + now.getMinutes()/60;
+
+    const placeholder = new Option('Wybierz godzinę', '', true, true);
+    placeholder.disabled = true;
+    timeSelect.appendChild(placeholder);
+
+    // Brak danych o godzinach → sensowny domyślny zakres; dzień zamknięty → komunikat.
+    const todayHours = HAS_HOURS ? CONFIG.hours[d.getDay()] : [9, 20];
+    if (!todayHours) {
+      const none = new Option('Tego dnia nieczynne — wybierz inny dzień', '');
+      none.disabled = true;
+      timeSelect.appendChild(none);
+      timeSelect.disabled = false;
+      return;
+    }
+    const [open, close] = todayHours;
+
+    let added = 0;
+    for (let h = open; h < close; h += 0.5) {
+      if (isToday && h <= nowH) continue;           // pomiń godziny, które już minęły
+      const hh = String(Math.floor(h)).padStart(2,'0');
+      const mm = (h % 1) ? '30' : '00';
+      const label = `${hh}:${mm}`;
+      timeSelect.appendChild(new Option(label, label));
+      added++;
+    }
+
+    if (added === 0) {
+      const none = new Option('Brak wolnych godzin — wybierz inny dzień', '');
+      none.disabled = true;
+      timeSelect.appendChild(none);
+    }
+    timeSelect.disabled = false;
+  }
+
+  // Domyślnie ustaw dzisiejszą datę i zbuduj sloty
+  dateInput.min = localISO(new Date());
+  dateInput.value = localISO(new Date());
+  buildTimeSlots();
+  dateInput.addEventListener('change', buildTimeSlots);
+
+  /* --- Karuzela opinii: kropki + synchronizacja przy przewijaniu (mobile) --- */
+  const reviewsScroller = document.getElementById('reviewsScroller');
+  const reviewsDots = document.getElementById('reviewsDots');
+  if (reviewsScroller && reviewsDots) {
+    const cards = Array.from(reviewsScroller.children);
+    cards.forEach((_, i) => {
+      const dot = document.createElement('button');
+      dot.type = 'button';
+      dot.setAttribute('aria-label', `Przejdź do opinii ${i+1}`);
+      dot.className = 'w-2 h-2 rounded-full bg-mocha/25 transition-all';
+      dot.addEventListener('click', () => cards[i].scrollIntoView({ behavior:'smooth', inline:'center', block:'nearest' }));
+      reviewsDots.appendChild(dot);
+    });
+    const dots = Array.from(reviewsDots.children);
+    function syncDots() {
+      const center = reviewsScroller.scrollLeft + reviewsScroller.clientWidth/2;
+      let active = 0, best = Infinity;
+      cards.forEach((c, i) => {
+        const mid = c.offsetLeft + c.offsetWidth/2;
+        const dist = Math.abs(mid - center);
+        if (dist < best) { best = dist; active = i; }
+      });
+      dots.forEach((d, i) => {
+        d.classList.toggle('bg-amberDark', i === active);
+        d.classList.toggle('w-5', i === active);
+        d.classList.toggle('bg-mocha/25', i !== active);
+      });
+    }
+    reviewsScroller.addEventListener('scroll', () => window.requestAnimationFrame(syncDots), { passive:true });
+    syncDots();
+  }
+
+  /* --- Formularze (demo: bez wysyłki na serwer) --- */
+  document.getElementById('reservationForm').addEventListener('submit', e => {
+    e.preventDefault();
+    if (!e.target.checkValidity()) { e.target.reportValidity(); return; }
+    toast('Dziękujemy! Potwierdzimy rezerwację wkrótce ☕');
+    e.target.reset();
+    buildTimeSlots();
+  });
+  document.getElementById('newsletterForm').addEventListener('submit', e => {
+    e.preventDefault();
+    if (!e.target.checkValidity()) { e.target.reportValidity(); return; }
+    toast('Zapisano do newslettera. Do zobaczenia w skrzynce!');
+    e.target.reset();
+  });
+
+  /* --- Baner zgody na pliki cookie (RODO) --- */
+  (function(){
+    const banner = document.getElementById('cookie-banner');
+    if (!banner) return;
+    let stored = null;
+    try { stored = localStorage.getItem('cookie-consent'); } catch(e) {}
+    if (!stored) setTimeout(() => banner.classList.add('show'), 800);
+    banner.querySelectorAll('[data-cookie]').forEach(b => b.addEventListener('click', () => {
+      try { localStorage.setItem('cookie-consent', b.getAttribute('data-cookie')); } catch(e) {}
+      banner.classList.remove('show');
+    }));
+  })();
+</script>
+
+</body>
+</html>
