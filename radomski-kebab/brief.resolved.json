@@ -1,0 +1,454 @@
+{
+  "name": "Radomski kebab",
+  "slug": "radomski-kebab",
+  "tagline": null,
+  "description": null,
+  "industry": "kebab",
+  "industryLabel": "Kebab",
+  "schemaType": "Restaurant",
+  "servicesHeading": {
+    "eyebrow": "Nasze menu",
+    "title": "Co dziś zamawiasz?"
+  },
+  "theme": {
+    "id": "artisan",
+    "label": "Rzemieślniczy",
+    "heroStyle": "split",
+    "font": {
+      "heading": "'Playfair Display', Georgia, 'Times New Roman', serif",
+      "body": "'DM Sans', system-ui, -apple-system, Segoe UI, sans-serif",
+      "google": "Playfair+Display:wght@600;700;800&family=DM+Sans:wght@400;500;600"
+    },
+    "type": {
+      "headingWeight": 700,
+      "headingSpacing": "-0.01em",
+      "headingTransform": "none",
+      "eyebrowSpacing": "0.18em",
+      "eyebrowTransform": "uppercase"
+    },
+    "radius": {
+      "card": "18px",
+      "button": "999px",
+      "input": "12px",
+      "pill": "999px"
+    },
+    "color": {
+      "primary": "#b91c1c",
+      "primaryDark": "#9b1818",
+      "primaryLight": "#d67b7b",
+      "primarySoft": "#f8e8e8",
+      "onPrimary": "#ffffff",
+      "accent": "#f59e0b",
+      "accentDark": "#d38809",
+      "onAccent": "#0b1220",
+      "ink": "#241c15",
+      "inkMuted": "#5c5247",
+      "bg": "#fffaf3",
+      "surface": "#ffffff",
+      "surfaceAlt": "#f5e7db",
+      "border": "#ece0d0",
+      "footerBg": "#241a13",
+      "footerInk": "#f8fafc",
+      "footerMuted": "#a7a5a3",
+      "heroOverlay": "#201711"
+    },
+    "shadow": {
+      "sm": "0 1px 2px rgba(42, 33, 24, 0.06), 0 1px 3px rgba(42, 33, 24, 0.1)",
+      "card": "0 6px 24px rgba(42, 33, 24, 0.08), 0 1px 2px rgba(42, 33, 24, 0.06)",
+      "hover": "0 18px 48px rgba(42, 33, 24, 0.16), 0 4px 12px rgba(42, 33, 24, 0.08)",
+      "header": "0 4px 20px rgba(42, 33, 24, 0.08)",
+      "button": "0 8px 20px rgba(185, 28, 28, 0.28)"
+    },
+    "_tint": "#2a2118"
+  },
+  "themeId": "artisan",
+  "brand": {
+    "primary": "#b91c1c",
+    "accent": "#f59e0b"
+  },
+  "city": "Radom",
+  "region": null,
+  "serviceArea": "Radom",
+  "year": null,
+  "url": null,
+  "contact": {
+    "phone": "+48 794 675 342",
+    "phoneRaw": "+48 794 675 342",
+    "phoneValid": true,
+    "email": null,
+    "address": {
+      "street": "Stanisława Wernera 10",
+      "postalCode": "26-600",
+      "city": "Radom",
+      "full": "Stanisława Wernera 10, 26-600 Radom"
+    },
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Radomski%20kebab&query_place_id=ChIJ2cLZCQBZGEcR26eQV5c8pbQ"
+  },
+  "hours": [
+    {
+      "label": "Poniedziałek – Sobota",
+      "value": "09:00 – 21:00"
+    },
+    {
+      "label": "Niedziela",
+      "value": "09:00 – 19:00"
+    }
+  ],
+  "social": {},
+  "legal": {
+    "fullName": "Radomski kebab",
+    "nip": null,
+    "regon": null,
+    "privacyUrl": "#polityka-prywatnosci"
+  },
+  "images": {
+    "hero": {
+      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEDQ5YzQg6NWFVfdCiTm-MYkvwkbthWCyyH0iRYigLXnGCGZJmr8LyRzaduNgelq3_cMdeWFbhl01nWfE9Zuhg8M7V7te4Z6P7qdXXrhPi33pOVf5sEHQAPy6Ro3LrnDIxPl_hHpMl4-ivu=w1280-h960-k-no",
+      "alt": "Radomski kebab",
+      "mode": "custom"
+    },
+    "about": {
+      "src": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=960&q=72",
+      "alt": "Nakryty stół w restauracji",
+      "mode": "unsplash"
+    },
+    "gallery": [
+      {
+        "src": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=900&q=70",
+        "alt": "Szef kuchni komponuje danie",
+        "mode": "unsplash"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?auto=format&fit=crop&w=900&q=70",
+        "alt": "Apetyczne danie na talerzu",
+        "mode": "unsplash"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=900&q=70",
+        "alt": "Świeżo przygotowany posiłek",
+        "mode": "unsplash"
+      }
+    ]
+  },
+  "services": [
+    {
+      "name": "Kebab z rożna",
+      "description": "Świeże mięso z pionowego rożna — kurczak, wołowina lub mieszane, w tortilli, bułce lub jako durum.",
+      "icon": "utensils"
+    },
+    {
+      "name": "Dostawa pod drzwi",
+      "description": "Gorący kebab dowieziemy prosto do domu lub biura — szybko i bez pośredników.",
+      "icon": "truck"
+    },
+    {
+      "name": "Odbiór osobisty",
+      "description": "Zamów telefonicznie i odbierz w lokalu w kilkanaście minut.",
+      "icon": "clock"
+    },
+    {
+      "name": "Zestawy rodzinne",
+      "description": "Większe zestawy na całą rodzinę i ekipę — w korzystnej cenie.",
+      "icon": "users"
+    }
+  ],
+  "menu": [
+    {
+      "name": "Kebaby",
+      "note": "",
+      "items": [
+        {
+          "name": "Kebab w tortilli",
+          "description": "kurczak / wołowina / mieszany, warzywa, sos do wyboru",
+          "price": "od 28 zł",
+          "tags": []
+        },
+        {
+          "name": "Kebab w bułce",
+          "description": "świeża bułka, mięso z rożna, sałata, sos",
+          "price": "od 26 zł",
+          "tags": []
+        },
+        {
+          "name": "Durum (zawijany)",
+          "description": "cienka tortilla, mięso, warzywa, sos",
+          "price": "od 30 zł",
+          "tags": []
+        },
+        {
+          "name": "Kebab Box",
+          "description": "mięso, frytki, surówka, 2 sosy",
+          "price": "od 38 zł",
+          "tags": []
+        },
+        {
+          "name": "Falafel wrap (wege)",
+          "description": "falafel z ciecierzycy, sałata, sos jogurtowy",
+          "price": "27 zł",
+          "tags": [
+            "wegetariańskie"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Zestawy",
+      "note": "",
+      "items": [
+        {
+          "name": "Zestaw studencki",
+          "description": "kebab w tortilli M + napój 0,5 l",
+          "price": "35 zł",
+          "tags": []
+        },
+        {
+          "name": "Mega zestaw",
+          "description": "kebab XL + frytki duże + sos + napój 1 l",
+          "price": "55 zł",
+          "tags": []
+        },
+        {
+          "name": "Zestaw rodzinny x2",
+          "description": "2× kebab L + 2× frytki + 2× napój",
+          "price": "75 zł",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "name": "Dodatki",
+      "note": "",
+      "items": [
+        {
+          "name": "Frytki",
+          "description": "małe lub duże",
+          "price": "od 8 zł",
+          "tags": []
+        },
+        {
+          "name": "Sos",
+          "description": "czosnkowy, ostry, jogurtowy, BBQ",
+          "price": "od 4 zł",
+          "tags": []
+        },
+        {
+          "name": "Hummus",
+          "description": "klasyczny z ciecierzycy z oliwą",
+          "price": "9 zł",
+          "tags": [
+            "wegetariańskie"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Napoje",
+      "note": "",
+      "items": [
+        {
+          "name": "Coca-Cola / Fanta / Sprite",
+          "description": "puszka lub butelka",
+          "price": "od 7 zł",
+          "tags": []
+        },
+        {
+          "name": "Ayran",
+          "description": "jogurt pitny z solą",
+          "price": "6 zł",
+          "tags": []
+        },
+        {
+          "name": "Woda",
+          "description": "gazowana / niegazowana",
+          "price": "od 4 zł",
+          "tags": []
+        }
+      ]
+    }
+  ],
+  "features": [
+    {
+      "title": "Dostawa do domu",
+      "text": "",
+      "icon": "truck"
+    },
+    {
+      "title": "Miejsca na miejscu",
+      "text": "",
+      "icon": "users"
+    },
+    {
+      "title": "Na wynos",
+      "text": "",
+      "icon": "truck"
+    },
+    {
+      "title": "Płatność kartą",
+      "text": "",
+      "icon": "shield"
+    },
+    {
+      "title": "Płatności zbliżeniowe",
+      "text": "",
+      "icon": "shield"
+    }
+  ],
+  "process": [],
+  "stats": [
+    {
+      "value": "25–40 min",
+      "label": "czas dostawy"
+    },
+    {
+      "value": "od 28 zł",
+      "label": "kebab w tortilli"
+    },
+    {
+      "value": "7 dni",
+      "label": "w tygodniu"
+    },
+    {
+      "value": "4,8",
+      "label": "ocena Google"
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "Najlepszy kebab w okolicy — mięso zawsze świeże i soczyste, a dostawa szybka. Polecam XL!",
+      "author": "Bartek",
+      "role": "opinia przykładowa",
+      "rating": 5
+    },
+    {
+      "quote": "Zamawiam regularnie. Frytki chrupiące, sosy domowe, zestaw rodzinny to świetna opcja na piątek.",
+      "author": "Karolina",
+      "role": "opinia przykładowa",
+      "rating": 5
+    }
+  ],
+  "pricing": [],
+  "faq": [
+    {
+      "q": "Czy dowozicie kebaby?",
+      "a": "Tak, dowozimy na terenie miasta i okolic w godzinach otwarcia. Próg darmowej dostawy i strefę potwierdzamy przy zamówieniu."
+    },
+    {
+      "q": "Jak mogę zapłacić?",
+      "a": "Przyjmujemy BLIK, karty oraz gotówkę przy odbiorze i u kierowcy."
+    },
+    {
+      "q": "Czy mięso jest świeże?",
+      "a": "Mięso opiekamy na bieżąco z pionowego rożna — nie odgrzewamy gotowych porcji."
+    },
+    {
+      "q": "Czy macie opcje wegetariańskie?",
+      "a": "Tak, w menu znajdziesz falafel wrap i hummus — dopytaj o aktualne propozycje wege."
+    }
+  ],
+  "hero": {
+    "headline": "Radomski kebab — jakość, na której polegają klienci.",
+    "subheadline": "Profesjonalne usługi — Radom i okolice. Rzetelnie, terminowo i w uczciwej cenie.",
+    "badges": [
+      "Dostawa do domu",
+      "Miejsca na miejscu",
+      "Na wynos"
+    ],
+    "image": {
+      "src": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEDQ5YzQg6NWFVfdCiTm-MYkvwkbthWCyyH0iRYigLXnGCGZJmr8LyRzaduNgelq3_cMdeWFbhl01nWfE9Zuhg8M7V7te4Z6P7qdXXrhPi33pOVf5sEHQAPy6Ro3LrnDIxPl_hHpMl4-ivu=w1280-h960-k-no",
+      "alt": "Radomski kebab",
+      "mode": "custom"
+    }
+  },
+  "about": {
+    "title": "Dlaczego my?",
+    "eyebrow": "O nas",
+    "text": [
+      "Robimy kebab tak, jak powinien wyglądać: świeże mięso z rożna, warzywa od lokalnych dostawców i sosy przygotowywane na miejscu. Bez chodzenia na skróty.",
+      "Stawiamy na szybkość i powtarzalny smak — żebyś za każdym razem dostał dokładnie to, po co wracasz. Na wynos, z dostawą albo do zjedzenia na miejscu."
+    ],
+    "points": [
+      "Świeże mięso z rożna",
+      "Szybka dostawa",
+      "Domowe sosy"
+    ],
+    "image": {
+      "src": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=960&q=72",
+      "alt": "Nakryty stół w restauracji",
+      "mode": "unsplash"
+    }
+  },
+  "cta": {
+    "title": "Głodny? Zamów kebab już teraz.",
+    "text": "Zadzwoń lub napisz — dowieziemy gorący kebab prosto pod Twoje drzwi."
+  },
+  "seo": {
+    "title": "Radomski kebab — Kebab | Radom",
+    "description": "Radomski kebab — kebab. Radom i okolice. Oferujemy: Kebab z rożna, Dostawa pod drzwi, Odbiór osobisty i Zestawy rodzinne.",
+    "keywords": [
+      "kebab",
+      "kebab z dostawą",
+      "durum",
+      "kebab w bułce",
+      "zestawy rodzinne",
+      "Radom"
+    ],
+    "ogImage": null
+  },
+  "rating": "4,8",
+  "reviewCount": 71,
+  "priceRange": null,
+  "hoursWeekly": [
+    {
+      "open": "09:00",
+      "close": "21:00"
+    },
+    {
+      "open": "09:00",
+      "close": "21:00"
+    },
+    {
+      "open": "09:00",
+      "close": "21:00"
+    },
+    {
+      "open": "09:00",
+      "close": "21:00"
+    },
+    {
+      "open": "09:00",
+      "close": "21:00"
+    },
+    {
+      "open": "09:00",
+      "close": "21:00"
+    },
+    {
+      "open": "09:00",
+      "close": "19:00"
+    }
+  ],
+  "layout": [
+    "header",
+    "hero",
+    "trustbar",
+    "menu",
+    "map",
+    "about",
+    "gallery",
+    "stats",
+    "testimonials",
+    "faq",
+    "cta",
+    "contact",
+    "footer",
+    "cookie"
+  ],
+  "meta": {
+    "generator": "demo-stron-pl",
+    "industry": "kebab",
+    "theme": "artisan",
+    "imageMode": "unsplash",
+    "generatedAt": "2026-06-20T22:16:58.512Z",
+    "warnings": []
+  }
+}

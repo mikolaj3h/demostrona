@@ -46,7 +46,10 @@ tailwind.config = {
 
 <style>
 /* ===== RESET & BASE ===== */
-html { scroll-behavior: smooth; }
+/* Poziome przewijanie na telefonie blokujemy na <html> ORAZ <body>: sam <body>
+   nie wystarcza, bo na mobile to element <html> jest „viewportem" przewijania.
+   Dzięki temu strona przesuwa się wyłącznie w pionie (góra–dół). */
+html { scroll-behavior: smooth; overflow-x: hidden; }
 *, *::before, *::after { box-sizing: border-box; }
 body {
   font-family: 'Inter', system-ui, sans-serif;
@@ -54,7 +57,13 @@ body {
   color: #1C1108;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+  position: relative;   /* kotwiczy elementy absolutne (np. skip-link) do <body> */
 }
+
+/* Media nigdy nie wystają poza szerokość kontenera (mapa Google, zdjęcia). */
+img, iframe, video { max-width: 100%; }
 
 /* Scroll offset pod fixed nav */
 section[id] { scroll-margin-top: 4.5rem; }
@@ -147,7 +156,9 @@ section[id] { scroll-margin-top: 4.5rem; }
 
 /* ===== SCROLLBAR HIDE ===== */
 .no-scrollbar::-webkit-scrollbar { display: none; }
-.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+/* overscroll-behavior-x: contain — poziome przesuwanie karuzeli (opinie) nie
+   „przelewa się" na całą stronę, więc strona nie skacze na boki. */
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; overscroll-behavior-x: contain; }
 
 /* ===== MARQUEE ===== */
 .marquee-inner { display: flex; gap: 2rem; animation: marquee-scroll 30s linear infinite; white-space: nowrap; }
@@ -166,8 +177,10 @@ section[id] { scroll-margin-top: 4.5rem; }
 ::selection { background: #C03D0A; color: #fff; }
 
 /* ===== SKIP-LINK + FOCUS (dostępność) ===== */
-.skip-link { position: absolute; left: -999px; top: 0; z-index: 200; background: #0D0905; color: #FBF4E6; padding: .65rem 1rem; border-radius: 0 0 .6rem 0; }
-.skip-link:focus { left: 0; }
+/* Skip-link chowamy przez transform (a nie left:-999px) — element pozostaje przy
+   lewej krawędzi, więc NIE tworzy poziomego przewijania strony na telefonie. */
+.skip-link { position: absolute; left: 0; top: 0; z-index: 200; background: #0D0905; color: #FBF4E6; padding: .65rem 1rem; border-radius: 0 0 .6rem 0; transform: translateY(-200%); transition: transform .15s ease; }
+.skip-link:focus { transform: translateY(0); }
 :focus-visible { outline: 2px solid #C03D0A; outline-offset: 2px; }
 
 /* ===== COOKIE BANNER (RODO) ===== */

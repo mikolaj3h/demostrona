@@ -1,0 +1,1317 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>Świstak Kebap Poznań — Kebab | Poznań</title>
+<meta name="description" content="Świstak Kebap Poznań — kebab. Poznań i okolice. Oferujemy: Kebab z rożna, Dostawa pod drzwi, Odbiór osobisty i Zestawy rodzinne." />
+<meta name="theme-color" content="#0D0905" />
+
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Google Fonts: Inter (wagi 400–800) — jedyna czcionka -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+<!-- Lucide icons -->
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+<!-- Tailwind custom tokens -->
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        k: {
+          dark:   '#0D0905',
+          brown:  '#180F06',
+          red:    '#C03D0A',
+          redH:   '#D95420',
+          gold:   '#B8850E',
+          cream:  '#FBF4E6',
+          light:  '#FFF9F0',
+          text:   '#1C1108',
+          muted:  '#6B5240',
+        }
+      },
+      fontFamily: {
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+      },
+    }
+  }
+}
+</script>
+
+<style>
+/* ===== RESET & BASE ===== */
+/* Poziome przewijanie na telefonie blokujemy na <html> ORAZ <body>: sam <body>
+   nie wystarcza, bo na mobile to element <html> jest „viewportem" przewijania.
+   Dzięki temu strona przesuwa się wyłącznie w pionie (góra–dół). */
+html { scroll-behavior: smooth; overflow-x: hidden; }
+*, *::before, *::after { box-sizing: border-box; }
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: #FBF4E6;
+  color: #1C1108;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+  position: relative;   /* kotwiczy elementy absolutne (np. skip-link) do <body> */
+}
+
+/* Media nigdy nie wystają poza szerokość kontenera (mapa Google, zdjęcia). */
+img, iframe, video { max-width: 100%; }
+
+/* Scroll offset pod fixed nav */
+section[id] { scroll-margin-top: 4.5rem; }
+
+/* ===== HERO BACKGROUND ===== */
+.hero-bg {
+  background-image:
+    linear-gradient(to bottom, rgba(13,9,5,0.35) 0%, rgba(13,9,5,0.82) 65%, rgba(13,9,5,0.96) 100%),
+    linear-gradient(135deg, #1C1108 0%, #0D0905 60%, #1A0E04 100%);
+  background-size: cover;
+  background-position: center top;
+}
+
+/* ===== NAVIGATION ===== */
+.nav-link { position: relative; transition: color .2s; }
+.nav-link::after {
+  content: ''; position: absolute; left: 0; bottom: -3px;
+  width: 0; height: 1.5px; background: #C03D0A;
+  transition: width .25s ease;
+}
+.nav-link:hover::after { width: 100%; }
+.nav-link:hover { color: #FBF4E6; }
+
+/* ===== BUTTONS ===== */
+.btn-primary {
+  background: #C03D0A; color: #fff;
+  transition: background .2s, transform .15s;
+  box-shadow: 0 4px 18px -4px rgba(192,61,10,.45);
+}
+.btn-primary:hover { background: #D95420; transform: translateY(-1px); }
+.btn-primary:active { transform: translateY(0); }
+
+.btn-ghost {
+  border: 1.5px solid rgba(251,244,230,.3); color: #FBF4E6;
+  transition: all .2s;
+}
+.btn-ghost:hover { border-color: rgba(251,244,230,.65); background: rgba(251,244,230,.08); }
+
+.btn-outline {
+  border: 1.5px solid #C03D0A; color: #C03D0A;
+  transition: all .2s;
+}
+.btn-outline:hover { background: #C03D0A; color: #fff; }
+
+/* ===== MOBILE MENU ===== */
+.mobile-menu { transform: translateY(-110%); opacity: 0; visibility: hidden; pointer-events: none; transition: transform .3s ease, opacity .25s ease, visibility 0s linear .3s; }
+.mobile-menu.open { transform: translateY(0); opacity: 1; visibility: visible; pointer-events: auto; transition: transform .3s ease, opacity .25s ease, visibility 0s; }
+
+/* ===== SCROLL REVEAL ===== */
+.reveal { opacity: 0; transform: translateY(14px); transition: opacity .65s ease, transform .65s ease; }
+.reveal.in { opacity: 1; transform: none; }
+
+/* ===== STATUS DOT ===== */
+.pulse-dot {
+  display: inline-block; width: 8px; height: 8px;
+  border-radius: 50%; background: #22c55e;
+  box-shadow: 0 0 0 0 rgba(34,197,94,.5);
+  animation: pulse-anim 2s infinite;
+}
+@keyframes pulse-anim {
+  0%   { box-shadow: 0 0 0 0   rgba(34,197,94,.5); }
+  70%  { box-shadow: 0 0 0 9px rgba(34,197,94,0); }
+  100% { box-shadow: 0 0 0 0   rgba(34,197,94,0); }
+}
+
+/* ===== MENU TABS ===== */
+.menu-tab { transition: background .2s, color .2s, border-color .2s; }
+.menu-tab.active { background: #C03D0A !important; color: #fff !important; border-color: #C03D0A !important; }
+
+/* ===== MENU ITEMS ===== */
+.menu-item { transition: background .2s; }
+.menu-item:not(:last-child) { border-bottom: 1px solid rgba(28,17,8,.08); }
+.menu-item:hover { background: rgba(192,61,10,.04); }
+
+/* ===== GALLERY ===== */
+.gallery-tile { overflow: hidden; }
+.gallery-tile img { transition: transform .7s cubic-bezier(.2,.7,.2,1); width: 100%; height: 100%; object-fit: cover; }
+.gallery-tile:hover img { transform: scale(1.04); }
+.gallery-ph {
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: .5rem; width: 100%; height: 100%; padding: 1.25rem; text-align: center;
+  background:
+    repeating-linear-gradient(45deg, rgba(192,61,10,.05) 0 12px, transparent 12px 24px),
+    linear-gradient(135deg, #F5ECD8 0%, #EDE0C4 100%);
+  color: #B8850E;
+  border: 2px dashed rgba(184,133,14,.4);
+  border-radius: inherit;
+}
+.gallery-ph span { font-size: .7rem; letter-spacing: .09em; text-transform: uppercase; font-weight: 600; }
+
+/* ===== SCROLLBAR HIDE ===== */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+/* overscroll-behavior-x: contain — poziome przesuwanie karuzeli (opinie) nie
+   „przelewa się" na całą stronę, więc strona nie skacze na boki. */
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; overscroll-behavior-x: contain; }
+
+/* ===== MARQUEE ===== */
+.marquee-inner { display: flex; gap: 2rem; animation: marquee-scroll 30s linear infinite; white-space: nowrap; }
+@keyframes marquee-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+/* ===== MAP (osadzona mapa Google) ===== */
+.map-embed { height: 100%; width: 100%; border: 0; display: block; background: #1C1108; }
+
+/* ===== MOBILE ORDER BAR ===== */
+#mobileOrderBar { padding-bottom: env(safe-area-inset-bottom, 0); }
+
+/* ===== SELECTION COLOR ===== */
+::selection { background: #C03D0A; color: #fff; }
+
+/* ===== SKIP-LINK + FOCUS (dostępność) ===== */
+/* Skip-link chowamy przez transform (a nie left:-999px) — element pozostaje przy
+   lewej krawędzi, więc NIE tworzy poziomego przewijania strony na telefonie. */
+.skip-link { position: absolute; left: 0; top: 0; z-index: 200; background: #0D0905; color: #FBF4E6; padding: .65rem 1rem; border-radius: 0 0 .6rem 0; transform: translateY(-200%); transition: transform .15s ease; }
+.skip-link:focus { transform: translateY(0); }
+:focus-visible { outline: 2px solid #C03D0A; outline-offset: 2px; }
+
+/* ===== COOKIE BANNER (RODO) ===== */
+.cookie-banner {
+  position: fixed; left: 1rem; right: 1rem; bottom: 5rem; z-index: 110;
+  max-width: 44rem; margin: 0 auto;
+  background: #0D0905; color: #FBF4E6;
+  border: 1px solid rgba(192,61,10,.3); border-radius: 1rem;
+  padding: 1rem 1.25rem; box-shadow: 0 20px 60px -20px rgba(0,0,0,.6);
+  display: none;
+}
+@media (min-width:1024px){ .cookie-banner { bottom: 1rem; } }
+.cookie-banner.show { display: flex; flex-wrap: wrap; gap: .75rem 1.25rem; align-items: center; justify-content: space-between; }
+.cookie-banner a { color: #D95420; text-decoration: underline; }
+.cookie-banner__btns { display: flex; gap: .5rem; flex-wrap: wrap; }
+
+/* ===== REDUCED MOTION ===== */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .marquee-inner { animation: none; }
+  .reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
+  .pulse-dot { animation: none; }
+  .gallery-tile:hover img { transform: none; }
+  * { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}
+</style>
+<meta name="robots" content="index, follow">
+<meta name="author" content="Świstak Kebap Poznań">
+<meta name="keywords" content="kebab, kebab z dostawą, durum, kebab w bułce, zestawy rodzinne, Poznań">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pl_PL">
+<meta property="og:site_name" content="Świstak Kebap Poznań">
+<meta property="og:title" content="Świstak Kebap Poznań — Kebab | Poznań">
+<meta property="og:description" content="Świstak Kebap Poznań — kebab. Poznań i okolice. Oferujemy: Kebab z rożna, Dostawa pod drzwi, Odbiór osobisty i Zestawy rodzinne.">
+<meta property="og:image" content="https://lh3.googleusercontent.com/gps-cs-s/APNQkAF09-Khlm4C_sO5NuyWjyKMj4ixkxtD3pkmK6nZi-Tx9DKB7YqkaD-JSph5bvZUYFtK26JAv9GnJUEuaOZdITZcObjwtIx7oMeSg_p6rfNMS7OW6YqBXuMADB3N0mr7Id0SMu1r=w1280-h960-k-no">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Świstak Kebap Poznań — Kebab | Poznań">
+<meta name="twitter:description" content="Świstak Kebap Poznań — kebab. Poznań i okolice. Oferujemy: Kebab z rożna, Dostawa pod drzwi, Odbiór osobisty i Zestawy rodzinne.">
+<meta name="twitter:image" content="https://lh3.googleusercontent.com/gps-cs-s/APNQkAF09-Khlm4C_sO5NuyWjyKMj4ixkxtD3pkmK6nZi-Tx9DKB7YqkaD-JSph5bvZUYFtK26JAv9GnJUEuaOZdITZcObjwtIx7oMeSg_p6rfNMS7OW6YqBXuMADB3N0mr7Id0SMu1r=w1280-h960-k-no">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23b91c1c'/%3E%3Cstop offset='1' stop-color='%23f59e0b'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='url(%23g)'/%3E%3Ctext x='32' y='44' font-family='Segoe UI, sans-serif' font-size='32' font-weight='700' fill='%23ffffff' text-anchor='middle'%3EŚK%3C/text%3E%3C/svg%3E">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Świstak Kebap Poznań",
+  "description": "Świstak Kebap Poznań — kebab. Poznań i okolice. Oferujemy: Kebab z rożna, Dostawa pod drzwi, Odbiór osobisty i Zestawy rodzinne.",
+  "image": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAF09-Khlm4C_sO5NuyWjyKMj4ixkxtD3pkmK6nZi-Tx9DKB7YqkaD-JSph5bvZUYFtK26JAv9GnJUEuaOZdITZcObjwtIx7oMeSg_p6rfNMS7OW6YqBXuMADB3N0mr7Id0SMu1r=w1280-h960-k-no",
+  "telephone": "+48791305012",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Wielka 19",
+    "postalCode": "61-775",
+    "addressLocality": "Poznań",
+    "addressCountry": "PL"
+  },
+  "areaServed": "Poznań",
+  "openingHours": [
+    "Mo-Tu 12:00-23:00",
+    "We-Th 12:00-00:00",
+    "Fr-Sa 12:00-04:00",
+    "Su 12:00-23:00"
+  ],
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Kebaby",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "Kebab w tortilli",
+            "description": "kurczak / wołowina / mieszany, warzywa, sos do wyboru",
+            "offers": {
+              "@type": "Offer",
+              "price": "28",
+              "priceCurrency": "PLN"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Kebab w bułce",
+            "description": "świeża bułka, mięso z rożna, sałata, sos",
+            "offers": {
+              "@type": "Offer",
+              "price": "26",
+              "priceCurrency": "PLN"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Durum (zawijany)",
+            "description": "cienka tortilla, mięso, warzywa, sos",
+            "offers": {
+              "@type": "Offer",
+              "price": "30",
+              "priceCurrency": "PLN"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Kebab Box",
+            "description": "mięso, frytki, surówka, 2 sosy",
+            "offers": {
+              "@type": "Offer",
+              "price": "38",
+              "priceCurrency": "PLN"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Falafel wrap (wege)",
+            "description": "falafel z ciecierzycy, sałata, sos jogurtowy",
+            "offers": {
+              "@type": "Offer",
+              "price": "27",
+              "priceCurrency": "PLN"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Zestawy",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "Zestaw studencki",
+            "description": "kebab w tortilli M + napój 0,5 l",
+            "offers": {
+              "@type": "Offer",
+              "price": "35",
+              "priceCurrency": "PLN"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Mega zestaw",
+            "description": "kebab XL + frytki duże + sos + napój 1 l",
+            "offers": {
+              "@type": "Offer",
+              "price": "55",
+              "priceCurrency": "PLN"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Zestaw rodzinny x2",
+            "description": "2× kebab L + 2× frytki + 2× napój",
+            "offers": {
+              "@type": "Offer",
+              "price": "75",
+              "priceCurrency": "PLN"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Dodatki",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "Frytki",
+            "description": "małe lub duże",
+            "offers": {
+              "@type": "Offer",
+              "price": "8",
+              "priceCurrency": "PLN"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Sos",
+            "description": "czosnkowy, ostry, jogurtowy, BBQ",
+            "offers": {
+              "@type": "Offer",
+              "price": "4",
+              "priceCurrency": "PLN"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Hummus",
+            "description": "klasyczny z ciecierzycy z oliwą",
+            "offers": {
+              "@type": "Offer",
+              "price": "9",
+              "priceCurrency": "PLN"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Napoje",
+        "hasMenuItem": [
+          {
+            "@type": "MenuItem",
+            "name": "Coca-Cola / Fanta / Sprite",
+            "description": "puszka lub butelka",
+            "offers": {
+              "@type": "Offer",
+              "price": "7",
+              "priceCurrency": "PLN"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Ayran",
+            "description": "jogurt pitny z solą",
+            "offers": {
+              "@type": "Offer",
+              "price": "6",
+              "priceCurrency": "PLN"
+            }
+          },
+          {
+            "@type": "MenuItem",
+            "name": "Woda",
+            "description": "gazowana / niegazowana",
+            "offers": {
+              "@type": "Offer",
+              "price": "4",
+              "priceCurrency": "PLN"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": 1722
+  }
+}
+</script>
+</head>
+
+<!-- pb-14 lg:pb-0 — kompensata za sticky mobile order bar -->
+<body class="pb-14 lg:pb-0">
+
+<a href="#main" class="skip-link">Przejdź do treści</a>
+
+<!-- ===================================================
+     NAV
+     =================================================== -->
+<header class="fixed top-0 left-0 right-0 z-50">
+  <div class="bg-k-dark/92 backdrop-blur-sm border-b border-white/5">
+    <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-[3.75rem] flex items-center justify-between" aria-label="Nawigacja główna">
+
+      <a href="#hero" class="flex items-center gap-2.5 min-w-0" aria-label="Świstak Kebap Poznań — strona główna" data-testid="nav-logo">
+        <span class="w-8 h-8 rounded-lg bg-k-red flex items-center justify-center text-white font-bold text-sm shrink-0" aria-hidden="true">ŚK</span>
+        <span class="text-k-cream font-semibold text-base sm:text-[1.05rem] tracking-tight truncate">Świstak Kebap Poznań</span>
+      </a>
+
+      <div class="hidden lg:flex items-center gap-8 text-sm text-k-cream/65">
+        <a href="#menu"   class="nav-link" data-testid="nav-menu">Menu</a>
+        <a href="#zamow"  class="nav-link" data-testid="nav-order">Zamów</a>
+        <a href="#galeria" class="nav-link" data-testid="nav-gallery">Galeria</a>
+        <a href="#opinie" class="nav-link" data-testid="nav-reviews">Opinie</a>
+        <a href="#kontakt" class="nav-link" data-testid="nav-contact">Kontakt</a>
+      </div>
+
+      <div class="hidden lg:flex items-center gap-4">
+        <a href="tel:+48791305012" class="flex items-center gap-1.5 text-k-cream/70 text-sm hover:text-k-cream transition" data-testid="nav-phone">
+          <i data-lucide="phone" class="w-3.5 h-3.5"></i>
+          +48 791 305 012
+        </a>
+        <a href="#zamow" class="btn-primary inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-sm font-semibold" data-testid="nav-order-btn">
+          <i data-lucide="shopping-bag" class="w-4 h-4"></i> Zamów online
+        </a>
+      </div>
+
+      <button id="mobileBtn" type="button"
+        class="lg:hidden w-10 h-10 flex items-center justify-center rounded-xl border border-white/10 text-k-cream"
+        aria-label="Otwórz menu nawigacji" aria-expanded="false" aria-controls="mobileMenu"
+        data-testid="mobile-menu-btn">
+        <i data-lucide="menu" class="w-5 h-5"></i>
+      </button>
+    </nav>
+  </div>
+
+  <div id="mobileMenu" class="mobile-menu lg:hidden absolute top-[3.75rem] left-0 right-0 bg-k-dark border-b border-white/8"
+    aria-hidden="true" data-testid="mobile-menu">
+    <div class="px-4 py-4 flex flex-col gap-0.5 text-k-cream">
+      <a href="#menu"    class="mobile-link py-3 text-sm border-b border-white/5" data-testid="m-menu">Menu</a>
+      <a href="#zamow"   class="mobile-link py-3 text-sm border-b border-white/5" data-testid="m-order">Zamów</a>
+      <a href="#galeria" class="mobile-link py-3 text-sm border-b border-white/5" data-testid="m-gallery">Galeria</a>
+      <a href="#opinie"  class="mobile-link py-3 text-sm border-b border-white/5" data-testid="m-reviews">Opinie</a>
+      <a href="#kontakt" class="mobile-link py-3 text-sm" data-testid="m-contact">Kontakt</a>
+      <div class="mt-3 grid grid-cols-2 gap-2">
+        <a href="tel:+48791305012"
+          class="flex items-center justify-center gap-2 py-3 rounded-xl border border-white/15 text-sm font-medium hover:bg-white/5 transition"
+          data-testid="m-call">
+          <i data-lucide="phone" class="w-4 h-4"></i> Zadzwoń
+        </a>
+        <a href="#zamow"
+          class="mobile-link flex items-center justify-center gap-2 py-3 rounded-xl bg-k-red text-white text-sm font-semibold"
+          data-testid="m-order-btn">
+          <i data-lucide="shopping-bag" class="w-4 h-4"></i> Zamów
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ===================================================
+     HERO
+     =================================================== -->
+<section id="hero" class="relative hero-bg min-h-[100svh] flex items-end" style="background-image: linear-gradient(to bottom, rgba(13,9,5,0.40) 0%, rgba(13,9,5,0.84) 65%, rgba(13,9,5,0.97) 100%), url('https://lh3.googleusercontent.com/gps-cs-s/APNQkAF09-Khlm4C_sO5NuyWjyKMj4ixkxtD3pkmK6nZi-Tx9DKB7YqkaD-JSph5bvZUYFtK26JAv9GnJUEuaOZdITZcObjwtIx7oMeSg_p6rfNMS7OW6YqBXuMADB3N0mr7Id0SMu1r=w1280-h960-k-no'); background-size: cover; background-position: center top;">
+  <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-8 sm:pb-12 w-full">
+    <div class="grid lg:grid-cols-12 gap-8 lg:gap-10 items-end">
+
+      <div class="lg:col-span-7 text-k-cream">
+
+        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 border border-white/12 text-k-cream/80 text-xs reveal" data-testid="hero-badge">
+          <i data-lucide="map-pin" class="w-3 h-3 text-k-red"></i>
+          Kebab · Poznań
+        </div>
+
+        <h1 class="mt-4 text-5xl sm:text-6xl lg:text-[4.5rem] font-extrabold leading-none tracking-tight text-white reveal" data-testid="hero-title">
+          Świstak Kebap Poznań
+        </h1>
+
+        <p class="mt-4 text-base sm:text-[1.05rem] text-k-cream/70 max-w-lg leading-relaxed reveal" data-testid="hero-tagline">
+          Profesjonalne usługi — Poznań i okolice. Rzetelnie, terminowo i w uczciwej cenie.
+        </p>
+
+        <div class="mt-6 flex flex-wrap gap-3 reveal">
+          <a href="#zamow"
+            class="btn-primary inline-flex items-center gap-2 px-6 py-3.5 rounded-xl font-semibold"
+            data-testid="hero-cta-order">
+            <i data-lucide="shopping-bag" class="w-4 h-4"></i> Zamów z dostawą
+          </a>
+          <a href="#menu"
+            class="btn-ghost inline-flex items-center gap-2 px-6 py-3.5 rounded-xl font-medium"
+            data-testid="hero-cta-menu">
+            Zobacz menu <i data-lucide="arrow-down" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <div class="mt-9 flex flex-wrap gap-6 sm:gap-8 reveal">
+          <div>
+            <div class="text-2xl font-bold text-white">4,8★</div>
+            <div class="text-xs text-k-cream/50 mt-0.5 uppercase tracking-wide">ocena Google</div>
+          </div>
+          <div>
+            <div class="text-2xl font-bold text-white">25–40 min</div>
+            <div class="text-xs text-k-cream/50 mt-0.5 uppercase tracking-wide">czas dostawy</div>
+          </div>
+          <div>
+            <div class="text-2xl font-bold text-white">1722+</div>
+            <div class="text-xs text-k-cream/50 mt-0.5 uppercase tracking-wide">opinii klientów</div>
+          </div>
+        </div>
+      </div><!-- /left -->
+
+      <div class="lg:col-span-5 reveal" data-testid="hero-map-card">
+        <div class="rounded-2xl bg-k-cream/97 backdrop-blur p-4 shadow-[0_20px_60px_-15px_rgba(13,9,5,.55)] border border-white/10">
+
+          <div class="flex items-center justify-between gap-3 mb-3">
+            <div class="min-w-0">
+              <div class="text-xs text-k-muted uppercase tracking-wider">Znajdź nas</div>
+              <div class="font-semibold text-k-text mt-0.5 truncate text-sm sm:text-base">Wielka 19, 61-775 Poznań</div>
+            </div>
+            <div id="statusBadge"
+              class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-green-50 border border-green-200 shrink-0 text-xs font-semibold text-green-700"
+              data-testid="hero-status">
+              <span class="pulse-dot"></span> Otwarte
+            </div>
+          </div>
+
+          <div class="h-44 sm:h-48 rounded-xl overflow-hidden border border-k-text/8">
+            <iframe class="map-embed" title="Mapa dojazdu — Świstak Kebap Poznań" src="https://maps.google.com/maps?q=Wielka%2019%2C%2061-775%20Pozna%C5%84&amp;z=15&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen data-testid="hero-map"></iframe>
+          </div>
+
+          <div class="mt-3 flex items-center justify-between gap-3">
+            <div class="flex items-center gap-1.5 text-sm text-k-muted">
+              <i data-lucide="clock" class="w-4 h-4 text-k-red shrink-0"></i>
+              <span id="hoursToday">Dziś: zapytaj w lokalu</span>
+            </div>
+            <a data-nav-link href="#" target="_blank" rel="noopener"
+              class="text-k-red text-sm font-semibold inline-flex items-center gap-1 hover:gap-2 transition-all shrink-0"
+              data-testid="hero-nav-link">
+              Nawigacja <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+
+          <div class="mt-3 grid grid-cols-2 gap-2">
+            <a href="tel:+48791305012"
+              class="flex items-center justify-center gap-1.5 py-2.5 rounded-xl border border-k-red text-k-red text-sm font-medium hover:bg-k-red hover:text-white transition"
+              data-testid="hero-call-btn">
+              <i data-lucide="phone" class="w-4 h-4"></i> Zadzwoń
+            </a>
+            <a href="#zamow"
+              class="flex items-center justify-center gap-1.5 py-2.5 rounded-xl bg-k-red text-white text-sm font-semibold hover:bg-k-redH transition"
+              data-testid="hero-order-btn">
+              <i data-lucide="shopping-bag" class="w-4 h-4"></i> Zamów
+            </a>
+          </div>
+        </div>
+      </div><!-- /right -->
+    </div>
+
+    <div class="mt-10 sm:mt-14 overflow-hidden border-y border-white/8 py-3.5" aria-hidden="true">
+      <div class="marquee-inner text-k-cream/45 text-sm">
+        <span>· Świeże mięso z rożna ·</span><span>Kebab w tortilli</span>
+        <span>· Kebab w bułce ·</span><span>Durum</span>
+        <span>· Dostawa do domu ·</span><span>Zestawy rodzinne</span>
+        <span>· Kurczak · Wołowina · Mieszany ·</span><span>Domowe sosy</span>
+        <span>· Frytki ·</span><span>Halal</span>
+        <span>· Świeże mięso z rożna ·</span><span>Kebab w tortilli</span>
+        <span>· Kebab w bułce ·</span><span>Durum</span>
+        <span>· Dostawa do domu ·</span><span>Zestawy rodzinne</span>
+        <span>· Kurczak · Wołowina · Mieszany ·</span><span>Domowe sosy</span>
+        <span>· Frytki ·</span><span>Halal</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===================================================
+     TRUST BAR
+     =================================================== -->
+<div class="bg-k-brown text-k-cream/75" data-testid="trust-bar">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5">
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-6 text-sm text-center">
+      <div class="flex items-center justify-center gap-2">
+        <i data-lucide="clock" class="w-4 h-4 text-k-red shrink-0" aria-hidden="true"></i>
+        <span>Dostawa <strong class="text-k-cream">25–40 min</strong></span>
+      </div>
+      <div class="flex items-center justify-center gap-2">
+        <i data-lucide="star" class="w-4 h-4 text-yellow-400 shrink-0" aria-hidden="true"></i>
+        <span><strong class="text-k-cream">4,8</strong> / 5 na Google</span>
+      </div>
+      <div class="flex items-center justify-center gap-2">
+        <i data-lucide="truck" class="w-4 h-4 text-k-red shrink-0" aria-hidden="true"></i>
+        <span>Darmowa od <strong class="text-k-cream">49 zł</strong></span>
+      </div>
+      <div class="flex items-center justify-center gap-2">
+        <i data-lucide="credit-card" class="w-4 h-4 text-k-red shrink-0" aria-hidden="true"></i>
+        <span>BLIK · karta · gotówka</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ===================================================
+     MENU
+     =================================================== -->
+<section id="menu" class="py-14 sm:py-18 lg:py-24 bg-k-cream">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-7 sm:mb-10 reveal">
+      <div>
+        <div class="text-xs font-medium uppercase tracking-widest text-k-red mb-2">Nasze menu</div>
+        <h2 class="text-3xl sm:text-4xl font-bold text-k-text leading-tight">Co dziś zamawiasz?</h2>
+      </div>
+      <a href="#zamow" class="btn-primary inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold w-fit shrink-0"
+        data-testid="menu-order-btn">
+        <i data-lucide="shopping-bag" class="w-4 h-4"></i> Zamów teraz
+      </a>
+    </div>
+
+    <div class="flex flex-wrap gap-2 mb-6 reveal" role="tablist" aria-label="Kategorie menu">
+      <button id="tab-kebaby"  role="tab" aria-selected="true"  aria-controls="menuPanel" tabindex="0"
+        class="menu-tab active px-4 py-2 rounded-full text-sm font-medium border border-k-muted/20 text-k-muted" data-tab="kebaby"
+        data-testid="tab-kebaby">Kebaby</button>
+      <button id="tab-zestawy" role="tab" aria-selected="false" aria-controls="menuPanel" tabindex="-1"
+        class="menu-tab px-4 py-2 rounded-full text-sm font-medium border border-k-muted/20 text-k-muted" data-tab="zestawy"
+        data-testid="tab-zestawy">Zestawy</button>
+      <button id="tab-dodatki" role="tab" aria-selected="false" aria-controls="menuPanel" tabindex="-1"
+        class="menu-tab px-4 py-2 rounded-full text-sm font-medium border border-k-muted/20 text-k-muted" data-tab="dodatki"
+        data-testid="tab-dodatki">Dodatki</button>
+      <button id="tab-napoje"  role="tab" aria-selected="false" aria-controls="menuPanel" tabindex="-1"
+        class="menu-tab px-4 py-2 rounded-full text-sm font-medium border border-k-muted/20 text-k-muted" data-tab="napoje"
+        data-testid="tab-napoje">Napoje</button>
+    </div>
+
+    <div id="menuPanel" role="tabpanel" aria-labelledby="tab-kebaby" tabindex="0" class="reveal">
+      <div id="menuList" class="grid sm:grid-cols-2 gap-x-8 lg:gap-x-14">
+        <!-- Wypełniane przez JS renderMenu() -->
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ===================================================
+     ZAMÓW / DOSTAWA
+     =================================================== -->
+<section id="zamow" class="py-14 sm:py-18 lg:py-24 bg-k-dark text-k-cream">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+
+      <div class="reveal">
+        <div class="text-xs font-medium uppercase tracking-widest text-k-red mb-2">Zamawiaj wygodnie</div>
+        <h2 class="text-3xl sm:text-4xl font-bold leading-tight mb-5">
+          Dostawa prosto<br/>pod Twoje drzwi
+        </h2>
+        <p class="text-k-cream/65 leading-relaxed mb-8">
+          Zamówienie trafia bezpośrednio do kuchni — bez pośredników.
+          Dostarczymy Ci świeże i gorące danie w <strong class="text-k-cream">25–40 minut</strong>.
+        </p>
+
+        <div class="space-y-3">
+          <div class="flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/8">
+            <div class="w-10 h-10 rounded-lg bg-k-red/20 flex items-center justify-center shrink-0">
+              <i data-lucide="truck" class="w-5 h-5 text-k-red" aria-hidden="true"></i>
+            </div>
+            <div>
+              <div class="font-semibold text-sm">Dostawa do domu lub biura</div>
+              <div class="text-xs text-k-cream/50 mt-0.5">Darmowa od 49 zł · strefę potwierdzamy przy zamówieniu</div>
+            </div>
+          </div>
+          <div class="flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/8">
+            <div class="w-10 h-10 rounded-lg bg-k-red/20 flex items-center justify-center shrink-0">
+              <i data-lucide="package" class="w-5 h-5 text-k-red" aria-hidden="true"></i>
+            </div>
+            <div>
+              <div class="font-semibold text-sm">Odbiór osobisty</div>
+              <div class="text-xs text-k-cream/50 mt-0.5">Gotowe w kilkanaście minut · odbierz w lokalu</div>
+            </div>
+          </div>
+          <div class="flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/8">
+            <div class="w-10 h-10 rounded-lg bg-k-red/20 flex items-center justify-center shrink-0">
+              <i data-lucide="credit-card" class="w-5 h-5 text-k-red" aria-hidden="true"></i>
+            </div>
+            <div>
+              <div class="font-semibold text-sm">Płatności</div>
+              <div class="text-xs text-k-cream/50 mt-0.5">BLIK · karta · gotówka przy odbiorze</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <div class="rounded-2xl bg-white/6 border border-white/10 p-5 sm:p-7">
+          <h3 class="text-lg font-bold mb-1">Złóż zamówienie</h3>
+          <p class="text-k-cream/55 text-sm mb-5">Wybierz wygodny sposób:</p>
+
+          <a href="tel:+48791305012"
+            class="btn-primary flex items-center justify-between gap-4 px-5 py-4 rounded-xl mb-2.5 group"
+            data-testid="order-online-btn">
+            <div class="flex items-center gap-3">
+              <i data-lucide="phone" class="w-5 h-5 shrink-0" aria-hidden="true"></i>
+              <div>
+                <div class="font-semibold text-[0.95rem]">Zadzwoń i zamów</div>
+                <div class="text-xs opacity-70 mt-0.5">+48 791 305 012 · dostawa lub odbiór</div>
+              </div>
+            </div>
+            <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform shrink-0" aria-hidden="true"></i>
+          </a>
+
+          <a href="https://wa.me/48791305012?text=Witam%2C%20chc%C4%99%20z%C5%82o%C5%BCy%C4%87%20zam%C3%B3wienie%3A" target="_blank" rel="noopener"
+            class="flex items-center justify-between gap-4 px-5 py-4 rounded-xl border border-white/12 hover:border-green-500/40 hover:bg-green-500/5 transition group"
+            data-testid="order-whatsapp-btn">
+            <div class="flex items-center gap-3">
+              <i data-lucide="message-circle" class="w-5 h-5 text-k-cream/65 shrink-0" aria-hidden="true"></i>
+              <div>
+                <div class="font-semibold text-[0.95rem]">WhatsApp</div>
+                <div class="text-xs text-k-cream/50 mt-0.5">Wyślij zamówienie przez wiadomość</div>
+              </div>
+            </div>
+            <i data-lucide="arrow-right" class="w-5 h-5 text-k-cream/35 group-hover:text-k-cream group-hover:translate-x-1 transition shrink-0" aria-hidden="true"></i>
+          </a>
+
+          <p class="mt-4 text-center text-xs text-k-cream/35">
+            Dostawa dostępna w godzinach otwarcia lokalu
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ===================================================
+     GALERIA
+     =================================================== -->
+<section id="galeria" class="py-14 sm:py-18 lg:py-24 bg-k-cream">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-7 sm:mb-10 reveal">
+      <div>
+        <div class="text-xs font-medium uppercase tracking-widest text-k-red mb-2">Galeria</div>
+        <h2 class="text-3xl sm:text-4xl font-bold text-k-text leading-tight">Nasz lokal i dania</h2>
+      </div>
+      <p class="max-w-xs text-k-muted text-sm sm:text-right">
+        Mięso prosto z rożna, warzywa od lokalnych dostawców, sosy robione na miejscu.
+      </p>
+    </div>
+
+    <div class="reveal">
+      <div class="gallery-tile relative rounded-2xl h-56 sm:h-80 lg:h-[420px]" data-testid="gallery-main">
+        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&amp;fit=crop&amp;w=900&amp;q=70" alt="Szef kuchni komponuje danie" loading="lazy" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?auto=format&amp;fit=crop&amp;w=900&amp;q=70'" class="w-full h-full object-cover" />
+      </div>
+
+      <div class="mt-3 grid grid-cols-2 sm:grid-cols-3 gap-3">
+        <div class="gallery-tile relative rounded-xl h-32 sm:h-44"><img src="https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?auto=format&amp;fit=crop&amp;w=900&amp;q=70" alt="Apetyczne danie na talerzu" loading="lazy" /></div>
+        <div class="gallery-tile relative rounded-xl h-32 sm:h-44"><img src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&amp;fit=crop&amp;w=900&amp;q=70" alt="Świeżo przygotowany posiłek" loading="lazy" /></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===================================================
+     OPINIE
+     =================================================== -->
+<section id="opinie" class="py-14 sm:py-18 lg:py-24 bg-k-brown text-k-cream">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="text-center mb-8 sm:mb-10 reveal">
+      <div class="text-xs font-medium uppercase tracking-widest text-k-red mb-2">Opinie klientów</div>
+      <h2 class="text-3xl sm:text-4xl font-bold leading-tight">Co mówią goście</h2>
+      <div class="mt-4 flex items-center justify-center gap-2">
+        <div class="flex" aria-label="Ocena 5 na 5 gwiazdek">
+          <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400" aria-hidden="true"></i>
+          <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400" aria-hidden="true"></i>
+          <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400" aria-hidden="true"></i>
+          <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400" aria-hidden="true"></i>
+          <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400" aria-hidden="true"></i>
+        </div>
+        <span class="text-k-cream/70 text-sm">4,8 · 1722 opinii Google</span>
+      </div>
+    </div>
+
+    <div class="reveal">
+      <div id="reviewsScroller"
+        class="flex gap-4 overflow-x-auto no-scrollbar pb-3 snap-x snap-mandatory"
+        role="list" aria-label="Opinie klientów">
+        <article class="flex-none w-[88vw] sm:w-[44vw] lg:w-[calc(33.33%-11px)] snap-center bg-white/5 border border-white/8 rounded-2xl p-5 sm:p-6" role="listitem" data-testid="review-0">
+          <div class="flex text-yellow-400 mb-3" aria-label="5 gwiazdek"><i data-lucide="star" class="w-4 h-4 fill-yellow-400" aria-hidden="true"></i><i data-lucide="star" class="w-4 h-4 fill-yellow-400" aria-hidden="true"></i><i data-lucide="star" class="w-4 h-4 fill-yellow-400" aria-hidden="true"></i><i data-lucide="star" class="w-4 h-4 fill-yellow-400" aria-hidden="true"></i><i data-lucide="star" class="w-4 h-4 fill-yellow-400" aria-hidden="true"></i></div>
+          <p class="text-k-cream/80 text-sm leading-relaxed">„Najlepszy kebab w okolicy — mięso zawsze świeże i soczyste, a dostawa szybka. Polecam XL!"</p>
+          <div class="mt-4 flex items-center gap-2.5">
+            <div class="w-8 h-8 rounded-full bg-k-red/25 flex items-center justify-center text-xs font-bold text-k-cream" aria-hidden="true">B</div>
+            <div>
+              <div class="text-sm font-medium">Bartek</div>
+              <div class="text-xs text-k-cream/40">opinia przykładowa</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="flex-none w-[88vw] sm:w-[44vw] lg:w-[calc(33.33%-11px)] snap-center bg-white/5 border border-white/8 rounded-2xl p-5 sm:p-6" role="listitem" data-testid="review-1">
+          <div class="flex text-yellow-400 mb-3" aria-label="5 gwiazdek"><i data-lucide="star" class="w-4 h-4 fill-yellow-400" aria-hidden="true"></i><i data-lucide="star" class="w-4 h-4 fill-yellow-400" aria-hidden="true"></i><i data-lucide="star" class="w-4 h-4 fill-yellow-400" aria-hidden="true"></i><i data-lucide="star" class="w-4 h-4 fill-yellow-400" aria-hidden="true"></i><i data-lucide="star" class="w-4 h-4 fill-yellow-400" aria-hidden="true"></i></div>
+          <p class="text-k-cream/80 text-sm leading-relaxed">„Zamawiam regularnie. Frytki chrupiące, sosy domowe, zestaw rodzinny to świetna opcja na piątek."</p>
+          <div class="mt-4 flex items-center gap-2.5">
+            <div class="w-8 h-8 rounded-full bg-k-red/25 flex items-center justify-center text-xs font-bold text-k-cream" aria-hidden="true">K</div>
+            <div>
+              <div class="text-sm font-medium">Karolina</div>
+              <div class="text-xs text-k-cream/40">opinia przykładowa</div>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div id="reviewsDots" class="flex justify-center gap-2 mt-4" aria-hidden="true"></div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ===================================================
+     O NAS
+     =================================================== -->
+<section id="o-nas" class="py-14 sm:py-18 lg:py-24 bg-k-cream">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+
+      <div class="reveal order-2 lg:order-1">
+        <div class="relative rounded-2xl overflow-hidden h-64 sm:h-80 lg:h-96 gallery-tile">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&amp;fit=crop&amp;w=960&amp;q=72" alt="Nakryty stół w restauracji" loading="lazy" class="w-full h-full object-cover" />
+        </div>
+      </div>
+
+      <div class="reveal order-1 lg:order-2">
+        <div class="text-xs font-medium uppercase tracking-widest text-k-red mb-2">Nasza historia</div>
+        <h2 class="text-3xl sm:text-4xl font-bold text-k-text leading-tight mb-5">Kim jesteśmy</h2>
+        <p class="text-k-muted leading-relaxed mb-4">Robimy kebab tak, jak powinien wyglądać: świeże mięso z rożna, warzywa od lokalnych dostawców i sosy przygotowywane na miejscu. Bez chodzenia na skróty.</p>
+        <p class="text-k-muted leading-relaxed mb-6">Stawiamy na szybkość i powtarzalny smak — żebyś za każdym razem dostał dokładnie to, po co wracasz. Na wynos, z dostawą albo do zjedzenia na miejscu.</p>
+
+        <div class="grid grid-cols-3 gap-4 pt-6 border-t border-k-text/8">
+          <div>
+            <div class="text-2xl font-bold text-k-red">25–40</div>
+            <div class="text-xs text-k-muted mt-0.5">minut do dostawy</div>
+          </div>
+          <div>
+            <div class="text-2xl font-bold text-k-red">4,8★</div>
+            <div class="text-xs text-k-muted mt-0.5">ocena Google</div>
+          </div>
+          <div>
+            <div class="text-2xl font-bold text-k-red">7 dni</div>
+            <div class="text-xs text-k-muted mt-0.5">w tygodniu</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ===================================================
+     KONTAKT
+     =================================================== -->
+<section id="kontakt" class="py-14 sm:py-18 lg:py-24 bg-k-light text-k-text">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-8 lg:gap-10">
+
+    <div class="reveal">
+      <div class="text-xs font-medium uppercase tracking-widest text-k-red mb-2">Kontakt</div>
+      <h2 class="text-3xl sm:text-4xl font-bold leading-tight mb-4">Wpadnij<br/>do nas</h2>
+      <p class="text-k-muted leading-relaxed mb-6">
+        Zamawiaj online, zadzwoń albo przyjdź osobiście. Jesteśmy tu dla Ciebie.
+      </p>
+      <a data-nav-link href="#" target="_blank" rel="noopener"
+        class="btn-primary inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold"
+        data-testid="contact-nav-btn">
+        <i data-lucide="navigation" class="w-4 h-4" aria-hidden="true"></i> Nawigacja
+      </a>
+    </div>
+
+    <div class="space-y-5 reveal">
+
+      <div class="flex items-start gap-4">
+        <div class="w-10 h-10 rounded-xl bg-k-red/10 border border-k-red/15 flex items-center justify-center shrink-0 mt-0.5">
+          <i data-lucide="map-pin" class="w-4 h-4 text-k-red" aria-hidden="true"></i>
+        </div>
+        <div>
+          <div class="text-xs uppercase tracking-wider text-k-muted mb-1">Adres</div>
+          <div>Wielka 19<br/>61-775 Poznań, Polska</div>
+        </div>
+      </div>
+
+      <div class="flex items-start gap-4">
+        <div class="w-10 h-10 rounded-xl bg-k-red/10 border border-k-red/15 flex items-center justify-center shrink-0 mt-0.5">
+          <i data-lucide="phone" class="w-4 h-4 text-k-red" aria-hidden="true"></i>
+        </div>
+        <div>
+          <div class="text-xs uppercase tracking-wider text-k-muted mb-1">Telefon / zamówienia</div>
+          <a href="tel:+48791305012" class="font-semibold hover:text-k-red transition">+48 791 305 012</a>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <div class="reveal">
+      <div class="text-xs uppercase tracking-wider text-k-muted mb-3">Godziny otwarcia</div>
+      <ul class="divide-y divide-k-text/8 mb-7">
+        <li class="flex justify-between py-2.5 text-sm"><span>Poniedziałek – Wtorek</span><span class="font-semibold text-k-red">12:00 – 23:00</span></li>
+        <li class="flex justify-between py-2.5 text-sm"><span>Środa – Czwartek</span><span class="font-semibold text-k-red">12:00 – 00:00</span></li>
+        <li class="flex justify-between py-2.5 text-sm"><span>Piątek – Sobota</span><span class="font-semibold text-k-red">12:00 – 04:00</span></li>
+        <li class="flex justify-between py-2.5 text-sm"><span>Niedziela</span><span class="font-semibold text-k-red">12:00 – 23:00</span></li>
+      </ul>
+
+      <div class="text-xs uppercase tracking-wider text-k-muted mb-3">Social media</div>
+      <div class="flex gap-2">
+        <a href="#" aria-label="Instagram" class="w-10 h-10 rounded-xl border border-k-text/12 flex items-center justify-center hover:bg-k-red/8 hover:border-k-red/50 transition" data-testid="social-ig">
+          <svg viewBox="0 0 24 24" class="w-4 h-4" fill="currentColor" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.43-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.3-1.46.72-2.12 1.38C1.35 2.68.94 3.35.63 4.14.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.72 1.46 1.38 2.12.66.66 1.33 1.08 2.12 1.38.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.9 5.9 0 0 0 2.12-1.38 5.9 5.9 0 0 0 1.38-2.12c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.9 5.9 0 0 0-1.38-2.12A5.9 5.9 0 0 0 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.41-10.41a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/></svg>
+        </a>
+        <a href="#" aria-label="Facebook" class="w-10 h-10 rounded-xl border border-k-text/12 flex items-center justify-center hover:bg-k-red/8 hover:border-k-red/50 transition" data-testid="social-fb">
+          <svg viewBox="0 0 24 24" class="w-4 h-4" fill="currentColor" aria-hidden="true"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07c0 6 4.39 10.95 10.13 11.85v-8.38H7.08v-3.47h3.05V9.43c0-3 1.79-4.67 4.53-4.67 1.31 0 2.69.24 2.69.24v2.95h-1.51c-1.49 0-1.96.93-1.96 1.87v2.25h3.33l-.53 3.47h-2.8v8.38C19.61 23.02 24 18.07 24 12.07z"/></svg>
+        </a>
+        <a href="#" aria-label="TikTok" class="w-10 h-10 rounded-xl border border-k-text/12 flex items-center justify-center hover:bg-k-red/8 hover:border-k-red/50 transition" data-testid="social-tt">
+          <svg viewBox="0 0 24 24" class="w-4 h-4" fill="currentColor" aria-hidden="true"><path d="M12.53.02c1.31-.02 2.6-.01 3.9-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<!-- ===================================================
+     FOOTER
+     =================================================== -->
+<footer class="bg-k-dark text-k-cream/55">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div id="polityka-prywatnosci" class="max-w-3xl mb-8 text-sm leading-relaxed text-k-cream/55">
+      <h2 class="text-base text-k-cream mb-2 font-semibold">Prywatność i pliki cookie (RODO)</h2>
+      <p>Administratorem danych podanych w formularzu kontaktowym jest Świstak Kebap Poznań. Dane przetwarzamy wyłącznie w celu obsługi zapytania, zgodnie z RODO. Strona może używać plików cookie do celów statystycznych — możesz nimi zarządzać w ustawieniach przeglądarki. Masz prawo dostępu do swoich danych, ich poprawiania i usunięcia.</p>
+    </div>
+    <div class="border-t border-white/5 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-center sm:text-left">
+      <div class="flex items-center gap-2.5">
+        <span class="w-7 h-7 rounded-lg bg-k-red flex items-center justify-center text-white font-bold text-xs shrink-0" aria-hidden="true">ŚK</span>
+        <span class="text-k-cream font-medium">Świstak Kebap Poznań</span>
+      </div>
+      <div>© <span id="year"></span> Świstak Kebap Poznań. Wszelkie prawa zastrzeżone.</div>
+      <div class="flex gap-5">
+        <a href="#polityka-prywatnosci" class="hover:text-k-cream transition">Polityka prywatności</a>
+        <a href="#menu" class="hover:text-k-cream transition">Menu</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ===================================================
+     COOKIE (RODO)
+     =================================================== -->
+<div class="cookie-banner" id="cookie-banner" role="region" aria-live="polite" aria-label="Zgoda na pliki cookie">
+  <p class="text-sm text-k-cream/80 flex-1 min-w-[16rem]">Używamy plików cookie, aby zapewnić najlepsze działanie strony i analizować ruch. Szczegóły znajdziesz w <a href="#polityka-prywatnosci">polityce prywatności</a>.</p>
+  <div class="cookie-banner__btns">
+    <button type="button" class="btn-primary px-4 py-2 rounded-full text-sm font-medium" data-cookie="accept">Akceptuję</button>
+    <button type="button" class="px-4 py-2 rounded-full text-sm font-medium border border-k-cream/30 text-k-cream hover:bg-k-cream/10 transition" data-cookie="reject">Tylko niezbędne</button>
+  </div>
+</div>
+
+
+<!-- ===================================================
+     MOBILE STICKY ORDER BAR
+     =================================================== -->
+<div id="mobileOrderBar"
+  class="fixed bottom-0 left-0 right-0 z-50 lg:hidden bg-k-dark border-t border-white/8 flex transition-transform duration-300"
+  aria-label="Szybkie akcje" data-testid="mobile-bar">
+  <a href="tel:+48791305012"
+    class="flex-1 flex items-center justify-center gap-2 py-3.5 text-k-cream/80 text-sm font-medium border-r border-white/10 active:bg-white/5"
+    data-testid="mobile-call">
+    <i data-lucide="phone" class="w-4 h-4" aria-hidden="true"></i>
+    <span>Zadzwoń</span>
+  </a>
+  <a href="#zamow"
+    class="flex-1 flex items-center justify-center gap-2 py-3.5 bg-k-red text-white text-sm font-bold active:bg-k-redH"
+    data-testid="mobile-order">
+    <i data-lucide="shopping-bag" class="w-4 h-4" aria-hidden="true"></i>
+    <span>Zamów online</span>
+  </a>
+</div>
+
+
+<!-- ===================================================
+     JAVASCRIPT
+     =================================================== -->
+<script>
+/* ============================================================
+   KONFIGURACJA LOKALU
+   ============================================================ */
+const CONFIG = {
+  name: "Świstak Kebap Poznań",
+  // Cel przycisku „Nawigacja" (Google Maps Directions) — adres lokalu.
+  navUrl: "https://www.google.com/maps/dir/?api=1\u0026destination=Wielka%2019%2C%2061-775%20Pozna%C5%84\u0026dir_action=navigate",
+  // Godziny otwarcia [otwarcie, zamknięcie] wg dnia tygodnia (0 = niedziela ... 6 = sobota).
+  // Wartości mogą być ułamkowe (9.5 = 09:30). Brak klucza dnia = zamknięte.
+  hours: {
+  "0": [
+    12,
+    23
+  ],
+  "1": [
+    12,
+    23
+  ],
+  "2": [
+    12,
+    23
+  ],
+  "3": [
+    12,
+    0
+  ],
+  "4": [
+    12,
+    0
+  ],
+  "5": [
+    12,
+    4
+  ],
+  "6": [
+    12,
+    4
+  ]
+},
+};
+const HAS_HOURS = Object.keys(CONFIG.hours).length > 0;
+function fmtHour(x){ const h=Math.floor(x); const m=Math.round((x-h)*60); return String(h).padStart(2,'0')+':'+String(m).padStart(2,'0'); }
+
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const $ = id => document.getElementById(id);
+
+function drawIcons() { if (window.lucide && typeof lucide.createIcons === 'function') lucide.createIcons(); }
+drawIcons();
+$('year').textContent = new Date().getFullYear();
+
+/* Google Maps navigation link (adres lokalu) */
+if (CONFIG.navUrl) document.querySelectorAll('[data-nav-link]').forEach(a => { a.href = CONFIG.navUrl; });
+
+/* ============================================================
+   MOBILE MENU
+   ============================================================ */
+const mobileBtn  = $('mobileBtn');
+const mobileMenu = $('mobileMenu');
+const ICON_MENU  = `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="18" y2="18"/></svg>`;
+const ICON_CLOSE = `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>`;
+
+mobileBtn.addEventListener('click', () => {
+  const open = mobileMenu.classList.toggle('open');
+  mobileBtn.setAttribute('aria-expanded', String(open));
+  mobileMenu.setAttribute('aria-hidden',  String(!open));
+  mobileBtn.innerHTML = open ? ICON_CLOSE : ICON_MENU;
+});
+document.querySelectorAll('.mobile-link').forEach(a => a.addEventListener('click', () => {
+  mobileMenu.classList.remove('open');
+  mobileBtn.setAttribute('aria-expanded', 'false');
+  mobileMenu.setAttribute('aria-hidden',  'true');
+  mobileBtn.innerHTML = ICON_MENU;
+}));
+
+/* ============================================================
+   SCROLL REVEAL
+   ============================================================ */
+const revealObserver = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+/* ============================================================
+   STATUS: OTWARTE / ZAMKNIĘTE (liczone z godzin otwarcia)
+   ============================================================ */
+const statusBadge = $('statusBadge');
+const hoursToday = $('hoursToday');
+function setClosed() {
+  if (statusBadge) {
+    statusBadge.className = 'flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-red-50 border border-red-200 shrink-0 text-xs font-semibold text-red-700';
+    statusBadge.innerHTML = '<span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:#ef4444;"></span> Zamknięte';
+  }
+}
+function updateStatus() {
+  if (!HAS_HOURS) {
+    if (statusBadge) statusBadge.style.display = 'none';
+    if (hoursToday) hoursToday.textContent = 'Godziny — zapytaj w lokalu';
+    return;
+  }
+  const now = new Date();
+  const todayHours = CONFIG.hours[now.getDay()];
+  if (!todayHours) { if (hoursToday) hoursToday.textContent = 'Dziś nieczynne'; setClosed(); return; }
+  const [open, close] = todayHours;
+  const h = now.getHours() + now.getMinutes() / 60;
+  if (hoursToday) hoursToday.textContent = `Dziś: ${fmtHour(open)} – ${fmtHour(close)}`;
+  if (h >= open && h < close) {
+    if (statusBadge) {
+      statusBadge.className = 'flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-green-50 border border-green-200 shrink-0 text-xs font-semibold text-green-700';
+      statusBadge.innerHTML = '<span class="pulse-dot"></span> Otwarte teraz';
+    }
+  } else { setClosed(); }
+}
+updateStatus();
+setInterval(updateStatus, 60000);
+
+/* ============================================================
+   DANE MENU (demo) — { name, desc, sizes: [{label, price}] }
+   ============================================================ */
+const menuData = {
+  kebaby: [
+    { name: 'Kebab w tortilli', desc: 'kurczak / wołowina / mieszany · sałata, pomidor, ogórek, cebula, sos do wyboru', sizes: [{ label: 'M · ~300 g', price: '28 zł' }, { label: 'L · ~450 g', price: '35 zł' }, { label: 'XL · ~600 g', price: '45 zł' }] },
+    { name: 'Kebab w bułce', desc: 'kurczak / wołowina / mieszany · sałata, pomidor, ogórek, cebula, sos do wyboru', sizes: [{ label: 'M · ~300 g', price: '26 zł' }, { label: 'L · ~450 g', price: '33 zł' }, { label: 'XL · ~550 g', price: '42 zł' }] },
+    { name: 'Durum (zawijany)', desc: 'cienka tortilla · kurczak / wołowina / mieszany · warzywa, sos', sizes: [{ label: '~380 g', price: '30 zł' }, { label: 'Duży · ~520 g', price: '38 zł' }] },
+    { name: 'Kebab Box', desc: 'mięso z rożna, frytki duże, surówka, 2 sosy do wyboru', sizes: [{ label: '~450 g', price: '38 zł' }, { label: 'Duży · ~600 g', price: '48 zł' }] },
+    { name: 'Pita kebab', desc: 'chleb pita, mięso, sałata, pomidor, sos biały', sizes: [{ label: '~280 g', price: '28 zł' }] },
+    { name: 'Falafel wrap (wege)', desc: 'tortilla, falafel z ciecierzycy, sałata, pomidor, sos jogurtowy', sizes: [{ label: '~350 g', price: '27 zł' }] },
+  ],
+  zestawy: [
+    { name: 'Zestaw studencki', desc: 'Kebab w tortilli M + Napój 0,5 l', sizes: [{ label: '', price: '35 zł' }] },
+    { name: 'Mega zestaw', desc: 'Kebab XL + Frytki duże + Sos + Napój 1 l', sizes: [{ label: '', price: '55 zł' }] },
+    { name: 'Zestaw rodzinny x2', desc: '2 × Kebab L + 2 × Frytki + 2 × Napój', sizes: [{ label: '', price: '75 zł' }] },
+    { name: 'Zestaw rodzinny x4', desc: '4 × Kebab M + 2 × Frytki duże + 4 × Napój', sizes: [{ label: '', price: '120 zł' }] },
+  ],
+  dodatki: [
+    { name: 'Frytki', desc: 'klasyczne frytki ziemniaczane', sizes: [{ label: 'Małe', price: '8 zł' }, { label: 'Duże', price: '12 zł' }] },
+    { name: 'Sos', desc: 'czosnkowy · ostry · jogurtowy · BBQ · tahini', sizes: [{ label: '50 ml', price: '4 zł' }, { label: '100 ml', price: '7 zł' }] },
+    { name: 'Surówka', desc: 'kapusta, marchew, pietruszka, kukurydza', sizes: [{ label: '150 g', price: '7 zł' }] },
+    { name: 'Hummus', desc: 'klasyczny hummus z ciecierzycy z oliwą', sizes: [{ label: '100 g', price: '9 zł' }] },
+  ],
+  napoje: [
+    { name: 'Coca-Cola', desc: '', sizes: [{ label: '0,5 l', price: '7 zł' }, { label: '1,5 l', price: '12 zł' }] },
+    { name: 'Fanta / Sprite', desc: '', sizes: [{ label: '0,5 l', price: '7 zł' }] },
+    { name: 'Woda niegazowana', desc: '', sizes: [{ label: '0,5 l', price: '4 zł' }, { label: '1,5 l', price: '7 zł' }] },
+    { name: 'Ayran', desc: 'jogurt pitny z solą', sizes: [{ label: '250 ml', price: '6 zł' }] },
+    { name: 'Herbata', desc: 'czarna lub miętowa', sizes: [{ label: 'szklanka', price: '6 zł' }] },
+  ],
+};
+
+function renderMenu(tab) {
+  $('menuList').innerHTML = (menuData[tab] || []).map(item => {
+    const sizePills = item.sizes.map(s =>
+      `<span class="inline-flex items-center text-xs px-2.5 py-1 rounded-lg bg-k-red/8 text-k-red font-medium border border-k-red/15 whitespace-nowrap">${s.label ? esc(s.label) + ' · ' : ''}${esc(s.price)}</span>`
+    ).join('');
+    return `
+      <div class="menu-item py-4" data-testid="menu-item-${esc(item.name.toLowerCase().replace(/\s+/g,'-'))}">
+        <div class="font-semibold text-k-text text-[0.925rem] sm:text-base">${esc(item.name)}</div>
+        ${item.desc ? `<div class="text-k-muted text-xs sm:text-sm mt-0.5 leading-relaxed">${esc(item.desc)}</div>` : ''}
+        <div class="flex flex-wrap gap-1.5 mt-2">${sizePills}</div>
+      </div>`;
+  }).join('');
+  drawIcons();
+}
+renderMenu('kebaby');
+
+/* Menu tabs — WAI-ARIA + klawiatura */
+const menuTabs  = Array.from(document.querySelectorAll('.menu-tab'));
+const menuPanel = $('menuPanel');
+function selectTab(btn, setFocus) {
+  menuTabs.forEach(b => {
+    const on = b === btn;
+    b.classList.toggle('active', on);
+    b.setAttribute('aria-selected', String(on));
+    b.tabIndex = on ? 0 : -1;
+  });
+  menuPanel.setAttribute('aria-labelledby', btn.id);
+  renderMenu(btn.dataset.tab);
+  if (setFocus) btn.focus();
+}
+menuTabs.forEach((btn, i) => {
+  btn.addEventListener('click', () => selectTab(btn));
+  btn.addEventListener('keydown', e => {
+    const map = { ArrowRight: (i+1)%menuTabs.length, ArrowDown: (i+1)%menuTabs.length,
+                  ArrowLeft:  (i-1+menuTabs.length)%menuTabs.length,
+                  ArrowUp:    (i-1+menuTabs.length)%menuTabs.length,
+                  Home: 0, End: menuTabs.length - 1 };
+    if (e.key in map) { e.preventDefault(); selectTab(menuTabs[map[e.key]], true); }
+  });
+});
+
+/* ============================================================
+   REVIEWS — SCROLL DOTS
+   ============================================================ */
+const reviewsScroller = $('reviewsScroller');
+const reviewsDots     = $('reviewsDots');
+if (reviewsScroller && reviewsDots) {
+  const cards = Array.from(reviewsScroller.children);
+  cards.forEach((_, i) => {
+    const dot = document.createElement('button');
+    dot.type = 'button';
+    dot.setAttribute('aria-label', `Opinia ${i + 1}`);
+    dot.className = 'w-2 h-2 rounded-full bg-k-cream/20 transition-all duration-200';
+    dot.addEventListener('click', () =>
+      cards[i].scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' })
+    );
+    reviewsDots.appendChild(dot);
+  });
+  const dots = Array.from(reviewsDots.children);
+  function syncDots() {
+    const center = reviewsScroller.scrollLeft + reviewsScroller.clientWidth / 2;
+    let active = 0, best = Infinity;
+    cards.forEach((c, i) => {
+      const d = Math.abs((c.offsetLeft + c.offsetWidth / 2) - center);
+      if (d < best) { best = d; active = i; }
+    });
+    dots.forEach((d, i) => {
+      const on = i === active;
+      d.classList.toggle('bg-k-red',       on);
+      d.classList.toggle('w-5',            on);
+      d.classList.toggle('bg-k-cream/20',  !on);
+    });
+  }
+  reviewsScroller.addEventListener('scroll', () => requestAnimationFrame(syncDots), { passive: true });
+  syncDots();
+}
+
+/* ============================================================
+   MOBILE ORDER BAR — ukryj gdy hero CTA jest widoczne
+   ============================================================ */
+const heroCTA        = document.querySelector('[data-testid="hero-cta-order"]');
+const mobileOrderBar = $('mobileOrderBar');
+if (heroCTA && mobileOrderBar) {
+  new IntersectionObserver(([entry]) => {
+    mobileOrderBar.style.transform = entry.isIntersecting ? 'translateY(110%)' : 'translateY(0)';
+  }, { threshold: 0.5 }).observe(heroCTA);
+}
+
+/* ============================================================
+   BANER ZGODY NA PLIKI COOKIE (RODO)
+   ============================================================ */
+(function(){
+  const banner = $('cookie-banner');
+  if (!banner) return;
+  let stored = null;
+  try { stored = localStorage.getItem('cookie-consent'); } catch(e) {}
+  if (!stored) setTimeout(() => banner.classList.add('show'), 800);
+  banner.querySelectorAll('[data-cookie]').forEach(b => b.addEventListener('click', () => {
+    try { localStorage.setItem('cookie-consent', b.getAttribute('data-cookie')); } catch(e) {}
+    banner.classList.remove('show');
+  }));
+})();
+</script>
+
+<style>
+  :root{ --ds-demobar-h:60px; }
+  @media (max-width:520px){ :root{ --ds-demobar-h:52px; } }
+  body{ padding-top:var(--ds-demobar-h) !important; }
+  .site-header{ top:var(--ds-demobar-h) !important; }
+  body > header.fixed{ top:var(--ds-demobar-h) !important; }
+  .nav__links{ top:var(--ds-demobar-h) !important; }
+  .ds-demobar{
+    position:fixed; top:0; left:0; right:0; z-index:2147483600;
+    height:var(--ds-demobar-h); display:flex; align-items:center; justify-content:center;
+    gap:1.1rem; padding:0 1rem; box-sizing:border-box;
+    background:#0f172a; color:#f8fafc; border-bottom:3px solid #22c55e;
+    font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    font-size:1.05rem; line-height:1.15; box-shadow:0 6px 22px -6px rgba(0,0,0,.65);
+  }
+  .ds-demobar__txt{ font-weight:600; }
+  @media (max-width:520px){ .ds-demobar__txt{ display:none; } }
+  .ds-demobar__btn{
+    display:inline-flex; align-items:center; gap:.45rem; white-space:nowrap;
+    background:#22c55e; color:#06210f; font-weight:800; text-decoration:none;
+    padding:.62rem 1.35rem; border-radius:9999px; font-size:1.02rem;
+    box-shadow:0 0 0 0 rgba(34,197,94,.55);
+    animation:ds-demobar-pulse 2.4s ease-out infinite;
+    transition:background .2s, transform .15s;
+  }
+  .ds-demobar__btn:hover{ background:#16a34a; transform:translateY(-1px) scale(1.02); }
+  @keyframes ds-demobar-pulse{
+    0%{ box-shadow:0 0 0 0 rgba(34,197,94,.5); }
+    70%{ box-shadow:0 0 0 13px rgba(34,197,94,0); }
+    100%{ box-shadow:0 0 0 0 rgba(34,197,94,0); }
+  }
+  @media (prefers-reduced-motion: reduce){ .ds-demobar__btn{ transition:none; animation:none; } }
+</style>
+<div class="ds-demobar" role="region" aria-label="Zamów tę stronę">
+  <span class="ds-demobar__txt">To jest demo Twojej strony — gotowa do uruchomienia.</span>
+  <a class="ds-demobar__btn" href="https://www.demostrona.com.pl/swistak-kebap-poznan/buy">Zamów tą stronę <span aria-hidden="true">→</span></a>
+</div>
+</body>
+</html>
