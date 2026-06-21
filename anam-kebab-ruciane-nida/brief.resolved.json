@@ -108,24 +108,34 @@
       "mode": "custom"
     },
     "about": {
-      "src": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=960&q=72",
-      "alt": "Nakryty stół w restauracji",
+      "src": "https://images.unsplash.com/photo-1530469912745-a215c6b256ea?auto=format&fit=crop&w=960&q=72",
+      "alt": "Kebab z kurczaka na pionowym rożnie",
       "mode": "unsplash"
     },
     "gallery": [
       {
-        "src": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=900&q=70",
-        "alt": "Szef kuchni komponuje danie",
+        "src": "https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=900&q=70",
+        "alt": "Kebaby w tortilli z frytkami, cebulą i świeżymi warzywami",
         "mode": "unsplash"
       },
       {
-        "src": "https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?auto=format&fit=crop&w=900&q=70",
-        "alt": "Apetyczne danie na talerzu",
+        "src": "https://images.unsplash.com/photo-1699728088614-7d1d4277414b?auto=format&fit=crop&w=900&q=70",
+        "alt": "Kebab wołowy w tortilli z pomidorem i natką",
         "mode": "unsplash"
       },
       {
-        "src": "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=900&q=70",
-        "alt": "Świeżo przygotowany posiłek",
+        "src": "https://images.unsplash.com/photo-1639737611208-a01d87b78605?auto=format&fit=crop&w=900&q=70",
+        "alt": "Świeże mięso krojone z pionowego rożna",
+        "mode": "unsplash"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1633321702518-7feccafb94d5?auto=format&fit=crop&w=900&q=70",
+        "alt": "Kebab w tortilli z frytkami na talerzu",
+        "mode": "unsplash"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=900&q=70",
+        "alt": "Grillowane mięso z rożna z domowymi sosami i dodatkami",
         "mode": "unsplash"
       }
     ]
@@ -351,7 +361,7 @@
     }
   ],
   "hero": {
-    "headline": "Soczysty kebab prosto z rożna.",
+    "headline": "Anam kebab Ruciane Nida",
     "subheadline": "Świeże mięso z rożna, domowe sosy i chrupiące frytki — Ruciane-Nida i okolice. Na miejscu, na wynos i z dostawą pod drzwi.",
     "badges": [
       "Dostawa do domu",
@@ -377,8 +387,8 @@
       "Domowe sosy"
     ],
     "image": {
-      "src": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=960&q=72",
-      "alt": "Nakryty stół w restauracji",
+      "src": "https://images.unsplash.com/photo-1530469912745-a215c6b256ea?auto=format&fit=crop&w=960&q=72",
+      "alt": "Kebab z kurczaka na pionowym rożnie",
       "mode": "unsplash"
     }
   },
@@ -453,7 +463,7 @@
     "industry": "kebab",
     "theme": "artisan",
     "imageMode": "unsplash",
-    "generatedAt": "2026-06-21T22:03:22.920Z",
+    "generatedAt": "2026-06-21T22:27:42.474Z",
     "warnings": []
   }
 }

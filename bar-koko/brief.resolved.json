@@ -3,64 +3,67 @@
   "slug": "bar-koko",
   "tagline": null,
   "description": null,
-  "industry": "uslugi",
-  "industryLabel": "Usługi dla klientów",
-  "schemaType": "LocalBusiness",
-  "servicesHeading": null,
+  "industry": "kebab",
+  "industryLabel": "Kebab",
+  "schemaType": "Restaurant",
+  "servicesHeading": {
+    "eyebrow": "Nasze menu",
+    "title": "Co dziś zamawiasz?"
+  },
   "theme": {
-    "id": "modern",
-    "label": "Nowoczesny",
-    "heroStyle": "overlay",
+    "id": "artisan",
+    "label": "Rzemieślniczy",
+    "heroStyle": "split",
     "font": {
-      "heading": "'Plus Jakarta Sans', system-ui, -apple-system, Segoe UI, Roboto, sans-serif",
-      "body": "'Inter', system-ui, -apple-system, Segoe UI, Roboto, sans-serif",
-      "google": "Plus+Jakarta+Sans:wght@600;700;800&family=Inter:wght@400;500;600;700"
+      "heading": "'Playfair Display', Georgia, 'Times New Roman', serif",
+      "body": "'DM Sans', system-ui, -apple-system, Segoe UI, sans-serif",
+      "google": "Playfair+Display:wght@600;700;800&family=DM+Sans:wght@400;500;600"
     },
     "type": {
-      "headingWeight": 800,
-      "headingSpacing": "-0.025em",
+      "headingWeight": 700,
+      "headingSpacing": "-0.01em",
       "headingTransform": "none",
-      "eyebrowSpacing": "0.08em",
+      "eyebrowSpacing": "0.18em",
       "eyebrowTransform": "uppercase"
     },
     "radius": {
-      "card": "20px",
-      "button": "12px",
+      "card": "18px",
+      "button": "999px",
       "input": "12px",
       "pill": "999px"
     },
     "color": {
-      "primary": "#2563eb",
-      "primaryDark": "#1f53c5",
-      "primaryLight": "#81a5f3",
-      "primarySoft": "#e9effd",
+      "primary": "#b91c1c",
+      "primaryDark": "#9b1818",
+      "primaryLight": "#d67b7b",
+      "primarySoft": "#f8e8e8",
       "onPrimary": "#ffffff",
       "accent": "#f59e0b",
       "accentDark": "#d38809",
       "onAccent": "#0b1220",
-      "ink": "#0f172a",
-      "inkMuted": "#51607a",
-      "bg": "#ffffff",
+      "ink": "#241c15",
+      "inkMuted": "#5c5247",
+      "bg": "#fffaf3",
       "surface": "#ffffff",
-      "surfaceAlt": "#eef2fb",
-      "border": "#e6eaf2",
-      "footerBg": "#0b1220",
+      "surfaceAlt": "#f5e7db",
+      "border": "#ece0d0",
+      "footerBg": "#241a13",
       "footerInk": "#f8fafc",
-      "footerMuted": "#9ea2a8",
-      "heroOverlay": "#0a101d"
+      "footerMuted": "#a7a5a3",
+      "heroOverlay": "#201711"
     },
     "shadow": {
-      "sm": "0 1px 2px rgba(30, 41, 59, 0.06), 0 1px 3px rgba(30, 41, 59, 0.1)",
-      "card": "0 6px 24px rgba(30, 41, 59, 0.08), 0 1px 2px rgba(30, 41, 59, 0.06)",
-      "hover": "0 18px 48px rgba(30, 41, 59, 0.16), 0 4px 12px rgba(30, 41, 59, 0.08)",
-      "header": "0 4px 20px rgba(30, 41, 59, 0.08)",
-      "button": "0 8px 20px rgba(37, 99, 235, 0.28)"
+      "sm": "0 1px 2px rgba(42, 33, 24, 0.06), 0 1px 3px rgba(42, 33, 24, 0.1)",
+      "card": "0 6px 24px rgba(42, 33, 24, 0.08), 0 1px 2px rgba(42, 33, 24, 0.06)",
+      "hover": "0 18px 48px rgba(42, 33, 24, 0.16), 0 4px 12px rgba(42, 33, 24, 0.08)",
+      "header": "0 4px 20px rgba(42, 33, 24, 0.08)",
+      "button": "0 8px 20px rgba(185, 28, 28, 0.28)"
     },
-    "_tint": "#1e293b"
+    "_tint": "#2a2118"
   },
-  "themeId": "modern",
+  "themeId": "artisan",
   "brand": {
-    "primary": "#2563eb",
+    "primary": "#b91c1c",
     "accent": "#f59e0b"
   },
   "city": "Suwałki",
@@ -101,51 +104,174 @@
       "mode": "custom"
     },
     "about": {
-      "src": "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=960&q=72",
-      "alt": "Zadowoleni klienci i rzetelna obsługa",
+      "src": "https://images.unsplash.com/photo-1530469912745-a215c6b256ea?auto=format&fit=crop&w=960&q=72",
+      "alt": "Kebab z kurczaka na pionowym rożnie",
       "mode": "unsplash"
     },
     "gallery": [
       {
-        "src": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=900&q=70",
-        "alt": "Zespół podczas pracy",
+        "src": "https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=900&q=70",
+        "alt": "Kebaby w tortilli z frytkami, cebulą i świeżymi warzywami",
         "mode": "unsplash"
       },
       {
-        "src": "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=70",
-        "alt": "Współpraca specjalistów",
+        "src": "https://images.unsplash.com/photo-1699728088614-7d1d4277414b?auto=format&fit=crop&w=900&q=70",
+        "alt": "Kebab wołowy w tortilli z pomidorem i natką",
         "mode": "unsplash"
       },
       {
-        "src": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=900&q=70",
-        "alt": "Nowoczesna przestrzeń do pracy",
+        "src": "https://images.unsplash.com/photo-1639737611208-a01d87b78605?auto=format&fit=crop&w=900&q=70",
+        "alt": "Świeże mięso krojone z pionowego rożna",
+        "mode": "unsplash"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1633321702518-7feccafb94d5?auto=format&fit=crop&w=900&q=70",
+        "alt": "Kebab w tortilli z frytkami na talerzu",
+        "mode": "unsplash"
+      },
+      {
+        "src": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=900&q=70",
+        "alt": "Grillowane mięso z rożna z domowymi sosami i dodatkami",
         "mode": "unsplash"
       }
     ]
   },
   "services": [
     {
-      "name": "Profesjonalna obsługa",
-      "description": "Realizujemy zlecenia rzetelnie, terminowo i z dbałością o szczegóły.",
-      "icon": "check"
+      "name": "Kebab z rożna",
+      "description": "Świeże mięso z pionowego rożna — kurczak, wołowina lub mieszane, w tortilli, bułce lub jako durum.",
+      "icon": "utensils"
     },
     {
-      "name": "Doradztwo",
-      "description": "Pomagamy dobrać najlepsze rozwiązanie do Twoich potrzeb.",
-      "icon": "headset"
+      "name": "Dostawa pod drzwi",
+      "description": "Gorący kebab dowieziemy prosto do domu lub biura — szybko i bez pośredników.",
+      "icon": "truck"
     },
     {
-      "name": "Realizacja",
-      "description": "Wykonujemy usługę sprawnie i z gwarancją jakości.",
-      "icon": "cog"
+      "name": "Odbiór osobisty",
+      "description": "Zamów telefonicznie i odbierz w lokalu w kilkanaście minut.",
+      "icon": "clock"
     },
     {
-      "name": "Wsparcie",
-      "description": "Jesteśmy do dyspozycji także po zakończeniu zlecenia.",
-      "icon": "shield"
+      "name": "Zestawy rodzinne",
+      "description": "Większe zestawy na całą rodzinę i ekipę — w korzystnej cenie.",
+      "icon": "users"
     }
   ],
-  "menu": [],
+  "menu": [
+    {
+      "name": "Kebaby",
+      "note": "",
+      "items": [
+        {
+          "name": "Kebab w tortilli",
+          "description": "kurczak / wołowina / mieszany, warzywa, sos do wyboru",
+          "price": "od 28 zł",
+          "tags": []
+        },
+        {
+          "name": "Kebab w bułce",
+          "description": "świeża bułka, mięso z rożna, sałata, sos",
+          "price": "od 26 zł",
+          "tags": []
+        },
+        {
+          "name": "Durum (zawijany)",
+          "description": "cienka tortilla, mięso, warzywa, sos",
+          "price": "od 30 zł",
+          "tags": []
+        },
+        {
+          "name": "Kebab Box",
+          "description": "mięso, frytki, surówka, 2 sosy",
+          "price": "od 38 zł",
+          "tags": []
+        },
+        {
+          "name": "Falafel wrap (wege)",
+          "description": "falafel z ciecierzycy, sałata, sos jogurtowy",
+          "price": "27 zł",
+          "tags": [
+            "wegetariańskie"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Zestawy",
+      "note": "",
+      "items": [
+        {
+          "name": "Zestaw studencki",
+          "description": "kebab w tortilli M + napój 0,5 l",
+          "price": "35 zł",
+          "tags": []
+        },
+        {
+          "name": "Mega zestaw",
+          "description": "kebab XL + frytki duże + sos + napój 1 l",
+          "price": "55 zł",
+          "tags": []
+        },
+        {
+          "name": "Zestaw rodzinny x2",
+          "description": "2× kebab L + 2× frytki + 2× napój",
+          "price": "75 zł",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "name": "Dodatki",
+      "note": "",
+      "items": [
+        {
+          "name": "Frytki",
+          "description": "małe lub duże",
+          "price": "od 8 zł",
+          "tags": []
+        },
+        {
+          "name": "Sos",
+          "description": "czosnkowy, ostry, jogurtowy, BBQ",
+          "price": "od 4 zł",
+          "tags": []
+        },
+        {
+          "name": "Hummus",
+          "description": "klasyczny z ciecierzycy z oliwą",
+          "price": "9 zł",
+          "tags": [
+            "wegetariańskie"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Napoje",
+      "note": "",
+      "items": [
+        {
+          "name": "Coca-Cola / Fanta / Sprite",
+          "description": "puszka lub butelka",
+          "price": "od 7 zł",
+          "tags": []
+        },
+        {
+          "name": "Ayran",
+          "description": "jogurt pitny z solą",
+          "price": "6 zł",
+          "tags": []
+        },
+        {
+          "name": "Woda",
+          "description": "gazowana / niegazowana",
+          "price": "od 4 zł",
+          "tags": []
+        }
+      ]
+    }
+  ],
   "features": [
     {
       "title": "Na wynos",
@@ -178,74 +304,61 @@
       "icon": "shield"
     }
   ],
-  "process": [
-    {
-      "title": "Kontakt",
-      "text": "Opowiadasz nam o swoich potrzebach."
-    },
-    {
-      "title": "Wycena",
-      "text": "Przedstawiamy ofertę i termin."
-    },
-    {
-      "title": "Realizacja",
-      "text": "Wykonujemy usługę z dbałością o detal."
-    },
-    {
-      "title": "Wsparcie",
-      "text": "Pozostajemy do dyspozycji po realizacji."
-    }
-  ],
+  "process": [],
   "stats": [
     {
-      "value": "10+",
-      "label": "lat doświadczenia"
+      "value": "25–40 min",
+      "label": "czas dostawy"
     },
     {
-      "value": "1000+",
-      "label": "klientów"
+      "value": "od 28 zł",
+      "label": "kebab w tortilli"
     },
     {
-      "value": "98%",
-      "label": "poleceń"
+      "value": "7 dni",
+      "label": "w tygodniu"
     },
     {
-      "value": "4,9",
-      "label": "ocena"
+      "value": "4,8",
+      "label": "ocena Google"
     }
   ],
   "testimonials": [
     {
-      "quote": "Profesjonalnie, terminowo i w dobrej cenie. Z czystym sumieniem polecam.",
-      "author": "Zadowolony klient",
-      "role": "Opinia Google",
+      "quote": "Najlepszy kebab w okolicy — mięso zawsze świeże i soczyste, a dostawa szybka. Polecam XL!",
+      "author": "Bartek",
+      "role": "opinia przykładowa",
       "rating": 5
     },
     {
-      "quote": "Wreszcie firma, która robi to, co obiecuje. Pełen profesjonalizm.",
-      "author": "Stała klientka",
-      "role": "Opinia Google",
+      "quote": "Zamawiam regularnie. Frytki chrupiące, sosy domowe, zestaw rodzinny to świetna opcja na piątek.",
+      "author": "Karolina",
+      "role": "opinia przykładowa",
       "rating": 5
     }
   ],
   "pricing": [],
   "faq": [
     {
-      "q": "Jak szybko mogę otrzymać wycenę?",
-      "a": "Wycenę przygotowujemy zwykle w ciągu jednego dnia roboczego od kontaktu."
+      "q": "Czy dowozicie kebaby?",
+      "a": "Tak, dowozimy na terenie miasta i okolic w godzinach otwarcia. Próg darmowej dostawy i strefę potwierdzamy przy zamówieniu."
     },
     {
-      "q": "Czy wystawiacie faktury?",
-      "a": "Tak, wystawiamy faktury dla klientów indywidualnych i firm."
+      "q": "Jak mogę zapłacić?",
+      "a": "Przyjmujemy BLIK, karty oraz gotówkę przy odbiorze i u kierowcy."
     },
     {
-      "q": "Na jakim obszarze działacie?",
-      "a": "Działamy lokalnie — w razie wątpliwości zadzwoń i potwierdź dostępność."
+      "q": "Czy mięso jest świeże?",
+      "a": "Mięso opiekamy na bieżąco z pionowego rożna — nie odgrzewamy gotowych porcji."
+    },
+    {
+      "q": "Czy macie opcje wegetariańskie?",
+      "a": "Tak, w menu znajdziesz falafel wrap i hummus — dopytaj o aktualne propozycje wege."
     }
   ],
   "hero": {
-    "headline": "Bar Koko — jakość, na której polegają klienci.",
-    "subheadline": "Profesjonalne usługi — Suwałki i okolice. Rzetelnie, terminowo i w uczciwej cenie.",
+    "headline": "Bar Koko",
+    "subheadline": "Świeże mięso z rożna, domowe sosy i chrupiące frytki — Suwałki i okolice. Na miejscu, na wynos i z dostawą pod drzwi.",
     "badges": [
       "Na wynos",
       "Miejsca na miejscu",
@@ -261,37 +374,38 @@
     "title": "Dlaczego my?",
     "eyebrow": "O nas",
     "text": [
-      "Jesteśmy lokalną firmą, która stawia na jakość i uczciwe podejście. Każde zlecenie traktujemy indywidualnie.",
-      "Naszą najlepszą reklamą są zadowoleni klienci, którzy wracają i polecają nas dalej."
+      "Robimy kebab tak, jak powinien wyglądać: świeże mięso z rożna, warzywa od lokalnych dostawców i sosy przygotowywane na miejscu. Bez chodzenia na skróty.",
+      "Stawiamy na szybkość i powtarzalny smak — żebyś za każdym razem dostał dokładnie to, po co wracasz. Na wynos, z dostawą albo do zjedzenia na miejscu."
     ],
     "points": [
-      "Doświadczenie",
-      "Uczciwe ceny",
-      "Terminowość"
+      "Świeże mięso z rożna",
+      "Szybka dostawa",
+      "Domowe sosy"
     ],
     "image": {
-      "src": "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=960&q=72",
-      "alt": "Zadowoleni klienci i rzetelna obsługa",
+      "src": "https://images.unsplash.com/photo-1530469912745-a215c6b256ea?auto=format&fit=crop&w=960&q=72",
+      "alt": "Kebab z kurczaka na pionowym rożnie",
       "mode": "unsplash"
     }
   },
   "cta": {
-    "title": "Porozmawiajmy o Twoim zleceniu.",
-    "text": "Zadzwoń lub napisz — przygotujemy ofertę dopasowaną do Ciebie."
+    "title": "Głodny? Zamów kebab już teraz.",
+    "text": "Zadzwoń lub napisz — dowieziemy gorący kebab prosto pod Twoje drzwi."
   },
   "seo": {
-    "title": "Bar Koko — Usługi dla klientów | Suwałki",
-    "description": "Bar Koko — usługi dla klientów. Suwałki i okolice. Oferujemy: Profesjonalna obsługa, Doradztwo, Realizacja i Wsparcie.",
+    "title": "Bar Koko — Kebab | Suwałki",
+    "description": "Bar Koko — kebab. Suwałki i okolice. Oferujemy: Kebab z rożna, Dostawa pod drzwi, Odbiór osobisty i Zestawy rodzinne.",
     "keywords": [
-      "usługi",
-      "firma",
-      "lokalnie",
-      "profesjonalnie",
+      "kebab",
+      "kebab z dostawą",
+      "durum",
+      "kebab w bułce",
+      "zestawy rodzinne",
       "Suwałki"
     ],
     "ogImage": null
   },
-  "rating": "4,9",
+  "rating": "4,8",
   "reviewCount": 1311,
   "priceRange": null,
   "hoursWeekly": [
@@ -328,11 +442,11 @@
     "header",
     "hero",
     "trustbar",
-    "services",
+    "menu",
+    "map",
     "about",
-    "process",
-    "stats",
     "gallery",
+    "stats",
     "testimonials",
     "faq",
     "cta",
@@ -342,10 +456,10 @@
   ],
   "meta": {
     "generator": "demo-stron-pl",
-    "industry": "uslugi",
-    "theme": "modern",
+    "industry": "kebab",
+    "theme": "artisan",
     "imageMode": "unsplash",
-    "generatedAt": "2026-06-21T22:03:22.920Z",
+    "generatedAt": "2026-06-21T22:27:42.474Z",
     "warnings": []
   }
 }
