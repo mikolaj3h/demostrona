@@ -3,12 +3,12 @@
   "slug": "pizzeria-desperados",
   "tagline": null,
   "description": null,
-  "industry": "kebab",
-  "industryLabel": "Kebab",
+  "industry": "restauracja",
+  "industryLabel": "Restauracja",
   "schemaType": "Restaurant",
   "servicesHeading": {
-    "eyebrow": "Nasze menu",
-    "title": "Co dziś zamawiasz?"
+    "eyebrow": "Nasza karta",
+    "title": "Co u nas zjesz"
   },
   "theme": {
     "id": "artisan",
@@ -128,59 +128,47 @@
   },
   "services": [
     {
-      "name": "Kebab z rożna",
-      "description": "Świeże mięso z pionowego rożna — kurczak, wołowina lub mieszane, w tortilli, bułce lub jako durum.",
+      "name": "Menu sezonowe",
+      "description": "Dania z lokalnych, świeżych składników, zmieniane wraz z porami roku.",
       "icon": "utensils"
     },
     {
-      "name": "Dostawa pod drzwi",
-      "description": "Gorący kebab dowieziemy prosto do domu lub biura — szybko i bez pośredników.",
-      "icon": "truck"
+      "name": "Rezerwacje",
+      "description": "Zarezerwuj stolik na wieczór we dwoje lub większą okazję.",
+      "icon": "calendar"
     },
     {
-      "name": "Odbiór osobisty",
-      "description": "Zamów telefonicznie i odbierz w lokalu w kilkanaście minut.",
-      "icon": "clock"
-    },
-    {
-      "name": "Zestawy rodzinne",
-      "description": "Większe zestawy na całą rodzinę i ekipę — w korzystnej cenie.",
+      "name": "Imprezy i bankiety",
+      "description": "Organizujemy urodziny, komunie i spotkania firmowe.",
       "icon": "users"
+    },
+    {
+      "name": "Catering",
+      "description": "Dowozimy nasze dania na Twoje wydarzenie.",
+      "icon": "truck"
     }
   ],
   "menu": [
     {
-      "name": "Kebaby",
+      "name": "Przystawki",
       "note": "",
       "items": [
         {
-          "name": "Kebab w tortilli",
-          "description": "kurczak / wołowina / mieszany, warzywa, sos do wyboru",
-          "price": "od 28 zł",
+          "name": "Tatar wołowy",
+          "description": "z piklami, kaparami i żółtkiem",
+          "price": "32 zł",
           "tags": []
         },
         {
-          "name": "Kebab w bułce",
-          "description": "świeża bułka, mięso z rożna, sałata, sos",
-          "price": "od 26 zł",
+          "name": "Śledź po kaszubsku",
+          "description": "z jabłkiem i czerwoną cebulą",
+          "price": "24 zł",
           "tags": []
         },
         {
-          "name": "Durum (zawijany)",
-          "description": "cienka tortilla, mięso, warzywa, sos",
-          "price": "od 30 zł",
-          "tags": []
-        },
-        {
-          "name": "Kebab Box",
-          "description": "mięso, frytki, surówka, 2 sosy",
-          "price": "od 38 zł",
-          "tags": []
-        },
-        {
-          "name": "Falafel wrap (wege)",
-          "description": "falafel z ciecierzycy, sałata, sos jogurtowy",
-          "price": "27 zł",
+          "name": "Zupa dnia",
+          "description": "codziennie świeża, z pieczywem",
+          "price": "18 zł",
           "tags": [
             "wegetariańskie"
           ]
@@ -188,52 +176,55 @@
       ]
     },
     {
-      "name": "Zestawy",
-      "note": "",
+      "name": "Dania główne",
+      "note": "kuchnia sezonowa",
       "items": [
         {
-          "name": "Zestaw studencki",
-          "description": "kebab w tortilli M + napój 0,5 l",
-          "price": "35 zł",
+          "name": "Dorsz z pieca",
+          "description": "z warzywami i masłem ziołowym",
+          "price": "54 zł",
           "tags": []
         },
         {
-          "name": "Mega zestaw",
-          "description": "kebab XL + frytki duże + sos + napój 1 l",
-          "price": "55 zł",
+          "name": "Policzki wołowe",
+          "description": "duszone w czerwonym winie, puree",
+          "price": "58 zł",
           "tags": []
         },
         {
-          "name": "Zestaw rodzinny x2",
-          "description": "2× kebab L + 2× frytki + 2× napój",
-          "price": "75 zł",
-          "tags": []
+          "name": "Pierogi ruskie",
+          "description": "z okrasą lub na maśle",
+          "price": "29 zł",
+          "tags": [
+            "wegetariańskie"
+          ]
+        },
+        {
+          "name": "Risotto z grzybami",
+          "description": "z parmezanem i natką",
+          "price": "42 zł",
+          "tags": [
+            "wegetariańskie",
+            "bez glutenu"
+          ]
         }
       ]
     },
     {
-      "name": "Dodatki",
+      "name": "Desery",
       "note": "",
       "items": [
         {
-          "name": "Frytki",
-          "description": "małe lub duże",
-          "price": "od 8 zł",
+          "name": "Sernik na ciepło",
+          "description": "z sosem żurawinowym",
+          "price": "19 zł",
           "tags": []
         },
         {
-          "name": "Sos",
-          "description": "czosnkowy, ostry, jogurtowy, BBQ",
-          "price": "od 4 zł",
+          "name": "Tarta cytrynowa",
+          "description": "z lekką bezą",
+          "price": "18 zł",
           "tags": []
-        },
-        {
-          "name": "Hummus",
-          "description": "klasyczny z ciecierzycy z oliwą",
-          "price": "9 zł",
-          "tags": [
-            "wegetariańskie"
-          ]
         }
       ]
     },
@@ -242,21 +233,23 @@
       "note": "",
       "items": [
         {
-          "name": "Coca-Cola / Fanta / Sprite",
-          "description": "puszka lub butelka",
-          "price": "od 7 zł",
+          "name": "Lemoniada domowa",
+          "description": "sezonowa, lekko gazowana",
+          "price": "14 zł",
+          "tags": [
+            "sezonowe"
+          ]
+        },
+        {
+          "name": "Kawa",
+          "description": "espresso / z mlekiem",
+          "price": "10 zł",
           "tags": []
         },
         {
-          "name": "Ayran",
-          "description": "jogurt pitny z solą",
-          "price": "6 zł",
-          "tags": []
-        },
-        {
-          "name": "Woda",
-          "description": "gazowana / niegazowana",
-          "price": "od 4 zł",
+          "name": "Wino — kieliszek",
+          "description": "białe / czerwone",
+          "price": "od 18 zł",
           "tags": []
         }
       ]
@@ -297,16 +290,16 @@
   "process": [],
   "stats": [
     {
-      "value": "25–40 min",
-      "label": "czas dostawy"
+      "value": "9",
+      "label": "lat na rynku"
     },
     {
-      "value": "od 28 zł",
-      "label": "kebab w tortilli"
+      "value": "120+",
+      "label": "pozycji w menu"
     },
     {
-      "value": "7 dni",
-      "label": "w tygodniu"
+      "value": "50k+",
+      "label": "gości rocznie"
     },
     {
       "value": "4,8",
@@ -315,40 +308,36 @@
   ],
   "testimonials": [
     {
-      "quote": "Najlepszy kebab w okolicy — mięso zawsze świeże i soczyste, a dostawa szybka. Polecam XL!",
-      "author": "Bartek",
-      "role": "opinia przykładowa",
+      "quote": "Najlepsza kolacja od dawna — smak, obsługa i klimat na najwyższym poziomie.",
+      "author": "Aleksandra W.",
+      "role": "Gość",
       "rating": 5
     },
     {
-      "quote": "Zamawiam regularnie. Frytki chrupiące, sosy domowe, zestaw rodzinny to świetna opcja na piątek.",
-      "author": "Karolina",
-      "role": "opinia przykładowa",
+      "quote": "Zorganizowali nam wspaniałe przyjęcie. Goście do dziś wspominają jedzenie.",
+      "author": "Paweł K.",
+      "role": "Organizator urodzin",
       "rating": 5
     }
   ],
   "pricing": [],
   "faq": [
     {
-      "q": "Czy dowozicie kebaby?",
-      "a": "Tak, dowozimy na terenie miasta i okolic w godzinach otwarcia. Próg darmowej dostawy i strefę potwierdzamy przy zamówieniu."
+      "q": "Czy trzeba rezerwować stolik?",
+      "a": "W weekendy zalecamy rezerwację — w tygodniu zwykle znajdzie się miejsce od ręki."
     },
     {
-      "q": "Jak mogę zapłacić?",
-      "a": "Przyjmujemy BLIK, karty oraz gotówkę przy odbiorze i u kierowcy."
+      "q": "Czy macie dania wegańskie?",
+      "a": "Tak, w menu znajdziesz propozycje wegetariańskie, wegańskie i bezglutenowe."
     },
     {
-      "q": "Czy mięso jest świeże?",
-      "a": "Mięso opiekamy na bieżąco z pionowego rożna — nie odgrzewamy gotowych porcji."
-    },
-    {
-      "q": "Czy macie opcje wegetariańskie?",
-      "a": "Tak, w menu znajdziesz falafel wrap i hummus — dopytaj o aktualne propozycje wege."
+      "q": "Czy organizujecie imprezy zamknięte?",
+      "a": "Tak, przyjmujemy rezerwacje całej sali na okazje prywatne i firmowe."
     }
   ],
   "hero": {
-    "headline": "Pizzeria Desperados — jakość, na której polegają klienci.",
-    "subheadline": "Profesjonalne usługi — Międzyzdroje i okolice. Rzetelnie, terminowo i w uczciwej cenie.",
+    "headline": "Smak, który zapamiętasz.",
+    "subheadline": "Restauracja z kuchnią z charakterem — Międzyzdroje i okolice. Świeże, lokalne składniki i atmosfera na każdą okazję.",
     "badges": [
       "Na wynos",
       "Miejsca na miejscu",
@@ -364,13 +353,13 @@
     "title": "Dlaczego my?",
     "eyebrow": "O nas",
     "text": [
-      "Robimy kebab tak, jak powinien wyglądać: świeże mięso z rożna, warzywa od lokalnych dostawców i sosy przygotowywane na miejscu. Bez chodzenia na skróty.",
-      "Stawiamy na szybkość i powtarzalny smak — żebyś za każdym razem dostał dokładnie to, po co wracasz. Na wynos, z dostawą albo do zjedzenia na miejscu."
+      "Tworzymy miejsce, do którego chce się wracać. Stawiamy na świeże, lokalne składniki i kuchnię z charakterem.",
+      "Każdy talerz to dla nas mała opowieść — o smaku, regionie i pasji do gotowania."
     ],
     "points": [
-      "Świeże mięso z rożna",
-      "Szybka dostawa",
-      "Domowe sosy"
+      "Świeże składniki",
+      "Wyjątkowa atmosfera",
+      "Dla każdego"
     ],
     "image": {
       "src": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=960&q=72",
@@ -379,18 +368,17 @@
     }
   },
   "cta": {
-    "title": "Głodny? Zamów kebab już teraz.",
-    "text": "Zadzwoń lub napisz — dowieziemy gorący kebab prosto pod Twoje drzwi."
+    "title": "Zarezerwuj stolik już dziś.",
+    "text": "Zadzwoń lub napisz — czekamy z wyjątkowym menu i ciepłą atmosferą."
   },
   "seo": {
-    "title": "Pizzeria Desperados — Kebab | Międzyzdroje",
-    "description": "Pizzeria Desperados — kebab. Międzyzdroje i okolice. Oferujemy: Kebab z rożna, Dostawa pod drzwi, Odbiór osobisty i Zestawy rodzinne.",
+    "title": "Pizzeria Desperados — Restauracja | Międzyzdroje",
+    "description": "Pizzeria Desperados — restauracja. Międzyzdroje i okolice. Oferujemy: Menu sezonowe, Rezerwacje, Imprezy i bankiety i Catering.",
     "keywords": [
-      "kebab",
-      "kebab z dostawą",
-      "durum",
-      "kebab w bułce",
-      "zestawy rodzinne",
+      "restauracja",
+      "menu",
+      "rezerwacja stolika",
+      "kuchnia",
       "Międzyzdroje"
     ],
     "ogImage": null
@@ -446,10 +434,10 @@
   ],
   "meta": {
     "generator": "demo-stron-pl",
-    "industry": "kebab",
+    "industry": "restauracja",
     "theme": "artisan",
     "imageMode": "unsplash",
-    "generatedAt": "2026-06-21T21:36:45.506Z",
+    "generatedAt": "2026-06-21T22:03:22.920Z",
     "warnings": []
   }
 }

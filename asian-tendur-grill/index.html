@@ -1,232 +1,40 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pl">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-<title>Asian Tendur Grill — Kebab | Ełk</title>
-<meta name="description" content="Asian Tendur Grill — kebab. Ełk i okolice. Oferujemy: Kebab z rożna, Dostawa pod drzwi, Odbiór osobisty i Zestawy rodzinne." />
-<meta name="theme-color" content="#0D0905" />
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Asian Tendur Grill — Usługi dla klientów | Ełk</title>
+  <meta name="description" content="Asian Tendur Grill — usługi dla klientów. Ełk i okolice. Oferujemy: Profesjonalna obsługa, Doradztwo, Realizacja i Wsparcie.">
+  <meta name="keywords" content="usługi, firma, lokalnie, profesjonalnie, Ełk">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Asian Tendur Grill">
+  <meta name="theme-color" content="#2563eb">
+  
 
-<!-- Tailwind CSS -->
-<script src="https://cdn.tailwindcss.com"></script>
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pl_PL">
+  <meta property="og:site_name" content="Asian Tendur Grill">
+  <meta property="og:title" content="Asian Tendur Grill — Usługi dla klientów | Ełk">
+  <meta property="og:description" content="Asian Tendur Grill — usługi dla klientów. Ełk i okolice. Oferujemy: Profesjonalna obsługa, Doradztwo, Realizacja i Wsparcie.">
+  <meta property="og:image" content="https://lh3.googleusercontent.com/gps-cs-s/APNQkAFvmBDoh3GJt5A3WvNHGH3XTm8WMRBYGLCMrWzizWuYZgs9gJiHmp1B5cMMOMAlTzt-nvfFwEuQa6LMEmYmXxmo4ThV_3g9uGj8-TGuQOa4ZbxnIzPlSu9eHhGlFCYoBk4Oqj8rPGRxxxst=w1280-h960-k-no">
+  
 
-<!-- Google Fonts: Inter (wagi 400–800) — jedyna czcionka -->
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Asian Tendur Grill — Usługi dla klientów | Ełk">
+  <meta name="twitter:description" content="Asian Tendur Grill — usługi dla klientów. Ełk i okolice. Oferujemy: Profesjonalna obsługa, Doradztwo, Realizacja i Wsparcie.">
+  <meta name="twitter:image" content="https://lh3.googleusercontent.com/gps-cs-s/APNQkAFvmBDoh3GJt5A3WvNHGH3XTm8WMRBYGLCMrWzizWuYZgs9gJiHmp1B5cMMOMAlTzt-nvfFwEuQa6LMEmYmXxmo4ThV_3g9uGj8-TGuQOa4ZbxnIzPlSu9eHhGlFCYoBk4Oqj8rPGRxxxst=w1280-h960-k-no">
 
-<!-- Lucide icons -->
-<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%232563eb'/%3E%3Cstop offset='1' stop-color='%23f59e0b'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='url(%23g)'/%3E%3Ctext x='32' y='44' font-family='Segoe UI, sans-serif' font-size='32' font-weight='700' fill='%23ffffff' text-anchor='middle'%3EAT%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap">
 
-<!-- Tailwind custom tokens -->
-<script>
-tailwind.config = {
-  theme: {
-    extend: {
-      colors: {
-        k: {
-          dark:   '#0D0905',
-          brown:  '#180F06',
-          red:    '#C03D0A',
-          redH:   '#D95420',
-          gold:   '#B8850E',
-          cream:  '#FBF4E6',
-          light:  '#FFF9F0',
-          text:   '#1C1108',
-          muted:  '#6B5240',
-        }
-      },
-      fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
-      },
-    }
-  }
-}
-</script>
-
-<style>
-/* ===== RESET & BASE ===== */
-/* Poziome przewijanie na telefonie blokujemy na <html> ORAZ <body>: sam <body>
-   nie wystarcza, bo na mobile to element <html> jest „viewportem" przewijania.
-   Dzięki temu strona przesuwa się wyłącznie w pionie (góra–dół). */
-html { scroll-behavior: smooth; overflow-x: hidden; }
-*, *::before, *::after { box-sizing: border-box; }
-body {
-  font-family: 'Inter', system-ui, sans-serif;
-  background: #FBF4E6;
-  color: #1C1108;
-  -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
-  width: 100%;
-  max-width: 100%;
-  position: relative;   /* kotwiczy elementy absolutne (np. skip-link) do <body> */
-}
-
-/* Media nigdy nie wystają poza szerokość kontenera (mapa Google, zdjęcia). */
-img, iframe, video { max-width: 100%; }
-
-/* Scroll offset pod fixed nav */
-section[id] { scroll-margin-top: 4.5rem; }
-
-/* ===== HERO BACKGROUND ===== */
-.hero-bg {
-  background-image:
-    linear-gradient(to bottom, rgba(13,9,5,0.35) 0%, rgba(13,9,5,0.82) 65%, rgba(13,9,5,0.96) 100%),
-    linear-gradient(135deg, #1C1108 0%, #0D0905 60%, #1A0E04 100%);
-  background-size: cover;
-  background-position: center top;
-}
-
-/* ===== NAVIGATION ===== */
-.nav-link { position: relative; transition: color .2s; }
-.nav-link::after {
-  content: ''; position: absolute; left: 0; bottom: -3px;
-  width: 0; height: 1.5px; background: #C03D0A;
-  transition: width .25s ease;
-}
-.nav-link:hover::after { width: 100%; }
-.nav-link:hover { color: #FBF4E6; }
-
-/* ===== BUTTONS ===== */
-.btn-primary {
-  background: #C03D0A; color: #fff;
-  transition: background .2s, transform .15s;
-  box-shadow: 0 4px 18px -4px rgba(192,61,10,.45);
-}
-.btn-primary:hover { background: #D95420; transform: translateY(-1px); }
-.btn-primary:active { transform: translateY(0); }
-
-.btn-ghost {
-  border: 1.5px solid rgba(251,244,230,.3); color: #FBF4E6;
-  transition: all .2s;
-}
-.btn-ghost:hover { border-color: rgba(251,244,230,.65); background: rgba(251,244,230,.08); }
-
-.btn-outline {
-  border: 1.5px solid #C03D0A; color: #C03D0A;
-  transition: all .2s;
-}
-.btn-outline:hover { background: #C03D0A; color: #fff; }
-
-/* ===== MOBILE MENU ===== */
-.mobile-menu { transform: translateY(-110%); opacity: 0; visibility: hidden; pointer-events: none; transition: transform .3s ease, opacity .25s ease, visibility 0s linear .3s; }
-.mobile-menu.open { transform: translateY(0); opacity: 1; visibility: visible; pointer-events: auto; transition: transform .3s ease, opacity .25s ease, visibility 0s; }
-
-/* ===== SCROLL REVEAL ===== */
-.reveal { opacity: 0; transform: translateY(14px); transition: opacity .65s ease, transform .65s ease; }
-.reveal.in { opacity: 1; transform: none; }
-
-/* ===== STATUS DOT ===== */
-.pulse-dot {
-  display: inline-block; width: 8px; height: 8px;
-  border-radius: 50%; background: #22c55e;
-  box-shadow: 0 0 0 0 rgba(34,197,94,.5);
-  animation: pulse-anim 2s infinite;
-}
-@keyframes pulse-anim {
-  0%   { box-shadow: 0 0 0 0   rgba(34,197,94,.5); }
-  70%  { box-shadow: 0 0 0 9px rgba(34,197,94,0); }
-  100% { box-shadow: 0 0 0 0   rgba(34,197,94,0); }
-}
-
-/* ===== MENU TABS ===== */
-.menu-tab { transition: background .2s, color .2s, border-color .2s; }
-.menu-tab.active { background: #C03D0A !important; color: #fff !important; border-color: #C03D0A !important; }
-
-/* ===== MENU ITEMS ===== */
-.menu-item { transition: background .2s; }
-.menu-item:not(:last-child) { border-bottom: 1px solid rgba(28,17,8,.08); }
-.menu-item:hover { background: rgba(192,61,10,.04); }
-
-/* ===== GALLERY ===== */
-.gallery-tile { overflow: hidden; }
-.gallery-tile img { transition: transform .7s cubic-bezier(.2,.7,.2,1); width: 100%; height: 100%; object-fit: cover; }
-.gallery-tile:hover img { transform: scale(1.04); }
-.gallery-ph {
-  display: flex; flex-direction: column; align-items: center; justify-content: center;
-  gap: .5rem; width: 100%; height: 100%; padding: 1.25rem; text-align: center;
-  background:
-    repeating-linear-gradient(45deg, rgba(192,61,10,.05) 0 12px, transparent 12px 24px),
-    linear-gradient(135deg, #F5ECD8 0%, #EDE0C4 100%);
-  color: #B8850E;
-  border: 2px dashed rgba(184,133,14,.4);
-  border-radius: inherit;
-}
-.gallery-ph span { font-size: .7rem; letter-spacing: .09em; text-transform: uppercase; font-weight: 600; }
-
-/* ===== SCROLLBAR HIDE ===== */
-.no-scrollbar::-webkit-scrollbar { display: none; }
-/* overscroll-behavior-x: contain — poziome przesuwanie karuzeli (opinie) nie
-   „przelewa się" na całą stronę, więc strona nie skacze na boki. */
-.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; overscroll-behavior-x: contain; }
-
-/* ===== MARQUEE ===== */
-.marquee-inner { display: flex; gap: 2rem; animation: marquee-scroll 30s linear infinite; white-space: nowrap; }
-@keyframes marquee-scroll {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
-}
-
-/* ===== MAP (osadzona mapa Google) ===== */
-.map-embed { height: 100%; width: 100%; border: 0; display: block; background: #1C1108; }
-
-/* ===== MOBILE ORDER BAR ===== */
-#mobileOrderBar { padding-bottom: env(safe-area-inset-bottom, 0); }
-
-/* ===== SELECTION COLOR ===== */
-::selection { background: #C03D0A; color: #fff; }
-
-/* ===== SKIP-LINK + FOCUS (dostępność) ===== */
-/* Skip-link chowamy przez transform (a nie left:-999px) — element pozostaje przy
-   lewej krawędzi, więc NIE tworzy poziomego przewijania strony na telefonie. */
-.skip-link { position: absolute; left: 0; top: 0; z-index: 200; background: #0D0905; color: #FBF4E6; padding: .65rem 1rem; border-radius: 0 0 .6rem 0; transform: translateY(-200%); transition: transform .15s ease; }
-.skip-link:focus { transform: translateY(0); }
-:focus-visible { outline: 2px solid #C03D0A; outline-offset: 2px; }
-
-/* ===== COOKIE BANNER (RODO) ===== */
-.cookie-banner {
-  position: fixed; left: 1rem; right: 1rem; bottom: 5rem; z-index: 110;
-  max-width: 44rem; margin: 0 auto;
-  background: #0D0905; color: #FBF4E6;
-  border: 1px solid rgba(192,61,10,.3); border-radius: 1rem;
-  padding: 1rem 1.25rem; box-shadow: 0 20px 60px -20px rgba(0,0,0,.6);
-  display: none;
-}
-@media (min-width:1024px){ .cookie-banner { bottom: 1rem; } }
-.cookie-banner.show { display: flex; flex-wrap: wrap; gap: .75rem 1.25rem; align-items: center; justify-content: space-between; }
-.cookie-banner a { color: #D95420; text-decoration: underline; }
-.cookie-banner__btns { display: flex; gap: .5rem; flex-wrap: wrap; }
-
-/* ===== REDUCED MOTION ===== */
-@media (prefers-reduced-motion: reduce) {
-  html { scroll-behavior: auto; }
-  .marquee-inner { animation: none; }
-  .reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
-  .pulse-dot { animation: none; }
-  .gallery-tile:hover img { transform: none; }
-  * { animation-duration: .01ms !important; transition-duration: .01ms !important; }
-}
-</style>
-<meta name="robots" content="index, follow">
-<meta name="author" content="Asian Tendur Grill">
-<meta name="keywords" content="kebab, kebab z dostawą, durum, kebab w bułce, zestawy rodzinne, Ełk">
-<meta property="og:type" content="website">
-<meta property="og:locale" content="pl_PL">
-<meta property="og:site_name" content="Asian Tendur Grill">
-<meta property="og:title" content="Asian Tendur Grill — Kebab | Ełk">
-<meta property="og:description" content="Asian Tendur Grill — kebab. Ełk i okolice. Oferujemy: Kebab z rożna, Dostawa pod drzwi, Odbiór osobisty i Zestawy rodzinne.">
-<meta property="og:image" content="https://lh3.googleusercontent.com/gps-cs-s/APNQkAFvmBDoh3GJt5A3WvNHGH3XTm8WMRBYGLCMrWzizWuYZgs9gJiHmp1B5cMMOMAlTzt-nvfFwEuQa6LMEmYmXxmo4ThV_3g9uGj8-TGuQOa4ZbxnIzPlSu9eHhGlFCYoBk4Oqj8rPGRxxxst=w1280-h960-k-no">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Asian Tendur Grill — Kebab | Ełk">
-<meta name="twitter:description" content="Asian Tendur Grill — kebab. Ełk i okolice. Oferujemy: Kebab z rożna, Dostawa pod drzwi, Odbiór osobisty i Zestawy rodzinne.">
-<meta name="twitter:image" content="https://lh3.googleusercontent.com/gps-cs-s/APNQkAFvmBDoh3GJt5A3WvNHGH3XTm8WMRBYGLCMrWzizWuYZgs9gJiHmp1B5cMMOMAlTzt-nvfFwEuQa6LMEmYmXxmo4ThV_3g9uGj8-TGuQOa4ZbxnIzPlSu9eHhGlFCYoBk4Oqj8rPGRxxxst=w1280-h960-k-no">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23b91c1c'/%3E%3Cstop offset='1' stop-color='%23f59e0b'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='url(%23g)'/%3E%3Ctext x='32' y='44' font-family='Segoe UI, sans-serif' font-size='32' font-weight='700' fill='%23ffffff' text-anchor='middle'%3EAT%3C/text%3E%3C/svg%3E">
-<script type="application/ld+json">
+  <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Restaurant",
+  "@type": "LocalBusiness",
   "name": "Asian Tendur Grill",
-  "description": "Asian Tendur Grill — kebab. Ełk i okolice. Oferujemy: Kebab z rożna, Dostawa pod drzwi, Odbiór osobisty i Zestawy rodzinne.",
+  "description": "Asian Tendur Grill — usługi dla klientów. Ełk i okolice. Oferujemy: Profesjonalna obsługa, Doradztwo, Realizacja i Wsparcie.",
   "image": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFvmBDoh3GJt5A3WvNHGH3XTm8WMRBYGLCMrWzizWuYZgs9gJiHmp1B5cMMOMAlTzt-nvfFwEuQa6LMEmYmXxmo4ThV_3g9uGj8-TGuQOa4ZbxnIzPlSu9eHhGlFCYoBk4Oqj8rPGRxxxst=w1280-h960-k-no",
   "telephone": "+48513621251",
   "address": {
@@ -240,1036 +48,985 @@ section[id] { scroll-margin-top: 4.5rem; }
   "openingHours": [
     "Mo-Su 10:00-23:00"
   ],
-  "hasMenu": {
-    "@type": "Menu",
-    "hasMenuSection": [
-      {
-        "@type": "MenuSection",
-        "name": "Kebaby",
-        "hasMenuItem": [
-          {
-            "@type": "MenuItem",
-            "name": "Kebab w tortilli",
-            "description": "kurczak / wołowina / mieszany, warzywa, sos do wyboru",
-            "offers": {
-              "@type": "Offer",
-              "price": "28",
-              "priceCurrency": "PLN"
-            }
-          },
-          {
-            "@type": "MenuItem",
-            "name": "Kebab w bułce",
-            "description": "świeża bułka, mięso z rożna, sałata, sos",
-            "offers": {
-              "@type": "Offer",
-              "price": "26",
-              "priceCurrency": "PLN"
-            }
-          },
-          {
-            "@type": "MenuItem",
-            "name": "Durum (zawijany)",
-            "description": "cienka tortilla, mięso, warzywa, sos",
-            "offers": {
-              "@type": "Offer",
-              "price": "30",
-              "priceCurrency": "PLN"
-            }
-          },
-          {
-            "@type": "MenuItem",
-            "name": "Kebab Box",
-            "description": "mięso, frytki, surówka, 2 sosy",
-            "offers": {
-              "@type": "Offer",
-              "price": "38",
-              "priceCurrency": "PLN"
-            }
-          },
-          {
-            "@type": "MenuItem",
-            "name": "Falafel wrap (wege)",
-            "description": "falafel z ciecierzycy, sałata, sos jogurtowy",
-            "offers": {
-              "@type": "Offer",
-              "price": "27",
-              "priceCurrency": "PLN"
-            }
-          }
-        ]
-      },
-      {
-        "@type": "MenuSection",
-        "name": "Zestawy",
-        "hasMenuItem": [
-          {
-            "@type": "MenuItem",
-            "name": "Zestaw studencki",
-            "description": "kebab w tortilli M + napój 0,5 l",
-            "offers": {
-              "@type": "Offer",
-              "price": "35",
-              "priceCurrency": "PLN"
-            }
-          },
-          {
-            "@type": "MenuItem",
-            "name": "Mega zestaw",
-            "description": "kebab XL + frytki duże + sos + napój 1 l",
-            "offers": {
-              "@type": "Offer",
-              "price": "55",
-              "priceCurrency": "PLN"
-            }
-          },
-          {
-            "@type": "MenuItem",
-            "name": "Zestaw rodzinny x2",
-            "description": "2× kebab L + 2× frytki + 2× napój",
-            "offers": {
-              "@type": "Offer",
-              "price": "75",
-              "priceCurrency": "PLN"
-            }
-          }
-        ]
-      },
-      {
-        "@type": "MenuSection",
-        "name": "Dodatki",
-        "hasMenuItem": [
-          {
-            "@type": "MenuItem",
-            "name": "Frytki",
-            "description": "małe lub duże",
-            "offers": {
-              "@type": "Offer",
-              "price": "8",
-              "priceCurrency": "PLN"
-            }
-          },
-          {
-            "@type": "MenuItem",
-            "name": "Sos",
-            "description": "czosnkowy, ostry, jogurtowy, BBQ",
-            "offers": {
-              "@type": "Offer",
-              "price": "4",
-              "priceCurrency": "PLN"
-            }
-          },
-          {
-            "@type": "MenuItem",
-            "name": "Hummus",
-            "description": "klasyczny z ciecierzycy z oliwą",
-            "offers": {
-              "@type": "Offer",
-              "price": "9",
-              "priceCurrency": "PLN"
-            }
-          }
-        ]
-      },
-      {
-        "@type": "MenuSection",
-        "name": "Napoje",
-        "hasMenuItem": [
-          {
-            "@type": "MenuItem",
-            "name": "Coca-Cola / Fanta / Sprite",
-            "description": "puszka lub butelka",
-            "offers": {
-              "@type": "Offer",
-              "price": "7",
-              "priceCurrency": "PLN"
-            }
-          },
-          {
-            "@type": "MenuItem",
-            "name": "Ayran",
-            "description": "jogurt pitny z solą",
-            "offers": {
-              "@type": "Offer",
-              "price": "6",
-              "priceCurrency": "PLN"
-            }
-          },
-          {
-            "@type": "MenuItem",
-            "name": "Woda",
-            "description": "gazowana / niegazowana",
-            "offers": {
-              "@type": "Offer",
-              "price": "4",
-              "priceCurrency": "PLN"
-            }
-          }
-        ]
-      }
-    ]
-  },
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingValue": "4.8",
+    "ratingValue": "4.9",
     "reviewCount": 66
   }
 }
-</script>
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Jak szybko mogę otrzymać wycenę?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Wycenę przygotowujemy zwykle w ciągu jednego dnia roboczego od kontaktu."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Czy wystawiacie faktury?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tak, wystawiamy faktury dla klientów indywidualnych i firm."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Na jakim obszarze działacie?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Działamy lokalnie — w razie wątpliwości zadzwoń i potwierdź dostępność."
+      }
+    }
+  ]
+}
+  </script>
+  <style>
+:root {
+  --c-primary: #2563eb;
+  --c-primary-dark: #1f53c5;
+  --c-primary-light: #81a5f3;
+  --c-primary-soft: #e9effd;
+  --c-on-primary: #ffffff;
+  --c-accent: #f59e0b;
+  --c-accent-dark: #d38809;
+  --c-on-accent: #0b1220;
+  --c-ink: #0f172a;
+  --c-ink-muted: #51607a;
+  --c-bg: #ffffff;
+  --c-surface: #ffffff;
+  --c-surface-alt: #eef2fb;
+  --c-border: #e6eaf2;
+  --c-footer-bg: #0b1220;
+  --c-footer-ink: #f8fafc;
+  --c-footer-muted: #9ea2a8;
+  --c-hero-overlay: #0a101d;
+
+  --font-heading: 'Plus Jakarta Sans', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  --fw-heading: 800;
+  --ls-heading: -0.025em;
+  --ls-eyebrow: 0.08em;
+  --tt-eyebrow: uppercase;
+
+  --r-card: 20px;
+  --r-button: 12px;
+  --r-input: 12px;
+  --r-pill: 999px;
+
+  --sh-sm: 0 1px 2px rgba(30, 41, 59, 0.06), 0 1px 3px rgba(30, 41, 59, 0.1);
+  --sh-card: 0 6px 24px rgba(30, 41, 59, 0.08), 0 1px 2px rgba(30, 41, 59, 0.06);
+  --sh-hover: 0 18px 48px rgba(30, 41, 59, 0.16), 0 4px 12px rgba(30, 41, 59, 0.08);
+  --sh-header: 0 4px 20px rgba(30, 41, 59, 0.08);
+  --sh-button: 0 8px 20px rgba(37, 99, 235, 0.28);
+
+  --container: 1160px;
+  --gutter: clamp(1.1rem, 4vw, 2rem);
+  --space-section: clamp(3.5rem, 8vw, 7rem);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+* { margin: 0; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; scroll-padding-top: 5.5rem; }
+body {
+  font-family: var(--font-body);
+  color: var(--c-ink);
+  background: var(--c-bg);
+  line-height: 1.65;
+  font-size: clamp(1rem, 0.96rem + 0.2vw, 1.075rem);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+img, svg, video { display: block; max-width: 100%; height: auto; }
+a { color: inherit; text-decoration: none; }
+ul, ol { list-style: none; padding: 0; }
+button { font: inherit; cursor: pointer; border: none; background: none; color: inherit; }
+input, textarea, select { font: inherit; color: inherit; }
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  font-weight: var(--fw-heading);
+  letter-spacing: var(--ls-heading);
+  line-height: 1.12;
+  color: var(--c-ink);
+  text-wrap: balance;
+}
+h1 { font-size: clamp(2.3rem, 1.6rem + 3.4vw, 4rem); }
+h2 { font-size: clamp(1.8rem, 1.4rem + 1.9vw, 2.7rem); }
+h3 { font-size: clamp(1.2rem, 1.1rem + 0.5vw, 1.4rem); }
+p { color: var(--c-ink-muted); }
+
+:focus-visible {
+  outline: 3px solid var(--c-accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* ---------- Układ ---------- */
+.container { width: 100%; max-width: var(--container); margin-inline: auto; padding-inline: var(--gutter); }
+.section { padding-block: var(--space-section); }
+.section--alt { background: var(--c-surface-alt); }
+.section--ink { background: var(--c-footer-bg); color: var(--c-footer-ink); }
+.section--ink h2, .section--ink h3 { color: var(--c-footer-ink); }
+.section--tight { padding-block: clamp(2.5rem, 5vw, 4rem); }
+
+.section-head { max-width: 44rem; margin: 0 auto clamp(2rem, 4vw, 3.25rem); text-align: center; }
+.section-head--left { margin-inline: 0; text-align: left; }
+.section-head .lead { margin-top: 0.9rem; font-size: 1.1rem; }
+
+.eyebrow {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: var(--ls-eyebrow);
+  text-transform: var(--tt-eyebrow);
+  color: var(--c-primary);
+  margin-bottom: 0.7rem;
+}
+.section--ink .eyebrow { color: var(--c-accent); }
+.lead { color: var(--c-ink-muted); font-size: 1.12rem; }
+
+/* ---------- Przyciski ---------- */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 0.55rem;
+  padding: 0.85rem 1.5rem;
+  border-radius: var(--r-button);
+  font-weight: 600; font-family: var(--font-body);
+  line-height: 1.1; text-align: center;
+  transition: transform .18s ease, box-shadow .18s ease, background-color .18s ease, color .18s ease;
+  will-change: transform;
+}
+.btn svg { width: 1.1em; height: 1.1em; }
+.btn--primary { background: var(--c-primary); color: var(--c-on-primary); box-shadow: var(--sh-button); }
+.btn--primary:hover { background: var(--c-primary-dark); transform: translateY(-2px); }
+.btn--accent { background: var(--c-accent); color: var(--c-on-accent); }
+.btn--accent:hover { background: var(--c-accent-dark); transform: translateY(-2px); }
+.btn--ghost { background: transparent; color: var(--c-ink); box-shadow: inset 0 0 0 1.5px var(--c-border); }
+.btn--ghost:hover { box-shadow: inset 0 0 0 1.5px var(--c-primary); color: var(--c-primary); }
+.btn--on-dark { background: rgba(255,255,255,0.12); color: #fff; box-shadow: inset 0 0 0 1.5px rgba(255,255,255,0.4); }
+.btn--on-dark:hover { background: rgba(255,255,255,0.2); }
+.btn--lg { padding: 1.05rem 1.9rem; font-size: 1.05rem; }
+.btn--block { width: 100%; }
+
+/* ---------- Nagłówek / nawigacja ---------- */
+.site-header {
+  position: sticky; top: 0; z-index: 60;
+  background: var(--c-bg); /* fallback dla przeglądarek bez color-mix() */
+  background: color-mix(in srgb, var(--c-bg) 86%, transparent);
+  -webkit-backdrop-filter: saturate(1.4) blur(10px);
+  backdrop-filter: saturate(1.4) blur(10px);
+  transition: box-shadow .25s ease, background-color .25s ease;
+}
+.site-header.is-scrolled { box-shadow: var(--sh-header); background: var(--c-bg); background: color-mix(in srgb, var(--c-bg) 96%, transparent); }
+.nav { display: flex; align-items: center; gap: 0.6rem 1.5rem; padding-block: 0.9rem; flex-wrap: wrap; }
+.brand { display: flex; align-items: center; gap: 0.65rem; font-family: var(--font-heading); font-weight: 800; font-size: 1.2rem; letter-spacing: -0.02em; min-width: 0; flex-shrink: 1; }
+/* Pełna nazwa firmy: zawija się maks. do 2 wierszy — nie ucina się i nie rozbija nawigacji. */
+.brand > span:last-child { min-width: 0; line-height: 1.15; overflow-wrap: anywhere; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; overflow: hidden; }
+.brand__mark {
+  display: grid; place-items: center; width: 2.4rem; height: 2.4rem; flex: none;
+  border-radius: calc(var(--r-button) * 0.8);
+  background: linear-gradient(135deg, var(--c-primary), var(--c-accent));
+  color: var(--c-on-primary); font-weight: 800; font-size: 1.05rem;
+}
+.nav__links { display: flex; align-items: center; gap: 1.4rem; margin-left: auto; flex-shrink: 0; }
+.nav__links a { font-weight: 500; color: var(--c-ink-muted); transition: color .15s ease; white-space: nowrap; }
+.nav__links a:hover { color: var(--c-primary); }
+.nav__actions { display: flex; align-items: center; gap: 0.8rem; flex-shrink: 0; }
+.nav__phone { display: inline-flex; align-items: center; gap: 0.45rem; font-weight: 700; color: var(--c-ink); white-space: nowrap; }
+.nav__phone svg { width: 1.05rem; height: 1.05rem; color: var(--c-primary); }
+.nav__toggle { display: none; width: 2.8rem; height: 2.8rem; border-radius: var(--r-button); align-items: center; justify-content: center; }
+.nav__toggle span, .nav__toggle span::before, .nav__toggle span::after { content: ""; display: block; width: 22px; height: 2px; background: var(--c-ink); border-radius: 2px; position: relative; transition: transform .25s ease, opacity .2s ease; }
+.nav__toggle span::before { position: absolute; top: -7px; }
+.nav__toggle span::after { position: absolute; top: 7px; }
+
+@media (max-width: 880px) {
+  .nav { gap: 0.75rem; }
+  .brand { min-width: 0; font-size: 1.05rem; }
+  .nav__toggle { display: inline-flex; margin-left: auto; flex: none; }
+  .nav__links {
+    position: fixed; inset: 0 0 auto 0; top: 0; margin: 0;
+    flex-direction: column; align-items: flex-start; gap: 0.4rem;
+    background: var(--c-surface); padding: 5rem 1.5rem 2rem;
+    box-shadow: var(--sh-hover); transform: translateY(-110%); visibility: hidden;
+    transition: transform .3s ease, visibility .3s ease; z-index: 55;
+  }
+  .nav__links a { font-size: 1.15rem; padding-block: 0.5rem; color: var(--c-ink); }
+  body.nav-open .nav__links { transform: translateY(0); visibility: visible; }
+  body.nav-open .nav__toggle span { background: transparent; }
+  body.nav-open .nav__toggle span::before { transform: translateY(7px) rotate(45deg); }
+  body.nav-open .nav__toggle span::after { transform: translateY(-7px) rotate(-45deg); }
+  .nav__actions .btn { display: none; }
+}
+@media (max-width: 560px) {
+  .nav__phone span { display: none; } /* zostaje sama klikalna ikona telefonu */
+}
+
+/* ---------- Hero ---------- */
+.hero { position: relative; isolation: isolate; color: #fff; }
+.hero__bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; }
+.hero::after {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--c-hero-overlay) 78%, transparent), color-mix(in srgb, var(--c-hero-overlay) 92%, transparent)),
+    linear-gradient(115deg, color-mix(in srgb, var(--c-primary) 55%, transparent), transparent 60%);
+}
+.hero--overlay .hero__inner { padding-block: clamp(5rem, 13vw, 9rem); max-width: 50rem; }
+.hero__eyebrow { color: #fff; opacity: .9; }
+.hero__title { color: #fff; }
+.hero__sub { color: rgba(255,255,255,0.92); font-size: clamp(1.05rem, 1rem + 0.4vw, 1.3rem); margin-top: 1.1rem; max-width: 38rem; }
+.hero__actions { display: flex; flex-wrap: wrap; gap: 0.9rem; margin-top: 2rem; }
+.hero__badges { display: flex; flex-wrap: wrap; gap: 1.4rem 2rem; margin-top: 2.5rem; }
+.hero__badge { display: flex; align-items: center; gap: 0.55rem; font-weight: 600; font-size: 0.95rem; color: rgba(255,255,255,0.95); }
+.hero__badge svg { width: 1.25rem; height: 1.25rem; color: var(--c-accent); flex: none; }
+
+/* wariant „split": tekst + karta z obrazem */
+.hero--split { color: var(--c-ink); }
+.hero--split::after { display: none; }
+.hero--split .hero__inner { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: clamp(2rem, 5vw, 4rem); align-items: center; padding-block: clamp(3.5rem, 8vw, 6rem); }
+.hero--split .hero__title, .hero--split .hero__eyebrow { color: var(--c-ink); }
+.hero--split .hero__sub { color: var(--c-ink-muted); }
+.hero--split .hero__badge { color: var(--c-ink); }
+.hero--split .hero__badge svg { color: var(--c-primary); }
+.hero__media { position: relative; border-radius: calc(var(--r-card) * 1.2); overflow: hidden; box-shadow: var(--sh-hover); aspect-ratio: 4/5; background: linear-gradient(135deg, var(--c-primary), var(--c-accent)); }
+.hero__media img { width: 100%; height: 100%; object-fit: cover; }
+.hero__media-badge { position: absolute; left: 1rem; bottom: 1rem; right: 1rem; display: flex; align-items: center; gap: 0.75rem; background: var(--c-surface); color: var(--c-ink); padding: 0.85rem 1rem; border-radius: var(--r-button); box-shadow: var(--sh-card); }
+.hero__media-badge strong { font-family: var(--font-heading); }
+.hero__media-badge .stars { color: var(--c-accent); }
+@media (max-width: 820px) { .hero--split .hero__inner { grid-template-columns: 1fr; } .hero__media { aspect-ratio: 16/11; max-width: 32rem; } }
+
+/* ---------- Pasek zaufania ---------- */
+.trustbar { background: var(--c-surface); border-block: 1px solid var(--c-border); }
+.trustbar__inner { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.25rem 2rem; padding-block: 1.6rem; }
+.trustbar__item { display: flex; align-items: center; gap: 0.8rem; }
+.trustbar__item svg { width: 1.6rem; height: 1.6rem; color: var(--c-primary); flex: none; }
+.trustbar__item strong { display: block; font-family: var(--font-heading); font-size: 0.98rem; }
+.trustbar__item span { font-size: 0.86rem; color: var(--c-ink-muted); }
+
+/* ---------- Karty / siatki ---------- */
+.grid { display: grid; gap: clamp(1rem, 2.5vw, 1.6rem); }
+.grid--3 { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+.grid--4 { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+.grid--2 { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+
+.card {
+  background: var(--c-surface); border: 1px solid var(--c-border);
+  border-radius: var(--r-card); padding: clamp(1.5rem, 3vw, 2rem);
+  box-shadow: var(--sh-sm); transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+  height: 100%;
+}
+.card:hover { transform: translateY(-4px); box-shadow: var(--sh-hover); border-color: transparent; }
+.card h3 { margin-bottom: 0.55rem; }
+.card p { font-size: 0.98rem; }
+
+.icon-badge {
+  display: grid; place-items: center; width: 3.2rem; height: 3.2rem; margin-bottom: 1.1rem;
+  border-radius: calc(var(--r-card) * 0.65);
+  background: var(--c-primary-soft); color: var(--c-primary);
+}
+.icon-badge svg { width: 1.6rem; height: 1.6rem; }
+
+/* ---------- O nas ---------- */
+.about__grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 5vw, 4rem); align-items: center; }
+.about__media { position: relative; border-radius: var(--r-card); overflow: hidden; box-shadow: var(--sh-hover); aspect-ratio: 5/4; background: linear-gradient(135deg, var(--c-primary), var(--c-accent)); }
+.about__media img { width: 100%; height: 100%; object-fit: cover; }
+.about__points { display: grid; gap: 0.85rem; margin-top: 1.5rem; }
+.about__point { display: flex; align-items: flex-start; gap: 0.75rem; }
+.about__point svg { width: 1.4rem; height: 1.4rem; color: var(--c-primary); flex: none; margin-top: 0.15rem; }
+.about__point span { font-weight: 500; color: var(--c-ink); }
+.about p + p { margin-top: 1rem; }
+@media (max-width: 820px) { .about__grid { grid-template-columns: 1fr; } .about__media { aspect-ratio: 16/10; } .about--reverse .about__media { order: -1; } }
+
+/* ---------- Proces ---------- */
+.steps { counter-reset: step; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: clamp(1.2rem, 3vw, 2rem); }
+.step { position: relative; padding-top: 0.5rem; }
+.step__num { display: grid; place-items: center; width: 2.9rem; height: 2.9rem; border-radius: var(--r-pill); background: var(--c-primary); color: var(--c-on-primary); font-family: var(--font-heading); font-weight: 800; margin-bottom: 1rem; }
+.step h3 { font-size: 1.15rem; margin-bottom: 0.4rem; }
+.step p { font-size: 0.95rem; }
+
+/* ---------- Statystyki ---------- */
+.stats__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: clamp(1.2rem, 3vw, 2rem); text-align: center; }
+.stat__value { font-family: var(--font-heading); font-weight: 800; font-size: clamp(2.2rem, 1.6rem + 2.4vw, 3.4rem); line-height: 1; color: var(--c-primary); }
+.section--ink .stat__value { color: var(--c-accent); }
+.stat__label { margin-top: 0.5rem; color: var(--c-ink-muted); font-weight: 500; }
+.section--ink .stat__label { color: var(--c-footer-muted); }
+
+/* ---------- Galeria ---------- */
+.gallery__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0.9rem; }
+.gallery__item { position: relative; border-radius: var(--r-card); overflow: hidden; aspect-ratio: 4/3; background: linear-gradient(135deg, var(--c-primary), var(--c-accent)); cursor: zoom-in; }
+.gallery__item img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s ease; }
+.gallery__item:hover img { transform: scale(1.06); }
+.gallery__item:nth-child(4n+1) { grid-column: span 2; }
+/* mała galeria (2–3 zdjęcia): bez span 2, wyśrodkowana, by nie zostawiać pustych kolumn */
+.gallery__grid--compact { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); max-width: 940px; margin-inline: auto; }
+.gallery__grid--compact .gallery__item { grid-column: span 1; }
+@media (max-width: 560px) { .gallery__item:nth-child(4n+1) { grid-column: span 1; } }
+
+.lightbox { position: fixed; inset: 0; z-index: 200; display: none; place-items: center; padding: 1.5rem; background: rgba(7, 10, 16, 0.86); backdrop-filter: blur(4px); }
+.lightbox.is-open { display: grid; }
+.lightbox img { max-width: min(94vw, 1100px); max-height: 88vh; border-radius: var(--r-card); box-shadow: var(--sh-hover); }
+.lightbox__close { position: absolute; top: 1.2rem; right: 1.4rem; width: 3rem; height: 3rem; border-radius: var(--r-pill); background: rgba(255,255,255,0.14); color: #fff; font-size: 1.5rem; display: grid; place-items: center; }
+
+/* ---------- Opinie ---------- */
+.testi-card { display: flex; flex-direction: column; gap: 1.1rem; }
+.stars { display: inline-flex; gap: 0.1rem; color: var(--c-accent); }
+.stars svg { width: 1.15rem; height: 1.15rem; }
+.testi__quote { font-size: 1.05rem; color: var(--c-ink); font-style: italic; }
+.testi__author { display: flex; align-items: center; gap: 0.8rem; margin-top: auto; }
+.avatar { display: grid; place-items: center; width: 2.8rem; height: 2.8rem; border-radius: var(--r-pill); background: linear-gradient(135deg, var(--c-primary), var(--c-accent)); color: var(--c-on-primary); font-weight: 700; flex: none; }
+.testi__author strong { display: block; font-size: 0.98rem; }
+.testi__author span { font-size: 0.85rem; color: var(--c-ink-muted); }
+
+/* ---------- Cennik ---------- */
+.pricing__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: clamp(1.2rem, 3vw, 1.8rem); align-items: stretch; }
+.price-card { display: flex; flex-direction: column; }
+.price-card--featured { border-color: var(--c-primary); box-shadow: var(--sh-hover); position: relative; }
+.price-card__tag { position: absolute; top: -0.85rem; left: 50%; transform: translateX(-50%); background: var(--c-primary); color: var(--c-on-primary); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; padding: 0.35rem 0.9rem; border-radius: var(--r-pill); }
+.price__amount { font-family: var(--font-heading); font-weight: 800; font-size: 2.4rem; color: var(--c-ink); margin-block: 0.6rem 0.2rem; }
+.price__amount span { font-size: 1rem; font-weight: 500; color: var(--c-ink-muted); }
+.price-card ul { display: grid; gap: 0.6rem; margin-block: 1.2rem; }
+.price-card li { display: flex; gap: 0.6rem; align-items: flex-start; font-size: 0.96rem; }
+.price-card li svg { width: 1.15rem; height: 1.15rem; color: var(--c-primary); flex: none; margin-top: 0.18rem; }
+.price-card .btn { margin-top: auto; }
+
+/* ---------- FAQ ---------- */
+.faq__list { max-width: 48rem; margin-inline: auto; display: grid; gap: 0.8rem; }
+.faq__item { background: var(--c-surface); border: 1px solid var(--c-border); border-radius: var(--r-button); overflow: hidden; }
+.faq__q { width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: 1.15rem 1.3rem; font-family: var(--font-heading); font-weight: 600; font-size: 1.05rem; text-align: left; color: var(--c-ink); }
+.faq__q::after { content: "+"; font-size: 1.5rem; line-height: 1; color: var(--c-primary); transition: transform .25s ease; flex: none; }
+.faq__item.is-open .faq__q::after { transform: rotate(45deg); }
+.faq__a { max-height: 0; overflow: hidden; transition: max-height .3s ease; }
+.faq__a p { padding: 0 1.3rem 1.2rem; color: var(--c-ink-muted); }
+
+/* ---------- Pasek CTA ---------- */
+.cta-band { position: relative; isolation: isolate; color: #fff; overflow: hidden; border-radius: clamp(0px, 0px, 0px); }
+.cta-band__inner { position: relative; text-align: center; padding-block: clamp(3rem, 7vw, 5rem); }
+.cta-band::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(120deg, var(--c-primary), var(--c-accent)); }
+.cta-band h2 { color: #fff; max-width: 36rem; margin-inline: auto; }
+.cta-band p { color: rgba(255,255,255,0.92); margin-top: 0.9rem; max-width: 36rem; margin-inline: auto; }
+.cta-band .hero__actions { justify-content: center; }
+
+/* ---------- Kontakt ---------- */
+.contact__grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 5vw, 3.5rem); align-items: start; }
+.contact__info { display: grid; gap: 1.2rem; }
+.contact__row { display: flex; align-items: flex-start; gap: 0.9rem; }
+.contact__row svg { width: 1.5rem; height: 1.5rem; color: var(--c-primary); flex: none; margin-top: 0.15rem; }
+.contact__row strong { display: block; font-family: var(--font-heading); }
+.contact__row a, .contact__row span { color: var(--c-ink-muted); }
+.contact__row a:hover { color: var(--c-primary); }
+.hours { display: grid; gap: 0.35rem; margin-top: 0.4rem; }
+.hours div { display: flex; justify-content: space-between; gap: 1rem; max-width: 22rem; font-size: 0.95rem; }
+.hours span:first-child { color: var(--c-ink); font-weight: 500; }
+.hours span:last-child { color: var(--c-ink-muted); }
+
+.contact__form { background: var(--c-surface); border: 1px solid var(--c-border); border-radius: var(--r-card); padding: clamp(1.5rem, 3vw, 2rem); box-shadow: var(--sh-card); }
+.field { margin-bottom: 1rem; }
+.field label { display: block; font-weight: 600; font-size: 0.9rem; margin-bottom: 0.4rem; }
+.field input, .field textarea {
+  width: 100%; padding: 0.8rem 0.95rem; border: 1.5px solid var(--c-border);
+  border-radius: var(--r-input); background: var(--c-bg); transition: border-color .15s ease, box-shadow .15s ease;
+}
+.field input:focus, .field textarea:focus { outline: none; border-color: var(--c-primary); box-shadow: 0 0 0 3px color-mix(in srgb, var(--c-primary) 18%, transparent); }
+.field textarea { resize: vertical; min-height: 120px; }
+.form-note { font-size: 0.82rem; color: var(--c-ink-muted); margin-top: 0.6rem; }
+@media (max-width: 820px) { .contact__grid { grid-template-columns: 1fr; } }
+
+.map-link { display: inline-flex; align-items: center; gap: 0.5rem; margin-top: 0.6rem; font-weight: 600; color: var(--c-primary); }
+.map-link svg { width: 1.1rem; height: 1.1rem; }
+
+/* ---------- Menu (lodziarnie / kawiarnie / cukiernie) ---------- */
+.menu__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: clamp(1.8rem, 4vw, 3rem) clamp(2rem, 5vw, 4rem); }
+.menu__cat-head { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; padding-bottom: 0.7rem; margin-bottom: 1.1rem; border-bottom: 2px solid var(--c-primary-soft); }
+.menu__cat-head h3 { font-size: 1.4rem; }
+.menu__note { font-size: 0.82rem; color: var(--c-ink-muted); font-style: italic; text-align: right; flex: none; }
+.menu__list { display: grid; gap: 1.05rem; }
+.menu__line { display: flex; align-items: baseline; gap: 0.4rem; }
+.menu__name { font-family: var(--font-heading); font-weight: 600; color: var(--c-ink); }
+.menu__dots { flex: 1; border-bottom: 2px dotted var(--c-border); transform: translateY(-0.28rem); min-width: 1.5rem; }
+.menu__price { font-family: var(--font-heading); font-weight: 700; color: var(--c-primary); white-space: nowrap; }
+.menu__desc { font-size: 0.92rem; margin-top: 0.15rem; max-width: 92%; }
+.menu__tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.5rem; }
+.menu__tag { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.02em; color: var(--c-primary); background: var(--c-primary-soft); padding: 0.18rem 0.62rem; border-radius: var(--r-pill); }
+
+/* ---------- Mapa dojazdu ---------- */
+.map__grid { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: clamp(2rem, 5vw, 3.5rem); align-items: start; }
+.map__info { display: grid; gap: 1.2rem; align-content: start; }
+.map__row { display: flex; align-items: flex-start; gap: 0.9rem; }
+.map__row svg { width: 1.5rem; height: 1.5rem; color: var(--c-primary); flex: none; margin-top: 0.15rem; }
+.map__row strong { display: block; font-family: var(--font-heading); }
+.map__row span { color: var(--c-ink-muted); }
+.map__info .btn { justify-self: start; }
+.map__embed { border-radius: var(--r-card); overflow: hidden; box-shadow: var(--sh-card); border: 1px solid var(--c-border); aspect-ratio: 4/3; background: var(--c-surface-alt); }
+.map__embed iframe { width: 100%; height: 100%; border: 0; display: block; }
+@media (max-width: 820px) { .map__grid { grid-template-columns: 1fr; } .map__embed { aspect-ratio: 16/11; } }
+
+/* ---------- Plakietka „Otwarte teraz" ---------- */
+.open-status { display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; font-weight: 600; padding: 0.4rem 0.9rem; border-radius: var(--r-pill); background: var(--c-surface); color: var(--c-ink); box-shadow: var(--sh-sm); border: 1px solid var(--c-border); }
+.open-status__dot { width: 0.55rem; height: 0.55rem; border-radius: 50%; background: var(--c-ink-muted); flex: none; }
+.open-status.is-open .open-status__dot { background: #16a34a; box-shadow: 0 0 0 3px color-mix(in srgb, #16a34a 28%, transparent); }
+.open-status.is-closed .open-status__dot { background: #dc2626; }
+.hero__status { margin-top: 1.3rem; }
+.hero--overlay .hero__status { background: rgba(255,255,255,0.92); color: #16110c; border-color: transparent; }
+
+/* ---------- Stopka ---------- */
+.site-footer { background: var(--c-footer-bg); color: var(--c-footer-ink); padding-block: clamp(3rem, 6vw, 4.5rem) 1.5rem; }
+.footer__grid { display: grid; grid-template-columns: 1.4fr repeat(auto-fit, minmax(150px, 1fr)); gap: 2rem; }
+.footer__col { min-width: 0; }
+.footer__brand .brand { color: var(--c-footer-ink); margin-bottom: 1rem; }
+.footer__brand p { color: var(--c-footer-muted); max-width: 24rem; font-size: 0.95rem; }
+.footer__col h3 { font-size: 0.9rem; letter-spacing: 0.04em; text-transform: uppercase; color: var(--c-footer-ink); margin-bottom: 1rem; }
+.footer__col a, .footer__col span { display: block; color: var(--c-footer-muted); padding-block: 0.28rem; font-size: 0.95rem; overflow-wrap: anywhere; }
+@media (max-width: 760px) { .footer__grid { grid-template-columns: 1fr; gap: 1.5rem; } }
+.footer__col a:hover { color: var(--c-footer-ink); }
+.socials { display: flex; gap: 0.7rem; margin-top: 1rem; }
+.socials a { display: grid; place-items: center; width: 2.5rem; height: 2.5rem; border-radius: var(--r-pill); background: rgba(255,255,255,0.08); color: var(--c-footer-ink); transition: background-color .15s ease, transform .15s ease; }
+.socials a:hover { background: var(--c-primary); transform: translateY(-2px); }
+.socials svg { width: 1.2rem; height: 1.2rem; }
+.footer__bottom { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.8rem; margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.12); font-size: 0.85rem; color: var(--c-footer-muted); }
+.footer__bottom a { color: var(--c-footer-muted); text-decoration: underline; text-underline-offset: 3px; }
+.footer__bottom a:hover { color: var(--c-footer-ink); }
+.footer__legal { display: flex; flex-wrap: wrap; gap: 0.4rem 1.2rem; }
+
+/* ---------- Baner cookies (RODO) ---------- */
+.cookie {
+  position: fixed; left: 1rem; right: 1rem; bottom: 1rem; z-index: 120;
+  max-width: 30rem; margin-inline: auto;
+  background: var(--c-surface); color: var(--c-ink); border: 1px solid var(--c-border);
+  border-radius: var(--r-card); box-shadow: var(--sh-hover); padding: 1.25rem 1.35rem;
+  transform: translateY(160%); transition: transform .4s ease;
+}
+.cookie.is-visible { transform: translateY(0); }
+.cookie p { font-size: 0.9rem; color: var(--c-ink-muted); }
+.cookie p a { color: var(--c-primary); text-decoration: underline; }
+.cookie__actions { display: flex; gap: 0.6rem; margin-top: 0.9rem; }
+.cookie .btn { padding: 0.6rem 1.1rem; font-size: 0.9rem; }
+
+/* ---------- Powrót do góry ---------- */
+.to-top {
+  position: fixed; right: 1.2rem; bottom: 1.2rem; z-index: 90;
+  width: 3rem; height: 3rem; border-radius: var(--r-pill);
+  background: var(--c-primary); color: var(--c-on-primary); box-shadow: var(--sh-button);
+  display: grid; place-items: center; opacity: 0; visibility: hidden;
+  transform: translateY(10px); transition: opacity .25s ease, transform .25s ease, visibility .25s;
+}
+.to-top.is-visible { opacity: 1; visibility: visible; transform: translateY(0); }
+.to-top svg { width: 1.3rem; height: 1.3rem; }
+
+/* ---------- Animacje wejścia ---------- */
+.reveal { opacity: 0; transform: translateY(22px); transition: opacity .6s ease, transform .6s ease; }
+.reveal.is-visible { opacity: 1; transform: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .001ms !important; transition-duration: .001ms !important; }
+  .reveal { opacity: 1; transform: none; }
+}
+
+/* ---------- Drobne ---------- */
+.skip-link { position: absolute; left: -999px; top: 0; background: var(--c-primary); color: var(--c-on-primary); padding: 0.7rem 1.1rem; border-radius: 0 0 var(--r-button) 0; z-index: 200; }
+.skip-link:focus { left: 0; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+  </style>
 </head>
-
-<!-- pb-14 lg:pb-0 — kompensata za sticky mobile order bar -->
-<body class="pb-14 lg:pb-0">
-
-<a href="#main" class="skip-link">Przejdź do treści</a>
-
-<!-- ===================================================
-     NAV
-     =================================================== -->
-<header class="fixed top-0 left-0 right-0 z-50">
-  <div class="bg-k-dark/92 backdrop-blur-sm border-b border-white/5">
-    <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-[3.75rem] flex items-center justify-between" aria-label="Nawigacja główna">
-
-      <a href="#hero" class="flex items-center gap-2.5 min-w-0" aria-label="Asian Tendur Grill — strona główna" data-testid="nav-logo">
-        <span class="w-8 h-8 rounded-lg bg-k-red flex items-center justify-center text-white font-bold text-sm shrink-0" aria-hidden="true">AT</span>
-        <span class="text-k-cream font-semibold text-base sm:text-[1.05rem] tracking-tight truncate">Asian Tendur Grill</span>
-      </a>
-
-      <div class="hidden lg:flex items-center gap-8 text-sm text-k-cream/65">
-        <a href="#menu"   class="nav-link" data-testid="nav-menu">Menu</a>
-        <a href="#zamow"  class="nav-link" data-testid="nav-order">Zamów</a>
-        <a href="#galeria" class="nav-link" data-testid="nav-gallery">Galeria</a>
-        <a href="#opinie" class="nav-link" data-testid="nav-reviews">Opinie</a>
-        <a href="#kontakt" class="nav-link" data-testid="nav-contact">Kontakt</a>
-      </div>
-
-      <div class="hidden lg:flex items-center gap-4">
-        <a href="tel:+48513621251" class="flex items-center gap-1.5 text-k-cream/70 text-sm hover:text-k-cream transition" data-testid="nav-phone">
-          <i data-lucide="phone" class="w-3.5 h-3.5"></i>
-          +48 513 621 251
+<body>
+  <a class="skip-link" href="#main">Przejdź do treści</a>
+<header class="site-header" id="top">
+    <div class="container">
+      <nav class="nav" aria-label="Nawigacja główna">
+        <a class="brand" href="#start" aria-label="Asian Tendur Grill — strona główna">
+          <span class="brand__mark" aria-hidden="true">AT</span>
+          <span title="Asian Tendur Grill">Asian Tendur Grill</span>
         </a>
-        <a href="#zamow" class="btn-primary inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-sm font-semibold" data-testid="nav-order-btn">
-          <i data-lucide="shopping-bag" class="w-4 h-4"></i> Zamów online
-        </a>
-      </div>
-
-      <button id="mobileBtn" type="button"
-        class="lg:hidden w-10 h-10 flex items-center justify-center rounded-xl border border-white/10 text-k-cream"
-        aria-label="Otwórz menu nawigacji" aria-expanded="false" aria-controls="mobileMenu"
-        data-testid="mobile-menu-btn">
-        <i data-lucide="menu" class="w-5 h-5"></i>
-      </button>
-    </nav>
-  </div>
-
-  <div id="mobileMenu" class="mobile-menu lg:hidden absolute top-[3.75rem] left-0 right-0 bg-k-dark border-b border-white/8"
-    aria-hidden="true" data-testid="mobile-menu">
-    <div class="px-4 py-4 flex flex-col gap-0.5 text-k-cream">
-      <a href="#menu"    class="mobile-link py-3 text-sm border-b border-white/5" data-testid="m-menu">Menu</a>
-      <a href="#zamow"   class="mobile-link py-3 text-sm border-b border-white/5" data-testid="m-order">Zamów</a>
-      <a href="#galeria" class="mobile-link py-3 text-sm border-b border-white/5" data-testid="m-gallery">Galeria</a>
-      <a href="#opinie"  class="mobile-link py-3 text-sm border-b border-white/5" data-testid="m-reviews">Opinie</a>
-      <a href="#kontakt" class="mobile-link py-3 text-sm" data-testid="m-contact">Kontakt</a>
-      <div class="mt-3 grid grid-cols-2 gap-2">
-        <a href="tel:+48513621251"
-          class="flex items-center justify-center gap-2 py-3 rounded-xl border border-white/15 text-sm font-medium hover:bg-white/5 transition"
-          data-testid="m-call">
-          <i data-lucide="phone" class="w-4 h-4"></i> Zadzwoń
-        </a>
-        <a href="#zamow"
-          class="mobile-link flex items-center justify-center gap-2 py-3 rounded-xl bg-k-red text-white text-sm font-semibold"
-          data-testid="m-order-btn">
-          <i data-lucide="shopping-bag" class="w-4 h-4"></i> Zamów
-        </a>
-      </div>
-    </div>
-  </div>
-</header>
-
-<main id="main">
-
-<!-- ===================================================
-     HERO
-     =================================================== -->
-<section id="hero" class="relative hero-bg min-h-[100svh] flex items-end" style="background-image: linear-gradient(to bottom, rgba(13,9,5,0.40) 0%, rgba(13,9,5,0.84) 65%, rgba(13,9,5,0.97) 100%), url('https://lh3.googleusercontent.com/gps-cs-s/APNQkAFvmBDoh3GJt5A3WvNHGH3XTm8WMRBYGLCMrWzizWuYZgs9gJiHmp1B5cMMOMAlTzt-nvfFwEuQa6LMEmYmXxmo4ThV_3g9uGj8-TGuQOa4ZbxnIzPlSu9eHhGlFCYoBk4Oqj8rPGRxxxst=w1280-h960-k-no'); background-size: cover; background-position: center top;">
-  <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-8 sm:pb-12 w-full">
-    <div class="grid lg:grid-cols-12 gap-8 lg:gap-10 items-end">
-
-      <div class="lg:col-span-7 text-k-cream min-w-0">
-
-        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 border border-white/12 text-k-cream/80 text-[0.7rem] sm:text-xs reveal" data-testid="hero-badge">
-          <i data-lucide="map-pin" class="w-3 h-3 text-k-red"></i>
-          Kebab · Ełk
+        <ul class="nav__links" id="primary-menu">
+          <li><a href="#uslugi">Usługi</a></li>
+        <li><a href="#o-nas">O nas</a></li>
+        <li><a href="#realizacje">Realizacje</a></li>
+        <li><a href="#opinie">Opinie</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+        <div class="nav__actions">
+          <a class="nav__phone" href="tel:+48513621251"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2 4.1 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.4 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7A2 2 0 0 1 22 16.9z"/></svg><span>+48 513 621 251</span></a>
+          <a class="btn btn--primary" href="#kontakt">Kontakt</a>
+          <button class="nav__toggle" type="button" aria-label="Otwórz menu" aria-expanded="false" aria-controls="primary-menu">
+            <span></span>
+          </button>
         </div>
-
-        <h1 class="mt-3 sm:mt-4 text-[2rem] sm:text-6xl lg:text-[4.5rem] font-extrabold leading-tight sm:leading-none tracking-tight text-white reveal" data-testid="hero-title">
-          Asian Tendur Grill
-        </h1>
-
-        <p class="mt-3 text-sm sm:text-[1.05rem] text-k-cream/70 max-w-lg leading-relaxed reveal" data-testid="hero-tagline">
-          Profesjonalne usługi — Ełk i okolice. Rzetelnie, terminowo i w uczciwej cenie.
-        </p>
-
-        <div class="mt-5 sm:mt-6 flex flex-wrap gap-2.5 sm:gap-3 reveal">
-          <a href="#zamow"
-            class="btn-primary inline-flex items-center gap-2 px-4 py-2.5 sm:px-6 sm:py-3.5 rounded-xl font-semibold text-sm sm:text-base"
-            data-testid="hero-cta-order">
-            <i data-lucide="shopping-bag" class="w-4 h-4"></i> Zamów z dostawą
-          </a>
-          <a href="#menu"
-            class="btn-ghost inline-flex items-center gap-2 px-4 py-2.5 sm:px-6 sm:py-3.5 rounded-xl font-medium text-sm sm:text-base"
-            data-testid="hero-cta-menu">
-            Zobacz menu <i data-lucide="arrow-down" class="w-4 h-4"></i>
-          </a>
-        </div>
-
-        <div class="mt-7 sm:mt-9 flex flex-wrap gap-x-6 gap-y-4 sm:gap-8 reveal">
-          <div>
-            <div class="text-xl sm:text-2xl font-bold text-white">4,8★</div>
-            <div class="text-[0.7rem] sm:text-xs text-k-cream/50 mt-0.5 uppercase tracking-wide">ocena Google</div>
-          </div>
-          <div>
-            <div class="text-xl sm:text-2xl font-bold text-white">25–40 min</div>
-            <div class="text-[0.7rem] sm:text-xs text-k-cream/50 mt-0.5 uppercase tracking-wide">czas dostawy</div>
-          </div>
-          <div>
-            <div class="text-xl sm:text-2xl font-bold text-white">66+</div>
-            <div class="text-[0.7rem] sm:text-xs text-k-cream/50 mt-0.5 uppercase tracking-wide">opinii klientów</div>
-          </div>
-        </div>
-      </div><!-- /left -->
-
-      <div class="lg:col-span-5 reveal min-w-0" data-testid="hero-map-card">
-        <div class="rounded-2xl bg-k-cream/97 backdrop-blur p-3.5 sm:p-4 shadow-[0_20px_60px_-15px_rgba(13,9,5,.55)] border border-white/10">
-
-          <div class="flex items-center justify-between gap-3 mb-3">
-            <div class="min-w-0">
-              <div class="text-xs text-k-muted uppercase tracking-wider">Znajdź nas</div>
-              <div class="font-semibold text-k-text mt-0.5 truncate text-sm sm:text-base">Wojska Polskiego 59, 19-300 Ełk</div>
-            </div>
-            <div id="statusBadge"
-              class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-green-50 border border-green-200 shrink-0 text-xs font-semibold text-green-700"
-              data-testid="hero-status">
-              <span class="pulse-dot"></span> Otwarte
-            </div>
-          </div>
-
-          <div class="h-40 sm:h-48 rounded-xl overflow-hidden border border-k-text/8">
-            <iframe class="map-embed" title="Mapa dojazdu — Asian Tendur Grill" src="https://maps.google.com/maps?q=Wojska%20Polskiego%2059%2C%2019-300%20E%C5%82k&amp;z=15&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen data-testid="hero-map"></iframe>
-          </div>
-
-          <div class="mt-3 flex items-center justify-between gap-3">
-            <div class="flex items-center gap-1.5 text-sm text-k-muted">
-              <i data-lucide="clock" class="w-4 h-4 text-k-red shrink-0"></i>
-              <span id="hoursToday">Dziś: zapytaj w lokalu</span>
-            </div>
-            <a data-nav-link href="#" target="_blank" rel="noopener"
-              class="text-k-red text-sm font-semibold inline-flex items-center gap-1 hover:gap-2 transition-all shrink-0"
-              data-testid="hero-nav-link">
-              Nawigacja <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
-            </a>
-          </div>
-
-          <div class="mt-3 grid grid-cols-2 gap-2">
-            <a href="tel:+48513621251"
-              class="flex items-center justify-center gap-1.5 py-2.5 rounded-xl border border-k-red text-k-red text-sm font-medium hover:bg-k-red hover:text-white transition"
-              data-testid="hero-call-btn">
-              <i data-lucide="phone" class="w-4 h-4"></i> Zadzwoń
-            </a>
-            <a href="#zamow"
-              class="flex items-center justify-center gap-1.5 py-2.5 rounded-xl bg-k-red text-white text-sm font-semibold hover:bg-k-redH transition"
-              data-testid="hero-order-btn">
-              <i data-lucide="shopping-bag" class="w-4 h-4"></i> Zamów
-            </a>
-          </div>
-        </div>
-      </div><!-- /right -->
+      </nav>
     </div>
-
-    <div class="mt-8 sm:mt-14 overflow-hidden border-y border-white/8 py-3 sm:py-3.5" aria-hidden="true">
-      <div class="marquee-inner text-k-cream/45 text-xs sm:text-sm">
-        <span>· Świeże mięso z rożna ·</span><span>Kebab w tortilli</span>
-        <span>· Kebab w bułce ·</span><span>Durum</span>
-        <span>· Dostawa do domu ·</span><span>Zestawy rodzinne</span>
-        <span>· Kurczak · Wołowina · Mieszany ·</span><span>Domowe sosy</span>
-        <span>· Frytki ·</span><span>Halal</span>
-        <span>· Świeże mięso z rożna ·</span><span>Kebab w tortilli</span>
-        <span>· Kebab w bułce ·</span><span>Durum</span>
-        <span>· Dostawa do domu ·</span><span>Zestawy rodzinne</span>
-        <span>· Kurczak · Wołowina · Mieszany ·</span><span>Domowe sosy</span>
-        <span>· Frytki ·</span><span>Halal</span>
+  </header>
+  <main id="main">
+<section id="start" class="hero hero--overlay" style="background:linear-gradient(135deg, var(--c-primary), var(--c-primary-dark));">
+    <img class="hero__bg" src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAFvmBDoh3GJt5A3WvNHGH3XTm8WMRBYGLCMrWzizWuYZgs9gJiHmp1B5cMMOMAlTzt-nvfFwEuQa6LMEmYmXxmo4ThV_3g9uGj8-TGuQOa4ZbxnIzPlSu9eHhGlFCYoBk4Oqj8rPGRxxxst=w1280-h960-k-no" alt="Asian Tendur Grill" loading="eager" fetchpriority="high" onerror="this.style.display='none'">
+    <div class="container">
+      <div class="hero__inner reveal">
+        <span class="eyebrow hero__eyebrow">Usługi dla klientów</span>
+      <h1 class="hero__title">Asian Tendur Grill — jakość, na której polegają klienci.</h1>
+      <p class="hero__sub">Profesjonalne usługi — Ełk i okolice. Rzetelnie, terminowo i w uczciwej cenie.</p>
+      <span class="open-status hero__status" data-hours="[{&quot;open&quot;:&quot;10:00&quot;,&quot;close&quot;:&quot;23:00&quot;},{&quot;open&quot;:&quot;10:00&quot;,&quot;close&quot;:&quot;23:00&quot;},{&quot;open&quot;:&quot;10:00&quot;,&quot;close&quot;:&quot;23:00&quot;},{&quot;open&quot;:&quot;10:00&quot;,&quot;close&quot;:&quot;23:00&quot;},{&quot;open&quot;:&quot;10:00&quot;,&quot;close&quot;:&quot;23:00&quot;},{&quot;open&quot;:&quot;10:00&quot;,&quot;close&quot;:&quot;23:00&quot;},{&quot;open&quot;:&quot;10:00&quot;,&quot;close&quot;:&quot;23:00&quot;}]" hidden></span>
+      <div class="hero__actions"><a class="btn btn--accent btn--lg" href="tel:+48513621251"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2 4.1 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.4 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7A2 2 0 0 1 22 16.9z"/></svg>Zadzwoń: +48 513 621 251</a>
+        <a class="btn btn--on-dark btn--lg" href="#kontakt">Napisz do nas</a></div>
+      <ul class="hero__badges">
+        <li class="hero__badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Doświadczenie</span></li>
+        <li class="hero__badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Uczciwe ceny</span></li>
+        <li class="hero__badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Terminowość</span></li>
+      </ul>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-
-<!-- ===================================================
-     TRUST BAR
-     =================================================== -->
-<div class="bg-k-brown text-k-cream/75" data-testid="trust-bar">
-  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5">
-    <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-6 text-xs sm:text-sm text-center">
-      <div class="flex items-center justify-center gap-2">
-        <i data-lucide="clock" class="w-4 h-4 text-k-red shrink-0" aria-hidden="true"></i>
-        <span>Dostawa <strong class="text-k-cream">25–40 min</strong></span>
-      </div>
-      <div class="flex items-center justify-center gap-2">
-        <i data-lucide="star" class="w-4 h-4 text-yellow-400 shrink-0" aria-hidden="true"></i>
-        <span><strong class="text-k-cream">4,8</strong> / 5 na Google</span>
-      </div>
-      <div class="flex items-center justify-center gap-2">
-        <i data-lucide="truck" class="w-4 h-4 text-k-red shrink-0" aria-hidden="true"></i>
-        <span>Darmowa od <strong class="text-k-cream">49 zł</strong></span>
-      </div>
-      <div class="flex items-center justify-center gap-2">
-        <i data-lucide="credit-card" class="w-4 h-4 text-k-red shrink-0" aria-hidden="true"></i>
-        <span>BLIK · karta · gotówka</span>
-      </div>
+<section class="trustbar" aria-label="Nasze atuty">
+    <div class="container">
+      <ul class="trustbar__inner">
+        <li class="trustbar__item reveal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="6"/><path d="M9 14.2 7.5 21 12 18.8 16.5 21 15 14.2"/></svg>
+          <div><strong>Doświadczenie</strong><span>Lata praktyki i setki zadowolonych klientów.</span></div>
+        </li>
+        <li class="trustbar__item reveal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+          <div><strong>Uczciwe ceny</strong><span>Przejrzysta wycena bez ukrytych kosztów.</span></div>
+        </li>
+        <li class="trustbar__item reveal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7.5V12l3 1.8"/></svg>
+          <div><strong>Terminowość</strong><span>Dotrzymujemy ustaleń i szanujemy Twój czas.</span></div>
+        </li>
+      </ul>
     </div>
-  </div>
-</div>
+  </section>
 
-
-<!-- ===================================================
-     MENU
-     =================================================== -->
-<section id="menu" class="py-14 sm:py-18 lg:py-24 bg-k-cream">
-  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-
-    <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-7 sm:mb-10 reveal">
-      <div>
-        <div class="text-xs font-medium uppercase tracking-widest text-k-red mb-2">Nasze menu</div>
-        <h2 class="text-2xl sm:text-4xl font-bold text-k-text leading-tight">Co dziś zamawiasz?</h2>
-      </div>
-      <a href="#zamow" class="btn-primary inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold w-fit shrink-0"
-        data-testid="menu-order-btn">
-        <i data-lucide="shopping-bag" class="w-4 h-4"></i> Zamów teraz
-      </a>
+<section id="uslugi" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+      <span class="eyebrow">Nasze usługi</span>
+      <h2>Co dla Ciebie zrobimy</h2>
+      <p class="lead">Kompleksowa oferta — Ełk i okolice. Wszystko, czego potrzebujesz, w jednym miejscu.</p>
     </div>
-
-    <div class="flex flex-wrap gap-2 mb-6 reveal" role="tablist" aria-label="Kategorie menu">
-      <button id="tab-kebaby"  role="tab" aria-selected="true"  aria-controls="menuPanel" tabindex="0"
-        class="menu-tab active px-4 py-2 rounded-full text-sm font-medium border border-k-muted/20 text-k-muted" data-tab="kebaby"
-        data-testid="tab-kebaby">Kebaby</button>
-      <button id="tab-zestawy" role="tab" aria-selected="false" aria-controls="menuPanel" tabindex="-1"
-        class="menu-tab px-4 py-2 rounded-full text-sm font-medium border border-k-muted/20 text-k-muted" data-tab="zestawy"
-        data-testid="tab-zestawy">Zestawy</button>
-      <button id="tab-dodatki" role="tab" aria-selected="false" aria-controls="menuPanel" tabindex="-1"
-        class="menu-tab px-4 py-2 rounded-full text-sm font-medium border border-k-muted/20 text-k-muted" data-tab="dodatki"
-        data-testid="tab-dodatki">Dodatki</button>
-      <button id="tab-napoje"  role="tab" aria-selected="false" aria-controls="menuPanel" tabindex="-1"
-        class="menu-tab px-4 py-2 rounded-full text-sm font-medium border border-k-muted/20 text-k-muted" data-tab="napoje"
-        data-testid="tab-napoje">Napoje</button>
-    </div>
-
-    <div id="menuPanel" role="tabpanel" aria-labelledby="tab-kebaby" tabindex="0" class="reveal">
-      <div id="menuList" class="grid sm:grid-cols-2 gap-x-8 lg:gap-x-14">
-        <!-- Wypełniane przez JS renderMenu() -->
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-<!-- ===================================================
-     ZAMÓW / DOSTAWA
-     =================================================== -->
-<section id="zamow" class="py-14 sm:py-18 lg:py-24 bg-k-dark text-k-cream">
-  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-
-      <div class="reveal">
-        <div class="text-xs font-medium uppercase tracking-widest text-k-red mb-2">Zamawiaj wygodnie</div>
-        <h2 class="text-2xl sm:text-4xl font-bold leading-tight mb-5">
-          Dostawa prosto<br/>pod Twoje drzwi
-        </h2>
-        <p class="text-sm sm:text-base text-k-cream/65 leading-relaxed mb-7 sm:mb-8">
-          Zamówienie trafia bezpośrednio do kuchni — bez pośredników.
-          Dostarczymy Ci świeże i gorące danie w <strong class="text-k-cream">25–40 minut</strong>.
-        </p>
-
-        <div class="space-y-3">
-          <div class="flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/8">
-            <div class="w-10 h-10 rounded-lg bg-k-red/20 flex items-center justify-center shrink-0">
-              <i data-lucide="truck" class="w-5 h-5 text-k-red" aria-hidden="true"></i>
-            </div>
-            <div>
-              <div class="font-semibold text-sm">Dostawa do domu lub biura</div>
-              <div class="text-xs text-k-cream/50 mt-0.5">Darmowa od 49 zł · strefę potwierdzamy przy zamówieniu</div>
-            </div>
-          </div>
-          <div class="flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/8">
-            <div class="w-10 h-10 rounded-lg bg-k-red/20 flex items-center justify-center shrink-0">
-              <i data-lucide="package" class="w-5 h-5 text-k-red" aria-hidden="true"></i>
-            </div>
-            <div>
-              <div class="font-semibold text-sm">Odbiór osobisty</div>
-              <div class="text-xs text-k-cream/50 mt-0.5">Gotowe w kilkanaście minut · odbierz w lokalu</div>
-            </div>
-          </div>
-          <div class="flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/8">
-            <div class="w-10 h-10 rounded-lg bg-k-red/20 flex items-center justify-center shrink-0">
-              <i data-lucide="credit-card" class="w-5 h-5 text-k-red" aria-hidden="true"></i>
-            </div>
-            <div>
-              <div class="font-semibold text-sm">Płatności</div>
-              <div class="text-xs text-k-cream/50 mt-0.5">BLIK · karta · gotówka przy odbiorze</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="reveal">
-        <div class="rounded-2xl bg-white/6 border border-white/10 p-5 sm:p-7">
-          <h3 class="text-lg font-bold mb-1">Złóż zamówienie</h3>
-          <p class="text-k-cream/55 text-sm mb-5">Wybierz wygodny sposób:</p>
-
-          <a href="tel:+48513621251"
-            class="btn-primary flex items-center justify-between gap-4 px-5 py-4 rounded-xl mb-2.5 group"
-            data-testid="order-online-btn">
-            <div class="flex items-center gap-3">
-              <i data-lucide="phone" class="w-5 h-5 shrink-0" aria-hidden="true"></i>
-              <div>
-                <div class="font-semibold text-[0.95rem]">Zadzwoń i zamów</div>
-                <div class="text-xs opacity-70 mt-0.5">+48 513 621 251 · dostawa lub odbiór</div>
-              </div>
-            </div>
-            <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform shrink-0" aria-hidden="true"></i>
-          </a>
-
-          <a href="https://wa.me/48513621251?text=Witam%2C%20chc%C4%99%20z%C5%82o%C5%BCy%C4%87%20zam%C3%B3wienie%3A" target="_blank" rel="noopener"
-            class="flex items-center justify-between gap-4 px-5 py-4 rounded-xl border border-white/12 hover:border-green-500/40 hover:bg-green-500/5 transition group"
-            data-testid="order-whatsapp-btn">
-            <div class="flex items-center gap-3">
-              <i data-lucide="message-circle" class="w-5 h-5 text-k-cream/65 shrink-0" aria-hidden="true"></i>
-              <div>
-                <div class="font-semibold text-[0.95rem]">WhatsApp</div>
-                <div class="text-xs text-k-cream/50 mt-0.5">Wyślij zamówienie przez wiadomość</div>
-              </div>
-            </div>
-            <i data-lucide="arrow-right" class="w-5 h-5 text-k-cream/35 group-hover:text-k-cream group-hover:translate-x-1 transition shrink-0" aria-hidden="true"></i>
-          </a>
-
-          <p class="mt-4 text-center text-xs text-k-cream/35">
-            Dostawa dostępna w godzinach otwarcia lokalu
-          </p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- ===================================================
-     GALERIA
-     =================================================== -->
-<section id="galeria" class="py-14 sm:py-18 lg:py-24 bg-k-cream">
-  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-7 sm:mb-10 reveal">
-      <div>
-        <div class="text-xs font-medium uppercase tracking-widest text-k-red mb-2">Galeria</div>
-        <h2 class="text-2xl sm:text-4xl font-bold text-k-text leading-tight">Nasz lokal i dania</h2>
-      </div>
-      <p class="max-w-xs text-k-muted text-sm sm:text-right">
-        Mięso prosto z rożna, warzywa od lokalnych dostawców, sosy robione na miejscu.
-      </p>
-    </div>
-
-    <div class="reveal">
-      <div class="gallery-tile relative rounded-2xl h-56 sm:h-80 lg:h-[420px]" data-testid="gallery-main">
-        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&amp;fit=crop&amp;w=900&amp;q=70" alt="Szef kuchni komponuje danie" loading="lazy" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?auto=format&amp;fit=crop&amp;w=900&amp;q=70'" class="w-full h-full object-cover" />
-      </div>
-
-      <div class="mt-3 grid grid-cols-2 sm:grid-cols-3 gap-3">
-        <div class="gallery-tile relative rounded-xl h-32 sm:h-44"><img src="https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?auto=format&amp;fit=crop&amp;w=900&amp;q=70" alt="Apetyczne danie na talerzu" loading="lazy" /></div>
-        <div class="gallery-tile relative rounded-xl h-32 sm:h-44"><img src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&amp;fit=crop&amp;w=900&amp;q=70" alt="Świeżo przygotowany posiłek" loading="lazy" /></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- ===================================================
-     OPINIE
-     =================================================== -->
-<section id="opinie" class="py-14 sm:py-18 lg:py-24 bg-k-brown text-k-cream">
-  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-
-    <div class="text-center mb-8 sm:mb-10 reveal">
-      <div class="text-xs font-medium uppercase tracking-widest text-k-red mb-2">Opinie klientów</div>
-      <h2 class="text-2xl sm:text-4xl font-bold leading-tight">Co mówią goście</h2>
-      <div class="mt-4 flex items-center justify-center gap-2">
-        <div class="flex" aria-label="Ocena 5 na 5 gwiazdek">
-          <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400" aria-hidden="true"></i>
-          <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400" aria-hidden="true"></i>
-          <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400" aria-hidden="true"></i>
-          <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400" aria-hidden="true"></i>
-          <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400" aria-hidden="true"></i>
-        </div>
-        <span class="text-k-cream/70 text-sm">4,8 · 66 opinii Google</span>
-      </div>
-    </div>
-
-    <div class="reveal">
-      <div id="reviewsScroller"
-        class="flex gap-4 overflow-x-auto no-scrollbar pb-3 snap-x snap-mandatory"
-        role="list" aria-label="Opinie klientów">
-        <article class="flex-none w-[88vw] sm:w-[44vw] lg:w-[calc(33.33%-11px)] snap-center bg-white/5 border border-white/8 rounded-2xl p-5 sm:p-6" role="listitem" data-testid="review-0">
-          <div class="flex text-yellow-400 mb-3" aria-label="5 gwiazdek"><i data-lucide="star" class="w-4 h-4 fill-yellow-400" aria-hidden="true"></i><i data-lucide="star" class="w-4 h-4 fill-yellow-400" aria-hidden="true"></i><i data-lucide="star" class="w-4 h-4 fill-yellow-400" aria-hidden="true"></i><i data-lucide="star" class="w-4 h-4 fill-yellow-400" aria-hidden="true"></i><i data-lucide="star" class="w-4 h-4 fill-yellow-400" aria-hidden="true"></i></div>
-          <p class="text-k-cream/80 text-sm leading-relaxed">„Najlepszy kebab w okolicy — mięso zawsze świeże i soczyste, a dostawa szybka. Polecam XL!"</p>
-          <div class="mt-4 flex items-center gap-2.5">
-            <div class="w-8 h-8 rounded-full bg-k-red/25 flex items-center justify-center text-xs font-bold text-k-cream" aria-hidden="true">B</div>
-            <div>
-              <div class="text-sm font-medium">Bartek</div>
-              <div class="text-xs text-k-cream/40">opinia przykładowa</div>
-            </div>
-          </div>
+      <div class="grid grid--3">
+        <article class="card reveal">
+          <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></div>
+          <h3>Profesjonalna obsługa</h3>
+          <p>Realizujemy zlecenia rzetelnie, terminowo i z dbałością o szczegóły.</p>
         </article>
-
-        <article class="flex-none w-[88vw] sm:w-[44vw] lg:w-[calc(33.33%-11px)] snap-center bg-white/5 border border-white/8 rounded-2xl p-5 sm:p-6" role="listitem" data-testid="review-1">
-          <div class="flex text-yellow-400 mb-3" aria-label="5 gwiazdek"><i data-lucide="star" class="w-4 h-4 fill-yellow-400" aria-hidden="true"></i><i data-lucide="star" class="w-4 h-4 fill-yellow-400" aria-hidden="true"></i><i data-lucide="star" class="w-4 h-4 fill-yellow-400" aria-hidden="true"></i><i data-lucide="star" class="w-4 h-4 fill-yellow-400" aria-hidden="true"></i><i data-lucide="star" class="w-4 h-4 fill-yellow-400" aria-hidden="true"></i></div>
-          <p class="text-k-cream/80 text-sm leading-relaxed">„Zamawiam regularnie. Frytki chrupiące, sosy domowe, zestaw rodzinny to świetna opcja na piątek."</p>
-          <div class="mt-4 flex items-center gap-2.5">
-            <div class="w-8 h-8 rounded-full bg-k-red/25 flex items-center justify-center text-xs font-bold text-k-cream" aria-hidden="true">K</div>
-            <div>
-              <div class="text-sm font-medium">Karolina</div>
-              <div class="text-xs text-k-cream/40">opinia przykładowa</div>
-            </div>
-          </div>
+        <article class="card reveal">
+          <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 14a8 8 0 0 1 16 0"/><path d="M4 14v3a2 2 0 0 0 2 2h1v-6H6a2 2 0 0 0-2 1z"/><path d="M20 14v3a2 2 0 0 1-2 2h-1v-6h1a2 2 0 0 1 2 1z"/><path d="M17 19a3.5 3.5 0 0 1-3.5 2.5H12"/></svg></div>
+          <h3>Doradztwo</h3>
+          <p>Pomagamy dobrać najlepsze rozwiązanie do Twoich potrzeb.</p>
+        </article>
+        <article class="card reveal">
+          <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M19.1 4.9 17 7M7 17l-2.1 2.1"/></svg></div>
+          <h3>Realizacja</h3>
+          <p>Wykonujemy usługę sprawnie i z gwarancją jakości.</p>
+        </article>
+        <article class="card reveal">
+          <div class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="m9 12 2 2 4-4"/></svg></div>
+          <h3>Wsparcie</h3>
+          <p>Jesteśmy do dyspozycji także po zakończeniu zlecenia.</p>
         </article>
       </div>
-      <div id="reviewsDots" class="flex justify-center gap-2 mt-4" aria-hidden="true"></div>
     </div>
+  </section>
 
-  </div>
-</section>
-
-
-<!-- ===================================================
-     O NAS
-     =================================================== -->
-<section id="o-nas" class="py-14 sm:py-18 lg:py-24 bg-k-cream">
-  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-
-      <div class="reveal order-2 lg:order-1">
-        <div class="relative rounded-2xl overflow-hidden h-64 sm:h-80 lg:h-96 gallery-tile">
-          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&amp;fit=crop&amp;w=960&amp;q=72" alt="Nakryty stół w restauracji" loading="lazy" class="w-full h-full object-cover" />
+<section id="o-nas" class="section section--alt">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__media reveal" style="background:linear-gradient(135deg, var(--c-primary), var(--c-accent));">
+          <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&amp;fit=crop&amp;w=960&amp;q=72" alt="Zadowoleni klienci i rzetelna obsługa" loading="lazy" onerror="this.style.display='none'">
         </div>
-      </div>
-
-      <div class="reveal order-1 lg:order-2">
-        <div class="text-xs font-medium uppercase tracking-widest text-k-red mb-2">Nasza historia</div>
-        <h2 class="text-2xl sm:text-4xl font-bold text-k-text leading-tight mb-5">Kim jesteśmy</h2>
-        <p class="text-sm sm:text-base text-k-muted leading-relaxed mb-4">Robimy kebab tak, jak powinien wyglądać: świeże mięso z rożna, warzywa od lokalnych dostawców i sosy przygotowywane na miejscu. Bez chodzenia na skróty.</p>
-        <p class="text-sm sm:text-base text-k-muted leading-relaxed mb-6">Stawiamy na szybkość i powtarzalny smak — żebyś za każdym razem dostał dokładnie to, po co wracasz. Na wynos, z dostawą albo do zjedzenia na miejscu.</p>
-
-        <div class="grid grid-cols-3 gap-4 pt-6 border-t border-k-text/8">
-          <div>
-            <div class="text-xl sm:text-2xl font-bold text-k-red">25–40</div>
-            <div class="text-xs text-k-muted mt-0.5">minut do dostawy</div>
-          </div>
-          <div>
-            <div class="text-xl sm:text-2xl font-bold text-k-red">4,8★</div>
-            <div class="text-xs text-k-muted mt-0.5">ocena Google</div>
-          </div>
-          <div>
-            <div class="text-xl sm:text-2xl font-bold text-k-red">7 dni</div>
-            <div class="text-xs text-k-muted mt-0.5">w tygodniu</div>
+        <div class="about__body reveal">
+          <span class="eyebrow">O nas</span>
+          <h2>Dlaczego my?</h2>
+          <p>Jesteśmy lokalną firmą, która stawia na jakość i uczciwe podejście. Każde zlecenie traktujemy indywidualnie.</p>
+        <p>Naszą najlepszą reklamą są zadowoleni klienci, którzy wracają i polecają nas dalej.</p>
+          <ul class="about__points"><li class="about__point"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Doświadczenie</span></li>
+          <li class="about__point"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Uczciwe ceny</span></li>
+          <li class="about__point"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Terminowość</span></li></ul>
+          <div class="hero__actions" style="margin-top:1.8rem;">
+            <a class="btn btn--primary" href="#kontakt">Skontaktuj się z nami</a>
           </div>
         </div>
       </div>
-
     </div>
-  </div>
-</section>
+  </section>
 
-
-<!-- ===================================================
-     KONTAKT
-     =================================================== -->
-<section id="kontakt" class="py-14 sm:py-18 lg:py-24 bg-k-light text-k-text">
-  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-3 gap-8 lg:gap-10">
-
-    <div class="reveal">
-      <div class="text-xs font-medium uppercase tracking-widest text-k-red mb-2">Kontakt</div>
-      <h2 class="text-2xl sm:text-4xl font-bold leading-tight mb-4">Wpadnij<br/>do nas</h2>
-      <p class="text-sm sm:text-base text-k-muted leading-relaxed mb-6">
-        Zamawiaj online, zadzwoń albo przyjdź osobiście. Jesteśmy tu dla Ciebie.
-      </p>
-      <a data-nav-link href="#" target="_blank" rel="noopener"
-        class="btn-primary inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold"
-        data-testid="contact-nav-btn">
-        <i data-lucide="navigation" class="w-4 h-4" aria-hidden="true"></i> Nawigacja
-      </a>
-    </div>
-
-    <div class="space-y-5 reveal">
-
-      <div class="flex items-start gap-4">
-        <div class="w-10 h-10 rounded-xl bg-k-red/10 border border-k-red/15 flex items-center justify-center shrink-0 mt-0.5">
-          <i data-lucide="map-pin" class="w-4 h-4 text-k-red" aria-hidden="true"></i>
-        </div>
-        <div>
-          <div class="text-xs uppercase tracking-wider text-k-muted mb-1">Adres</div>
-          <div>Wojska Polskiego 59<br/>19-300 Ełk, Polska</div>
-        </div>
-      </div>
-
-      <div class="flex items-start gap-4">
-        <div class="w-10 h-10 rounded-xl bg-k-red/10 border border-k-red/15 flex items-center justify-center shrink-0 mt-0.5">
-          <i data-lucide="phone" class="w-4 h-4 text-k-red" aria-hidden="true"></i>
-        </div>
-        <div>
-          <div class="text-xs uppercase tracking-wider text-k-muted mb-1">Telefon / zamówienia</div>
-          <a href="tel:+48513621251" class="font-semibold hover:text-k-red transition">+48 513 621 251</a>
-        </div>
-      </div>
-
+<section id="jak-dzialamy" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+      <span class="eyebrow">Jak działamy</span>
+      <h2>Prosty proces współpracy</h2>
       
     </div>
-
-    <div class="reveal">
-      <div class="text-xs uppercase tracking-wider text-k-muted mb-3">Godziny otwarcia</div>
-      <ul class="divide-y divide-k-text/8 mb-7">
-        <li class="flex justify-between py-2.5 text-sm"><span>Poniedziałek – Niedziela</span><span class="font-semibold text-k-red">10:00 – 23:00</span></li>
-      </ul>
-
-      <div class="text-xs uppercase tracking-wider text-k-muted mb-3">Social media</div>
-      <div class="flex gap-2">
-        <a href="#" aria-label="Instagram" class="w-10 h-10 rounded-xl border border-k-text/12 flex items-center justify-center hover:bg-k-red/8 hover:border-k-red/50 transition" data-testid="social-ig">
-          <svg viewBox="0 0 24 24" class="w-4 h-4" fill="currentColor" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.43-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zM12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.3-1.46.72-2.12 1.38C1.35 2.68.94 3.35.63 4.14.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.72 1.46 1.38 2.12.66.66 1.33 1.08 2.12 1.38.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.9 5.9 0 0 0 2.12-1.38 5.9 5.9 0 0 0 1.38-2.12c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.9 5.9 0 0 0-1.38-2.12A5.9 5.9 0 0 0 19.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.41-10.41a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/></svg>
-        </a>
-        <a href="#" aria-label="Facebook" class="w-10 h-10 rounded-xl border border-k-text/12 flex items-center justify-center hover:bg-k-red/8 hover:border-k-red/50 transition" data-testid="social-fb">
-          <svg viewBox="0 0 24 24" class="w-4 h-4" fill="currentColor" aria-hidden="true"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07c0 6 4.39 10.95 10.13 11.85v-8.38H7.08v-3.47h3.05V9.43c0-3 1.79-4.67 4.53-4.67 1.31 0 2.69.24 2.69.24v2.95h-1.51c-1.49 0-1.96.93-1.96 1.87v2.25h3.33l-.53 3.47h-2.8v8.38C19.61 23.02 24 18.07 24 12.07z"/></svg>
-        </a>
-        <a href="#" aria-label="TikTok" class="w-10 h-10 rounded-xl border border-k-text/12 flex items-center justify-center hover:bg-k-red/8 hover:border-k-red/50 transition" data-testid="social-tt">
-          <svg viewBox="0 0 24 24" class="w-4 h-4" fill="currentColor" aria-hidden="true"><path d="M12.53.02c1.31-.02 2.6-.01 3.9-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
-        </a>
+      <div class="steps">
+        <div class="step reveal">
+          <div class="step__num">1</div>
+          <h3>Kontakt</h3>
+          <p>Opowiadasz nam o swoich potrzebach.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step__num">2</div>
+          <h3>Wycena</h3>
+          <p>Przedstawiamy ofertę i termin.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step__num">3</div>
+          <h3>Realizacja</h3>
+          <p>Wykonujemy usługę z dbałością o detal.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step__num">4</div>
+          <h3>Wsparcie</h3>
+          <p>Pozostajemy do dyspozycji po realizacji.</p>
+        </div>
       </div>
     </div>
+  </section>
 
-  </div>
-</section>
-
-</main>
-
-<!-- ===================================================
-     FOOTER
-     =================================================== -->
-<footer class="bg-k-dark text-k-cream/55">
-  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-    <div id="polityka-prywatnosci" class="max-w-3xl mb-8 text-sm leading-relaxed text-k-cream/55">
-      <h2 class="text-base text-k-cream mb-2 font-semibold">Prywatność i pliki cookie (RODO)</h2>
-      <p>Administratorem danych podanych w formularzu kontaktowym jest Asian Tendur Grill. Dane przetwarzamy wyłącznie w celu obsługi zapytania, zgodnie z RODO. Strona może używać plików cookie do celów statystycznych — możesz nimi zarządzać w ustawieniach przeglądarki. Masz prawo dostępu do swoich danych, ich poprawiania i usunięcia.</p>
-    </div>
-    <div class="border-t border-white/5 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-center sm:text-left">
-      <div class="flex items-center gap-2.5">
-        <span class="w-7 h-7 rounded-lg bg-k-red flex items-center justify-center text-white font-bold text-xs shrink-0" aria-hidden="true">AT</span>
-        <span class="text-k-cream font-medium">Asian Tendur Grill</span>
-      </div>
-      <div>© <span id="year"></span> Asian Tendur Grill. Wszelkie prawa zastrzeżone.</div>
-      <div class="flex gap-5">
-        <a href="#polityka-prywatnosci" class="hover:text-k-cream transition">Polityka prywatności</a>
-        <a href="#menu" class="hover:text-k-cream transition">Menu</a>
+<section class="section section--ink section--tight">
+    <div class="container">
+      <div class="stats__grid">
+        <div class="stat reveal">
+          <div class="stat__value" data-count="10+">10+</div>
+          <div class="stat__label">lat doświadczenia</div>
+        </div>
+        <div class="stat reveal">
+          <div class="stat__value" data-count="1000+">1000+</div>
+          <div class="stat__label">klientów</div>
+        </div>
+        <div class="stat reveal">
+          <div class="stat__value" data-count="98%">98%</div>
+          <div class="stat__label">poleceń</div>
+        </div>
+        <div class="stat reveal">
+          <div class="stat__value" data-count="4,9">4,9</div>
+          <div class="stat__label">ocena</div>
+        </div>
       </div>
     </div>
+  </section>
+
+<section id="realizacje" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+      <span class="eyebrow">Realizacje</span>
+      <h2>Zobacz nasze prace</h2>
+      <p class="lead">Wybrane realizacje, z których jesteśmy dumni.</p>
+    </div>
+      <div class="gallery__grid gallery__grid--compact">
+        <button type="button" class="gallery__item reveal" data-full="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&amp;fit=crop&amp;w=1600&amp;q=70" aria-label="Powiększ: Zespół podczas pracy">
+          <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&amp;fit=crop&amp;w=900&amp;q=70" alt="Zespół podczas pracy" loading="lazy" onerror="this.closest('.gallery__item').style.display='none'">
+        </button>
+        <button type="button" class="gallery__item reveal" data-full="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&amp;fit=crop&amp;w=1600&amp;q=70" aria-label="Powiększ: Współpraca specjalistów">
+          <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&amp;fit=crop&amp;w=900&amp;q=70" alt="Współpraca specjalistów" loading="lazy" onerror="this.closest('.gallery__item').style.display='none'">
+        </button>
+        <button type="button" class="gallery__item reveal" data-full="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&amp;fit=crop&amp;w=1600&amp;q=70" aria-label="Powiększ: Nowoczesna przestrzeń do pracy">
+          <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&amp;fit=crop&amp;w=900&amp;q=70" alt="Nowoczesna przestrzeń do pracy" loading="lazy" onerror="this.closest('.gallery__item').style.display='none'">
+        </button>
+      </div>
+    </div>
+  </section>
+
+<section id="opinie" class="section section--alt">
+    <div class="container">
+      <div class="section-head reveal">
+      <span class="eyebrow">Opinie</span>
+      <h2>Co mówią nasi klienci</h2>
+      <p class="lead">Średnia ocena 4,9/5 na podstawie opinii zadowolonych klientów.</p>
+    </div>
+      <div class="grid grid--3">
+        <article class="card testi-card reveal">
+          <span class="stars" role="img" aria-label="Ocena 5 na 5"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.8 6.2 20.9l1.1-6.5L2.6 9.8l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.8 6.2 20.9l1.1-6.5L2.6 9.8l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.8 6.2 20.9l1.1-6.5L2.6 9.8l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.8 6.2 20.9l1.1-6.5L2.6 9.8l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.8 6.2 20.9l1.1-6.5L2.6 9.8l6.5-.9z"/></svg></span>
+          <blockquote class="testi__quote">„Profesjonalnie, terminowo i w dobrej cenie. Z czystym sumieniem polecam.”</blockquote>
+          <div class="testi__author">
+            <span class="avatar" aria-hidden="true">ZK</span>
+            <div>
+              <strong>Zadowolony klient</strong>
+              <span>Opinia Google</span>
+            </div>
+          </div>
+        </article>
+        <article class="card testi-card reveal">
+          <span class="stars" role="img" aria-label="Ocena 5 na 5"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.8 6.2 20.9l1.1-6.5L2.6 9.8l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.8 6.2 20.9l1.1-6.5L2.6 9.8l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.8 6.2 20.9l1.1-6.5L2.6 9.8l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.8 6.2 20.9l1.1-6.5L2.6 9.8l6.5-.9z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.8 6.2 20.9l1.1-6.5L2.6 9.8l6.5-.9z"/></svg></span>
+          <blockquote class="testi__quote">„Wreszcie firma, która robi to, co obiecuje. Pełen profesjonalizm.”</blockquote>
+          <div class="testi__author">
+            <span class="avatar" aria-hidden="true">SK</span>
+            <div>
+              <strong>Stała klientka</strong>
+              <span>Opinia Google</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+<section id="faq" class="section section--alt">
+    <div class="container">
+      <div class="section-head reveal">
+      <span class="eyebrow">FAQ</span>
+      <h2>Najczęstsze pytania</h2>
+      
+    </div>
+      <div class="faq__list">
+        <div class="faq__item reveal">
+          <button type="button" class="faq__q" aria-expanded="false" aria-controls="faq-a-0" id="faq-q-0">
+            Jak szybko mogę otrzymać wycenę?
+          </button>
+          <div class="faq__a" id="faq-a-0" aria-labelledby="faq-q-0" aria-hidden="true">
+            <p>Wycenę przygotowujemy zwykle w ciągu jednego dnia roboczego od kontaktu.</p>
+          </div>
+        </div>
+        <div class="faq__item reveal">
+          <button type="button" class="faq__q" aria-expanded="false" aria-controls="faq-a-1" id="faq-q-1">
+            Czy wystawiacie faktury?
+          </button>
+          <div class="faq__a" id="faq-a-1" aria-labelledby="faq-q-1" aria-hidden="true">
+            <p>Tak, wystawiamy faktury dla klientów indywidualnych i firm.</p>
+          </div>
+        </div>
+        <div class="faq__item reveal">
+          <button type="button" class="faq__q" aria-expanded="false" aria-controls="faq-a-2" id="faq-q-2">
+            Na jakim obszarze działacie?
+          </button>
+          <div class="faq__a" id="faq-a-2" aria-labelledby="faq-q-2" aria-hidden="true">
+            <p>Działamy lokalnie — w razie wątpliwości zadzwoń i potwierdź dostępność.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="cta-band">
+    <div class="container">
+      <div class="cta-band__inner reveal">
+        <h2>Porozmawiajmy o Twoim zleceniu.</h2>
+        <p>Zadzwoń lub napisz — przygotujemy ofertę dopasowaną do Ciebie.</p>
+        <div class="hero__actions">
+          <a class="btn btn--on-dark btn--lg" href="tel:+48513621251"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2 4.1 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.4 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7A2 2 0 0 1 22 16.9z"/></svg>Zadzwoń: +48 513 621 251</a>
+          <a class="btn btn--on-dark btn--lg" href="#kontakt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>Napisz do nas</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section id="kontakt" class="section">
+    <div class="container">
+      <div class="section-head section-head--left reveal">
+      <span class="eyebrow">Kontakt</span>
+      <h2>Porozmawiajmy</h2>
+      <p class="lead">Odpowiadamy szybko. Zadzwoń, napisz lub wypełnij formularz — odezwiemy się najszybciej, jak to możliwe.</p>
+    </div>
+      <div class="contact__grid">
+        <div class="contact__info reveal">
+          <div class="contact__row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2 4.1 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.4 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7A2 2 0 0 1 22 16.9z"/></svg><div><strong>Telefon</strong><a href="tel:+48513621251">+48 513 621 251</a></div></div>
+          <div class="contact__row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg><div><strong>Adres</strong><span>Wojska Polskiego 59, 19-300 Ełk</span><br><a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Asian%20Tendur%20Grill&amp;query_place_id=ChIJgQbnTwC54UYRaZ1L-87j0Lo" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg> Zobacz na mapie</a></div></div>
+          <div class="contact__row">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7.5V12l3 1.8"/></svg>
+          <div><strong>Godziny otwarcia</strong>
+            <div class="hours"><div><span>Poniedziałek – Niedziela</span><span>10:00 – 23:00</span></div></div>
+          </div>
+        </div>
+        </div>
+        <form class="contact__form reveal" id="contact-form" novalidate>
+          <div class="field">
+            <label for="cf-name">Imię i nazwisko</label>
+            <input type="text" id="cf-name" name="name" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="cf-email">E-mail</label>
+            <input type="email" id="cf-email" name="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="cf-phone">Telefon <span style="font-weight:400;color:var(--c-ink-muted)">(opcjonalnie)</span></label>
+            <input type="tel" id="cf-phone" name="phone" autocomplete="tel">
+          </div>
+          <div class="field">
+            <label for="cf-message">Wiadomość</label>
+            <textarea id="cf-message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--block btn--lg">Wyślij wiadomość</button>
+          <p class="form-note">Wysyłając wiadomość, akceptujesz <a href="#polityka-prywatnosci">politykę prywatności</a>. To demonstracja — formularz otworzy Twój program pocztowy.</p>
+          <p class="form-note" data-form-status role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+  </main>
+<footer class="site-footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a class="brand" href="#start">
+            <span class="brand__mark" aria-hidden="true">AT</span>
+            <span>Asian Tendur Grill</span>
+          </a>
+          <p>Asian Tendur Grill — usługi dla klientów. Ełk i okolice. Oferujemy: Profesjonalna obsługa, Doradztwo, Realizacja i Wsparcie.</p>
+          
+        </div>
+        <nav class="footer__col" aria-label="Stopka — nawigacja"><h3>Nawigacja</h3><a href="#uslugi">Usługi</a>
+          <a href="#o-nas">O nas</a>
+          <a href="#realizacje">Realizacje</a>
+          <a href="#opinie">Opinie</a>
+          <a href="#faq">FAQ</a>
+          <a href="#kontakt">Kontakt</a></nav>
+        <div class="footer__col"><h3>Usługi</h3><a href="#uslugi">Profesjonalna obsługa</a>
+          <a href="#uslugi">Doradztwo</a>
+          <a href="#uslugi">Realizacja</a>
+          <a href="#uslugi">Wsparcie</a></div>
+        <div class="footer__col"><h3>Kontakt</h3><a href="tel:+48513621251">+48 513 621 251</a>
+          <span>Wojska Polskiego 59, 19-300 Ełk</span></div>
+      </div>
+
+      <div id="polityka-prywatnosci" class="footer__col" style="margin-top:2.5rem;max-width:48rem;">
+        <h3>Prywatność i pliki cookie (RODO)</h3>
+        <span>Administratorem danych podanych w formularzu kontaktowym jest Asian Tendur Grill. Dane przetwarzamy wyłącznie w celu odpowiedzi na zapytanie, zgodnie z RODO. Strona może używać plików cookie do celów statystycznych — możesz zarządzać nimi w ustawieniach przeglądarki. Masz prawo dostępu do swoich danych, ich poprawiania i usunięcia.</span>
+      </div>
+
+      <div class="footer__bottom">
+        <span>© 2026 Asian Tendur Grill. Wszelkie prawa zastrzeżone.</span>
+        <div class="footer__legal">
+          
+          <a href="#polityka-prywatnosci">Polityka prywatności</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+<div class="cookie" id="cookie-banner" role="region" aria-live="polite" aria-label="Zgoda na pliki cookie">
+    <p>Używamy plików cookie, aby zapewnić najlepsze działanie strony i analizować ruch. Szczegóły znajdziesz w <a href="#polityka-prywatnosci">polityce prywatności</a>.</p>
+    <div class="cookie__actions">
+      <button type="button" class="btn btn--primary" data-cookie="accept">Akceptuję</button>
+      <button type="button" class="btn btn--ghost" data-cookie="reject">Tylko niezbędne</button>
+    </div>
   </div>
-</footer>
-
-
-<!-- ===================================================
-     COOKIE (RODO)
-     =================================================== -->
-<div class="cookie-banner" id="cookie-banner" role="region" aria-live="polite" aria-label="Zgoda na pliki cookie">
-  <p class="text-sm text-k-cream/80 flex-1 min-w-[16rem]">Używamy plików cookie, aby zapewnić najlepsze działanie strony i analizować ruch. Szczegóły znajdziesz w <a href="#polityka-prywatnosci">polityce prywatności</a>.</p>
-  <div class="cookie-banner__btns">
-    <button type="button" class="btn-primary px-4 py-2 rounded-full text-sm font-medium" data-cookie="accept">Akceptuję</button>
-    <button type="button" class="px-4 py-2 rounded-full text-sm font-medium border border-k-cream/30 text-k-cream hover:bg-k-cream/10 transition" data-cookie="reject">Tylko niezbędne</button>
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button type="button" class="lightbox__close" aria-label="Zamknij">×</button>
+    <img alt="">
   </div>
-</div>
-
-
-<!-- ===================================================
-     MOBILE STICKY ORDER BAR
-     =================================================== -->
-<div id="mobileOrderBar"
-  class="fixed bottom-0 left-0 right-0 z-50 lg:hidden bg-k-dark border-t border-white/8 flex transition-transform duration-300"
-  aria-label="Szybkie akcje" data-testid="mobile-bar">
-  <a href="tel:+48513621251"
-    class="flex-1 flex items-center justify-center gap-2 py-3.5 text-k-cream/80 text-sm font-medium border-r border-white/10 active:bg-white/5"
-    data-testid="mobile-call">
-    <i data-lucide="phone" class="w-4 h-4" aria-hidden="true"></i>
-    <span>Zadzwoń</span>
-  </a>
-  <a href="#zamow"
-    class="flex-1 flex items-center justify-center gap-2 py-3.5 bg-k-red text-white text-sm font-bold active:bg-k-redH"
-    data-testid="mobile-order">
-    <i data-lucide="shopping-bag" class="w-4 h-4" aria-hidden="true"></i>
-    <span>Zamów online</span>
-  </a>
-</div>
-
-
-<!-- ===================================================
-     JAVASCRIPT
-     =================================================== -->
-<script>
-/* ============================================================
-   KONFIGURACJA LOKALU
-   ============================================================ */
-const CONFIG = {
-  name: "Asian Tendur Grill",
-  // Cel przycisku „Nawigacja" (Google Maps Directions) — adres lokalu.
-  navUrl: "https://www.google.com/maps/dir/?api=1\u0026destination=Wojska%20Polskiego%2059%2C%2019-300%20E%C5%82k\u0026dir_action=navigate",
-  // Godziny otwarcia [otwarcie, zamknięcie] wg dnia tygodnia (0 = niedziela ... 6 = sobota).
-  // Wartości mogą być ułamkowe (9.5 = 09:30). Brak klucza dnia = zamknięte.
-  hours: {
-  "0": [
-    10,
-    23
-  ],
-  "1": [
-    10,
-    23
-  ],
-  "2": [
-    10,
-    23
-  ],
-  "3": [
-    10,
-    23
-  ],
-  "4": [
-    10,
-    23
-  ],
-  "5": [
-    10,
-    23
-  ],
-  "6": [
-    10,
-    23
-  ]
-},
-};
-const HAS_HOURS = Object.keys(CONFIG.hours).length > 0;
-function fmtHour(x){ const h=Math.floor(x); const m=Math.round((x-h)*60); return String(h).padStart(2,'0')+':'+String(m).padStart(2,'0'); }
-
-const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const $ = id => document.getElementById(id);
-
-function drawIcons() { if (window.lucide && typeof lucide.createIcons === 'function') lucide.createIcons(); }
-drawIcons();
-$('year').textContent = new Date().getFullYear();
-
-/* Google Maps navigation link (adres lokalu) */
-if (CONFIG.navUrl) document.querySelectorAll('[data-nav-link]').forEach(a => { a.href = CONFIG.navUrl; });
-
-/* ============================================================
-   MOBILE MENU
-   ============================================================ */
-const mobileBtn  = $('mobileBtn');
-const mobileMenu = $('mobileMenu');
-const ICON_MENU  = `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="18" y2="18"/></svg>`;
-const ICON_CLOSE = `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>`;
-
-mobileBtn.addEventListener('click', () => {
-  const open = mobileMenu.classList.toggle('open');
-  mobileBtn.setAttribute('aria-expanded', String(open));
-  mobileMenu.setAttribute('aria-hidden',  String(!open));
-  mobileBtn.innerHTML = open ? ICON_CLOSE : ICON_MENU;
-});
-document.querySelectorAll('.mobile-link').forEach(a => a.addEventListener('click', () => {
-  mobileMenu.classList.remove('open');
-  mobileBtn.setAttribute('aria-expanded', 'false');
-  mobileMenu.setAttribute('aria-hidden',  'true');
-  mobileBtn.innerHTML = ICON_MENU;
-}));
-
-/* ============================================================
-   SCROLL REVEAL
-   ============================================================ */
-const revealObserver = new IntersectionObserver(entries => {
-  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
-}, { threshold: 0.1 });
-document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
-
-/* ============================================================
-   STATUS: OTWARTE / ZAMKNIĘTE (liczone z godzin otwarcia)
-   ============================================================ */
-const statusBadge = $('statusBadge');
-const hoursToday = $('hoursToday');
-function setClosed() {
-  if (statusBadge) {
-    statusBadge.className = 'flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-red-50 border border-red-200 shrink-0 text-xs font-semibold text-red-700';
-    statusBadge.innerHTML = '<span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:#ef4444;"></span> Zamknięte';
+  <button type="button" class="to-top" id="to-top" aria-label="Powrót na górę strony"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5"/><path d="m5 12 7-7 7 7"/></svg></button>
+  <script>(function(){
+  var doc=document, body=doc.body;
+  var header=doc.querySelector('.site-header');
+  var toTop=doc.getElementById('to-top');
+  function onScroll(){
+    if(header) header.classList.toggle('is-scrolled', window.scrollY>8);
+    if(toTop) toTop.classList.toggle('is-visible', window.scrollY>600);
   }
-}
-function updateStatus() {
-  if (!HAS_HOURS) {
-    if (statusBadge) statusBadge.style.display = 'none';
-    if (hoursToday) hoursToday.textContent = 'Godziny — zapytaj w lokalu';
-    return;
-  }
-  const now = new Date();
-  const todayHours = CONFIG.hours[now.getDay()];
-  if (!todayHours) { if (hoursToday) hoursToday.textContent = 'Dziś nieczynne'; setClosed(); return; }
-  const [open, close] = todayHours;
-  const h = now.getHours() + now.getMinutes() / 60;
-  if (hoursToday) hoursToday.textContent = `Dziś: ${fmtHour(open)} – ${fmtHour(close)}`;
-  if (h >= open && h < close) {
-    if (statusBadge) {
-      statusBadge.className = 'flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-green-50 border border-green-200 shrink-0 text-xs font-semibold text-green-700';
-      statusBadge.innerHTML = '<span class="pulse-dot"></span> Otwarte teraz';
-    }
-  } else { setClosed(); }
-}
-updateStatus();
-setInterval(updateStatus, 60000);
+  window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
 
-/* ============================================================
-   DANE MENU (demo) — { name, desc, sizes: [{label, price}] }
-   ============================================================ */
-const menuData = {
-  kebaby: [
-    { name: 'Kebab w tortilli', desc: 'kurczak / wołowina / mieszany · sałata, pomidor, ogórek, cebula, sos do wyboru', sizes: [{ label: 'M · ~300 g', price: '28 zł' }, { label: 'L · ~450 g', price: '35 zł' }, { label: 'XL · ~600 g', price: '45 zł' }] },
-    { name: 'Kebab w bułce', desc: 'kurczak / wołowina / mieszany · sałata, pomidor, ogórek, cebula, sos do wyboru', sizes: [{ label: 'M · ~300 g', price: '26 zł' }, { label: 'L · ~450 g', price: '33 zł' }, { label: 'XL · ~550 g', price: '42 zł' }] },
-    { name: 'Durum (zawijany)', desc: 'cienka tortilla · kurczak / wołowina / mieszany · warzywa, sos', sizes: [{ label: '~380 g', price: '30 zł' }, { label: 'Duży · ~520 g', price: '38 zł' }] },
-    { name: 'Kebab Box', desc: 'mięso z rożna, frytki duże, surówka, 2 sosy do wyboru', sizes: [{ label: '~450 g', price: '38 zł' }, { label: 'Duży · ~600 g', price: '48 zł' }] },
-    { name: 'Pita kebab', desc: 'chleb pita, mięso, sałata, pomidor, sos biały', sizes: [{ label: '~280 g', price: '28 zł' }] },
-    { name: 'Falafel wrap (wege)', desc: 'tortilla, falafel z ciecierzycy, sałata, pomidor, sos jogurtowy', sizes: [{ label: '~350 g', price: '27 zł' }] },
-  ],
-  zestawy: [
-    { name: 'Zestaw studencki', desc: 'Kebab w tortilli M + Napój 0,5 l', sizes: [{ label: '', price: '35 zł' }] },
-    { name: 'Mega zestaw', desc: 'Kebab XL + Frytki duże + Sos + Napój 1 l', sizes: [{ label: '', price: '55 zł' }] },
-    { name: 'Zestaw rodzinny x2', desc: '2 × Kebab L + 2 × Frytki + 2 × Napój', sizes: [{ label: '', price: '75 zł' }] },
-    { name: 'Zestaw rodzinny x4', desc: '4 × Kebab M + 2 × Frytki duże + 4 × Napój', sizes: [{ label: '', price: '120 zł' }] },
-  ],
-  dodatki: [
-    { name: 'Frytki', desc: 'klasyczne frytki ziemniaczane', sizes: [{ label: 'Małe', price: '8 zł' }, { label: 'Duże', price: '12 zł' }] },
-    { name: 'Sos', desc: 'czosnkowy · ostry · jogurtowy · BBQ · tahini', sizes: [{ label: '50 ml', price: '4 zł' }, { label: '100 ml', price: '7 zł' }] },
-    { name: 'Surówka', desc: 'kapusta, marchew, pietruszka, kukurydza', sizes: [{ label: '150 g', price: '7 zł' }] },
-    { name: 'Hummus', desc: 'klasyczny hummus z ciecierzycy z oliwą', sizes: [{ label: '100 g', price: '9 zł' }] },
-  ],
-  napoje: [
-    { name: 'Coca-Cola', desc: '', sizes: [{ label: '0,5 l', price: '7 zł' }, { label: '1,5 l', price: '12 zł' }] },
-    { name: 'Fanta / Sprite', desc: '', sizes: [{ label: '0,5 l', price: '7 zł' }] },
-    { name: 'Woda niegazowana', desc: '', sizes: [{ label: '0,5 l', price: '4 zł' }, { label: '1,5 l', price: '7 zł' }] },
-    { name: 'Ayran', desc: 'jogurt pitny z solą', sizes: [{ label: '250 ml', price: '6 zł' }] },
-    { name: 'Herbata', desc: 'czarna lub miętowa', sizes: [{ label: 'szklanka', price: '6 zł' }] },
-  ],
-};
-
-function renderMenu(tab) {
-  $('menuList').innerHTML = (menuData[tab] || []).map(item => {
-    const sizePills = item.sizes.map(s =>
-      `<span class="inline-flex items-center text-xs px-2.5 py-1 rounded-lg bg-k-red/8 text-k-red font-medium border border-k-red/15 whitespace-nowrap">${s.label ? esc(s.label) + ' · ' : ''}${esc(s.price)}</span>`
-    ).join('');
-    return `
-      <div class="menu-item py-4" data-testid="menu-item-${esc(item.name.toLowerCase().replace(/\s+/g,'-'))}">
-        <div class="font-semibold text-k-text text-[0.925rem] sm:text-base">${esc(item.name)}</div>
-        ${item.desc ? `<div class="text-k-muted text-xs sm:text-sm mt-0.5 leading-relaxed">${esc(item.desc)}</div>` : ''}
-        <div class="flex flex-wrap gap-1.5 mt-2">${sizePills}</div>
-      </div>`;
-  }).join('');
-  drawIcons();
-}
-renderMenu('kebaby');
-
-/* Menu tabs — WAI-ARIA + klawiatura */
-const menuTabs  = Array.from(document.querySelectorAll('.menu-tab'));
-const menuPanel = $('menuPanel');
-function selectTab(btn, setFocus) {
-  menuTabs.forEach(b => {
-    const on = b === btn;
-    b.classList.toggle('active', on);
-    b.setAttribute('aria-selected', String(on));
-    b.tabIndex = on ? 0 : -1;
-  });
-  menuPanel.setAttribute('aria-labelledby', btn.id);
-  renderMenu(btn.dataset.tab);
-  if (setFocus) btn.focus();
-}
-menuTabs.forEach((btn, i) => {
-  btn.addEventListener('click', () => selectTab(btn));
-  btn.addEventListener('keydown', e => {
-    const map = { ArrowRight: (i+1)%menuTabs.length, ArrowDown: (i+1)%menuTabs.length,
-                  ArrowLeft:  (i-1+menuTabs.length)%menuTabs.length,
-                  ArrowUp:    (i-1+menuTabs.length)%menuTabs.length,
-                  Home: 0, End: menuTabs.length - 1 };
-    if (e.key in map) { e.preventDefault(); selectTab(menuTabs[map[e.key]], true); }
-  });
-});
-
-/* ============================================================
-   REVIEWS — SCROLL DOTS
-   ============================================================ */
-const reviewsScroller = $('reviewsScroller');
-const reviewsDots     = $('reviewsDots');
-if (reviewsScroller && reviewsDots) {
-  const cards = Array.from(reviewsScroller.children);
-  cards.forEach((_, i) => {
-    const dot = document.createElement('button');
-    dot.type = 'button';
-    dot.setAttribute('aria-label', `Opinia ${i + 1}`);
-    dot.className = 'w-2 h-2 rounded-full bg-k-cream/20 transition-all duration-200';
-    dot.addEventListener('click', () =>
-      cards[i].scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' })
-    );
-    reviewsDots.appendChild(dot);
-  });
-  const dots = Array.from(reviewsDots.children);
-  function syncDots() {
-    const center = reviewsScroller.scrollLeft + reviewsScroller.clientWidth / 2;
-    let active = 0, best = Infinity;
-    cards.forEach((c, i) => {
-      const d = Math.abs((c.offsetLeft + c.offsetWidth / 2) - center);
-      if (d < best) { best = d; active = i; }
+  var toggle=doc.querySelector('.nav__toggle');
+  if(toggle){
+    toggle.addEventListener('click', function(){
+      var open=body.classList.toggle('nav-open');
+      toggle.setAttribute('aria-expanded', open?'true':'false');
+      toggle.setAttribute('aria-label', open?'Zamknij menu':'Otwórz menu');
     });
-    dots.forEach((d, i) => {
-      const on = i === active;
-      d.classList.toggle('bg-k-red',       on);
-      d.classList.toggle('w-5',            on);
-      d.classList.toggle('bg-k-cream/20',  !on);
+    doc.querySelectorAll('.nav__links a').forEach(function(a){
+      a.addEventListener('click', function(){ body.classList.remove('nav-open'); toggle.setAttribute('aria-expanded','false'); });
     });
   }
-  reviewsScroller.addEventListener('scroll', () => requestAnimationFrame(syncDots), { passive: true });
-  syncDots();
-}
 
-/* ============================================================
-   MOBILE ORDER BAR — ukryj gdy hero CTA jest widoczne
-   ============================================================ */
-const heroCTA        = document.querySelector('[data-testid="hero-cta-order"]');
-const mobileOrderBar = $('mobileOrderBar');
-if (heroCTA && mobileOrderBar) {
-  new IntersectionObserver(([entry]) => {
-    mobileOrderBar.style.transform = entry.isIntersecting ? 'translateY(110%)' : 'translateY(0)';
-  }, { threshold: 0.5 }).observe(heroCTA);
-}
+  doc.querySelectorAll('.faq__q').forEach(function(q){
+    q.addEventListener('click', function(){
+      var item=q.closest('.faq__item');
+      var panel=doc.getElementById(q.getAttribute('aria-controls'));
+      var open=item.classList.toggle('is-open');
+      q.setAttribute('aria-expanded', open?'true':'false');
+      if(panel){ panel.style.maxHeight = open ? (panel.scrollHeight+'px') : ''; panel.setAttribute('aria-hidden', open?'false':'true'); }
+    });
+  });
 
-/* ============================================================
-   BANER ZGODY NA PLIKI COOKIE (RODO)
-   ============================================================ */
-(function(){
-  const banner = $('cookie-banner');
-  if (!banner) return;
-  let stored = null;
-  try { stored = localStorage.getItem('cookie-consent'); } catch(e) {}
-  if (!stored) setTimeout(() => banner.classList.add('show'), 800);
-  banner.querySelectorAll('[data-cookie]').forEach(b => b.addEventListener('click', () => {
-    try { localStorage.setItem('cookie-consent', b.getAttribute('data-cookie')); } catch(e) {}
-    banner.classList.remove('show');
-  }));
-})();
-</script>
+  var reveals=doc.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('is-visible'); io.unobserve(e.target); } });
+    }, {rootMargin:'0px 0px -8% 0px', threshold:0.04});
+    reveals.forEach(function(el){ io.observe(el); });
+  } else { reveals.forEach(function(el){ el.classList.add('is-visible'); }); }
 
+  var cookie=doc.getElementById('cookie-banner');
+  if(cookie){
+    var KEY='cookie-consent', stored=null;
+    try{ stored=localStorage.getItem(KEY); }catch(e){}
+    if(!stored){ setTimeout(function(){ cookie.classList.add('is-visible'); }, 900); }
+    cookie.querySelectorAll('[data-cookie]').forEach(function(b){
+      b.addEventListener('click', function(){
+        try{ localStorage.setItem(KEY, b.getAttribute('data-cookie')); }catch(e){}
+        cookie.classList.remove('is-visible');
+      });
+    });
+  }
+
+  if(toTop) toTop.addEventListener('click', function(){ window.scrollTo({top:0, behavior:'smooth'}); });
+
+  var lb=doc.getElementById('lightbox');
+  if(lb){
+    var lbImg=lb.querySelector('img');
+    var lbClose=lb.querySelector('.lightbox__close');
+    var lbOpener=null;
+    doc.querySelectorAll('.gallery__item').forEach(function(it){
+      it.addEventListener('click', function(){
+        var thumb=it.querySelector('img');
+        lbImg.src=it.getAttribute('data-full'); lbImg.alt=thumb?thumb.alt:'';
+        lbOpener=it;
+        lb.classList.add('is-open'); lb.setAttribute('aria-hidden','false'); body.style.overflow='hidden';
+        if(lbClose) lbClose.focus();
+      });
+    });
+    function closeLb(){ lb.classList.remove('is-open'); lb.setAttribute('aria-hidden','true'); body.style.overflow=''; lbImg.removeAttribute('src'); if(lbOpener){ lbOpener.focus(); lbOpener=null; } }
+    lb.addEventListener('click', function(e){ if(e.target===lb || e.target.classList.contains('lightbox__close')) closeLb(); });
+    doc.addEventListener('keydown', function(e){
+      if(!lb.classList.contains('is-open')) return;
+      if(e.key==='Escape'){ closeLb(); }
+      else if(e.key==='Tab'){ e.preventDefault(); if(lbClose) lbClose.focus(); } // pułapka fokusa w oknie
+    });
+  }
+
+  var form=doc.getElementById('contact-form');
+  if(form){
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      var status=form.querySelector('[data-form-status]');
+      if(!form.checkValidity()){ if(form.reportValidity) form.reportValidity(); return; }
+      var data=new FormData(form);
+      var name=data.get('name')||'', mail=data.get('email')||'', phone=data.get('phone')||'', msg=data.get('message')||'';
+      var email=form.getAttribute('data-email');
+      var subject='Zapytanie ze strony — '+name;
+      var text='Imię i nazwisko: '+name+'\nE-mail: '+mail+'\nTelefon: '+phone+'\n\nWiadomość:\n'+msg;
+      if(email){
+        window.location.href='mailto:'+email+'?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(text);
+        if(status) status.textContent='Otwieramy Twój program pocztowy…';
+      } else {
+        if(status) status.textContent='Dziękujemy za wiadomość! (Wersja demonstracyjna — podłącz prawdziwy adres e-mail, aby odbierać zgłoszenia.)';
+        form.reset();
+      }
+    });
+  }
+
+  var openEls=doc.querySelectorAll('.open-status[data-hours]');
+  if(openEls.length){
+    var now=new Date(), dayIdx=(now.getDay()+6)%7, nowMin=now.getHours()*60+now.getMinutes();
+    var toMin=function(t){ var p=String(t).split(':'); return (parseInt(p[0],10)||0)*60+(parseInt(p[1],10)||0); };
+    openEls.forEach(function(el){
+      var data; try{ data=JSON.parse(el.getAttribute('data-hours')); }catch(e){ return; }
+      if(!Array.isArray(data)) return;
+      var today=data[dayIdx], isOpen=false, closeAt=null;
+      if(today){
+        var o=toMin(today.open), c=toMin(today.close);
+        isOpen = c<=o ? (nowMin>=o || nowMin<c) : (nowMin>=o && nowMin<c);
+        closeAt=today.close;
+      }
+      el.classList.add(isOpen?'is-open':'is-closed');
+      var label=isOpen ? ('Otwarte teraz'+(closeAt?(' · do '+closeAt):'')) : 'Teraz zamknięte';
+      el.innerHTML='<span class="open-status__dot" aria-hidden="true"></span><span>'+label+'</span>';
+      el.hidden=false;
+    });
+  }
+})();</script>
 <style>
   :root{ --ds-demobar-h:60px; }
   @media (max-width:520px){ :root{ --ds-demobar-h:52px; } }

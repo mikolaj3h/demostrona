@@ -330,8 +330,8 @@
     }
   ],
   "hero": {
-    "headline": "Kami kebab — jakość, na której polegają klienci.",
-    "subheadline": "Profesjonalne usługi — Kamieńsk i okolice. Rzetelnie, terminowo i w uczciwej cenie.",
+    "headline": "Soczysty kebab prosto z rożna.",
+    "subheadline": "Świeże mięso z rożna, domowe sosy i chrupiące frytki — Kamieńsk i okolice. Na miejscu, na wynos i z dostawą pod drzwi.",
     "badges": [
       "Płatność kartą"
     ],
@@ -430,7 +430,7 @@
     "industry": "kebab",
     "theme": "artisan",
     "imageMode": "unsplash",
-    "generatedAt": "2026-06-21T21:36:45.506Z",
+    "generatedAt": "2026-06-21T22:03:22.920Z",
     "warnings": []
   }
 }

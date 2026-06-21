@@ -6,20 +6,20 @@
 <title>Zamów stronę — Perełka. Bar</title>
 <meta name="description" content="Zamów gotową stronę internetową dla Perełka. Bar. 1299 zł jednorazowo + 80 zł/mc za hosting i pełne wsparcie. Gotowe w 2 dni — płacisz dopiero, gdy zobaczysz…" />
 <meta name="robots" content="noindex, nofollow" />
-<meta name="theme-color" content="#241a13" />
+<meta name="theme-color" content="#0b1220" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 <style>
   *,*::before,*::after{ box-sizing:border-box; }
   :root{
-    --bg:#241a13; --hero-deep:#201711; --on-dark:#f8fafc; --muted-dark:#a7a5a3;
-    --panel:#ffffff; --page:#f5e7db; --soft:#f5e7db;
-    --ink:#241c15; --muted:#5c5247; --line:#ece0d0;
-    --brand:#b91c1c; --brandH:#9b1818; --on-brand:#ffffff;
+    --bg:#0b1220; --hero-deep:#0a101d; --on-dark:#f8fafc; --muted-dark:#9ea2a8;
+    --panel:#ffffff; --page:#eef2fb; --soft:#eef2fb;
+    --ink:#0f172a; --muted:#51607a; --line:#e6eaf2;
+    --brand:#2563eb; --brandH:#1f53c5; --on-brand:#ffffff;
     --accent:#f59e0b; --on-accent:#0b1220;
-    --rad-card:18px; --rad-btn:999px; --rad-input:12px;
-    --font-head:'Playfair Display', Georgia, 'Times New Roman', serif; --font-body:'DM Sans', system-ui, -apple-system, Segoe UI, sans-serif;
+    --rad-card:20px; --rad-btn:12px; --rad-input:12px;
+    --font-head:'Plus Jakarta Sans', system-ui, -apple-system, Segoe UI, Roboto, sans-serif; --font-body:'Inter', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
   }
   html{ scroll-behavior:smooth; -webkit-text-size-adjust:100%; }
   body{
@@ -151,7 +151,13 @@
   .feat__name{ font-weight:700; font-size:.98rem; }
   .feat__desc{ font-size:.82rem; color:var(--muted); }
   .feat__badge{ flex:0 0 auto; font-size:.72rem; font-weight:700; text-transform:uppercase; letter-spacing:.03em; color:var(--on-accent); background:var(--accent); padding:.22rem .55rem; border-radius:9999px; white-space:nowrap; }
-  @media (max-width:480px){ .feat{ flex-wrap:wrap; } .feat__badge{ order:3; margin-left:2rem; } }
+  @media (max-width:480px){
+    /* Stały układ siatki — plakietka zawsze pod opisem, tekst nigdy się nie ściska */
+    .feat{ display:grid; grid-template-columns:auto 1fr; grid-template-areas:"cb body" ". badge"; align-items:start; column-gap:.7rem; row-gap:.5rem; }
+    .feat__cb{ grid-area:cb; align-self:start; margin-top:.1rem; }
+    .feat__body{ grid-area:body; }
+    .feat__badge{ grid-area:badge; margin-left:0; justify-self:start; }
+  }
 
   /* Picker godzin */
   .hours{ border:0; padding:0; margin:.2rem 0 0; }

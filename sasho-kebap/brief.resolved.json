@@ -346,8 +346,8 @@
     }
   ],
   "hero": {
-    "headline": "Sasho Kebap — jakość, na której polegają klienci.",
-    "subheadline": "Profesjonalne usługi — Łęknica i okolice. Rzetelnie, terminowo i w uczciwej cenie.",
+    "headline": "Soczysty kebab prosto z rożna.",
+    "subheadline": "Świeże mięso z rożna, domowe sosy i chrupiące frytki — Łęknica i okolice. Na miejscu, na wynos i z dostawą pod drzwi.",
     "badges": [
       "Na wynos",
       "Miejsca na miejscu",
@@ -445,7 +445,7 @@
     "industry": "kebab",
     "theme": "artisan",
     "imageMode": "unsplash",
-    "generatedAt": "2026-06-21T21:36:45.506Z",
+    "generatedAt": "2026-06-21T22:03:22.920Z",
     "warnings": []
   }
 }

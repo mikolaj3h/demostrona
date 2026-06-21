@@ -151,7 +151,13 @@
   .feat__name{ font-weight:700; font-size:.98rem; }
   .feat__desc{ font-size:.82rem; color:var(--muted); }
   .feat__badge{ flex:0 0 auto; font-size:.72rem; font-weight:700; text-transform:uppercase; letter-spacing:.03em; color:var(--on-accent); background:var(--accent); padding:.22rem .55rem; border-radius:9999px; white-space:nowrap; }
-  @media (max-width:480px){ .feat{ flex-wrap:wrap; } .feat__badge{ order:3; margin-left:2rem; } }
+  @media (max-width:480px){
+    /* Stały układ siatki — plakietka zawsze pod opisem, tekst nigdy się nie ściska */
+    .feat{ display:grid; grid-template-columns:auto 1fr; grid-template-areas:"cb body" ". badge"; align-items:start; column-gap:.7rem; row-gap:.5rem; }
+    .feat__cb{ grid-area:cb; align-self:start; margin-top:.1rem; }
+    .feat__body{ grid-area:body; }
+    .feat__badge{ grid-area:badge; margin-left:0; justify-self:start; }
+  }
 
   /* Picker godzin */
   .hours{ border:0; padding:0; margin:.2rem 0 0; }
