@@ -497,52 +497,52 @@ section[id] { scroll-margin-top: 4.5rem; }
   <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-8 sm:pb-12 w-full">
     <div class="grid lg:grid-cols-12 gap-8 lg:gap-10 items-end">
 
-      <div class="lg:col-span-7 text-k-cream">
+      <div class="lg:col-span-7 text-k-cream min-w-0">
 
-        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 border border-white/12 text-k-cream/80 text-xs reveal" data-testid="hero-badge">
+        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 border border-white/12 text-k-cream/80 text-[0.7rem] sm:text-xs reveal" data-testid="hero-badge">
           <i data-lucide="map-pin" class="w-3 h-3 text-k-red"></i>
           Kebab · Łuków
         </div>
 
-        <h1 class="mt-4 text-5xl sm:text-6xl lg:text-[4.5rem] font-extrabold leading-none tracking-tight text-white reveal" data-testid="hero-title">
+        <h1 class="mt-3 sm:mt-4 text-[2rem] sm:text-6xl lg:text-[4.5rem] font-extrabold leading-tight sm:leading-none tracking-tight text-white reveal" data-testid="hero-title">
           MY KEBAB ŁUKOW
         </h1>
 
-        <p class="mt-4 text-base sm:text-[1.05rem] text-k-cream/70 max-w-lg leading-relaxed reveal" data-testid="hero-tagline">
+        <p class="mt-3 text-sm sm:text-[1.05rem] text-k-cream/70 max-w-lg leading-relaxed reveal" data-testid="hero-tagline">
           Profesjonalne usługi — Łuków i okolice. Rzetelnie, terminowo i w uczciwej cenie.
         </p>
 
-        <div class="mt-6 flex flex-wrap gap-3 reveal">
+        <div class="mt-5 sm:mt-6 flex flex-wrap gap-2.5 sm:gap-3 reveal">
           <a href="#zamow"
-            class="btn-primary inline-flex items-center gap-2 px-6 py-3.5 rounded-xl font-semibold"
+            class="btn-primary inline-flex items-center gap-2 px-4 py-2.5 sm:px-6 sm:py-3.5 rounded-xl font-semibold text-sm sm:text-base"
             data-testid="hero-cta-order">
             <i data-lucide="shopping-bag" class="w-4 h-4"></i> Zamów z dostawą
           </a>
           <a href="#menu"
-            class="btn-ghost inline-flex items-center gap-2 px-6 py-3.5 rounded-xl font-medium"
+            class="btn-ghost inline-flex items-center gap-2 px-4 py-2.5 sm:px-6 sm:py-3.5 rounded-xl font-medium text-sm sm:text-base"
             data-testid="hero-cta-menu">
             Zobacz menu <i data-lucide="arrow-down" class="w-4 h-4"></i>
           </a>
         </div>
 
-        <div class="mt-9 flex flex-wrap gap-6 sm:gap-8 reveal">
+        <div class="mt-7 sm:mt-9 flex flex-wrap gap-x-6 gap-y-4 sm:gap-8 reveal">
           <div>
-            <div class="text-2xl font-bold text-white">4,8★</div>
-            <div class="text-xs text-k-cream/50 mt-0.5 uppercase tracking-wide">ocena Google</div>
+            <div class="text-xl sm:text-2xl font-bold text-white">4,8★</div>
+            <div class="text-[0.7rem] sm:text-xs text-k-cream/50 mt-0.5 uppercase tracking-wide">ocena Google</div>
           </div>
           <div>
-            <div class="text-2xl font-bold text-white">25–40 min</div>
-            <div class="text-xs text-k-cream/50 mt-0.5 uppercase tracking-wide">czas dostawy</div>
+            <div class="text-xl sm:text-2xl font-bold text-white">25–40 min</div>
+            <div class="text-[0.7rem] sm:text-xs text-k-cream/50 mt-0.5 uppercase tracking-wide">czas dostawy</div>
           </div>
           <div>
-            <div class="text-2xl font-bold text-white">691+</div>
-            <div class="text-xs text-k-cream/50 mt-0.5 uppercase tracking-wide">opinii klientów</div>
+            <div class="text-xl sm:text-2xl font-bold text-white">691+</div>
+            <div class="text-[0.7rem] sm:text-xs text-k-cream/50 mt-0.5 uppercase tracking-wide">opinii klientów</div>
           </div>
         </div>
       </div><!-- /left -->
 
-      <div class="lg:col-span-5 reveal" data-testid="hero-map-card">
-        <div class="rounded-2xl bg-k-cream/97 backdrop-blur p-4 shadow-[0_20px_60px_-15px_rgba(13,9,5,.55)] border border-white/10">
+      <div class="lg:col-span-5 reveal min-w-0" data-testid="hero-map-card">
+        <div class="rounded-2xl bg-k-cream/97 backdrop-blur p-3.5 sm:p-4 shadow-[0_20px_60px_-15px_rgba(13,9,5,.55)] border border-white/10">
 
           <div class="flex items-center justify-between gap-3 mb-3">
             <div class="min-w-0">
@@ -556,7 +556,7 @@ section[id] { scroll-margin-top: 4.5rem; }
             </div>
           </div>
 
-          <div class="h-44 sm:h-48 rounded-xl overflow-hidden border border-k-text/8">
+          <div class="h-40 sm:h-48 rounded-xl overflow-hidden border border-k-text/8">
             <iframe class="map-embed" title="Mapa dojazdu — MY KEBAB ŁUKOW" src="https://maps.google.com/maps?q=Ksi%C4%99dza%20Kardyna%C5%82a%20Stefana%20Wyszy%C5%84skiego%2033%2C%2021-410%20%C5%81uk%C3%B3w&amp;z=15&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen data-testid="hero-map"></iframe>
           </div>
 
@@ -588,8 +588,8 @@ section[id] { scroll-margin-top: 4.5rem; }
       </div><!-- /right -->
     </div>
 
-    <div class="mt-10 sm:mt-14 overflow-hidden border-y border-white/8 py-3.5" aria-hidden="true">
-      <div class="marquee-inner text-k-cream/45 text-sm">
+    <div class="mt-8 sm:mt-14 overflow-hidden border-y border-white/8 py-3 sm:py-3.5" aria-hidden="true">
+      <div class="marquee-inner text-k-cream/45 text-xs sm:text-sm">
         <span>· Świeże mięso z rożna ·</span><span>Kebab w tortilli</span>
         <span>· Kebab w bułce ·</span><span>Durum</span>
         <span>· Dostawa do domu ·</span><span>Zestawy rodzinne</span>
@@ -611,7 +611,7 @@ section[id] { scroll-margin-top: 4.5rem; }
      =================================================== -->
 <div class="bg-k-brown text-k-cream/75" data-testid="trust-bar">
   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5">
-    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-6 text-sm text-center">
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-6 text-xs sm:text-sm text-center">
       <div class="flex items-center justify-center gap-2">
         <i data-lucide="clock" class="w-4 h-4 text-k-red shrink-0" aria-hidden="true"></i>
         <span>Dostawa <strong class="text-k-cream">25–40 min</strong></span>
@@ -642,7 +642,7 @@ section[id] { scroll-margin-top: 4.5rem; }
     <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-7 sm:mb-10 reveal">
       <div>
         <div class="text-xs font-medium uppercase tracking-widest text-k-red mb-2">Nasze menu</div>
-        <h2 class="text-3xl sm:text-4xl font-bold text-k-text leading-tight">Co dziś zamawiasz?</h2>
+        <h2 class="text-2xl sm:text-4xl font-bold text-k-text leading-tight">Co dziś zamawiasz?</h2>
       </div>
       <a href="#zamow" class="btn-primary inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold w-fit shrink-0"
         data-testid="menu-order-btn">
@@ -684,10 +684,10 @@ section[id] { scroll-margin-top: 4.5rem; }
 
       <div class="reveal">
         <div class="text-xs font-medium uppercase tracking-widest text-k-red mb-2">Zamawiaj wygodnie</div>
-        <h2 class="text-3xl sm:text-4xl font-bold leading-tight mb-5">
+        <h2 class="text-2xl sm:text-4xl font-bold leading-tight mb-5">
           Dostawa prosto<br/>pod Twoje drzwi
         </h2>
-        <p class="text-k-cream/65 leading-relaxed mb-8">
+        <p class="text-sm sm:text-base text-k-cream/65 leading-relaxed mb-7 sm:mb-8">
           Zamówienie trafia bezpośrednio do kuchni — bez pośredników.
           Dostarczymy Ci świeże i gorące danie w <strong class="text-k-cream">25–40 minut</strong>.
         </p>
@@ -773,7 +773,7 @@ section[id] { scroll-margin-top: 4.5rem; }
     <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-7 sm:mb-10 reveal">
       <div>
         <div class="text-xs font-medium uppercase tracking-widest text-k-red mb-2">Galeria</div>
-        <h2 class="text-3xl sm:text-4xl font-bold text-k-text leading-tight">Nasz lokal i dania</h2>
+        <h2 class="text-2xl sm:text-4xl font-bold text-k-text leading-tight">Nasz lokal i dania</h2>
       </div>
       <p class="max-w-xs text-k-muted text-sm sm:text-right">
         Mięso prosto z rożna, warzywa od lokalnych dostawców, sosy robione na miejscu.
@@ -802,7 +802,7 @@ section[id] { scroll-margin-top: 4.5rem; }
 
     <div class="text-center mb-8 sm:mb-10 reveal">
       <div class="text-xs font-medium uppercase tracking-widest text-k-red mb-2">Opinie klientów</div>
-      <h2 class="text-3xl sm:text-4xl font-bold leading-tight">Co mówią goście</h2>
+      <h2 class="text-2xl sm:text-4xl font-bold leading-tight">Co mówią goście</h2>
       <div class="mt-4 flex items-center justify-center gap-2">
         <div class="flex" aria-label="Ocena 5 na 5 gwiazdek">
           <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-yellow-400" aria-hidden="true"></i>
@@ -865,21 +865,21 @@ section[id] { scroll-margin-top: 4.5rem; }
 
       <div class="reveal order-1 lg:order-2">
         <div class="text-xs font-medium uppercase tracking-widest text-k-red mb-2">Nasza historia</div>
-        <h2 class="text-3xl sm:text-4xl font-bold text-k-text leading-tight mb-5">Kim jesteśmy</h2>
-        <p class="text-k-muted leading-relaxed mb-4">Robimy kebab tak, jak powinien wyglądać: świeże mięso z rożna, warzywa od lokalnych dostawców i sosy przygotowywane na miejscu. Bez chodzenia na skróty.</p>
-        <p class="text-k-muted leading-relaxed mb-6">Stawiamy na szybkość i powtarzalny smak — żebyś za każdym razem dostał dokładnie to, po co wracasz. Na wynos, z dostawą albo do zjedzenia na miejscu.</p>
+        <h2 class="text-2xl sm:text-4xl font-bold text-k-text leading-tight mb-5">Kim jesteśmy</h2>
+        <p class="text-sm sm:text-base text-k-muted leading-relaxed mb-4">Robimy kebab tak, jak powinien wyglądać: świeże mięso z rożna, warzywa od lokalnych dostawców i sosy przygotowywane na miejscu. Bez chodzenia na skróty.</p>
+        <p class="text-sm sm:text-base text-k-muted leading-relaxed mb-6">Stawiamy na szybkość i powtarzalny smak — żebyś za każdym razem dostał dokładnie to, po co wracasz. Na wynos, z dostawą albo do zjedzenia na miejscu.</p>
 
         <div class="grid grid-cols-3 gap-4 pt-6 border-t border-k-text/8">
           <div>
-            <div class="text-2xl font-bold text-k-red">25–40</div>
+            <div class="text-xl sm:text-2xl font-bold text-k-red">25–40</div>
             <div class="text-xs text-k-muted mt-0.5">minut do dostawy</div>
           </div>
           <div>
-            <div class="text-2xl font-bold text-k-red">4,8★</div>
+            <div class="text-xl sm:text-2xl font-bold text-k-red">4,8★</div>
             <div class="text-xs text-k-muted mt-0.5">ocena Google</div>
           </div>
           <div>
-            <div class="text-2xl font-bold text-k-red">7 dni</div>
+            <div class="text-xl sm:text-2xl font-bold text-k-red">7 dni</div>
             <div class="text-xs text-k-muted mt-0.5">w tygodniu</div>
           </div>
         </div>
@@ -898,8 +898,8 @@ section[id] { scroll-margin-top: 4.5rem; }
 
     <div class="reveal">
       <div class="text-xs font-medium uppercase tracking-widest text-k-red mb-2">Kontakt</div>
-      <h2 class="text-3xl sm:text-4xl font-bold leading-tight mb-4">Wpadnij<br/>do nas</h2>
-      <p class="text-k-muted leading-relaxed mb-6">
+      <h2 class="text-2xl sm:text-4xl font-bold leading-tight mb-4">Wpadnij<br/>do nas</h2>
+      <p class="text-sm sm:text-base text-k-muted leading-relaxed mb-6">
         Zamawiaj online, zadzwoń albo przyjdź osobiście. Jesteśmy tu dla Ciebie.
       </p>
       <a data-nav-link href="#" target="_blank" rel="noopener"
